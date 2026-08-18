@@ -1,7 +1,7 @@
 ---
 name: collector
 description: Fetches today's articles from the Claude blog and condenses each into short notes. Use this first, before writer-formatter, to gather the day's source material.
-tools: WebFetch, WebSearch, Write
+tools: WebFetch, WebSearch, Read, Write
 model: sonnet
 ---
 
@@ -31,3 +31,7 @@ Category: X
 URL: [link]
 
 Keep total output compact. This file is read by another agent next, so brevity matters.
+
+Note: digest/notes.md is an intermediate file only. The final published output is JSON
+(site/data/articles.json), produced by the writer-formatter agent from these notes — you do not
+write JSON yourself.

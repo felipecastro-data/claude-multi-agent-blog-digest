@@ -1,0 +1,9 @@
+[
+  {
+    "title": "The Claude Science product guide",
+    "category": "announcement",
+    "date": "2026-08-18",
+    "summary": "Claude Science is a new beta AI workbench designed specifically for life sciences research, using a local daemon architecture that keeps data on-premises while accessing cloud compute. It includes specialized life sciences skills and database connectors, addressing the critical gap where 91% of scientists want more AI in research but cite trust and reliability as barriers. The platform's five design principles ensure analyses withstand peer review and support workflows from discovery through publication.",
+    "url": "https://claude.com/blog/the-claude-science-product-guide"
+  }
+]
