@@ -1,5 +1,12 @@
 [
   {
+    "title": "Claude on call: How Claude Tag serves as Anthropic's first responder for CI/CD failures",
+    "category": "announcement",
+    "date": "2026-08-18",
+    "summary": "Anthropic deployed Claude Tag as an automated first responder that detects, triages, and resolves CI/CD failures using an orchestrator/executor agent workflow. The system analyzes failures across Grafana, logs, GitHub, and Kubernetes, achieving median time-to-first-analysis of 14 minutes and reducing on-call engineer workload. Available for Claude Team/Enterprise plans with an open-source setup kit for other organizations.",
+    "url": "https://claude.com/blog/ai-ci-cd-on-call"
+  },
+  {
     "title": "The Claude Science product guide",
     "category": "announcement",
     "date": "2026-08-18",
