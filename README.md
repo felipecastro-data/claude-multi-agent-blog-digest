@@ -28,10 +28,12 @@ The pipeline runs nightly via a GitHub Actions workflow. The resulting `data/art
 
 ## Screenshots
 
-<p align="center">
-  <img src="docs/screenshots/card-list.png" width="300" alt="Digest card list view" />
-  <img src="docs/screenshots/card-expanded.png" width="300" alt="Expanded article card" />
-</p>
+<table>
+<tr>
+<td><img src="docs/screenshots/card-list.png" width="100%" /></td>
+<td><img src="docs/screenshots/card-expanded.png" width="100%" /></td>
+</tr>
+</table>
 
 Left: the daily digest card list. Right: an expanded card showing the
 summary and source link.
