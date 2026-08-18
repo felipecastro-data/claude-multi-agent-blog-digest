@@ -28,7 +28,13 @@ The pipeline runs nightly via a GitHub Actions workflow. The resulting `data/art
 
 ## Screenshots
 
-<!-- app screenshots go here once the UI is built -->
+<p align="center">
+  <img src="docs/screenshots/card-list.png" width="300" alt="Digest card list view" />
+  <img src="docs/screenshots/card-expanded.png" width="300" alt="Expanded article card" />
+</p>
+
+Left: the daily digest card list. Right: an expanded card showing the
+summary and source link.
 
 ## Setup / Local Development
 
