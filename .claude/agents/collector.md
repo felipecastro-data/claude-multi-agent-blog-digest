@@ -33,5 +33,5 @@ URL: [link]
 Keep total output compact. This file is read by another agent next, so brevity matters.
 
 Note: digest/notes.md is an intermediate file only. The final published output is JSON
-(site/data/articles.json), produced by the writer-formatter agent from these notes — you do not
+(docs/data/articles.json), produced by the writer-formatter agent from these notes — you do not
 write JSON yourself.

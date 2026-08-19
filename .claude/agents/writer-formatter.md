@@ -1,6 +1,6 @@
 ---
 name: writer-formatter
-description: Reads digest/notes.md, reorders items by importance, tightens wording, and prepends today's new (non-duplicate) articles as JSON to site/data/articles.json, trimmed to the 6 most recent. Use this second, after collector has gathered the day's notes.
+description: Reads digest/notes.md, reorders items by importance, tightens wording, and prepends today's new (non-duplicate) articles as JSON to docs/data/articles.json, trimmed to the 6 most recent. Use this second, after collector has gathered the day's notes.
 tools: Read, Write
 model: haiku
 ---
@@ -10,9 +10,9 @@ never inventing new facts or fetching new sources.
 
 Steps:
 1. Read digest/notes.md.
-2. If it contains only "NO_UPDATES", leave site/data/articles.json completely untouched and end.
+2. If it contains only "NO_UPDATES", leave docs/data/articles.json completely untouched and end.
    Do not read, write, or modify it in any way.
-3. Otherwise, read the existing site/data/articles.json, if it exists. If the file does not
+3. Otherwise, read the existing docs/data/articles.json, if it exists. If the file does not
    exist, treat the existing array as empty (`[]`).
 4. Reorder the new items from digest/notes.md by importance, highest first:
    1. Breaking changes / deprecations
@@ -38,7 +38,7 @@ Steps:
    consistent) and skip straight to verification.
 8. Trim the combined array to the 6 most recent articles: keep only the first 6 items and drop
    everything past index 6 (the oldest entries).
-9. Write the array to site/data/articles.json as pretty-printed JSON (2-space indent).
-10. Read site/data/articles.json back and confirm it parses as valid JSON, that no URL appears
+9. Write the array to docs/data/articles.json as pretty-printed JSON (2-space indent).
+10. Read docs/data/articles.json back and confirm it parses as valid JSON, that no URL appears
     more than once, and that the array length is 6 or fewer. If verification fails, fix the file
     and re-verify before ending.
