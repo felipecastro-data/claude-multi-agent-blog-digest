@@ -1,5 +1,26 @@
 [
   {
+    "title": "Anthropic's approach to teaching and learning AI",
+    "category": "announcement",
+    "date": "2026-08-20",
+    "summary": "Anthropic launched Claude Academy, a public education platform teaching people to use AI safely and effectively using the '4D AI Fluency Framework' that focuses on mindsets and ethical disclosure over rigid feature training. The program offers personalized learning paths with Claude-powered recommendations accessible at academy.claude.com and integrated into Claude's profile menu.",
+    "url": "https://claude.com/blog/anthropics-approach-to-teaching-and-learning-ai"
+  },
+  {
+    "title": "How monday.com transformed its platform into an agent-first product where humans and agents collaborate",
+    "category": "announcement",
+    "date": "2026-08-20",
+    "summary": "monday.com rebuilt its work management platform around human-agent collaboration using Claude as the core AI engine, achieving 5 million agent interactions in the first months after its May 2026 launch. The platform supports four implementation methods including custom agents, bring-your-own-agent, pre-built agents, and Claude Coding integration, with 250,000+ companies already using specialized agents for IT triage, HR recruiting, and executive support. Case studies show tangible results, such as Cooke Seafood reducing manual reporting across 200+ projects.",
+    "url": "https://claude.com/blog/how-monday-com-transformed-its-platform-into-an-agent-first-product-where-humans-and-agents-collaborate"
+  },
+  {
+    "title": "The Claude Code Guide for Startups",
+    "category": "announcement",
+    "date": "2026-08-20",
+    "summary": "Anthropic released a guide distilling five operating principles that fast-growing startups use to ship faster with Claude Code, based on interviews with 15+ companies. The framework enables non-technical employees to build features while agents handle ~80% of mechanical dev tasks, with reported gains including ClickHouse shipping 30% more features, Omni seeing 2-3x engineering productivity, and Clay automating 100% of bug triage.",
+    "url": "https://claude.com/blog/claude-code-guide-for-startups"
+  },
+  {
     "title": "Claude on call: How Claude Tag serves as Anthropic's first responder for CI/CD failures",
     "category": "announcement",
     "date": "2026-08-18",
