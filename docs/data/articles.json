@@ -1,5 +1,19 @@
 [
   {
+    "title": "Claude's memory works everywhere, and you decide what's in it",
+    "category": "feature update",
+    "date": "2026-08-25",
+    "summary": "Anthropic unified Claude's memory system across all platforms (chat, Cowork, web, desktop, mobile) with real-time updates as users chat instead of post-conversation summaries. Users can view, edit, and delete memories by topic in settings, with sensitive topics excluded by default and corrections propagating across all future interactions. This reduces repetitive context-setting and improves consistency across platforms and teams.",
+    "url": "https://claude.com/blog/claudes-memory-works-everywhere-and-you-decide-whats-in-it"
+  },
+  {
+    "title": "Bain & Company joins the Claude Partner Network as a Global Premier partner",
+    "category": "announcement",
+    "date": "2026-08-25",
+    "summary": "Anthropic and Bain & Company formed a strategic partnership where Bain joins the Claude Partner Network as a Global Premier partner. With over 7,000 of Bain's 19,000 employees actively using Claude and achieving 30-50% productivity gains on legacy code modernization, the partnership brings 1,500+ specialists to help enterprises scale from experimentation to operational AI deployment.",
+    "url": "https://claude.com/blog/bain-company-joins-the-claude-partner-network-as-a-global-premier-partner"
+  },
+  {
     "title": "Anthropic's approach to teaching and learning AI",
     "category": "announcement",
     "date": "2026-08-20",
@@ -26,12 +40,5 @@
     "date": "2026-08-18",
     "summary": "Anthropic deployed Claude Tag as an automated first responder that detects, triages, and resolves CI/CD failures using an orchestrator/executor agent workflow. The system analyzes failures across Grafana, logs, GitHub, and Kubernetes, achieving median time-to-first-analysis of 14 minutes and reducing on-call engineer workload. Available for Claude Team/Enterprise plans with an open-source setup kit for other organizations.",
     "url": "https://claude.com/blog/ai-ci-cd-on-call"
-  },
-  {
-    "title": "The Claude Science product guide",
-    "category": "announcement",
-    "date": "2026-08-18",
-    "summary": "Claude Science is a new beta AI workbench designed specifically for life sciences research, using a local daemon architecture that keeps data on-premises while accessing cloud compute. It includes specialized life sciences skills and database connectors, addressing the critical gap where 91% of scientists want more AI in research but cite trust and reliability as barriers. The platform's five design principles ensure analyses withstand peer review and support workflows from discovery through publication.",
-    "url": "https://claude.com/blog/the-claude-science-product-guide"
   }
 ]
