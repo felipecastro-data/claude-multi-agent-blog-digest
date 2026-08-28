@@ -1,5 +1,19 @@
 [
   {
+    "title": "Claude's memory works everywhere, and you decide what's in it",
+    "category": "feature update",
+    "date": "2026-08-25",
+    "summary": "Anthropic launched a unified memory system across Claude chat and Cowork that synchronizes and shares memory between both interfaces. Users can view, edit, and control stored information organized by topic, with sensitive data excluded by default. A single correction now updates memory everywhere Claude operates, eliminating repeated explanations.",
+    "url": "https://claude.com/blog/claudes-memory-works-everywhere-and-you-decide-whats-in-it"
+  },
+  {
+    "title": "Bain & Company joins the Claude Partner Network as a Global Premier partner",
+    "category": "announcement",
+    "date": "2026-08-25",
+    "summary": "Bain & Company partnered with Anthropic as a Global Premier Claude Partner to help enterprises transition from pilots to production. Bain deployed Claude across its 19,000 employees through chat, Cowork, Code, Excel integration, and Microsoft 365, achieving 7,000+ active users within weeks. The firm reports 30–50% productivity gains in legacy code modernization engagements.",
+    "url": "https://claude.com/blog/bain-company-joins-the-claude-partner-network-as-a-global-premier-partner"
+  },
+  {
     "title": "Claude in Chrome is generally available",
     "category": "feature update",
     "date": "2026-08-26",
@@ -26,19 +40,5 @@
     "date": "2026-08-26",
     "summary": "Warp built self-improving agents using Claude's Skills API with a two-skill architecture where an outer 'improver' skill observes user feedback and proposes updates to an inner domain-knowledge skill. This enables agents to learn from accumulated feedback without manual prompt rewriting while maintaining human control via code-review workflows, addressing the problem of agents plateauing at ~80% accuracy.",
     "url": "https://claude.com/blog/how-warp-builds-self-improving-agents-on-claude"
-  },
-  {
-    "title": "How an Anthropic field marketer uses Claude Code to send weekly personalized updates to every sales rep",
-    "category": "announcement",
-    "date": "2026-08-24",
-    "summary": "Field marketer Adam Ward automated weekly personalized sales briefings using Claude Code to pull data from BigQuery, HubSpot, Clay, and Salesforce into individualized Slack digests with top priorities, events, and marketing content. Scaled across multiple teams with quality-control validation, the implementation doubled executive dinner registrations without requiring coding expertise.",
-    "url": "https://claude.com/blog/how-an-anthropic-field-marketer-uses-claude-code-to-send-weekly-personalized-updates-to-every-sales-rep"
-  },
-  {
-    "title": "Bringing the cybersecurity capabilities of Claude Mythos 5 to more defenders",
-    "category": "announcement",
-    "date": "2026-08-21",
-    "summary": "Anthropic expanded access to Claude Mythos 5's cybersecurity capabilities through Claude Security Integration for enterprise vulnerability scanning, partner integrations embedding Mythos 5 in vendor tools, and a new $35M Defender Advantage Fund for open-source security work. The Cyber Verification Program provides verified defenders enhanced access with reduced safeguards on Opus and Sonnet models.",
-    "url": "https://claude.com/blog/bringing-claude-mythos-5-to-more-defenders"
   }
 ]
