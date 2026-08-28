@@ -1,44 +1,44 @@
 [
   {
-    "title": "Claude's memory works everywhere, and you decide what's in it",
+    "title": "Claude in Chrome is generally available",
     "category": "feature update",
-    "date": "2026-08-25",
-    "summary": "Anthropic unified Claude's memory system across all platforms (chat, Cowork, web, desktop, mobile) with real-time updates as users chat instead of post-conversation summaries. Users can view, edit, and delete memories by topic in settings, with sensitive topics excluded by default and corrections propagating across all future interactions. This reduces repetitive context-setting and improves consistency across platforms and teams.",
-    "url": "https://claude.com/blog/claudes-memory-works-everywhere-and-you-decide-whats-in-it"
+    "date": "2026-08-26",
+    "summary": "Claude in Chrome browser extension is now generally available on all paid plans, enabling Claude to read, click, fill forms, and autonomously execute safe actions on websites and internal dashboards. Enhanced security includes improved prompt-injection training, content scanning, and action verification, with testing showing a 0-0.3% attack success rate.",
+    "url": "https://claude.com/blog/claude-in-chrome-generally-available"
   },
   {
-    "title": "Bain & Company joins the Claude Partner Network as a Global Premier partner",
-    "category": "announcement",
-    "date": "2026-08-25",
-    "summary": "Anthropic and Bain & Company formed a strategic partnership where Bain joins the Claude Partner Network as a Global Premier partner. With over 7,000 of Bain's 19,000 employees actively using Claude and achieving 30-50% productivity gains on legacy code modernization, the partnership brings 1,500+ specialists to help enterprises scale from experimentation to operational AI deployment.",
-    "url": "https://claude.com/blog/bain-company-joins-the-claude-partner-network-as-a-global-premier-partner"
+    "title": "Claude gets its own browser in Cowork",
+    "category": "feature update",
+    "date": "2026-08-26",
+    "summary": "Claude Cowork now includes a built-in browser (rolled out to Pro, Max, Team, and enterprise users across macOS, Windows, and Linux) that operates independently from the user's personal browser, eliminating the need for browser extensions for web-based agent tasks. The private browser never accesses the user's tabs, bookmarks, or passwords unless credentials are explicitly shared.",
+    "url": "https://claude.com/blog/cowork-built-in-browser"
   },
   {
-    "title": "Anthropic's approach to teaching and learning AI",
+    "title": "Claude for Teachers, now available for schools and districts",
     "category": "announcement",
-    "date": "2026-08-20",
-    "summary": "Anthropic launched Claude Academy, a public education platform teaching people to use AI safely and effectively using the '4D AI Fluency Framework' that focuses on mindsets and ethical disclosure over rigid feature training. The program offers personalized learning paths with Claude-powered recommendations accessible at academy.claude.com and integrated into Claude's profile menu.",
-    "url": "https://claude.com/blog/anthropics-approach-to-teaching-and-learning-ai"
+    "date": "2026-08-28",
+    "summary": "Claude for Teachers expanded from individual educators to schools and districts with free enterprise-level access including centralized management, single sign-on, and role-based controls. Two new teaching skills for lesson preparation and math assessment are now available, with FERPA-aligned terms and data protection from model training, free through June 30, 2027.",
+    "url": "https://claude.com/blog/claude-for-teachers-now-available-for-schools-and-districts"
   },
   {
-    "title": "How monday.com transformed its platform into an agent-first product where humans and agents collaborate",
+    "title": "How Warp builds self-improving agents on Claude",
     "category": "announcement",
-    "date": "2026-08-20",
-    "summary": "monday.com rebuilt its work management platform around human-agent collaboration using Claude as the core AI engine, achieving 5 million agent interactions in the first months after its May 2026 launch. The platform supports four implementation methods including custom agents, bring-your-own-agent, pre-built agents, and Claude Coding integration, with 250,000+ companies already using specialized agents for IT triage, HR recruiting, and executive support. Case studies show tangible results, such as Cooke Seafood reducing manual reporting across 200+ projects.",
-    "url": "https://claude.com/blog/how-monday-com-transformed-its-platform-into-an-agent-first-product-where-humans-and-agents-collaborate"
+    "date": "2026-08-26",
+    "summary": "Warp built self-improving agents using Claude's Skills API with a two-skill architecture where an outer 'improver' skill observes user feedback and proposes updates to an inner domain-knowledge skill. This enables agents to learn from accumulated feedback without manual prompt rewriting while maintaining human control via code-review workflows, addressing the problem of agents plateauing at ~80% accuracy.",
+    "url": "https://claude.com/blog/how-warp-builds-self-improving-agents-on-claude"
   },
   {
-    "title": "The Claude Code Guide for Startups",
+    "title": "How an Anthropic field marketer uses Claude Code to send weekly personalized updates to every sales rep",
     "category": "announcement",
-    "date": "2026-08-20",
-    "summary": "Anthropic released a guide distilling five operating principles that fast-growing startups use to ship faster with Claude Code, based on interviews with 15+ companies. The framework enables non-technical employees to build features while agents handle ~80% of mechanical dev tasks, with reported gains including ClickHouse shipping 30% more features, Omni seeing 2-3x engineering productivity, and Clay automating 100% of bug triage.",
-    "url": "https://claude.com/blog/claude-code-guide-for-startups"
+    "date": "2026-08-24",
+    "summary": "Field marketer Adam Ward automated weekly personalized sales briefings using Claude Code to pull data from BigQuery, HubSpot, Clay, and Salesforce into individualized Slack digests with top priorities, events, and marketing content. Scaled across multiple teams with quality-control validation, the implementation doubled executive dinner registrations without requiring coding expertise.",
+    "url": "https://claude.com/blog/how-an-anthropic-field-marketer-uses-claude-code-to-send-weekly-personalized-updates-to-every-sales-rep"
   },
   {
-    "title": "Claude on call: How Claude Tag serves as Anthropic's first responder for CI/CD failures",
+    "title": "Bringing the cybersecurity capabilities of Claude Mythos 5 to more defenders",
     "category": "announcement",
-    "date": "2026-08-18",
-    "summary": "Anthropic deployed Claude Tag as an automated first responder that detects, triages, and resolves CI/CD failures using an orchestrator/executor agent workflow. The system analyzes failures across Grafana, logs, GitHub, and Kubernetes, achieving median time-to-first-analysis of 14 minutes and reducing on-call engineer workload. Available for Claude Team/Enterprise plans with an open-source setup kit for other organizations.",
-    "url": "https://claude.com/blog/ai-ci-cd-on-call"
+    "date": "2026-08-21",
+    "summary": "Anthropic expanded access to Claude Mythos 5's cybersecurity capabilities through Claude Security Integration for enterprise vulnerability scanning, partner integrations embedding Mythos 5 in vendor tools, and a new $35M Defender Advantage Fund for open-source security work. The Cyber Verification Program provides verified defenders enhanced access with reduced safeguards on Opus and Sonnet models.",
+    "url": "https://claude.com/blog/bringing-claude-mythos-5-to-more-defenders"
   }
 ]
