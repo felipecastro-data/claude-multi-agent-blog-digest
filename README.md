@@ -4,13 +4,7 @@ An autonomous 2-agent Claude Code pipeline that produces a nightly digest of [cl
 
 ## Architecture
 
-```mermaid
-flowchart LR
-    A[GitHub Actions<br/>nightly trigger] --> B[collector subagent<br/>fetches + condenses via WebFetch]
-    B --> C[writer-formatter subagent<br/>reorders + verifies]
-    C --> D[docs/data/articles.json]
-    D --> E[Static site<br/>on GitHub Pages]
-```
+![Architecture diagram](docs/screenshots/architecture-diagram.svg)
 
 ## How it works
 
