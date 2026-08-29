@@ -1,5 +1,33 @@
 [
   {
+    "title": "How Anthropic employees use Claude Tag",
+    "category": "feature update",
+    "date": "2026-08-28",
+    "summary": "Claude Tag is a Slack integration that treats Claude as a colleague in threads, pulling workspace context and posting results directly in-thread. Real workflows show significant productivity gains: marketing collateral in 45 minutes, feature consolidation in 26 minutes, and legal review reduced from a day to 30 minutes per asset. Scoped access lets Claude search workspace context without leaving Slack.",
+    "url": "https://claude.com/blog/how-anthropic-employees-use-claude-tag"
+  },
+  {
+    "title": "Bringing the cybersecurity capabilities of Claude Mythos 5 to more defenders",
+    "category": "announcement",
+    "date": "2026-08-21",
+    "summary": "Anthropic expanded Claude Mythos 5's cybersecurity capabilities through integrations with partner tools, enabling enterprises to run security scans via Claude Security. A new $35 million Defender Advantage Fund supports open-source security projects, with access channeled through purpose-built interfaces to balance defensive utility against misuse risks. The Cyber Verification Program now covers broader dual-use capabilities.",
+    "url": "https://claude.com/blog/bringing-claude-mythos-5-to-more-defenders"
+  },
+  {
+    "title": "How an Anthropic field marketer uses Claude Code to send weekly personalized updates to every sales rep",
+    "category": "announcement",
+    "date": "2026-08-24",
+    "summary": "An Anthropic field marketer automated personalized weekly sales briefings using Claude Code, replacing manual Sunday presentations with dynamically generated Monday Slack updates. The system connects BigQuery to HubSpot, Salesforce, and Clay data for per-rep personalization by territory and account. Results include doubled event registrations for one executive dinner and freed-up manual time.",
+    "url": "https://claude.com/blog/how-an-anthropic-field-marketer-uses-claude-code-to-send-weekly-personalized-updates-to-every-sales-rep"
+  },
+  {
+    "title": "The AI-native SDLC playbook",
+    "category": "announcement",
+    "date": "2026-08-21",
+    "summary": "Anthropic released an AI-native SDLC playbook restructuring software development around Claude with integrated loops replacing sequential handoffs, using version-controlled artifacts readable by both humans and AI. It argues the bottleneck has shifted from code writing (now fast via agents) to planning, review, and deployment. Includes Anthropic's own practices: parallelization, automated reviews, and closed feedback loops for autonomous incident response.",
+    "url": "https://claude.com/blog/the-ai-native-sdlc-playbook"
+  },
+  {
     "title": "Claude's memory works everywhere, and you decide what's in it",
     "category": "feature update",
     "date": "2026-08-25",
@@ -12,33 +40,5 @@
     "date": "2026-08-25",
     "summary": "Bain & Company partnered with Anthropic as a Global Premier Claude Partner to help enterprises transition from pilots to production. Bain deployed Claude across its 19,000 employees through chat, Cowork, Code, Excel integration, and Microsoft 365, achieving 7,000+ active users within weeks. The firm reports 30–50% productivity gains in legacy code modernization engagements.",
     "url": "https://claude.com/blog/bain-company-joins-the-claude-partner-network-as-a-global-premier-partner"
-  },
-  {
-    "title": "Claude in Chrome is generally available",
-    "category": "feature update",
-    "date": "2026-08-26",
-    "summary": "Claude in Chrome browser extension is now generally available on all paid plans, enabling Claude to read, click, fill forms, and autonomously execute safe actions on websites and internal dashboards. Enhanced security includes improved prompt-injection training, content scanning, and action verification, with testing showing a 0-0.3% attack success rate.",
-    "url": "https://claude.com/blog/claude-in-chrome-generally-available"
-  },
-  {
-    "title": "Claude gets its own browser in Cowork",
-    "category": "feature update",
-    "date": "2026-08-26",
-    "summary": "Claude Cowork now includes a built-in browser (rolled out to Pro, Max, Team, and enterprise users across macOS, Windows, and Linux) that operates independently from the user's personal browser, eliminating the need for browser extensions for web-based agent tasks. The private browser never accesses the user's tabs, bookmarks, or passwords unless credentials are explicitly shared.",
-    "url": "https://claude.com/blog/cowork-built-in-browser"
-  },
-  {
-    "title": "Claude for Teachers, now available for schools and districts",
-    "category": "announcement",
-    "date": "2026-08-28",
-    "summary": "Claude for Teachers expanded from individual educators to schools and districts with free enterprise-level access including centralized management, single sign-on, and role-based controls. Two new teaching skills for lesson preparation and math assessment are now available, with FERPA-aligned terms and data protection from model training, free through June 30, 2027.",
-    "url": "https://claude.com/blog/claude-for-teachers-now-available-for-schools-and-districts"
-  },
-  {
-    "title": "How Warp builds self-improving agents on Claude",
-    "category": "announcement",
-    "date": "2026-08-26",
-    "summary": "Warp built self-improving agents using Claude's Skills API with a two-skill architecture where an outer 'improver' skill observes user feedback and proposes updates to an inner domain-knowledge skill. This enables agents to learn from accumulated feedback without manual prompt rewriting while maintaining human control via code-review workflows, addressing the problem of agents plateauing at ~80% accuracy.",
-    "url": "https://claude.com/blog/how-warp-builds-self-improving-agents-on-claude"
   }
 ]
