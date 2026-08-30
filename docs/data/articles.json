@@ -1,5 +1,33 @@
 [
   {
+    "title": "Claude in Chrome is generally available",
+    "category": "feature update",
+    "date": "2026-08-26",
+    "summary": "Claude's Chrome extension is now generally available for all paid plan users, allowing Claude to view pages and take autonomous actions without manual approval. The extension includes enhanced prompt-injection defenses through model training improvements and automated verification, with testing showing near-zero attack success rates. This enables seamless Claude integration for websites without native integrations.",
+    "url": "https://claude.com/blog/claude-in-chrome-generally-available"
+  },
+  {
+    "title": "Claude for Teachers, now available for U.S. K-12 schools and districts",
+    "category": "feature update",
+    "date": "2026-08-28",
+    "summary": "Claude for Teachers expands to a free Enterprise offering for K-12 schools and districts, with centrally managed organizations, SSO, role-based access, and admin dashboard capabilities. New teaching skills include lesson preparation and check-for-understanding features, with content updated in the K-12 Academy. A FERPA-compliant pilot with Detroit Public Schools offers qualifying schools a free year through June 30, 2027.",
+    "url": "https://claude.com/blog/claude-for-teachers-now-available-for-schools-and-districts"
+  },
+  {
+    "title": "Claude gets its own browser in Cowork",
+    "category": "feature update",
+    "date": "2026-08-26",
+    "summary": "Claude Cowork now includes an isolated, built-in browser that keeps Claude's sessions separate from the user's personal browsing, protecting tabs, bookmarks, and passwords. Users can optionally import logins per site from Chrome, Edge, or Firefox, enabling hands-off web task delegation like research and vendor portal access. The feature includes prompt-injection safeguards and is rolling out to Pro, Max, and Team plans with immediate availability for Enterprise admins.",
+    "url": "https://claude.com/blog/cowork-built-in-browser"
+  },
+  {
+    "title": "How Warp builds self-improving agents on Claude",
+    "category": "announcement",
+    "date": "2026-08-26",
+    "summary": "Warp built a framework for self-improving Claude agents using a two-skill architecture with a domain-specialized inner skill paired with an outer improver skill that observes feedback and proposes refinements through code review. This approach addresses the 80% accuracy plateau common in agent prompt optimization. Warp is now scaling the framework across its open-source repo with specialized agents for code review, spec-writing, and issue triage.",
+    "url": "https://claude.com/blog/how-warp-builds-self-improving-agents-on-claude"
+  },
+  {
     "title": "How Anthropic employees use Claude Tag",
     "category": "feature update",
     "date": "2026-08-28",
@@ -12,33 +40,5 @@
     "date": "2026-08-21",
     "summary": "Anthropic expanded Claude Mythos 5's cybersecurity capabilities through integrations with partner tools, enabling enterprises to run security scans via Claude Security. A new $35 million Defender Advantage Fund supports open-source security projects, with access channeled through purpose-built interfaces to balance defensive utility against misuse risks. The Cyber Verification Program now covers broader dual-use capabilities.",
     "url": "https://claude.com/blog/bringing-claude-mythos-5-to-more-defenders"
-  },
-  {
-    "title": "How an Anthropic field marketer uses Claude Code to send weekly personalized updates to every sales rep",
-    "category": "announcement",
-    "date": "2026-08-24",
-    "summary": "An Anthropic field marketer automated personalized weekly sales briefings using Claude Code, replacing manual Sunday presentations with dynamically generated Monday Slack updates. The system connects BigQuery to HubSpot, Salesforce, and Clay data for per-rep personalization by territory and account. Results include doubled event registrations for one executive dinner and freed-up manual time.",
-    "url": "https://claude.com/blog/how-an-anthropic-field-marketer-uses-claude-code-to-send-weekly-personalized-updates-to-every-sales-rep"
-  },
-  {
-    "title": "The AI-native SDLC playbook",
-    "category": "announcement",
-    "date": "2026-08-21",
-    "summary": "Anthropic released an AI-native SDLC playbook restructuring software development around Claude with integrated loops replacing sequential handoffs, using version-controlled artifacts readable by both humans and AI. It argues the bottleneck has shifted from code writing (now fast via agents) to planning, review, and deployment. Includes Anthropic's own practices: parallelization, automated reviews, and closed feedback loops for autonomous incident response.",
-    "url": "https://claude.com/blog/the-ai-native-sdlc-playbook"
-  },
-  {
-    "title": "Claude's memory works everywhere, and you decide what's in it",
-    "category": "feature update",
-    "date": "2026-08-25",
-    "summary": "Anthropic launched a unified memory system across Claude chat and Cowork that synchronizes and shares memory between both interfaces. Users can view, edit, and control stored information organized by topic, with sensitive data excluded by default. A single correction now updates memory everywhere Claude operates, eliminating repeated explanations.",
-    "url": "https://claude.com/blog/claudes-memory-works-everywhere-and-you-decide-whats-in-it"
-  },
-  {
-    "title": "Bain & Company joins the Claude Partner Network as a Global Premier partner",
-    "category": "announcement",
-    "date": "2026-08-25",
-    "summary": "Bain & Company partnered with Anthropic as a Global Premier Claude Partner to help enterprises transition from pilots to production. Bain deployed Claude across its 19,000 employees through chat, Cowork, Code, Excel integration, and Microsoft 365, achieving 7,000+ active users within weeks. The firm reports 30–50% productivity gains in legacy code modernization engagements.",
-    "url": "https://claude.com/blog/bain-company-joins-the-claude-partner-network-as-a-global-premier-partner"
   }
 ]
