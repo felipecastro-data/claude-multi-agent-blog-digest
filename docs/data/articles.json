@@ -1,5 +1,26 @@
 [
   {
+    "title": "Claude's Memory works everywhere, and you decide what's in it",
+    "category": "feature update",
+    "date": "2026-08-25",
+    "summary": "Unified memory now works across Claude chat and Claude Cowork, retaining information about users and preferences with real-time updates during conversations. A transparent Topics interface lets users view, edit, and delete saved information, with sensitive topics excluded by default. Context set in chat automatically carries over to Cowork outputs.",
+    "url": "https://claude.com/blog/claudes-memory-works-everywhere-and-you-decide-whats-in-it"
+  },
+  {
+    "title": "Bain & Company joins the Claude Partner Network as a Global Premier Partner",
+    "category": "announcement",
+    "date": "2026-08-25",
+    "summary": "Anthropic and Bain & Company formalize a strategic partnership with Bain joining as a Global Premier member of the Claude Partner Network. Bain deployed Claude to its 19,000-person workforce with 7,000+ actively using it within weeks, achieving 30-50% productivity gains on legacy code modernization. Bain now offers combined Claude technology and consulting expertise to enterprise clients.",
+    "url": "https://claude.com/blog/bain-company-joins-the-claude-partner-network-as-a-global-premier-partner"
+  },
+  {
+    "title": "How an Anthropic field marketer uses Claude Code to send weekly personalized updates to every sales rep",
+    "category": "announcement",
+    "date": "2026-08-24",
+    "summary": "Anthropic's field marketer automated personalized weekly sales-rep briefings using Claude Code to pull and synthesize data from BigQuery, HubSpot, Salesforce, Slack, blog posts, and customer stories. The system eliminated a manual Sunday-night process, now runs autonomously, and has expanded to customer success and alliance teams with measurable impact like doubled event registrations. It demonstrates hands-off deployment of Claude Code across non-engineering teams.",
+    "url": "https://claude.com/blog/how-an-anthropic-field-marketer-uses-claude-code-to-send-weekly-personalized-updates-to-every-sales-rep"
+  },
+  {
     "title": "Claude in Chrome is generally available",
     "category": "feature update",
     "date": "2026-08-26",
@@ -19,26 +40,5 @@
     "date": "2026-08-26",
     "summary": "Claude Cowork now includes an isolated, built-in browser that keeps Claude's sessions separate from the user's personal browsing, protecting tabs, bookmarks, and passwords. Users can optionally import logins per site from Chrome, Edge, or Firefox, enabling hands-off web task delegation like research and vendor portal access. The feature includes prompt-injection safeguards and is rolling out to Pro, Max, and Team plans with immediate availability for Enterprise admins.",
     "url": "https://claude.com/blog/cowork-built-in-browser"
-  },
-  {
-    "title": "How Warp builds self-improving agents on Claude",
-    "category": "announcement",
-    "date": "2026-08-26",
-    "summary": "Warp built a framework for self-improving Claude agents using a two-skill architecture with a domain-specialized inner skill paired with an outer improver skill that observes feedback and proposes refinements through code review. This approach addresses the 80% accuracy plateau common in agent prompt optimization. Warp is now scaling the framework across its open-source repo with specialized agents for code review, spec-writing, and issue triage.",
-    "url": "https://claude.com/blog/how-warp-builds-self-improving-agents-on-claude"
-  },
-  {
-    "title": "How Anthropic employees use Claude Tag",
-    "category": "feature update",
-    "date": "2026-08-28",
-    "summary": "Claude Tag is a Slack integration that treats Claude as a colleague in threads, pulling workspace context and posting results directly in-thread. Real workflows show significant productivity gains: marketing collateral in 45 minutes, feature consolidation in 26 minutes, and legal review reduced from a day to 30 minutes per asset. Scoped access lets Claude search workspace context without leaving Slack.",
-    "url": "https://claude.com/blog/how-anthropic-employees-use-claude-tag"
-  },
-  {
-    "title": "Bringing the cybersecurity capabilities of Claude Mythos 5 to more defenders",
-    "category": "announcement",
-    "date": "2026-08-21",
-    "summary": "Anthropic expanded Claude Mythos 5's cybersecurity capabilities through integrations with partner tools, enabling enterprises to run security scans via Claude Security. A new $35 million Defender Advantage Fund supports open-source security projects, with access channeled through purpose-built interfaces to balance defensive utility against misuse risks. The Cyber Verification Program now covers broader dual-use capabilities.",
-    "url": "https://claude.com/blog/bringing-claude-mythos-5-to-more-defenders"
   }
 ]
