@@ -1,5 +1,19 @@
 [
   {
+    "title": "Claude for Teachers, now available for U.S. K-12 schools and districts",
+    "category": "feature update",
+    "date": "2026-08-28",
+    "summary": "Claude for Teachers launches as a free Enterprise offering for U.S. K-12 schools with centralized SSO and role-based access. New teaching skills include lesson preparation and check-for-understanding (math-focused), with FERPA-aligned privacy and student data excluded from training. Free for one year through June 30, 2027, including a pilot with Detroit Public Schools.",
+    "url": "https://claude.com/blog/claude-for-teachers-now-available-for-schools-and-districts"
+  },
+  {
+    "title": "Claude gets its own browser in Cowork",
+    "category": "feature update",
+    "date": "2026-08-26",
+    "summary": "Claude Cowork now includes a dedicated built-in browser that isolates Claude from personal browsing data—tabs, bookmarks, and passwords remain private. Users can choose between the built-in browser or Chrome extension, both with prompt-injection defenses. Rolling out this week across Pro, Max, and Team plans on macOS, Windows, and Linux.",
+    "url": "https://claude.com/blog/cowork-built-in-browser"
+  },
+  {
     "title": "How Anthropic employees use Claude Tag",
     "category": "announcement",
     "date": "2026-08-28",
@@ -26,19 +40,5 @@
     "date": "2026-08-25",
     "summary": "Anthropic and Bain & Company formalize a strategic partnership with Bain joining as a Global Premier member of the Claude Partner Network. Bain deployed Claude to its 19,000-person workforce with 7,000+ actively using it within weeks, achieving 30-50% productivity gains on legacy code modernization. Bain now offers combined Claude technology and consulting expertise to enterprise clients.",
     "url": "https://claude.com/blog/bain-company-joins-the-claude-partner-network-as-a-global-premier-partner"
-  },
-  {
-    "title": "How an Anthropic field marketer uses Claude Code to send weekly personalized updates to every sales rep",
-    "category": "announcement",
-    "date": "2026-08-24",
-    "summary": "Anthropic's field marketer automated personalized weekly sales-rep briefings using Claude Code to pull and synthesize data from BigQuery, HubSpot, Salesforce, Slack, blog posts, and customer stories. The system eliminated a manual Sunday-night process, now runs autonomously, and has expanded to customer success and alliance teams with measurable impact like doubled event registrations. It demonstrates hands-off deployment of Claude Code across non-engineering teams.",
-    "url": "https://claude.com/blog/how-an-anthropic-field-marketer-uses-claude-code-to-send-weekly-personalized-updates-to-every-sales-rep"
-  },
-  {
-    "title": "Claude in Chrome is generally available",
-    "category": "feature update",
-    "date": "2026-08-26",
-    "summary": "Claude's Chrome extension is now generally available for all paid plan users, allowing Claude to view pages and take autonomous actions without manual approval. The extension includes enhanced prompt-injection defenses through model training improvements and automated verification, with testing showing near-zero attack success rates. This enables seamless Claude integration for websites without native integrations.",
-    "url": "https://claude.com/blog/claude-in-chrome-generally-available"
   }
 ]
