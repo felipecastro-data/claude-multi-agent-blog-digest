@@ -1,5 +1,33 @@
 [
   {
+    "title": "Claude in Chrome is generally available",
+    "category": "feature update",
+    "date": "2026-08-26",
+    "summary": "Claude in Chrome moves from pilot to general availability across all paid plans, enabling autonomous web browsing including page reading, form filling, and site navigation. Three-layer prompt-injection defense achieved 0% attack success rate in red-team testing, extending Claude's utility to internal dashboards, legacy systems, and vendor portals without direct integrations.",
+    "url": "https://claude.com/blog/claude-in-chrome-generally-available"
+  },
+  {
+    "title": "Building commerce agents with Claude",
+    "category": "announcement",
+    "date": "2026-09-02",
+    "summary": "Anthropic launches a commerce agents blueprint enabling retailers, travel companies, and marketplaces to build AI shopping assistants deployable across Claude API, Amazon Bedrock, Microsoft Foundry, and Google Cloud. Early enterprise users report 35% larger shopping carts and 60% higher purchase completion rates, with partners including Shopify, Priceline, Visa, and Mastercard deploying working agents in under an hour.",
+    "url": "https://claude.com/blog/claude-for-commerce-agents"
+  },
+  {
+    "title": "A guide to the anatomy of effective commerce agents",
+    "category": "announcement",
+    "date": "2026-09-02",
+    "summary": "A comprehensive guide covers architecture, optimization, and production deployment of commerce agents with reusable patterns for retail, travel, telecom, and ticketing. Key techniques include UI components as tools, skills-based architecture to preserve context, and aggressive prompt caching achieving 90-99% hit rates, emphasizing safety enforcement through technical harness rather than prompts alone.",
+    "url": "https://claude.com/blog/the-anatomy-of-effective-commerce-agents"
+  },
+  {
+    "title": "How an Anthropic field marketer uses Claude Code to send weekly personalized updates to every sales rep",
+    "category": "announcement",
+    "date": "2026-08-24",
+    "summary": "An Anthropic field marketer automated personalized weekly sales briefings for each rep using Claude Code, pulling data from BigQuery, HubSpot, Clay, and Salesforce to generate customized Monday digests. The workflow expanded from a pilot sales team to BDRs and customer success, demonstrating how non-technical staff can build scalable AI solutions that doubled executive dinner registrations.",
+    "url": "https://claude.com/blog/how-an-anthropic-field-marketer-uses-claude-code-to-send-weekly-personalized-updates-to-every-sales-rep"
+  },
+  {
     "title": "Claude for Teachers, now available for U.S. K-12 schools and districts",
     "category": "feature update",
     "date": "2026-08-28",
@@ -12,33 +40,5 @@
     "date": "2026-08-26",
     "summary": "Claude Cowork now includes a dedicated built-in browser that isolates Claude from personal browsing data—tabs, bookmarks, and passwords remain private. Users can choose between the built-in browser or Chrome extension, both with prompt-injection defenses. Rolling out this week across Pro, Max, and Team plans on macOS, Windows, and Linux.",
     "url": "https://claude.com/blog/cowork-built-in-browser"
-  },
-  {
-    "title": "How Anthropic employees use Claude Tag",
-    "category": "announcement",
-    "date": "2026-08-28",
-    "summary": "Claude Tag integrates Claude into Slack with inline responses and context preservation, enabling teams to automate synthesis tasks. Marketing reduced a 15-message thread into polished documentation in 45 minutes, while product operations found 24 relevant customer accounts in 26 minutes instead of a week manually. Legal review turnaround dropped from days to 30 minutes, demonstrating Claude's ability to handle synthesis while humans retain judgment on accuracy.",
-    "url": "https://claude.com/blog/how-anthropic-employees-use-claude-tag"
-  },
-  {
-    "title": "How Warp builds self-improving agents on Claude",
-    "category": "announcement",
-    "date": "2026-08-26",
-    "summary": "Warp developed a two-skill architecture for self-improving Claude agents: an inner skill holding domain knowledge and an outer improver skill observing feedback to propose refinements. Skills are file-based to enable standard code-review workflows, addressing the common issue that initial prompts reach only 80% accuracy. This pattern is applied across Warp's spec-writing, code-review, and issue-triage agents.",
-    "url": "https://claude.com/blog/how-warp-builds-self-improving-agents-on-claude"
-  },
-  {
-    "title": "Claude's Memory works everywhere, and you decide what's in it",
-    "category": "feature update",
-    "date": "2026-08-25",
-    "summary": "Unified memory now works across Claude chat and Claude Cowork, retaining information about users and preferences with real-time updates during conversations. A transparent Topics interface lets users view, edit, and delete saved information, with sensitive topics excluded by default. Context set in chat automatically carries over to Cowork outputs.",
-    "url": "https://claude.com/blog/claudes-memory-works-everywhere-and-you-decide-whats-in-it"
-  },
-  {
-    "title": "Bain & Company joins the Claude Partner Network as a Global Premier Partner",
-    "category": "announcement",
-    "date": "2026-08-25",
-    "summary": "Anthropic and Bain & Company formalize a strategic partnership with Bain joining as a Global Premier member of the Claude Partner Network. Bain deployed Claude to its 19,000-person workforce with 7,000+ actively using it within weeks, achieving 30-50% productivity gains on legacy code modernization. Bain now offers combined Claude technology and consulting expertise to enterprise clients.",
-    "url": "https://claude.com/blog/bain-company-joins-the-claude-partner-network-as-a-global-premier-partner"
   }
 ]
