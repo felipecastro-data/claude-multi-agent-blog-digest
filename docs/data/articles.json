@@ -1,5 +1,19 @@
 [
   {
+    "title": "How Anthropic employees use Claude Tag",
+    "category": "announcement",
+    "date": "2026-08-28",
+    "summary": "Claude Tag (Claude integrated into Slack) streamlines internal workflows, shifting time from information synthesis to higher-judgment work. Marketing, product ops, and legal teams report 10-100x time savings: document preparation in 45 minutes, week-long data consolidations in hours, and compliance reviews cut from a day to 30 minutes.",
+    "url": "https://claude.com/blog/how-anthropic-employees-use-claude-tag"
+  },
+  {
+    "title": "How Warp builds self-improving agents on Claude",
+    "category": "feature update",
+    "date": "2026-08-26",
+    "summary": "Warp demonstrates self-improving agents using Claude's Skills framework, where paired \"base\" and \"improver\" skills institutionalize feedback loops with human oversight through code review. Deployed at scale for spec-writing, review, and triage across Warp's repo, the pattern breaks through agent accuracy plateaus while keeping humans in control.",
+    "url": "https://claude.com/blog/how-warp-builds-self-improving-agents-on-claude"
+  },
+  {
     "title": "Claude in Chrome is generally available",
     "category": "feature update",
     "date": "2026-08-26",
@@ -26,19 +40,5 @@
     "date": "2026-08-24",
     "summary": "An Anthropic field marketer automated personalized weekly sales briefings for each rep using Claude Code, pulling data from BigQuery, HubSpot, Clay, and Salesforce to generate customized Monday digests. The workflow expanded from a pilot sales team to BDRs and customer success, demonstrating how non-technical staff can build scalable AI solutions that doubled executive dinner registrations.",
     "url": "https://claude.com/blog/how-an-anthropic-field-marketer-uses-claude-code-to-send-weekly-personalized-updates-to-every-sales-rep"
-  },
-  {
-    "title": "Claude for Teachers, now available for U.S. K-12 schools and districts",
-    "category": "feature update",
-    "date": "2026-08-28",
-    "summary": "Claude for Teachers launches as a free Enterprise offering for U.S. K-12 schools with centralized SSO and role-based access. New teaching skills include lesson preparation and check-for-understanding (math-focused), with FERPA-aligned privacy and student data excluded from training. Free for one year through June 30, 2027, including a pilot with Detroit Public Schools.",
-    "url": "https://claude.com/blog/claude-for-teachers-now-available-for-schools-and-districts"
-  },
-  {
-    "title": "Claude gets its own browser in Cowork",
-    "category": "feature update",
-    "date": "2026-08-26",
-    "summary": "Claude Cowork now includes a dedicated built-in browser that isolates Claude from personal browsing data—tabs, bookmarks, and passwords remain private. Users can choose between the built-in browser or Chrome extension, both with prompt-injection defenses. Rolling out this week across Pro, Max, and Team plans on macOS, Windows, and Linux.",
-    "url": "https://claude.com/blog/cowork-built-in-browser"
   }
 ]
