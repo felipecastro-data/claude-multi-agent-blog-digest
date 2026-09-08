@@ -1,79 +1,79 @@
 ## A guide to the anatomy of effective commerce agents
-- Guide for architects/eng leaders on building production commerce agents with Claude
-- Recommends single Claude model in standard agent loop with skills/tools over multiple subagents
-- Prompt caching flagged as biggest cost lever; deployed systems see 90-99% cache hit rates
-- Financial transactions must be enforced in code, not prompts; model proposes, humans/policy approve
-- Long-term memory belongs in databases; evals need snapshot-based testing incl. negative cases
+- Comprehensive guide on architecting, deploying, and operating commerce agents with Claude
+- Released reference implementation blueprint on GitHub (anthropics/commerce-agents)
+- Details agent-loop architecture (vs subagents) for commerce use cases
+- Techniques for 90-99% prompt cache hit rates to cut latency/cost
+- Enterprise customers report larger carts and more efficient seller operations
 Category: announcement
 Date: 2026-09-02
 URL: https://claude.com/blog/the-anatomy-of-effective-commerce-agents
 
 ## Building commerce agents with Claude
-- Anthropic launched a commerce agent blueprint for retailers to build shopping/merchant agents
-- Shopping agent: multi-item search, personalized recs, in-chat UI, cart building, customer service
-- Merchant agent: sales analysis, inventory tracking, pricing/promo recommendations, marketing drafts
-- Enterprise customers report carts up to 35% larger, 60% higher purchase completion likelihood
-- Available via Claude API, Bedrock, Microsoft Foundry, Vertex AI; partners include Accenture, Mastercard, Visa, Shopify, Priceline
+- Launch of open-source commerce agent blueprint for retailers, travel, telecom, ticketing
+- Two agent types: customer-facing shopping agent and merchant operations agent
+- Available via Claude API, Amazon Bedrock, Microsoft Foundry, and Google Cloud Vertex AI
+- Includes live demos and an engineering deep-dive post
+- Retailers using Claude shopping agents report carts up to 35% larger and 60% higher purchase completion
 Category: feature update
 Date: 2026-09-02
 URL: https://claude.com/blog/claude-for-commerce-agents
 
 ## How Anthropic employees use Claude Tag
-- Showcases internal use of Claude Tag, a Slack integration to tag @Claude in conversations
-- Marketing: generated polished 2-page doc from 15-message thread in 45 minutes
-- Ops: identified 24 accounts requesting a feature and compiled 23 open issues from 120 findings in ~50 min
-- Legal: pre-screening marketing assets via dedicated channel cut review time from a day to 30 min
-- No new feature; Claude Tag currently in public beta on Team/Enterprise plans
+- Showcases internal use of Claude Tag (Claude in Slack) for workplace tasks
+- Marketer turned a messy 15-message thread into a polished one-pager in 45 minutes
+- Product ops staffer consolidated customer feature requests from Slack in 26 minutes
+- Legal team set up a Slack channel where Claude pre-screens marketing assets for compliance
+- Cuts routine task turnaround from a full day to 30 minutes, enabling work that wouldn't otherwise happen
 Category: announcement
 Date: 2026-08-28
 URL: https://claude.com/blog/how-anthropic-employees-use-claude-tag
 
 ## Claude for Teachers, now available for U.S. K-12 schools and districts
-- Expanded Claude for Teachers from individual educators to district-wide free Enterprise access
-- Adds SSO, role-based access controls, and domain claiming for centralized management
-- Free access to teaching skills aligned with state standards across all 50 states
-- New lesson prep and standards-aligned understanding-check tools
-- Sign up by June 30, 2027 for one year free; FERPA-aligned data protections, no training on student data
+- Free Enterprise offering for K-12 schools/districts, expanding beyond individual educator access
+- Adds centrally managed accounts with SSO and role-based access controls
+- New teaching skills: lesson preparation and standards-aligned check-for-understanding tools
+- Accessibility improvements to student-facing materials; updated K-12 Academy AI fluency content
+- FERPA-compliant terms; student data not used for training; free year for orgs signing up by June 30, 2027
 Category: feature update
 Date: 2026-08-28
 URL: https://claude.com/blog/claude-for-teachers-now-available-for-schools-and-districts
 
 ## How Warp builds self-improving agents on Claude
-- Warp (AI terminal) built a feedback loop system to continuously improve its Claude-based agents
-- Two-skill framework: inner skill holds domain knowledge, outer "improver" skill analyzes feedback
-- Skills are file-based, making updates reviewable/mergeable via standard code review
-- Best practices: write principles not rigid rules, explain rationale, capture feedback easily, keep skills modular
-- Example: triage agent updates via maintainer feedback deployed through pull requests
+- Warp (AI terminal company) built a self-improving agent framework using Claude
+- Two-skill architecture: "inner skill" performs task, "outer improver skill" refines it from feedback
+- Updates flow through standard code review before being adopted
+- Solves the problem of feedback disappearing when agent sessions end
+- Proven managing Warp's open-source repo with hundreds of contributors
 Category: announcement
 Date: 2026-08-26
 URL: https://claude.com/blog/how-warp-builds-self-improving-agents-on-claude
 
 ## Claude in Chrome is generally available
-- Claude in Chrome extension moved from pilot to general availability on all paid plans
-- Claude can now take autonomous browser actions without per-step approval
-- Safety classifier validates actions match user requests before execution
-- Accesses internal dashboards, legacy systems, vendor portals using existing user logins
-- Strengthened prompt injection defenses: expanded training, content-screening "probes," action-verification classifiers
+- Claude in Chrome extension now GA for all paid Claude users
+- Adds autonomous action-taking without per-action approval
+- Enhanced prompt-injection defenses: attack success rate down from 17.6% (Opus 4.5) to 0% with safeguards
+- New attack detection and AI-probe content screening
+- Enterprise admins can manage domain restrictions via Organization Settings
 Category: feature update
 Date: 2026-08-26
 URL: https://claude.com/blog/claude-in-chrome-generally-available
 
 ## Claude gets its own browser in Cowork
-- Claude Cowork now has a built-in browser, separate from users' personal browsers
-- Can navigate sites, fill forms, retrieve info without needing personal browser access
-- Users can optionally transfer logins from Chrome/Edge/Firefox; banking/email/SSO excluded by default
-- Includes prompt injection safeguards
-- Available on Pro, Max, Team desktop app; Enterprise admins can enable immediately; complements (not replaces) Claude in Chrome
+- Claude Cowork now includes a built-in, isolated browser
+- Lets Claude navigate sites, fill forms, and gather info autonomously
+- Kept separate from user's personal browser tabs, bookmarks, and passwords for privacy
+- Enables delegating web research/data tasks while user continues other work
+- Addresses security concerns vs. using the Chrome extension tied to user's session
 Category: feature update
 Date: 2026-08-26
 URL: https://claude.com/blog/cowork-built-in-browser
 
-## Bain & Company joins the Claude Partner Network as a Global Premier partner
-- Anthropic and Bain announced global partnership for enterprise AI deployment using Claude
-- Bain rolled out Claude to all 19,000 employees across Claude.ai, Cowork, Claude Code, Excel, M365
-- 7,000+ employees actively used Claude within weeks of pilot; two-thirds adopted Claude for Excel
-- Bain reports 30-50% productivity gains on legacy code modernization client engagements
-- Bain joins as Global Premier partner, contributing 1,500+ AI/data/engineering experts
-Category: announcement
+## Claude's memory works everywhere, and you decide what's in it
+- Memory now unified/synced across Claude chat and Claude Cowork
+- Claude updates memory actively during conversations rather than summarizing after
+- Users can view, edit, and delete individual memory topics in settings
+- Sensitive topics (health, beliefs, identity) excluded by default, can be opted in
+- Available on Free, Pro, and Max plans across web, desktop, and mobile
+Category: feature update
 Date: 2026-08-25
-URL: https://claude.com/blog/bain-company-joins-the-claude-partner-network-as-a-global-premier-partner
+URL: https://claude.com/blog/claudes-memory-works-everywhere-and-you-decide-whats-in-it
