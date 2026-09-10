@@ -1,10 +1,24 @@
 [
   {
-    "title": "Claude in Chrome is generally available",
+    "title": "Claude gets its own browser in Cowork",
     "category": "feature update",
     "date": "2026-08-26",
-    "summary": "Claude in Chrome is now generally available on all paid plans, enabling Claude to read web pages and autonomously perform actions like clicking, typing, and filling forms. New autonomous action capability auto-approves safe actions, reducing friction, while strengthened prompt-injection defenses provide enhanced security.",
-    "url": "https://claude.com/blog/claude-in-chrome-generally-available"
+    "summary": "Claude Cowork now includes a built-in, isolated browser enabling Claude to navigate websites and complete web tasks independently without needing access to the user's personal browser, addressing privacy concerns. Users can delegate web tasks like filling forms and pulling dashboard data while continuing other work. Rolling out this week to Pro, Max, and Team plans.",
+    "url": "https://claude.com/blog/cowork-built-in-browser"
+  },
+  {
+    "title": "How Anthropic employees use Claude Tag",
+    "category": "announcement",
+    "date": "2026-08-28",
+    "summary": "Anthropic's internal case studies show Claude Tag (bringing Claude into Slack conversations) accelerating workflows across teams: marketing synthesized discussions 60x faster, product ops compiled feedback in hours versus a week, and legal teams cut review time from a day to 30 minutes. The approach delegates research and synthesis to Claude while preserving human judgment for final decisions.",
+    "url": "https://claude.com/blog/how-anthropic-employees-use-claude-tag"
+  },
+  {
+    "title": "How Warp builds self-improving agents on Claude",
+    "category": "announcement",
+    "date": "2026-08-26",
+    "summary": "Warp's self-improving agent framework uses a two-skill architecture where an inner task-executing skill is continuously refined by an outer improver skill analyzing feedback, automating prompt improvement from typical ~80% to higher accuracy. Skills are treated as editable files in code review workflows, enabling reproducible and scalable agent development while keeping humans in control of changes.",
+    "url": "https://claude.com/blog/how-warp-builds-self-improving-agents-on-claude"
   },
   {
     "title": "Reducing cost and improving performance with Claude Platform",
@@ -26,19 +40,5 @@
     "date": "2026-09-02",
     "summary": "This guide recommends a single-agent-with-skills architecture for commerce applications, outperforming both one-prompt and multi-agent designs on quality, cost, and latency. It covers optimization strategies, production safety (including asynchronous memory and staged writes), and evaluation practices for non-deterministic agents.",
     "url": "https://claude.com/blog/the-anatomy-of-effective-commerce-agents"
-  },
-  {
-    "title": "Claude for Teachers, now available for U.S. K-12 schools and districts",
-    "category": "feature update",
-    "date": "2026-08-28",
-    "summary": "Anthropic launched a free Enterprise offering for U.S. K-12 schools and districts with centrally managed accounts, SSO, and role-based access controls. New teaching tools include lesson preparation and standards-aligned assessment features, with FERPA compliance ensuring student data is never used for training.",
-    "url": "https://claude.com/blog/claude-for-teachers-now-available-for-schools-and-districts"
-  },
-  {
-    "title": "Claude's memory works everywhere, and you decide what's in it",
-    "category": "feature update",
-    "date": "2026-08-25",
-    "summary": "Claude's unified memory now syncs across chat and Cowork with active updates during conversations rather than post-session summaries. Users can view, edit, and delete individual memory topics in settings, with sensitive topics excluded by default, available on all plans across web, desktop, and mobile.",
-    "url": "https://claude.com/blog/claudes-memory-works-everywhere-and-you-decide-whats-in-it"
   }
 ]
