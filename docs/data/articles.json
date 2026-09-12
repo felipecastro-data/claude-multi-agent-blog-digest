@@ -1,5 +1,33 @@
 [
   {
+    "title": "Reducing cost and improving performance with Claude Platform",
+    "category": "feature update",
+    "date": "2026-09-08",
+    "summary": "Anthropic released guidance for cutting Claude Platform costs without sacrificing performance, including new `/claude-api` skill commands (prompt-audit, hillclimb, cost-optimize) that optimize prompt caching and model configuration. Real-world deployments show 52-73% cost savings possible, with one case achieving 14.6% cost reduction and 5.3% accuracy improvement by removing legacy anti-pattern instructions.",
+    "url": "https://claude.com/blog/reducing-cost-and-improving-performance-with-claude-platform"
+  },
+  {
+    "title": "Building commerce agents with Claude",
+    "category": "announcement",
+    "date": "2026-09-02",
+    "summary": "Anthropic released a blueprint for production commerce agents covering shopping and merchant roles across retail, travel, telecom, and ticketing. The blueprint is deployable via Claude API, Amazon Bedrock, Microsoft Foundry, and Google Cloud Vertex AI, backed by partners including Shopify, Priceline, Visa, and Mastercard; enterprise deployments report 35% larger shopping carts and 60% higher purchase completion rates.",
+    "url": "https://claude.com/blog/claude-for-commerce-agents"
+  },
+  {
+    "title": "A guide to the anatomy of effective commerce agents",
+    "category": "feature update",
+    "date": "2026-09-02",
+    "summary": "Detailed guide on building production-ready commerce agents with Claude, covering architecture, performance patterns, and operations. The guide recommends single-agent architecture with skills, introduces new memory and safety patterns (enforced in code rather than prompts), and releases a GitHub reference implementation achieving 90-99% prompt cache hit rates.",
+    "url": "https://claude.com/blog/the-anatomy-of-effective-commerce-agents"
+  },
+  {
+    "title": "How Warp builds self-improving agents on Claude",
+    "category": "announcement",
+    "date": "2026-08-26",
+    "summary": "Warp (800K monthly developer users) demonstrated a self-improving agent pattern using Claude Platform's Agent Skills with a two-skill architecture combining domain knowledge and human-feedback-driven refinement. The approach scales across thousands of specialized code-review agents while keeping humans in control through normal code review processes; Warp runs 400K+ Claude Code sessions weekly.",
+    "url": "https://claude.com/blog/how-warp-builds-self-improving-agents-on-claude"
+  },
+  {
     "title": "Claude in Chrome is generally available",
     "category": "feature update",
     "date": "2026-08-26",
@@ -12,33 +40,5 @@
     "date": "2026-09-10",
     "summary": "Anthropic's Claude SMB Tour trained 1,000+ small business owners across 10 US cities, following launch of Claude for Small Business with QuickBooks and PayPal integrations. Research found non-technical owners can build custom tools, accuracy and data security dominate adoption barriers, hands-on practice drives engagement, and peer stories matter more than features.",
     "url": "https://claude.com/blog/what-1-000-small-business-owners-taught-us-about-ai"
-  },
-  {
-    "title": "T. Rowe Price brings more of Claude to its investment process",
-    "category": "announcement",
-    "date": "2026-09-10",
-    "summary": "T. Rowe Price expanded Claude across portfolio management, research, and tool development, with analysts using Claude Cowork for research synthesis and developers using Claude Code to build investment tools. The firm prioritized deploying Claude with core decision-makers rather than back-office functions while maintaining human judgment and accountability.",
-    "url": "https://claude.com/blog/t-rowe-price-brings-more-of-claude-to-its-investment-process"
-  },
-  {
-    "title": "Claude for Teachers, now available for U.S. K-12 schools and districts",
-    "category": "announcement",
-    "date": "2026-08-28",
-    "summary": "Claude for Teachers expanded from individual educators to a free enterprise offering for qualifying US K-12 schools and districts, adding centralized management (single sign-on, role-based access, domain claiming) and state-standards-aligned teaching skills. FERPA-aligned terms ensure student data is not used for model training.",
-    "url": "https://claude.com/blog/claude-for-teachers-now-available-for-schools-and-districts"
-  },
-  {
-    "title": "Claude gets its own browser in Cowork",
-    "category": "feature update",
-    "date": "2026-08-26",
-    "summary": "Claude Cowork now includes a built-in, isolated browser enabling Claude to navigate websites and complete web tasks independently without needing access to the user's personal browser, addressing privacy concerns. Users can delegate web tasks like filling forms and pulling dashboard data while continuing other work. Rolling out this week to Pro, Max, and Team plans.",
-    "url": "https://claude.com/blog/cowork-built-in-browser"
-  },
-  {
-    "title": "How Anthropic employees use Claude Tag",
-    "category": "announcement",
-    "date": "2026-08-28",
-    "summary": "Anthropic's internal case studies show Claude Tag (bringing Claude into Slack conversations) accelerating workflows across teams: marketing synthesized discussions 60x faster, product ops compiled feedback in hours versus a week, and legal teams cut review time from a day to 30 minutes. The approach delegates research and synthesis to Claude while preserving human judgment for final decisions.",
-    "url": "https://claude.com/blog/how-anthropic-employees-use-claude-tag"
   }
 ]
