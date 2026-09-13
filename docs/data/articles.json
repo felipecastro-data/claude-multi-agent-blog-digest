@@ -1,5 +1,26 @@
 [
   {
+    "title": "Claude for Teachers, now available for U.S. K-12 schools and districts",
+    "category": "announcement",
+    "date": "2026-08-28",
+    "summary": "Claude for Teachers expanded from individual educators to a free Enterprise offering for U.S. K-12 schools and districts, providing centralized management with SSO and role-based access controls. Two new teaching skills launched for lesson preparation and assessment; qualifying organizations signing up by June 30, 2027 receive a full year free with FERPA-compliance built in.",
+    "url": "https://claude.com/blog/claude-for-teachers-now-available-for-schools-and-districts"
+  },
+  {
+    "title": "How Anthropic employees use Claude Tag",
+    "category": "feature update",
+    "date": "2026-08-28",
+    "summary": "Claude Tag, Anthropic's Slack-integrated AI assistant, moved to public beta for Team and Enterprise plans, enabling tagging @Claude in Slack threads to access workspace context without leaving chat. Internal deployments achieved significant productivity gains: marketing collateral creation in 45 minutes versus days, feature consolidation of 120 findings in 26 minutes versus a week, and legal reviews in 30 minutes versus a day.",
+    "url": "https://claude.com/blog/how-anthropic-employees-use-claude-tag"
+  },
+  {
+    "title": "T. Rowe Price brings more of Claude to its investment process",
+    "category": "announcement",
+    "date": "2026-09-10",
+    "summary": "T. Rowe Price expanded Claude and Claude Cowork use from back-office to portfolio management and analysis, enabling managers to synthesize research and developers to build tools with Claude Code. The expansion follows a new AI leadership model established in August and aims to keep human judgment central while increasing analyst capacity to evaluate information and debate decisions.",
+    "url": "https://claude.com/blog/t-rowe-price-brings-more-of-claude-to-its-investment-process"
+  },
+  {
     "title": "Reducing cost and improving performance with Claude Platform",
     "category": "feature update",
     "date": "2026-09-08",
@@ -19,26 +40,5 @@
     "date": "2026-09-02",
     "summary": "Detailed guide on building production-ready commerce agents with Claude, covering architecture, performance patterns, and operations. The guide recommends single-agent architecture with skills, introduces new memory and safety patterns (enforced in code rather than prompts), and releases a GitHub reference implementation achieving 90-99% prompt cache hit rates.",
     "url": "https://claude.com/blog/the-anatomy-of-effective-commerce-agents"
-  },
-  {
-    "title": "How Warp builds self-improving agents on Claude",
-    "category": "announcement",
-    "date": "2026-08-26",
-    "summary": "Warp (800K monthly developer users) demonstrated a self-improving agent pattern using Claude Platform's Agent Skills with a two-skill architecture combining domain knowledge and human-feedback-driven refinement. The approach scales across thousands of specialized code-review agents while keeping humans in control through normal code review processes; Warp runs 400K+ Claude Code sessions weekly.",
-    "url": "https://claude.com/blog/how-warp-builds-self-improving-agents-on-claude"
-  },
-  {
-    "title": "Claude in Chrome is generally available",
-    "category": "feature update",
-    "date": "2026-08-26",
-    "summary": "Claude in Chrome moved from pilot to general availability on all paid Claude plans, enabling Claude to view and act on websites without direct integrations. Autonomous action approval for safe tasks and enhanced three-layer security (adversarial training, content screening, automatic verification) reduce strong prompt-injection attack success from 3.8% to 0%.",
-    "url": "https://claude.com/blog/claude-in-chrome-generally-available"
-  },
-  {
-    "title": "What 1,000 small business owners taught us about AI",
-    "category": "announcement",
-    "date": "2026-09-10",
-    "summary": "Anthropic's Claude SMB Tour trained 1,000+ small business owners across 10 US cities, following launch of Claude for Small Business with QuickBooks and PayPal integrations. Research found non-technical owners can build custom tools, accuracy and data security dominate adoption barriers, hands-on practice drives engagement, and peer stories matter more than features.",
-    "url": "https://claude.com/blog/what-1-000-small-business-owners-taught-us-about-ai"
   }
 ]
