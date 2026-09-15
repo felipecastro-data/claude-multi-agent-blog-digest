@@ -1,5 +1,33 @@
 [
   {
+    "title": "How Healthcare Organizations Use Claude Tag",
+    "category": "feature update",
+    "date": "2026-09-14",
+    "summary": "Claude Tag, a beta feature in Slack, brings Claude into channels as a teammate via @Claude mentions. It reads threads, accesses connected tools, and retains channel memory, enabling healthcare organizations to automate processes like alert handling while maintaining granular access controls for PHI compliance.",
+    "url": "https://claude.com/blog/how-healthcare-organizations-use-claude-tag"
+  },
+  {
+    "title": "Building an AI-native revenue organization",
+    "category": "announcement",
+    "date": "2026-09-15",
+    "summary": "Anthropic released an eBook for revenue leaders implementing Claude in sales organizations, covering maturity models, rollout strategies, ROI measurement, and a 3-phase implementation plan mapped by sales role. Cox Communications is cited achieving 7x ROI in the first year of AI investment.",
+    "url": "https://claude.com/blog/building-an-ai-native-revenue-organization"
+  },
+  {
+    "title": "Agentic coding is straining CI. Here's how we scaled test impact analysis at Anthropic",
+    "category": "announcement",
+    "date": "2026-09-14",
+    "summary": "Anthropic scaled test impact analysis infrastructure as CI job volume grew 25x with Claude authoring 80% of code. The redesign replaced temporary fixes with an in-memory data store and stateless, horizontally-scalable workers. Teams should anticipate 25x load increases within two quarters under agentic coding workflows.",
+    "url": "https://claude.com/blog/agentic-coding-is-straining-ci-heres-how-we-scaled-test-impact-analysis-at-anthropic"
+  },
+  {
+    "title": "Deploying AI from Pilot to Production",
+    "category": "announcement",
+    "date": "2026-09-14",
+    "summary": "Anthropic released an eBook co-authored with Accenture on transitioning enterprise AI pilots into production. It introduces a four-tier oversight model and cost-of-ownership framework, providing a transition blueprint with decision points and seven chronological considerations for sustaining enterprise-wide AI impact.",
+    "url": "https://claude.com/blog/deploying-ai-from-pilot-to-production"
+  },
+  {
     "title": "Claude for Financial Advisors",
     "category": "announcement",
     "date": "2026-09-14",
@@ -12,33 +40,5 @@
     "date": "2026-09-10",
     "summary": "Anthropic completed its Claude SMB Tour across 10 U.S. cities, engaging over 1,000 small business owners in free workshops integrating AI with tools like QuickBooks and PayPal. Key findings: non-technical owners can build custom workflows when guided, accuracy validation and data security are top concerns, and hands-on building sessions drive adoption faster than passive instruction. Anthropic is launching a Claude SMB Trainer Program and expanding to Boston on September 16.",
     "url": "https://claude.com/blog/what-1-000-small-business-owners-taught-us-about-ai"
-  },
-  {
-    "title": "T. Rowe Price brings more of Claude to its investment process",
-    "category": "announcement",
-    "date": "2026-09-10",
-    "summary": "T. Rowe Price expanded Claude and Claude Cowork use from back-office to portfolio management and analysis, enabling managers to synthesize research and developers to build tools with Claude Code. The expansion follows a new AI leadership model established in August and aims to keep human judgment central while increasing analyst capacity to evaluate information and debate decisions.",
-    "url": "https://claude.com/blog/t-rowe-price-brings-more-of-claude-to-its-investment-process"
-  },
-  {
-    "title": "Reducing cost and improving performance with Claude Platform",
-    "category": "feature update",
-    "date": "2026-09-08",
-    "summary": "Anthropic released guidance for cutting Claude Platform costs without sacrificing performance, including new `/claude-api` skill commands (prompt-audit, hillclimb, cost-optimize) that optimize prompt caching and model configuration. Real-world deployments show 52-73% cost savings possible, with one case achieving 14.6% cost reduction and 5.3% accuracy improvement by removing legacy anti-pattern instructions.",
-    "url": "https://claude.com/blog/reducing-cost-and-improving-performance-with-claude-platform"
-  },
-  {
-    "title": "Building commerce agents with Claude",
-    "category": "announcement",
-    "date": "2026-09-02",
-    "summary": "Anthropic released a blueprint for production commerce agents covering shopping and merchant roles across retail, travel, telecom, and ticketing. The blueprint is deployable via Claude API, Amazon Bedrock, Microsoft Foundry, and Google Cloud Vertex AI, backed by partners including Shopify, Priceline, Visa, and Mastercard; enterprise deployments report 35% larger shopping carts and 60% higher purchase completion rates.",
-    "url": "https://claude.com/blog/claude-for-commerce-agents"
-  },
-  {
-    "title": "A guide to the anatomy of effective commerce agents",
-    "category": "feature update",
-    "date": "2026-09-02",
-    "summary": "Detailed guide on building production-ready commerce agents with Claude, covering architecture, performance patterns, and operations. The guide recommends single-agent architecture with skills, introduces new memory and safety patterns (enforced in code rather than prompts), and releases a GitHub reference implementation achieving 90-99% prompt cache hit rates.",
-    "url": "https://claude.com/blog/the-anatomy-of-effective-commerce-agents"
   }
 ]
