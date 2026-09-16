@@ -1,5 +1,26 @@
 [
   {
+    "title": "Bringing Salesforce into Claude",
+    "category": "feature update",
+    "date": "2026-09-15",
+    "summary": "Anthropic launched a beta Salesforce plugin for Claude with 37 skills for sales workflows, integrating Salesforce and Slack connectors for accessing accounts and opportunities. Features include daily briefings, call prep, deal scoring, and pipeline dashboards, with early adoption by GitLab, Siemens, and Legora.",
+    "url": "https://claude.com/blog/salesforce-in-claude"
+  },
+  {
+    "title": "Claude for Small Business launches new workflows, integrations, and training programs",
+    "category": "feature update",
+    "date": "2026-09-15",
+    "summary": "Claude for Small Business expanded to 43 workflows and 27 new integrations including Shopify, Salesforce, Gusto, and tools for e-commerce, CRM, project management, and accounting. New free training workshops in 10 U.S. cities (Sept–Nov) help small business owners apply Claude to lead generation, proposal writing, marketing, and financial tasks.",
+    "url": "https://claude.com/blog/claude-for-small-business-launches-new-workflows-integrations-and-training-programs"
+  },
+  {
+    "title": "T. Rowe Price brings more of Claude to its investment process",
+    "category": "announcement",
+    "date": "2026-09-10",
+    "summary": "T. Rowe Price expanded Claude deployment into core investment operations beyond back-office functions, using Cowork for research synthesis and Claude Code for building investment tools. The deployment operates under T. Rowe Price's AI leadership model and aims to boost analyst and portfolio manager capacity for research while maintaining human judgment.",
+    "url": "https://claude.com/blog/t-rowe-price-brings-more-of-claude-to-its-investment-process"
+  },
+  {
     "title": "How Healthcare Organizations Use Claude Tag",
     "category": "feature update",
     "date": "2026-09-14",
@@ -19,26 +40,5 @@
     "date": "2026-09-14",
     "summary": "Anthropic scaled test impact analysis infrastructure as CI job volume grew 25x with Claude authoring 80% of code. The redesign replaced temporary fixes with an in-memory data store and stateless, horizontally-scalable workers. Teams should anticipate 25x load increases within two quarters under agentic coding workflows.",
     "url": "https://claude.com/blog/agentic-coding-is-straining-ci-heres-how-we-scaled-test-impact-analysis-at-anthropic"
-  },
-  {
-    "title": "Deploying AI from Pilot to Production",
-    "category": "announcement",
-    "date": "2026-09-14",
-    "summary": "Anthropic released an eBook co-authored with Accenture on transitioning enterprise AI pilots into production. It introduces a four-tier oversight model and cost-of-ownership framework, providing a transition blueprint with decision points and seven chronological considerations for sustaining enterprise-wide AI impact.",
-    "url": "https://claude.com/blog/deploying-ai-from-pilot-to-production"
-  },
-  {
-    "title": "Claude for Financial Advisors",
-    "category": "announcement",
-    "date": "2026-09-14",
-    "summary": "Anthropic released a suite of connectors and workflow skills for financial advisors, integrating with 11+ major platforms including Charles Schwab, Vanguard, and BlackRock. The skills automate pre-meeting preparation, compliance reviews, estate/tax analysis, and portfolio rebalancing, freeing advisors to spend more time with clients; Claude drafts and briefs for advisor review, maintaining human oversight.",
-    "url": "https://claude.com/blog/claude-for-financial-advisors"
-  },
-  {
-    "title": "What 1,000 small business owners taught us about AI",
-    "category": "announcement",
-    "date": "2026-09-10",
-    "summary": "Anthropic completed its Claude SMB Tour across 10 U.S. cities, engaging over 1,000 small business owners in free workshops integrating AI with tools like QuickBooks and PayPal. Key findings: non-technical owners can build custom workflows when guided, accuracy validation and data security are top concerns, and hands-on building sessions drive adoption faster than passive instruction. Anthropic is launching a Claude SMB Trainer Program and expanding to Boston on September 16.",
-    "url": "https://claude.com/blog/what-1-000-small-business-owners-taught-us-about-ai"
   }
 ]
