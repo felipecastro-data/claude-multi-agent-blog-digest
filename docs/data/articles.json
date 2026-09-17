@@ -1,5 +1,33 @@
 [
   {
+    "title": "Claude Cowork and chat are now one Claude",
+    "category": "feature update",
+    "date": "2026-09-16",
+    "summary": "Anthropic merged Claude Cowork and chat into a unified platform where context, skills, and connectors flow across all interfaces. Introduces Claude Docs, Slides, and Design within conversations, with auto-detection of appropriate outputs (edit, present, download). Rollout begins with Pro and Max plans.",
+    "url": "https://claude.com/blog/cowork-is-now-claude"
+  },
+  {
+    "title": "Claude for Financial Advisors",
+    "category": "announcement",
+    "date": "2026-09-14",
+    "summary": "Claude for Financial Advisors brings connectors and workflows tailored to advisor tasks, integrating BlackRock, Charles Schwab, and Addepar for meeting prep and portfolio analysis. Designed to reduce admin burden so advisors spend more time with clients, with built-in approval workflows and compliance controls.",
+    "url": "https://claude.com/blog/claude-for-financial-advisors"
+  },
+  {
+    "title": "Deploying AI from pilot to production",
+    "category": "announcement",
+    "date": "2026-09-14",
+    "summary": "Anthropic and Accenture released a guide for enterprise AI deployment covering seven key considerations across pilot and production phases. Includes a four-tier oversight model and cost-of-ownership framework to help teams scale beyond limited pilots and achieve sustained enterprise-wide impact.",
+    "url": "https://claude.com/blog/deploying-ai-from-pilot-to-production"
+  },
+  {
+    "title": "What 1,000 small business owners taught us about AI",
+    "category": "announcement",
+    "date": "2026-09-10",
+    "summary": "Anthropic shared learnings from the Claude SMB Tour (1,000+ business owners across 10 cities), highlighting that hands-on training and peer learning drive adoption. Launched Claude SMB Trainer Program and a second tour phase, emphasizing that small businesses need validation, security transparency, and accessible interfaces.",
+    "url": "https://claude.com/blog/what-1-000-small-business-owners-taught-us-about-ai"
+  },
+  {
     "title": "Bringing Salesforce into Claude",
     "category": "feature update",
     "date": "2026-09-15",
@@ -12,33 +40,5 @@
     "date": "2026-09-15",
     "summary": "Claude for Small Business expanded to 43 workflows and 27 new integrations including Shopify, Salesforce, Gusto, and tools for e-commerce, CRM, project management, and accounting. New free training workshops in 10 U.S. cities (Sept–Nov) help small business owners apply Claude to lead generation, proposal writing, marketing, and financial tasks.",
     "url": "https://claude.com/blog/claude-for-small-business-launches-new-workflows-integrations-and-training-programs"
-  },
-  {
-    "title": "T. Rowe Price brings more of Claude to its investment process",
-    "category": "announcement",
-    "date": "2026-09-10",
-    "summary": "T. Rowe Price expanded Claude deployment into core investment operations beyond back-office functions, using Cowork for research synthesis and Claude Code for building investment tools. The deployment operates under T. Rowe Price's AI leadership model and aims to boost analyst and portfolio manager capacity for research while maintaining human judgment.",
-    "url": "https://claude.com/blog/t-rowe-price-brings-more-of-claude-to-its-investment-process"
-  },
-  {
-    "title": "How Healthcare Organizations Use Claude Tag",
-    "category": "feature update",
-    "date": "2026-09-14",
-    "summary": "Claude Tag, a beta feature in Slack, brings Claude into channels as a teammate via @Claude mentions. It reads threads, accesses connected tools, and retains channel memory, enabling healthcare organizations to automate processes like alert handling while maintaining granular access controls for PHI compliance.",
-    "url": "https://claude.com/blog/how-healthcare-organizations-use-claude-tag"
-  },
-  {
-    "title": "Building an AI-native revenue organization",
-    "category": "announcement",
-    "date": "2026-09-15",
-    "summary": "Anthropic released an eBook for revenue leaders implementing Claude in sales organizations, covering maturity models, rollout strategies, ROI measurement, and a 3-phase implementation plan mapped by sales role. Cox Communications is cited achieving 7x ROI in the first year of AI investment.",
-    "url": "https://claude.com/blog/building-an-ai-native-revenue-organization"
-  },
-  {
-    "title": "Agentic coding is straining CI. Here's how we scaled test impact analysis at Anthropic",
-    "category": "announcement",
-    "date": "2026-09-14",
-    "summary": "Anthropic scaled test impact analysis infrastructure as CI job volume grew 25x with Claude authoring 80% of code. The redesign replaced temporary fixes with an in-memory data store and stateless, horizontally-scalable workers. Teams should anticipate 25x load increases within two quarters under agentic coding workflows.",
-    "url": "https://claude.com/blog/agentic-coding-is-straining-ci-heres-how-we-scaled-test-impact-analysis-at-anthropic"
   }
 ]
