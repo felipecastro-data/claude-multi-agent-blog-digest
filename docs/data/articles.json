@@ -1,24 +1,17 @@
 [
   {
-    "title": "Bringing Salesforce into Claude",
-    "category": "feature update",
-    "date": "2026-09-15",
-    "summary": "\"Salesforce in Claude\" beta plugin brings live CRM data integration with 37 skills for account research, call prep, deal management, and automated documentation. It consolidates Salesforce, email, and Slack data while preserving permission boundaries and already powers 7,000 sellers at early adopters like GitLab and Siemens.",
-    "url": "https://claude.com/blog/salesforce-in-claude"
+    "title": "Claude for Financial Advisors",
+    "category": "announcement",
+    "date": "2026-09-14",
+    "summary": "Claude for Financial Advisors integrates with 11 major platforms (Addepar, Charles Schwab, Vanguard, etc.) and provides 8 specialized skills for pre-meeting prep, portfolio reviews, compliance screening, and admin tasks. Built-in safeguards require advisor approval on key decisions. The tool aims to free advisors to focus on client service by automating administrative burden that currently limits face-time to 1/6 of their day.",
+    "url": "https://claude.com/blog/claude-for-financial-advisors"
   },
   {
-    "title": "Claude for Small Business launches new workflows, integrations, and training programs",
-    "category": "feature update",
-    "date": "2026-09-15",
-    "summary": "Claude for Small Business expanded to 43 workflows and added integrations with Shopify, Salesforce, HubSpot, Xero, Gusto, Square, and Stripe, responding to feedback from 1,000+ business owners. The rollout includes free workshops in 10 US cities and webinars from 14 tech partners, with 150 trained community trainers now running 750+ workshops.",
-    "url": "https://claude.com/blog/claude-for-small-business-launches-new-workflows-integrations-and-training-programs"
-  },
-  {
-    "title": "Projects redesigned: from folder to conversation",
-    "category": "feature update",
-    "date": "2026-09-17",
-    "summary": "Claude Projects redesigned from folders to conversation-based coordination with threaded execution, a coordinator for delegation, shared memory, and file library. Users describe desired outcomes and Claude autonomously delegates tasks, coordinates parallel work, and assembles results, eliminating manual handoffs. Currently in beta for Claude Pro and Max subscribers.",
-    "url": "https://claude.com/blog/projects-redesigned"
+    "title": "Agentic coding is straining CI. Here's how we scaled test impact analysis at Anthropic",
+    "category": "announcement",
+    "date": "2026-09-14",
+    "summary": "Agentic coding at Anthropic triggered a 25x increase in CI jobs over six months, with Claude authoring 80% of shipped code but test volume growing 10x. Traditional scaling approaches proved insufficient; Anthropic redesigned with a distributed, stateless architecture using in-memory data stores. The company argues this horizontally scalable approach will become the industry standard as agentic coding drives exponential growth.",
+    "url": "https://claude.com/blog/agentic-coding-is-straining-ci-heres-how-we-scaled-test-impact-analysis-at-anthropic"
   },
   {
     "title": "Working at the frontier: How Balyasny Asset Management evaluates and governs Claude Fable 5",
@@ -28,6 +21,13 @@
     "url": "https://claude.com/blog/working-at-the-frontier-how-balyasny-asset-management-evaluates-and-governs-claude-fable-5"
   },
   {
+    "title": "Projects redesigned: from folder to conversation",
+    "category": "feature update",
+    "date": "2026-09-17",
+    "summary": "Claude Projects redesigned from folders to conversation-based coordination with threaded execution, a coordinator for delegation, shared memory, and file library. Users describe desired outcomes and Claude autonomously delegates tasks, coordinates parallel work, and assembles results, eliminating manual handoffs. Currently in beta for Claude Pro and Max subscribers.",
+    "url": "https://claude.com/blog/projects-redesigned"
+  },
+  {
     "title": "Claude Cowork and chat are now one Claude",
     "category": "feature update",
     "date": "2026-09-16",
@@ -35,10 +35,10 @@
     "url": "https://claude.com/blog/cowork-is-now-claude"
   },
   {
-    "title": "Building an AI-native revenue organization",
-    "category": "announcement",
+    "title": "Bringing Salesforce into Claude",
+    "category": "feature update",
     "date": "2026-09-15",
-    "summary": "New eBook for revenue leaders on deploying Claude across sales teams with a three-phase rollout plan (setup, pilot, scale), role-based use cases, and ROI measurement framework. Cox Communications case study shows 7x first-year return and 86% reduction in lead validation costs, demonstrating value of cohesive company-wide AI implementation.",
-    "url": "https://claude.com/blog/building-an-ai-native-revenue-organization"
+    "summary": "\"Salesforce in Claude\" beta plugin brings live CRM data integration with 37 skills for account research, call prep, deal management, and automated documentation. It consolidates Salesforce, email, and Slack data while preserving permission boundaries and already powers 7,000 sellers at early adopters like GitLab and Siemens.",
+    "url": "https://claude.com/blog/salesforce-in-claude"
   }
 ]
