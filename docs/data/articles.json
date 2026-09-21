@@ -1,5 +1,33 @@
 [
   {
+    "title": "Claude for Small Business launches new workflows, integrations, and training programs",
+    "category": "announcement",
+    "date": "2026-09-15",
+    "summary": "Claude for Small Business now includes 43 workflows and 27 new integrations (Shopify, Salesforce, Gusto), enabling automation of lead generation, proposal writing, financial reconciliation, and content planning. The company is launching a fall tour with free workshops and partner webinars across 10 US cities.",
+    "url": "https://claude.com/blog/claude-for-small-business-launches-new-workflows-integrations-and-training-programs"
+  },
+  {
+    "title": "How healthcare organizations use Claude Tag",
+    "category": "feature update",
+    "date": "2026-09-14",
+    "summary": "Claude Tag is a Slack-integrated AI agent enabling healthcare organizations to automate alert triage, internal tool maintenance, and compliance workflows with per-channel PHI restrictions. Insight Health achieved 97% automation of alert triage using Claude Tag, and enterprises linking it to GitHub receive $25,000 in credits through October 1, 2026.",
+    "url": "https://claude.com/blog/how-healthcare-organizations-use-claude-tag"
+  },
+  {
+    "title": "Building an AI-native revenue organization",
+    "category": "announcement",
+    "date": "2026-09-15",
+    "summary": "Anthropic released an eBook guide for revenue leaders on deploying Claude across sales organizations, featuring a three-phase rollout plan, maturity models, and ROI measurement. Cox Communications case study shows 7x first-year ROI and 86% cost reduction in lead validation.",
+    "url": "https://claude.com/blog/building-an-ai-native-revenue-organization"
+  },
+  {
+    "title": "Deploying AI from pilot to production",
+    "category": "announcement",
+    "date": "2026-09-14",
+    "summary": "Anthropic and Accenture released a guide for deploying AI initiatives from pilot to production, providing a four-part job definition framework and four-tier oversight model (automated, sampled, reviewed, advisory). The guide addresses the fact that only 23% of C-suite leaders report sustained enterprise-wide AI impact.",
+    "url": "https://claude.com/blog/deploying-ai-from-pilot-to-production"
+  },
+  {
     "title": "Claude for Financial Advisors",
     "category": "announcement",
     "date": "2026-09-14",
@@ -12,33 +40,5 @@
     "date": "2026-09-14",
     "summary": "Agentic coding at Anthropic triggered a 25x increase in CI jobs over six months, with Claude authoring 80% of shipped code but test volume growing 10x. Traditional scaling approaches proved insufficient; Anthropic redesigned with a distributed, stateless architecture using in-memory data stores. The company argues this horizontally scalable approach will become the industry standard as agentic coding drives exponential growth.",
     "url": "https://claude.com/blog/agentic-coding-is-straining-ci-heres-how-we-scaled-test-impact-analysis-at-anthropic"
-  },
-  {
-    "title": "Working at the frontier: How Balyasny Asset Management evaluates and governs Claude Fable 5",
-    "category": "announcement",
-    "date": "2026-09-17",
-    "summary": "Balyasny Asset Management, a $38B asset manager, deployed Claude Fable 5 internally achieving 89.4% accuracy on financial tasks versus 86.1% for prior models. The company built BAMAgent to run thousands of autonomous agents 24/7 securely, framing safety around data access controls, tool permissions, and human oversight rather than model capability alone.",
-    "url": "https://claude.com/blog/working-at-the-frontier-how-balyasny-asset-management-evaluates-and-governs-claude-fable-5"
-  },
-  {
-    "title": "Projects redesigned: from folder to conversation",
-    "category": "feature update",
-    "date": "2026-09-17",
-    "summary": "Claude Projects redesigned from folders to conversation-based coordination with threaded execution, a coordinator for delegation, shared memory, and file library. Users describe desired outcomes and Claude autonomously delegates tasks, coordinates parallel work, and assembles results, eliminating manual handoffs. Currently in beta for Claude Pro and Max subscribers.",
-    "url": "https://claude.com/blog/projects-redesigned"
-  },
-  {
-    "title": "Claude Cowork and chat are now one Claude",
-    "category": "feature update",
-    "date": "2026-09-16",
-    "summary": "Anthropic merged Claude Cowork and chat into a unified platform where context, skills, and connectors flow across all interfaces. Introduces Claude Docs, Slides, and Design within conversations, with auto-detection of appropriate outputs (edit, present, download). Rollout begins with Pro and Max plans.",
-    "url": "https://claude.com/blog/cowork-is-now-claude"
-  },
-  {
-    "title": "Bringing Salesforce into Claude",
-    "category": "feature update",
-    "date": "2026-09-15",
-    "summary": "\"Salesforce in Claude\" beta plugin brings live CRM data integration with 37 skills for account research, call prep, deal management, and automated documentation. It consolidates Salesforce, email, and Slack data while preserving permission boundaries and already powers 7,000 sellers at early adopters like GitLab and Siemens.",
-    "url": "https://claude.com/blog/salesforce-in-claude"
   }
 ]

@@ -1,79 +1,99 @@
 ## Working at the frontier: How Balyasny Asset Management evaluates and governs Claude Fable 5
 - Interview with BAM's Chief AI Officer on deploying Claude Fable 5 across investment operations
-- BAM shifted from AI-for-search to AI-for-task-completion; merger-arb analysis now under 1 day vs 3-5 days
-- Fable tested on thousands of real financial tasks: 89.4% success vs 86.1% for prior model, stronger in planning/agentic execution
-- Safety approach centers on data boundaries, tool permissions, logging, human review (not relying on model alone)
-- Built internal "BAMAgent" platform running thousands of autonomous agents 24/7; used for tax-loss harvesting and central-bank research
+- BAM shifted from AI-for-retrieval to AI-for-autonomous-task-execution via internal platform "BAMAgent"
+- BAMAgent handles multi-step tasks like merger analysis and tax-loss harvesting
+- Claude Fable 5 scored 89.4% accuracy vs 86.1% for prior model on BAM's financial task evals, notably stronger at planning/analysis/agentic execution
+- Success required governance controls: data boundaries, tool permissions, human review, not just model power
 Category: announcement
 Date: 2026-09-17
 URL: https://claude.com/blog/working-at-the-frontier-how-balyasny-asset-management-evaluates-and-governs-claude-fable-5
 
 ## Projects redesigned: from folder to conversation
-- Claude Projects redesigned from static folder system to conversation-based, multi-threaded workflow
-- New architecture: multiple threads perform work while a coordinator directs and assembles results
-- Each thread runs as an independent Claude Code cloud session on its own repo branch; can open PRs and run tests
-- Threads can spawn subagents, loops, and workflows for complex multi-step tasks
-- Projects now build persistent contextual memory over time and maintain a shared file/artifact library
+- Redesign of Claude Code's project experience from static folders to conversation-based workflows
+- New coordinator-based architecture: "threads do the work, Claude directs it"
+- Users describe goals; Claude delegates tasks across parallel threads, coordinates, reviews, and assembles results
+- Adds shared memory that builds context over time, reducing repetitive instructions
+- Enables goals like "reduce checkout p75 latency" or "retire a deprecated API endpoint" handled across repos with tests and PRs
 Category: feature update
 Date: 2026-09-17
 URL: https://claude.com/blog/projects-redesigned
 
 ## Claude Cowork and chat are now one Claude
-- Anthropic merged Claude Cowork and chat into a single unified Claude interface
-- Adds native Claude Docs and Claude Slides directly within conversations
-- Users can create documents, presentations, and designs without switching apps; outputs shareable via link, editable on mobile
-- Claude Design now embedded in chat conversations rather than a separate product
-- Rolling out first to Pro and Max plans, with Team and Free plans to follow
+- Claude Cowork and the chat interface have been merged into a single unified product
+- Adds new capabilities: Claude Docs and Claude Slides (beta), plus Claude Design now works within conversations
+- Users can request documents, presentations, or visuals directly in chat
+- Outputs can be edited, presented, or exported as PowerPoint/PDF
+- Rollout starts on Pro and Max plans, with Team and Free plans to follow
 Category: feature update
 Date: 2026-09-16
 URL: https://claude.com/blog/cowork-is-now-claude
 
 ## Bringing Salesforce into Claude
-- Launched "Salesforce in Claude," a beta plugin giving sales professionals Salesforce data access within Claude
-- Includes 37 skills covering account research, call prep, pipeline review, opportunity management, and record updates
-- Integrates Salesforce and Slack connectors to consolidate scattered data
-- Changes are user-approved before updating Salesforce records; respects existing permissions, no training on data for Team/Enterprise
-- Early adopters include GitLab, Siemens, Legora; 7,000 Salesforce sellers already using it
+- Beta plugin integrating Salesforce sales data directly into Claude with 37 skills
+- Lets sellers research accounts, prep for calls, review pipelines, and update CRM without leaving Claude
+- Features: personalized daily briefings, automated call prep (Salesforce/Slack/email), deal scoring, close-plan generation, post-call summaries, interactive pipeline dashboards
+- Operates under sellers' existing Salesforce permissions
+- Early adopters (GitLab, Siemens, Legora) report freed-up time for customer conversations
 Category: feature update
 Date: 2026-09-15
 URL: https://claude.com/blog/salesforce-in-claude
 
 ## Building an AI-native revenue organization
-- Published guide for revenue leaders on implementing Claude across sales organizations
-- Addresses fragmented workflows (reps spend ~30 min gathering context for 15-min calls) and inconsistent AI adoption
-- Provides maturity model, pre-pilot setup checklist, three-phase rollout (setup, pilot, scale), and ROI framework
-- Cox Communications cited 7x first-year ROI; Cyera reached 88% weekly Claude adoption among 1,500 employees
-- Aims to move teams beyond individual productivity gains toward organizational transformation
+- New eBook guide for revenue leaders on rolling out Claude across sales organizations
+- Details a three-phase rollout plan: setup, pilot, scale
+- Includes maturity models and ROI measurement frameworks
+- Addresses challenges like low adoption and fragmented workflows across sales teams
+- Cites Cox Communications achieving 7x first-year ROI and 86% cost reduction in lead validation
 Category: announcement
 Date: 2026-09-15
 URL: https://claude.com/blog/building-an-ai-native-revenue-organization
 
 ## Claude for Small Business launches new workflows, integrations, and training programs
-- Expanded Claude for Small Business with new workflows and integrations
-- Now 43 total workflows and 27 new integrations (Shopify, Salesforce, TikTok, Atlassian, Zoom, Xero, Gusto, Square, Stripe, Zapier, etc.)
-- Over 900,000 installations since May 2026 launch; covers financial briefing, lead response, proposals, marketing, accounting
-- Fall training tour resuming in 10 US cities; 150+ Approved SMB Trainers running 750+ community workshops
-- Quote: "What used to take me 120 hours now takes me five minutes" (Pedro Rubio, Blackfyre GovCon)
-Category: feature update
+- Expansion of Claude for Small Business with 43 workflows and 27 new integrations
+- New integrations include Shopify, Salesforce, and Gusto
+- Adds capabilities for lead generation, proposal writing, financial reconciliation, content planning, weekly reporting
+- Launching a fall tour with free workshops in 10 US cities plus partner webinars
+- One founder reports work that took 120 hours now takes 5 minutes
+Category: announcement
 Date: 2026-09-15
 URL: https://claude.com/blog/claude-for-small-business-launches-new-workflows-integrations-and-training-programs
 
 ## Agentic coding is straining CI. Here's how we scaled test impact analysis at Anthropic
-- Describes how Anthropic scaled test impact analysis for CI amid a 25x increase in CI jobs over six months
-- AI-assisted coding drove 8x more shipped code per quarter, with Claude authoring 80% of it; test volume grew 10x
-- Failed fixes: bigger machine (worked 70 days), sharding by package (29 days), daily restarts (<1 day, caused lag)
-- Solution: redesigned architecture with distributed, in-memory data store enabling stateless, horizontally scalable listener workers
-- Argues horizontally scaled test-selection architecture will become industry standard; recommends planning for 25x growth within two quarters
+- Describes scaling Anthropic's internal test impact analysis service through a 25x increase in CI jobs over six months
+- Increase driven by AI-assisted coding generating more code and tests
+- Three temporary fixes (hardware upgrade, per-package sharding, daily restarts) each gave diminishing relief (70 days, 29 days, <1 day)
+- Final fix: full redesign with in-memory data store and stateless workers, making the service horizontally scalable
+- Argues engineering teams should plan for 25x load growth within two quarters rather than quick patches
 Category: announcement
 Date: 2026-09-14
 URL: https://claude.com/blog/agentic-coding-is-straining-ci-heres-how-we-scaled-test-impact-analysis-at-anthropic
 
 ## Claude for Financial Advisors
-- Launched Claude for Financial Advisors: connectors and workflow skills to reduce administrative burden for advisors
-- Connectors to 11 platforms: Addepar, BlackRock, Charles Schwab, Envestnet, iCapital, Orion, SS&C Black Diamond, Wealthbox, Wealth.com, Vanguard, Zocks
-- 8 specialized skills: pre-meeting prep, portfolio rebalancing review, estate/tax briefs, alt-investment summaries, compliance screening, post-meeting notes, prospect intake, advisor onboarding
-- Built-in safeguards require advisor approval on key decisions; compliance skill screens marketing language against SEC rules
-- Aims to free advisor time (currently only ~1/6 spent in client meetings) for client service and practice growth
-Category: announcement
+- New suite of connectors and workflow skills for financial advisors' admin tasks
+- 11 new connectors to custodians/CRMs/portfolio platforms (Charles Schwab, BlackRock, Addepar, Envestnet)
+- 8 specialized skills for meeting prep, portfolio analysis, compliance checks, client follow-up
+- Includes governance: approval workflows and SEC Marketing Rule compliance screening
+- Claude drafts briefs/summaries for advisor review rather than acting autonomously, preserving human oversight
+Category: feature update
 Date: 2026-09-14
 URL: https://claude.com/blog/claude-for-financial-advisors
+
+## How healthcare organizations use Claude Tag
+- Case studies of Insight Health, Tennr, and Medallion using Claude Tag (beta), a Slack-integrated AI agent
+- Per-channel scoping lets admins restrict Claude Tag from PHI-containing channels
+- Enterprises linking Claude Tag to GitHub get $25,000 in credits (expires Oct 1, 2026)
+- Insight Health automated 97% of alert triage using Claude Tag
+- Other use cases include internal tool maintenance and knowledge accumulation around payer rules
+Category: feature update
+Date: 2026-09-14
+URL: https://claude.com/blog/how-healthcare-organizations-use-claude-tag
+
+## Deploying AI from pilot to production
+- Guide co-developed with Accenture on moving AI initiatives from pilot to full production
+- Outlines seven considerations across before-pilot, during-pilot, and production phases
+- Provides a four-part job definition framework and cost modeling tools
+- Introduces a four-tier oversight model: automated, sampled, reviewed, advisory
+- Cites Accenture research that only 23% of C-suite leaders report sustained enterprise-wide AI impact
+Category: announcement
+Date: 2026-09-14
+URL: https://claude.com/blog/deploying-ai-from-pilot-to-production
