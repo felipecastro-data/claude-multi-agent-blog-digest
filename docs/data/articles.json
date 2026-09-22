@@ -1,5 +1,33 @@
 [
   {
+    "title": "Projects redesigned: from folder to conversation",
+    "category": "feature update",
+    "date": "2026-09-17",
+    "summary": "Claude Projects was redesigned from a folder-based system to a conversation-driven workflow where a coordinator manages multiple parallel worker threads and automatically handles merge conflicts. Users set project goals and maintain shared memory of context across sessions, enabling long-running, multi-session builds with remote steering and no manual handoffs.",
+    "url": "https://claude.com/blog/projects-redesigned"
+  },
+  {
+    "title": "Claude Cowork and chat are now one Claude",
+    "category": "feature update",
+    "date": "2026-09-16",
+    "summary": "Claude Cowork and chat merged into a unified platform featuring Claude Docs and Slides (beta), plus integrated Claude Design. Users can create documents, presentations, and designs without leaving the chat interface, with outputs downloadable as PowerPoint, PDF, or other formats.",
+    "url": "https://claude.com/blog/cowork-is-now-claude"
+  },
+  {
+    "title": "Bringing Salesforce into Claude",
+    "category": "feature update",
+    "date": "2026-09-15",
+    "summary": "A new beta Salesforce plugin brings 37 skills to Claude for sales teams—account research, call prep, pipeline review, and CRM updates—with daily briefings, deal scoring, and post-call summaries. The integration respects existing Salesforce permissions and early adopters report significant time savings on administrative work.",
+    "url": "https://claude.com/blog/salesforce-in-claude"
+  },
+  {
+    "title": "Working at the frontier: How Balyasny Asset Management evaluates and governs Claude Fable 5",
+    "category": "announcement",
+    "date": "2026-09-17",
+    "summary": "Balyasny Asset Management's Chief AI Officer discusses deploying Claude Fable 5, showing how agentic capabilities cut multi-day workflows to hours and scoring 89.4% on proprietary financial tasks. The interview highlights critical governance practices—data boundaries, tool permissions, and human review—for high-stakes financial AI use.",
+    "url": "https://claude.com/blog/working-at-the-frontier-how-balyasny-asset-management-evaluates-and-governs-claude-fable-5"
+  },
+  {
     "title": "Claude for Small Business launches new workflows, integrations, and training programs",
     "category": "announcement",
     "date": "2026-09-15",
@@ -12,33 +40,5 @@
     "date": "2026-09-14",
     "summary": "Claude Tag is a Slack-integrated AI agent enabling healthcare organizations to automate alert triage, internal tool maintenance, and compliance workflows with per-channel PHI restrictions. Insight Health achieved 97% automation of alert triage using Claude Tag, and enterprises linking it to GitHub receive $25,000 in credits through October 1, 2026.",
     "url": "https://claude.com/blog/how-healthcare-organizations-use-claude-tag"
-  },
-  {
-    "title": "Building an AI-native revenue organization",
-    "category": "announcement",
-    "date": "2026-09-15",
-    "summary": "Anthropic released an eBook guide for revenue leaders on deploying Claude across sales organizations, featuring a three-phase rollout plan, maturity models, and ROI measurement. Cox Communications case study shows 7x first-year ROI and 86% cost reduction in lead validation.",
-    "url": "https://claude.com/blog/building-an-ai-native-revenue-organization"
-  },
-  {
-    "title": "Deploying AI from pilot to production",
-    "category": "announcement",
-    "date": "2026-09-14",
-    "summary": "Anthropic and Accenture released a guide for deploying AI initiatives from pilot to production, providing a four-part job definition framework and four-tier oversight model (automated, sampled, reviewed, advisory). The guide addresses the fact that only 23% of C-suite leaders report sustained enterprise-wide AI impact.",
-    "url": "https://claude.com/blog/deploying-ai-from-pilot-to-production"
-  },
-  {
-    "title": "Claude for Financial Advisors",
-    "category": "announcement",
-    "date": "2026-09-14",
-    "summary": "Claude for Financial Advisors integrates with 11 major platforms (Addepar, Charles Schwab, Vanguard, etc.) and provides 8 specialized skills for pre-meeting prep, portfolio reviews, compliance screening, and admin tasks. Built-in safeguards require advisor approval on key decisions. The tool aims to free advisors to focus on client service by automating administrative burden that currently limits face-time to 1/6 of their day.",
-    "url": "https://claude.com/blog/claude-for-financial-advisors"
-  },
-  {
-    "title": "Agentic coding is straining CI. Here's how we scaled test impact analysis at Anthropic",
-    "category": "announcement",
-    "date": "2026-09-14",
-    "summary": "Agentic coding at Anthropic triggered a 25x increase in CI jobs over six months, with Claude authoring 80% of shipped code but test volume growing 10x. Traditional scaling approaches proved insufficient; Anthropic redesigned with a distributed, stateless architecture using in-memory data stores. The company argues this horizontally scalable approach will become the industry standard as agentic coding drives exponential growth.",
-    "url": "https://claude.com/blog/agentic-coding-is-straining-ci-heres-how-we-scaled-test-impact-analysis-at-anthropic"
   }
 ]
