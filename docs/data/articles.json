@@ -1,5 +1,26 @@
 [
   {
+    "title": "How to prepare for AI-driven code modernization projects",
+    "category": "announcement",
+    "date": "2026-09-23",
+    "summary": "Guide for enterprises and regulated organizations preparing for large-scale codebase modernization using Claude Code. The six-step framework emphasizes traceability and governance, with every change linked to an agent transcript and certificate evidence. Pre-staging organizational approval processes balances speed of agentic code generation with human oversight in regulated environments.",
+    "url": "https://claude.com/blog/how-to-prepare-for-ai-driven-code-modernization-projects"
+  },
+  {
+    "title": "Agentic coding is straining CI. Here's how we scaled test impact analysis at Anthropic",
+    "category": "announcement",
+    "date": "2026-09-14",
+    "summary": "Anthropic scaled its test impact analysis service to handle a 25x increase in CI jobs over six months as engineers now author 8x more code quarterly with Claude authoring 80% of it. The final fix moved from a singleton to a distributed stateless architecture with independent listener workers and in-memory data stores. Teams should plan for exponential growth, expecting 25x load increases within two quarters.",
+    "url": "https://claude.com/blog/agentic-coding-is-straining-ci-heres-how-we-scaled-test-impact-analysis-at-anthropic"
+  },
+  {
+    "title": "What a task costs on Opus 5.5",
+    "category": "feature update",
+    "date": "2026-09-22",
+    "summary": "Opus 5.5 costs 20% less per input and output token than prior versions, with cache read pricing dropping 60%. Typical sessions save approximately 31% on cost from pricing changes alone. Key cost drivers include turn count, cache hit rate, output tokens, and model selection; smaller models like Sonnet and Haiku work well for lookups.",
+    "url": "https://claude.com/blog/what-a-task-costs-on-opus-5-5"
+  },
+  {
     "title": "Projects redesigned: from folder to conversation",
     "category": "feature update",
     "date": "2026-09-17",
@@ -19,26 +40,5 @@
     "date": "2026-09-15",
     "summary": "A new beta Salesforce plugin brings 37 skills to Claude for sales teams—account research, call prep, pipeline review, and CRM updates—with daily briefings, deal scoring, and post-call summaries. The integration respects existing Salesforce permissions and early adopters report significant time savings on administrative work.",
     "url": "https://claude.com/blog/salesforce-in-claude"
-  },
-  {
-    "title": "Working at the frontier: How Balyasny Asset Management evaluates and governs Claude Fable 5",
-    "category": "announcement",
-    "date": "2026-09-17",
-    "summary": "Balyasny Asset Management's Chief AI Officer discusses deploying Claude Fable 5, showing how agentic capabilities cut multi-day workflows to hours and scoring 89.4% on proprietary financial tasks. The interview highlights critical governance practices—data boundaries, tool permissions, and human review—for high-stakes financial AI use.",
-    "url": "https://claude.com/blog/working-at-the-frontier-how-balyasny-asset-management-evaluates-and-governs-claude-fable-5"
-  },
-  {
-    "title": "Claude for Small Business launches new workflows, integrations, and training programs",
-    "category": "announcement",
-    "date": "2026-09-15",
-    "summary": "Claude for Small Business now includes 43 workflows and 27 new integrations (Shopify, Salesforce, Gusto), enabling automation of lead generation, proposal writing, financial reconciliation, and content planning. The company is launching a fall tour with free workshops and partner webinars across 10 US cities.",
-    "url": "https://claude.com/blog/claude-for-small-business-launches-new-workflows-integrations-and-training-programs"
-  },
-  {
-    "title": "How healthcare organizations use Claude Tag",
-    "category": "feature update",
-    "date": "2026-09-14",
-    "summary": "Claude Tag is a Slack-integrated AI agent enabling healthcare organizations to automate alert triage, internal tool maintenance, and compliance workflows with per-channel PHI restrictions. Insight Health achieved 97% automation of alert triage using Claude Tag, and enterprises linking it to GitHub receive $25,000 in credits through October 1, 2026.",
-    "url": "https://claude.com/blog/how-healthcare-organizations-use-claude-tag"
   }
 ]

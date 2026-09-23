@@ -1,79 +1,79 @@
+## How to prepare for AI-driven code modernization projects
+- Guide for enterprises/regulated orgs preparing for large-scale codebase modernization using Claude Code
+- Six-step framework: define target, create certificate (correctness proof), set promotion/review policy, prepare prerequisites, build agentic workflow, run modernization starting small
+- Argues the bottleneck shifts from writing code to managing organizational approval processes
+- Emphasizes traceability: every change linked to an agent transcript and certificate evidence
+- Aims to pre-stage governance so speed and human oversight are balanced in regulated environments
+Category: announcement
+Date: 2026-09-23
+URL: https://claude.com/blog/how-to-prepare-for-ai-driven-code-modernization-projects
+
+## What a task costs on Opus 5.5
+- Explains pricing/cost structure for Claude Code tasks on Opus 5.5 vs Opus 5
+- Opus 5.5 costs 20% less per input/output token; cache read pricing dropped 60% (1/10 to 1/20 of input price)
+- Typical session saves ~31% on cost from pricing changes alone
+- Four cost drivers: number of turns, cache hit rate, output/thinking tokens, model selection
+- Tips: start at medium effort, use smaller models (Sonnet/Haiku) for lookups, avoid mid-session config changes to preserve cache, use prompt-audit tool
+Category: feature update
+Date: 2026-09-22
+URL: https://claude.com/blog/what-a-task-costs-on-opus-5-5
+
 ## Working at the frontier: How Balyasny Asset Management evaluates and governs Claude Fable 5
-- Interview with BAM's Chief AI Officer Charlie Flanagan on deploying Claude Fable 5
-- BAM shifted from AI-for-retrieval to autonomous agents completing complex, multi-step work
-- Claude Code/agentic capabilities cut multi-day workflows down to hours
-- Fable scored 89.4% on BAM's proprietary financial task evals vs. 86.1% for prior models
-- Highlights governance: data boundaries, tool permissions, human review for high-stakes finance use
+- Interview with BAM's Chief AI Officer on evaluating/deploying Claude Fable 5 for financial analysis
+- 2026 shift described as moving "from AI systems that do search to AI systems that do work" via longer multi-step tasks
+- BAM evaluates on thousands of real financial tasks with verifiable outcomes (equities, macro, commodities), not generic benchmarks
+- Fable 5 scored 89.4% vs 86.1% for prior production model, strongest in complex planning/agentic execution
+- Safety relies on data boundaries, tool permissions, logging, human review (not the model alone); BAMAgent platform runs thousands of autonomous agents continuously
 Category: announcement
 Date: 2026-09-17
 URL: https://claude.com/blog/working-at-the-frontier-how-balyasny-asset-management-evaluates-and-governs-claude-fable-5
 
 ## Projects redesigned: from folder to conversation
-- Claude Projects redesigned from a folder-based system into a conversation-driven workflow tool in Claude Code
-- New coordinator manages multiple independent worker threads (cloud sessions) in parallel
-- Users set project goals; Claude delegates work, handles merge conflicts automatically
-- Maintains shared memory of project context and decisions over time
-- Enables long-running, multi-session builds without manual handoffs; users can steer remotely
+- Claude Projects redesigned from static folders into conversation-driven, multi-threaded agentic workflows
+- Multiple threads can work on tasks in parallel while Claude coordinates; users monitor via main chat or individual threads
+- Each thread runs as its own Claude Code cloud session, potentially on different branches
+- Builds persistent memory over time, reducing repeated context; adds a library collecting files/artifacts
+- Supports complex multi-part work like cross-repo optimization or retiring deprecated APIs simultaneously
 Category: feature update
 Date: 2026-09-17
 URL: https://claude.com/blog/projects-redesigned
 
 ## Claude Cowork and chat are now one Claude
-- Claude Cowork and the standard chat interface merged into a single unified Claude platform
-- New features: Claude Docs and Claude Slides (beta); Claude Design now integrated into conversations
-- Users can create documents, presentations, and visual designs without leaving chat
-- Outputs downloadable as PowerPoint, PDF, or other formats
-- Available on Pro and Max plans now, rolling out to other tiers soon; removes need to pick the "right" tool
+- Claude Cowork and Claude chat merged into a single unified app/interface
+- New capabilities: Claude Docs and Claude Slides launchable directly from conversations, editable and downloadable as PDF/PowerPoint
+- Claude Design now works within conversations instead of as a separate tool
+- Rolling out first to Pro/Max (web, desktop, mobile); Team and Free plans to follow; Enterprise admins get 30+ days notice
+- Eliminates friction of choosing between Cowork and chat for different task types
 Category: feature update
 Date: 2026-09-16
 URL: https://claude.com/blog/cowork-is-now-claude
 
 ## Bringing Salesforce into Claude
-- New beta plugin integrates Salesforce data directly into Claude for sales teams
-- Adds 37 skills for sellers: account research, call prep, pipeline review, CRM updates
-- Two new connectors: Salesforce and Slack; respects existing Salesforce permissions
-- Features: daily briefings, deal scoring, close-plan generation, post-call summaries, pipeline dashboards
-- Early adopters (GitLab, Siemens, Legora) report significant time savings on admin work
+- New plugin integrates Salesforce CRM directly into Claude for sales professionals
+- Includes 37 skills: account research, call prep, pipeline review, CRM updates
+- Features personalized daily briefings, deal scoring, meeting prep, automated follow-up documentation
+- Operates under existing Salesforce permissions; seller approval required for changes by default
+- Available on all paid plans via Salesforce MCP marketplace; early adopters GitLab, Siemens, Legora report time savings
 Category: feature update
 Date: 2026-09-15
 URL: https://claude.com/blog/salesforce-in-claude
 
-## Building an AI-native revenue organization
-- New eBook guide for revenue leaders rolling out Claude across sales organizations
-- Addresses inconsistent AI adoption, fragmented account research, lack of ROI visibility
-- Provides a maturity model, setup decisions, three-phase rollout strategy, ROI frameworks
-- Cites Cox Communications: 7x first-year AI ROI, 86% cut in cost of validating/enriching sales leads
-- Aims to help teams scale adoption beyond early adopters to company-wide use
-Category: announcement
-Date: 2026-09-15
-URL: https://claude.com/blog/building-an-ai-native-revenue-organization
-
 ## Claude for Small Business launches new workflows, integrations, and training programs
-- Expansion of Claude for Small Business: 43 new workflows and 27 new integrations (Shopify, Salesforce, Gusto, etc.)
-- Extends beyond back-office tasks into lead generation, proposal writing, marketing, financial close
-- Fall tour with free in-person workshops across 10 US cities plus partner-hosted webinars
-- Over 900,000 installations already; emphasizes user approval before actions execute
-- Aims to bring enterprise-grade AI automation to small businesses
+- Expanded Claude for Small Business with 43 workflows and 27 new integrations (Shopify, Salesforce, Xero, etc.)
+- Workflows cover back-office ops and growth activities (lead gen, proposals, reporting)
+- Over 900,000 installations since May launch
+- Free training programs launching fall 2026: 10-city tour, 750+ community workshops, 14 partner webinars (Sept-Nov)
+- One owner reported work dropping from 120 hours to five minutes
 Category: feature update
 Date: 2026-09-15
 URL: https://claude.com/blog/claude-for-small-business-launches-new-workflows-integrations-and-training-programs
 
 ## Agentic coding is straining CI. Here's how we scaled test impact analysis at Anthropic
-- Anthropic engineering post on scaling CI as AI agents accelerated code generation
-- CI jobs grew 25x in six months; Claude wrote 80% of code, engineers shipped 8x more code/quarter
-- Temporary fixes (hardware upgrade, sharding, daily restarts) bought progressively less time (70d, 29d, <1d)
-- Replaced singleton architecture with stateless, horizontally scalable system using in-memory data store
-- Redesign completed in three weeks instead of a quarter; advises designing for 25x load growth and horizontal scalability
+- Describes how Anthropic scaled its test impact analysis service for a 25x increase in CI jobs over six months
+- Engineers now ship 8x more code quarterly, with Claude authoring 80% of it; test volume grew 10x with flat headcount
+- Three temporary patches applied before a full architectural redesign was needed (lasted 70 days, 29 days, <24 hours)
+- Final fix: in-memory data store, offloaded consumer, moved from singleton to distributed stateless architecture with independent listener workers
+- Advises teams to plan for exponential growth rather than patches, assuming 25x load within two quarters
 Category: announcement
 Date: 2026-09-14
 URL: https://claude.com/blog/agentic-coding-is-straining-ci-heres-how-we-scaled-test-impact-analysis-at-anthropic
-
-## Claude for Financial Advisors
-- New suite of connectors and workflow skills for financial advisors
-- Integrates with 11 platforms: Addepar, BlackRock, Charles Schwab, Envestnet, iCapital, Orion, SS&C Black Diamond, Wealthbox, Wealth.com, Vanguard, Zocks
-- Eight specialized skills: onboarding, alt-investment analysis, compliance review, estate/tax planning, rebalancing, meeting notes, pre-meeting prep, prospect intake
-- Human approval still required for regulated activities and client-facing communications
-- Available via Claude Enterprise with audit logs; targets advisors who spend only 1/6 of time in client meetings
-Category: feature update
-Date: 2026-09-14
-URL: https://claude.com/blog/claude-for-financial-advisors
