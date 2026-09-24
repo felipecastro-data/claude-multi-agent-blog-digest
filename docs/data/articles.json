@@ -1,17 +1,24 @@
 [
   {
+    "title": "Claude Marketplace: one place to discover plugins, agents, and services from our partners",
+    "category": "feature update",
+    "date": "2026-09-23",
+    "summary": "Launch of Claude Marketplace, a unified hub consolidating 2,000+ plugins, Claude-powered agents and products, and consulting services. Customers can apply existing Anthropic commitments to marketplace offerings, streamlining procurement and giving partners direct access to Claude's customer base.",
+    "url": "https://claude.com/blog/claude-marketplace"
+  },
+  {
+    "title": "How CodeRabbit, Power Digital, and ThoughtSpot scale with Snowflake and Vercel on Claude Marketplace",
+    "category": "announcement",
+    "date": "2026-09-23",
+    "summary": "Case study showing how CodeRabbit, Power Digital, and ThoughtSpot use Claude Marketplace to integrate Snowflake and Vercel services. Customers redirect existing Anthropic commitments to partner services, streamlining procurement and consolidating vendor approvals into a single process.",
+    "url": "https://claude.com/blog/how-coderabbit-power-digital-and-thoughtspot-scale-with-snowflake-and-vercel-on-claude-marketplace"
+  },
+  {
     "title": "How to prepare for AI-driven code modernization projects",
     "category": "announcement",
     "date": "2026-09-23",
     "summary": "Guide for enterprises and regulated organizations preparing for large-scale codebase modernization using Claude Code. The six-step framework emphasizes traceability and governance, with every change linked to an agent transcript and certificate evidence. Pre-staging organizational approval processes balances speed of agentic code generation with human oversight in regulated environments.",
     "url": "https://claude.com/blog/how-to-prepare-for-ai-driven-code-modernization-projects"
-  },
-  {
-    "title": "Agentic coding is straining CI. Here's how we scaled test impact analysis at Anthropic",
-    "category": "announcement",
-    "date": "2026-09-14",
-    "summary": "Anthropic scaled its test impact analysis service to handle a 25x increase in CI jobs over six months as engineers now author 8x more code quarterly with Claude authoring 80% of it. The final fix moved from a singleton to a distributed stateless architecture with independent listener workers and in-memory data stores. Teams should plan for exponential growth, expecting 25x load increases within two quarters.",
-    "url": "https://claude.com/blog/agentic-coding-is-straining-ci-heres-how-we-scaled-test-impact-analysis-at-anthropic"
   },
   {
     "title": "What a task costs on Opus 5.5",
@@ -21,24 +28,17 @@
     "url": "https://claude.com/blog/what-a-task-costs-on-opus-5-5"
   },
   {
+    "title": "Working at the frontier: How Balyasny Asset Management evaluates and governs Claude Fable 5",
+    "category": "announcement",
+    "date": "2026-09-17",
+    "summary": "Interview with Balyasny Asset Management's Chief AI Officer on deploying Claude Fable 5 across 1,000s of autonomous agents for financial analysis. Claude Fable 5 achieved 89.4% accuracy on proprietary evals, with governance controls including data boundaries, tool permissions, and human review of material decisions.",
+    "url": "https://claude.com/blog/working-at-the-frontier-how-balyasny-asset-management-evaluates-and-governs-claude-fable-5"
+  },
+  {
     "title": "Projects redesigned: from folder to conversation",
     "category": "feature update",
     "date": "2026-09-17",
     "summary": "Claude Projects was redesigned from a folder-based system to a conversation-driven workflow where a coordinator manages multiple parallel worker threads and automatically handles merge conflicts. Users set project goals and maintain shared memory of context across sessions, enabling long-running, multi-session builds with remote steering and no manual handoffs.",
     "url": "https://claude.com/blog/projects-redesigned"
-  },
-  {
-    "title": "Claude Cowork and chat are now one Claude",
-    "category": "feature update",
-    "date": "2026-09-16",
-    "summary": "Claude Cowork and chat merged into a unified platform featuring Claude Docs and Slides (beta), plus integrated Claude Design. Users can create documents, presentations, and designs without leaving the chat interface, with outputs downloadable as PowerPoint, PDF, or other formats.",
-    "url": "https://claude.com/blog/cowork-is-now-claude"
-  },
-  {
-    "title": "Bringing Salesforce into Claude",
-    "category": "feature update",
-    "date": "2026-09-15",
-    "summary": "A new beta Salesforce plugin brings 37 skills to Claude for sales teams—account research, call prep, pipeline review, and CRM updates—with daily briefings, deal scoring, and post-call summaries. The integration respects existing Salesforce permissions and early adopters report significant time savings on administrative work.",
-    "url": "https://claude.com/blog/salesforce-in-claude"
   }
 ]
