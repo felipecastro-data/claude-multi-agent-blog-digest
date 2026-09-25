@@ -1,5 +1,33 @@
 [
   {
+    "title": "Coding sessions are longer and use more context. Claude Opus 5.5 is built for that.",
+    "category": "feature update",
+    "date": "2026-09-24",
+    "summary": "Opus 5.5 is a new model designed for longer, context-heavy coding sessions, running ~40% cheaper than Opus 5 with 60% cheaper cache reads and 30% faster output generation. Built on usage data showing developers now run significantly longer sessions, it maintains superior performance while improving cost efficiency.",
+    "url": "https://claude.com/blog/claude-opus-5-5-built-for-coding-sessions-that-use-more-context"
+  },
+  {
+    "title": "Claude Tag now supports personal connectors in channels",
+    "category": "feature update",
+    "date": "2026-09-24",
+    "summary": "Claude Tag in Slack channels now supports personal connectors (Google Drive, calendar, CRM) alongside shared connectors, enabling Claude to synthesize public channel data with private user data while maintaining role-based access controls. Users can choose between review and auto modes for responses.",
+    "url": "https://claude.com/blog/claude-tag-now-supports-personal-connectors-in-channels"
+  },
+  {
+    "title": "Claude Cowork and chat are now one Claude",
+    "category": "feature update",
+    "date": "2026-09-16",
+    "summary": "Claude Cowork and chat are now unified into a single interface with new Claude Docs, Slides (beta), and integrated Design capabilities. All features, connectors, and skills are now accessible from any conversation, eliminating the need to choose between separate tools.",
+    "url": "https://claude.com/blog/cowork-is-now-claude"
+  },
+  {
+    "title": "Salesforce in Claude",
+    "category": "announcement",
+    "date": "2026-09-15",
+    "summary": "A new beta Salesforce plugin integrates CRM data directly into Claude with 37 sales-focused skills and connectors respecting existing permissions. Early customers report generating meeting briefs in seconds instead of hours, with capabilities spanning account research, deal scoring, and pipeline reviews.",
+    "url": "https://claude.com/blog/salesforce-in-claude"
+  },
+  {
     "title": "Claude Marketplace: one place to discover plugins, agents, and services from our partners",
     "category": "feature update",
     "date": "2026-09-23",
@@ -12,33 +40,5 @@
     "date": "2026-09-23",
     "summary": "Case study showing how CodeRabbit, Power Digital, and ThoughtSpot use Claude Marketplace to integrate Snowflake and Vercel services. Customers redirect existing Anthropic commitments to partner services, streamlining procurement and consolidating vendor approvals into a single process.",
     "url": "https://claude.com/blog/how-coderabbit-power-digital-and-thoughtspot-scale-with-snowflake-and-vercel-on-claude-marketplace"
-  },
-  {
-    "title": "How to prepare for AI-driven code modernization projects",
-    "category": "announcement",
-    "date": "2026-09-23",
-    "summary": "Guide for enterprises and regulated organizations preparing for large-scale codebase modernization using Claude Code. The six-step framework emphasizes traceability and governance, with every change linked to an agent transcript and certificate evidence. Pre-staging organizational approval processes balances speed of agentic code generation with human oversight in regulated environments.",
-    "url": "https://claude.com/blog/how-to-prepare-for-ai-driven-code-modernization-projects"
-  },
-  {
-    "title": "What a task costs on Opus 5.5",
-    "category": "feature update",
-    "date": "2026-09-22",
-    "summary": "Opus 5.5 costs 20% less per input and output token than prior versions, with cache read pricing dropping 60%. Typical sessions save approximately 31% on cost from pricing changes alone. Key cost drivers include turn count, cache hit rate, output tokens, and model selection; smaller models like Sonnet and Haiku work well for lookups.",
-    "url": "https://claude.com/blog/what-a-task-costs-on-opus-5-5"
-  },
-  {
-    "title": "Working at the frontier: How Balyasny Asset Management evaluates and governs Claude Fable 5",
-    "category": "announcement",
-    "date": "2026-09-17",
-    "summary": "Interview with Balyasny Asset Management's Chief AI Officer on deploying Claude Fable 5 across 1,000s of autonomous agents for financial analysis. Claude Fable 5 achieved 89.4% accuracy on proprietary evals, with governance controls including data boundaries, tool permissions, and human review of material decisions.",
-    "url": "https://claude.com/blog/working-at-the-frontier-how-balyasny-asset-management-evaluates-and-governs-claude-fable-5"
-  },
-  {
-    "title": "Projects redesigned: from folder to conversation",
-    "category": "feature update",
-    "date": "2026-09-17",
-    "summary": "Claude Projects was redesigned from a folder-based system to a conversation-driven workflow where a coordinator manages multiple parallel worker threads and automatically handles merge conflicts. Users set project goals and maintain shared memory of context across sessions, enabling long-running, multi-session builds with remote steering and no manual handoffs.",
-    "url": "https://claude.com/blog/projects-redesigned"
   }
 ]
