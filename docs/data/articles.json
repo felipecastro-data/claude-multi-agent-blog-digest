@@ -1,5 +1,19 @@
 [
   {
+    "title": "Build plugins for Claude",
+    "category": "announcement",
+    "date": "2026-09-25",
+    "summary": "Anthropic launched a new directory submission portal for developers on paid Claude plans to build and publish plugins. Developers can submit individual MCP connectors or bundled plugin packages with auto-validation, safety scanning, real-time review tracking, and usage analytics. The portal supports MCP 2.0 with extensions like MCP Apps for interactive UI and Enterprise Managed Auth for OAuth.",
+    "url": "https://claude.com/blog/build-plugins-for-claude"
+  },
+  {
+    "title": "How to prepare for AI-driven code modernization projects",
+    "category": "announcement",
+    "date": "2026-09-23",
+    "summary": "A guide provides a six-step framework for enterprises preparing code modernization projects with AI agents like Claude Code, covering target definition, certification, promotion policies, prerequisite setup, workflow development, and execution. While AI has accelerated code changes, organizational processes and governance have become the limiting factor for enterprises with critical or regulated systems. The framework helps teams align stakeholders to maintain quality and trust at scale.",
+    "url": "https://claude.com/blog/how-to-prepare-for-ai-driven-code-modernization-projects"
+  },
+  {
     "title": "Coding sessions are longer and use more context. Claude Opus 5.5 is built for that.",
     "category": "feature update",
     "date": "2026-09-24",
@@ -26,19 +40,5 @@
     "date": "2026-09-15",
     "summary": "A new beta Salesforce plugin integrates CRM data directly into Claude with 37 sales-focused skills and connectors respecting existing permissions. Early customers report generating meeting briefs in seconds instead of hours, with capabilities spanning account research, deal scoring, and pipeline reviews.",
     "url": "https://claude.com/blog/salesforce-in-claude"
-  },
-  {
-    "title": "Claude Marketplace: one place to discover plugins, agents, and services from our partners",
-    "category": "feature update",
-    "date": "2026-09-23",
-    "summary": "Launch of Claude Marketplace, a unified hub consolidating 2,000+ plugins, Claude-powered agents and products, and consulting services. Customers can apply existing Anthropic commitments to marketplace offerings, streamlining procurement and giving partners direct access to Claude's customer base.",
-    "url": "https://claude.com/blog/claude-marketplace"
-  },
-  {
-    "title": "How CodeRabbit, Power Digital, and ThoughtSpot scale with Snowflake and Vercel on Claude Marketplace",
-    "category": "announcement",
-    "date": "2026-09-23",
-    "summary": "Case study showing how CodeRabbit, Power Digital, and ThoughtSpot use Claude Marketplace to integrate Snowflake and Vercel services. Customers redirect existing Anthropic commitments to partner services, streamlining procurement and consolidating vendor approvals into a single process.",
-    "url": "https://claude.com/blog/how-coderabbit-power-digital-and-thoughtspot-scale-with-snowflake-and-vercel-on-claude-marketplace"
   }
 ]

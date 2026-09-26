@@ -1,97 +1,59 @@
+## Build plugins for Claude
+- Anthropic launched a new directory submission portal for developers (on paid Claude plans) to build and publish plugins for Claude
+- Supports submitting single MCP connectors or plugin bundles combining MCP servers and skills
+- Includes auto-validation, safety scanning, and real-time review status tracking
+- Provides usage analytics: installs by product surface, version, and discovery metrics
+- Supports MCP 2.0 with extensions like MCP Apps (interactive UI) and Enterprise Managed Auth (OAuth)
+Category: announcement
+Date: 2026-09-25
+URL: https://claude.com/blog/build-plugins-for-claude
+
 ## Claude Tag now supports personal connectors in channels
-- Claude Tag in Slack channels can now use a user's own personal connectors (Google Drive, calendar, CRM), not just admin-attached shared channel connectors
-- Lets Claude synthesize public channel data with private user data without exposing it to the whole team
-- Users choose between review mode or auto mode for responses
-- Maintains role-based access controls while improving usefulness in collaborative settings
+- Claude Tag (Slack integration) now lets users access their own personal connectors (Google Drive, calendars, CRM) in channel conversations
+- Previously Claude could only use connectors admins attached to channels; now individual users can use their own
+- Users can choose review mode (approve before posting) or auto mode (posts unless sensitive content detected)
+- Personal connector activity is logged under individual user accounts, not shared service accounts, for better governance
+- Organizations can decide per-tool whether to use shared or personal connectors
 Category: feature update
 Date: 2026-09-24
 URL: https://claude.com/blog/claude-tag-now-supports-personal-connectors-in-channels
 
 ## Coding sessions are longer and use more context. Claude Opus 5.5 is built for that.
-- New model Opus 5.5 designed for longer coding sessions with heavier context use
-- Runs ~40% cheaper than Opus 5 for typical workloads
-- Cached tokens 60% cheaper, cache misses down over 50%, output generation ~30% faster
-- Better performance on open-ended tasks while maintaining cost efficiency
-- Usage data (Mar-Sep 2026) shows developers running significantly longer, more context-heavy sessions
+- Claude Opus 5.5 launched, optimized for longer coding sessions requiring more context
+- Pricing cut: 20% lower input/output token cost, 60% lower cost for cached tokens
+- Improved cache management in Claude Code reduces cache misses by over 50%
+- Model efficiency improved, requiring fewer turns to complete complex tasks; output generated 30% faster than Opus 5
+- Aligns cost structure with real usage as developers use 2.6x more context per request
 Category: feature update
 Date: 2026-09-24
 URL: https://claude.com/blog/claude-opus-5-5-built-for-coding-sessions-that-use-more-context
 
 ## How CodeRabbit, Power Digital, and ThoughtSpot scale with Snowflake and Vercel on Claude Marketplace
-- Case study on three companies using Claude Marketplace to add Snowflake and Vercel to existing Anthropic commitments
-- Customers can direct part of their Anthropic spend toward partner services (e.g., Snowflake inference API, Vercel infrastructure)
-- Removes need for separate purchases/budgets for complementary tools
-- Reduces procurement friction and consolidates vendors under one approved budget
-- Simplifies financial planning and speeds up deployment for enterprises scaling AI
+- Case study on three companies using Claude Marketplace to apply existing Anthropic spend commitments toward partner services
+- Power Digital expanded its Snowflake commitment via the marketplace
+- ThoughtSpot applied Snowflake inference API purchases to its existing Anthropic commitment
+- CodeRabbit upgraded its Vercel plan through the same consolidated purchasing mechanism (limited preview)
+- Simplifies enterprise procurement by consolidating vendor spend under one Anthropic commitment
 Category: announcement
 Date: 2026-09-23
 URL: https://claude.com/blog/how-coderabbit-power-digital-and-thoughtspot-scale-with-snowflake-and-vercel-on-claude-marketplace
 
 ## How to prepare for AI-driven code modernization projects
-- Guide with a six-step framework for organizing enterprise AI-driven code modernization for critical systems
-- AI can compress multi-year modernization efforts into months or weeks
-- Argues the bottleneck shifts from producing code changes to mobilizing the organization around them
-- Covers change management, review capacity, and approval processes needed to handle rapid AI output
-- Provides templates for success criteria, promotion policies, and agentic workflows aligned to regulatory/business needs
+- Guide presenting a six-step framework for preparing large-scale code modernization projects using AI agents like Claude Code
+- Steps include target definition, certification requirements, promotion policies, prerequisite setup, agentic workflow development, and execution strategy
+- Argues AI has accelerated code changes, but organizational process is now the bottleneck
+- Aimed at enterprises with critical/regulated systems needing structured approval and change management
+- Helps teams align stakeholders and maintain quality/trust as modernization speed increases
 Category: announcement
 Date: 2026-09-23
 URL: https://claude.com/blog/how-to-prepare-for-ai-driven-code-modernization-projects
 
 ## Claude Marketplace: one place to discover plugins, agents, and services from our partners
-- Launch of Claude Marketplace, a centralized hub for tools, integrations, and services extending Claude
-- Consolidates connectors/plugins (2,000+, e.g. Salesforce, Notion, Google, Microsoft), Claude-powered agents/products (CrowdStrike, Cursor, Harvey, Snowflake), and service partners (Accenture, BCG, Deloitte)
-- Teams can allocate part of their Anthropic commitment toward third-party products/services
-- Streamlines discovery and procurement for customers; gives partners easier access to Claude's customer base
+- Anthropic launched Claude Marketplace, a centralized platform to discover and integrate tools/services that extend Claude
+- Features 2,000+ connectors and plugins from companies like Atlassian, Google, Microsoft, Notion, Salesforce
+- Includes Claude-powered agents/products from vendors such as CrowdStrike, Cursor, Harvey, Snowflake
+- Also lists consulting/systems integration partners from the Claude Partner Network
+- Builders can list offerings via open standards (MCP, Agent Skills); customers can apply committed Anthropic spend to third-party solutions
 Category: announcement
 Date: 2026-09-23
 URL: https://claude.com/blog/claude-marketplace
-
-## What a task costs on Opus 5.5
-- Breaks down Claude Code task pricing on Opus 5.5: turns, cache reads, output tokens, model choice
-- Input/output tokens 20% cheaper than Opus 5; cache reads 60% cheaper
-- Long runs now conclude with summary reports
-- Provides calculators and guidance on effort levels, model selection, and caching strategy
-- Helps developers balance capability against cost
-Category: feature update
-Date: 2026-09-22
-URL: https://claude.com/blog/what-a-task-costs-on-opus-5-5
-
-## Working at the frontier: How Balyasny Asset Management evaluates and governs Claude Fable 5
-- Interview with BAM's Chief AI Officer on deploying Claude Fable 5 across investment operations
-- BAM shifted from retrieval-focused AI to systems executing complex multi-step tasks
-- Launched BAMAgent, internal platform for securely deploying autonomous agents in enterprise workflows
-- Claude Fable 5 improved task performance to 89.4% vs 86.1% for prior production model across thousands of tasks
-- Emphasizes safety governance (data boundaries, tool permissions, human review) even as models grow more capable
-Category: announcement
-Date: 2026-09-17
-URL: https://claude.com/blog/working-at-the-frontier-how-balyasny-asset-management-evaluates-and-governs-claude-fable-5
-
-## Projects redesigned: from folder to conversation
-- Claude Projects redesigned from folder-based organization into conversation-based workflow management (beta, via Claude Code)
-- New coordinator delegates work across multiple threads, each an independent Claude Code cloud session
-- Adds shared memory that accumulates context over time and a library for files/artifacts
-- Supports parallel work streams (e.g., profiling endpoints, testing optimizations, opening PRs in parallel)
-- Enables more autonomous, long-running workflows with less need for detailed prompting
-Category: feature update
-Date: 2026-09-17
-URL: https://claude.com/blog/projects-redesigned
-
-## Claude Cowork and chat are now one Claude
-- Claude Cowork and Claude chat merged into a single unified interface
-- New products launched: Claude Docs and Claude Slides (beta); Claude Design now works within conversations instead of as separate tool
-- Users can create docs/presentations/designs directly in chat, with options to edit, present, or export as PowerPoint/PDF
-- Rolling out first to Pro and Max plans, then Team and Free
-- Removes need to choose the "right" tool for a task; all capabilities (connectors, skills) available from any conversation
-Category: feature update
-Date: 2026-09-16
-URL: https://claude.com/blog/cowork-is-now-claude
-
-## Salesforce in Claude
-- Beta plugin integrating Salesforce data directly into Claude, for sales professionals
-- Includes 37 skills for account research, call prep, pipeline review, and CRM updates
-- Two connectors (Salesforce, Slack) let Claude read/write data respecting existing permissions
-- Generates daily briefs, meeting prep, deal scoring, call summaries, and forecast reviews; updates Salesforce on approval
-- Early customers (GitLab, Siemens, Legora) report meeting briefs generated in seconds instead of hours
-Category: announcement
-Date: 2026-09-15
-URL: https://claude.com/blog/salesforce-in-claude
