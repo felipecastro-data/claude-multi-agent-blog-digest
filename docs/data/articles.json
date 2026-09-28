@@ -1,5 +1,26 @@
 [
   {
+    "title": "Projects redesigned: from folder to conversation",
+    "category": "feature update",
+    "date": "2026-09-17",
+    "summary": "Claude Code Projects now features multi-threaded workspaces where a coordinator orchestrates parallel work across independent threads. Added shared memory accumulates project context and decisions, with a library for files and artifacts. In beta for Claude Pro/Max subscribers using cloud sessions; Team/Enterprise rollout planned next.",
+    "url": "https://claude.com/blog/projects-redesigned"
+  },
+  {
+    "title": "How to prepare for AI-driven code modernization projects",
+    "category": "announcement",
+    "date": "2026-09-23",
+    "summary": "Anthropic's forward-deployed engineers provide a 6-step framework for organizing AI-driven code modernization in critical and regulated systems. Introduces 'certificates' (conditions every change must meet) and 'promotion policies' (review depth based on risk), with recommendations for dedicated environments, CI/CD readiness, and pilot testing.",
+    "url": "https://claude.com/blog/how-to-prepare-for-ai-driven-code-modernization-projects"
+  },
+  {
+    "title": "Working at the frontier: How Balyasny Asset Management evaluates and governs Claude Fable 5",
+    "category": "announcement",
+    "date": "2026-09-17",
+    "summary": "Balyasny Asset Management (~$38B AUM) shifted from AI-assisted search to autonomous agents via 'BAMAgent,' reducing merger analysis from 3-5 days to under one hour. Claude Fable 5 scored 89.4% on BAM's internal evaluation suite, with governance emphasizing data boundaries and tool permissions over model capability alone.",
+    "url": "https://claude.com/blog/working-at-the-frontier-how-balyasny-asset-management-evaluates-and-governs-claude-fable-5"
+  },
+  {
     "title": "Claude Marketplace: one place to discover plugins, agents, and services from our partners",
     "category": "announcement",
     "date": "2026-09-23",
@@ -19,26 +40,5 @@
     "date": "2026-09-25",
     "summary": "Anthropic launched a new directory submission portal for developers on paid Claude plans to build and publish plugins. Developers can submit individual MCP connectors or bundled plugin packages with auto-validation, safety scanning, real-time review tracking, and usage analytics. The portal supports MCP 2.0 with extensions like MCP Apps for interactive UI and Enterprise Managed Auth for OAuth.",
     "url": "https://claude.com/blog/build-plugins-for-claude"
-  },
-  {
-    "title": "Coding sessions are longer and use more context. Claude Opus 5.5 is built for that.",
-    "category": "feature update",
-    "date": "2026-09-24",
-    "summary": "Opus 5.5 is a new model designed for longer, context-heavy coding sessions, running ~40% cheaper than Opus 5 with 60% cheaper cache reads and 30% faster output generation. Built on usage data showing developers now run significantly longer sessions, it maintains superior performance while improving cost efficiency.",
-    "url": "https://claude.com/blog/claude-opus-5-5-built-for-coding-sessions-that-use-more-context"
-  },
-  {
-    "title": "Claude Tag now supports personal connectors in channels",
-    "category": "feature update",
-    "date": "2026-09-24",
-    "summary": "Claude Tag in Slack channels now supports personal connectors (Google Drive, calendar, CRM) alongside shared connectors, enabling Claude to synthesize public channel data with private user data while maintaining role-based access controls. Users can choose between review and auto modes for responses.",
-    "url": "https://claude.com/blog/claude-tag-now-supports-personal-connectors-in-channels"
-  },
-  {
-    "title": "Claude Cowork and chat are now one Claude",
-    "category": "feature update",
-    "date": "2026-09-16",
-    "summary": "Claude Cowork and chat are now unified into a single interface with new Claude Docs, Slides (beta), and integrated Design capabilities. All features, connectors, and skills are now accessible from any conversation, eliminating the need to choose between separate tools.",
-    "url": "https://claude.com/blog/cowork-is-now-claude"
   }
 ]
