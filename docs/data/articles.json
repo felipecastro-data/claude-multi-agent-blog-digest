@@ -1,5 +1,33 @@
 [
   {
+    "title": "Giving companies more control over their AI agents, with NVIDIA",
+    "category": "announcement",
+    "date": "2026-09-28",
+    "summary": "Claude Managed Agents offers composable APIs for production agents with layered security, credential management, and audit trails. Credentials are held in separate vaults inaccessible to agents; NVIDIA OpenShell integration enforces policies outside the model, enabling enterprises to formally verify agent access and set narrow permissions.",
+    "url": "https://claude.com/blog/giving-companies-more-control-over-their-ai-agents-with-nvidia"
+  },
+  {
+    "title": "Coding sessions are longer and use more context. Claude Opus 5.5 is built with that in mind.",
+    "category": "announcement",
+    "date": "2026-09-24",
+    "summary": "Claude Opus 5.5 is optimized for long, context-heavy coding and costs 40% less to run than Opus 5. Cached token pricing dropped 60% with 50% fewer cache misses; output is 30% faster than its predecessor.",
+    "url": "https://claude.com/blog/claude-opus-5-5-built-for-coding-sessions-that-use-more-context"
+  },
+  {
+    "title": "Claude Tag now supports personal connectors in channels",
+    "category": "feature update",
+    "date": "2026-09-24",
+    "summary": "Claude Tag in Slack channels now enables users to invoke personal connectors (Drive, calendar, CRM) alongside channel connectors, with audit trails preserved under each user's account. Responses can be reviewed before posting or auto-posted with sensitive content flagging.",
+    "url": "https://claude.com/blog/claude-tag-now-supports-personal-connectors-in-channels"
+  },
+  {
+    "title": "Agents you can coach: how Asana builds human-agent teams with Claude",
+    "category": "announcement",
+    "date": "2026-09-29",
+    "summary": "Asana integrates AI agents into its Work Graph as configurable teammates with persistent memory and explicit permissions. Agent work is visible in shared tasks for colleagues to coach and refine; access is scoped by project, document, and app.",
+    "url": "https://claude.com/blog/agents-you-can-coach-how-asana-builds-human-agent-teams-with-claude"
+  },
+  {
     "title": "Projects redesigned: from folder to conversation",
     "category": "feature update",
     "date": "2026-09-17",
@@ -12,33 +40,5 @@
     "date": "2026-09-23",
     "summary": "Anthropic's forward-deployed engineers provide a 6-step framework for organizing AI-driven code modernization in critical and regulated systems. Introduces 'certificates' (conditions every change must meet) and 'promotion policies' (review depth based on risk), with recommendations for dedicated environments, CI/CD readiness, and pilot testing.",
     "url": "https://claude.com/blog/how-to-prepare-for-ai-driven-code-modernization-projects"
-  },
-  {
-    "title": "Working at the frontier: How Balyasny Asset Management evaluates and governs Claude Fable 5",
-    "category": "announcement",
-    "date": "2026-09-17",
-    "summary": "Balyasny Asset Management (~$38B AUM) shifted from AI-assisted search to autonomous agents via 'BAMAgent,' reducing merger analysis from 3-5 days to under one hour. Claude Fable 5 scored 89.4% on BAM's internal evaluation suite, with governance emphasizing data boundaries and tool permissions over model capability alone.",
-    "url": "https://claude.com/blog/working-at-the-frontier-how-balyasny-asset-management-evaluates-and-governs-claude-fable-5"
-  },
-  {
-    "title": "Claude Marketplace: one place to discover plugins, agents, and services from our partners",
-    "category": "announcement",
-    "date": "2026-09-23",
-    "summary": "Anthropic launched Claude Marketplace, a centralized hub combining 2,000+ connectors and plugins (Atlassian, Google, Salesforce), Claude-powered agents and products (CrowdStrike, Cursor), and consulting partners (Accenture, Deloitte). Partners can list via MCP connectors, Claude-powered products, or the Partner Network, with procurement simplified through committed spend consolidation.",
-    "url": "https://claude.com/blog/claude-marketplace"
-  },
-  {
-    "title": "How CodeRabbit, Power Digital, and ThoughtSpot scale with Snowflake and Vercel on Claude Marketplace",
-    "category": "announcement",
-    "date": "2026-09-23",
-    "summary": "A case study shows how customers leverage Claude Marketplace to apply Anthropic spend commitments to partner services: Power Digital expanded Snowflake capacity, ThoughtSpot applied inference API purchases, and CodeRabbit upgraded to committed Vercel billing. This consolidates procurement across integrated tools into a single budget.",
-    "url": "https://claude.com/blog/how-coderabbit-power-digital-and-thoughtspot-scale-with-snowflake-and-vercel-on-claude-marketplace"
-  },
-  {
-    "title": "Build plugins for Claude",
-    "category": "announcement",
-    "date": "2026-09-25",
-    "summary": "Anthropic launched a new directory submission portal for developers on paid Claude plans to build and publish plugins. Developers can submit individual MCP connectors or bundled plugin packages with auto-validation, safety scanning, real-time review tracking, and usage analytics. The portal supports MCP 2.0 with extensions like MCP Apps for interactive UI and Enterprise Managed Auth for OAuth.",
-    "url": "https://claude.com/blog/build-plugins-for-claude"
   }
 ]
