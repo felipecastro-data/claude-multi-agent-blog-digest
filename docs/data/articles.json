@@ -1,44 +1,44 @@
 [
   {
+    "title": "Build plugins for Claude",
+    "category": "feature update",
+    "date": "2026-09-25",
+    "summary": "Anthropic launched a plugin directory submission portal for publishing MCP connectors and Agent Skills with built-in validation, safety scanning, and usage analytics. The system supports MCP 2.0 including interactive MCP Apps and Enterprise Managed Auth, establishing the primary distribution channel for third-party extensions.",
+    "url": "https://claude.com/blog/build-plugins-for-claude"
+  },
+  {
+    "title": "Claude Marketplace: one place to discover plugins, agents, and services from our partners",
+    "category": "announcement",
+    "date": "2026-09-23",
+    "summary": "Anthropic launched Claude Marketplace, a unified platform hosting 2,000+ connectors, plugins, agents, and services from partners like Google, Microsoft, Salesforce, and Snowflake. Enterprises can apply committed Anthropic spend toward partner offerings, streamlining procurement for AI-integrated workflows.",
+    "url": "https://claude.com/blog/claude-marketplace"
+  },
+  {
+    "title": "How Anthropic's sales team rebuilt inbound with Claude Managed Agents",
+    "category": "announcement",
+    "date": "2026-09-30",
+    "summary": "Anthropic deployed a Claude-powered sales agent on Claude Managed Agents to handle inbound inquiries, answering pricing and compliance questions while guiding prospects through checkout 24/7. The agent doubled lead-to-opportunity conversion rates and reduced deal closing time by approximately five days.",
+    "url": "https://claude.com/blog/how-anthropics-sales-team-rebuilt-inbound-with-claude-managed-agents"
+  },
+  {
+    "title": "How CodeRabbit, Power Digital, and ThoughtSpot scale with Snowflake and Vercel on Claude Marketplace",
+    "category": "announcement",
+    "date": "2026-09-23",
+    "summary": "CodeRabbit, Power Digital, and ThoughtSpot demonstrate using Anthropic commitments to purchase Snowflake and Vercel services through Claude Marketplace. By consolidating third-party spend under a single approval process, these companies avoid separate budget requests and streamline procurement.",
+    "url": "https://claude.com/blog/how-coderabbit-power-digital-and-thoughtspot-scale-with-snowflake-and-vercel-on-claude-marketplace"
+  },
+  {
+    "title": "Working at the frontier: How Balyasny Asset Management evaluates and governs Claude Fable 5",
+    "category": "announcement",
+    "date": "2026-09-17",
+    "summary": "Balyasny Asset Management deployed Claude Fable 5 in its BAMAgent platform for financial research, achieving 89.4% accuracy on real tasks and reducing merger-arbitrage analysis time from days to hours. The firm implements governance through data boundaries, least-privilege access, and mandatory human review.",
+    "url": "https://claude.com/blog/working-at-the-frontier-how-balyasny-asset-management-evaluates-and-governs-claude-fable-5"
+  },
+  {
     "title": "Giving companies more control over their AI agents, with NVIDIA",
     "category": "announcement",
     "date": "2026-09-28",
     "summary": "Claude Managed Agents offers composable APIs for production agents with layered security, credential management, and audit trails. Credentials are held in separate vaults inaccessible to agents; NVIDIA OpenShell integration enforces policies outside the model, enabling enterprises to formally verify agent access and set narrow permissions.",
     "url": "https://claude.com/blog/giving-companies-more-control-over-their-ai-agents-with-nvidia"
-  },
-  {
-    "title": "Coding sessions are longer and use more context. Claude Opus 5.5 is built with that in mind.",
-    "category": "announcement",
-    "date": "2026-09-24",
-    "summary": "Claude Opus 5.5 is optimized for long, context-heavy coding and costs 40% less to run than Opus 5. Cached token pricing dropped 60% with 50% fewer cache misses; output is 30% faster than its predecessor.",
-    "url": "https://claude.com/blog/claude-opus-5-5-built-for-coding-sessions-that-use-more-context"
-  },
-  {
-    "title": "Claude Tag now supports personal connectors in channels",
-    "category": "feature update",
-    "date": "2026-09-24",
-    "summary": "Claude Tag in Slack channels now enables users to invoke personal connectors (Drive, calendar, CRM) alongside channel connectors, with audit trails preserved under each user's account. Responses can be reviewed before posting or auto-posted with sensitive content flagging.",
-    "url": "https://claude.com/blog/claude-tag-now-supports-personal-connectors-in-channels"
-  },
-  {
-    "title": "Agents you can coach: how Asana builds human-agent teams with Claude",
-    "category": "announcement",
-    "date": "2026-09-29",
-    "summary": "Asana integrates AI agents into its Work Graph as configurable teammates with persistent memory and explicit permissions. Agent work is visible in shared tasks for colleagues to coach and refine; access is scoped by project, document, and app.",
-    "url": "https://claude.com/blog/agents-you-can-coach-how-asana-builds-human-agent-teams-with-claude"
-  },
-  {
-    "title": "Projects redesigned: from folder to conversation",
-    "category": "feature update",
-    "date": "2026-09-17",
-    "summary": "Claude Code Projects now features multi-threaded workspaces where a coordinator orchestrates parallel work across independent threads. Added shared memory accumulates project context and decisions, with a library for files and artifacts. In beta for Claude Pro/Max subscribers using cloud sessions; Team/Enterprise rollout planned next.",
-    "url": "https://claude.com/blog/projects-redesigned"
-  },
-  {
-    "title": "How to prepare for AI-driven code modernization projects",
-    "category": "announcement",
-    "date": "2026-09-23",
-    "summary": "Anthropic's forward-deployed engineers provide a 6-step framework for organizing AI-driven code modernization in critical and regulated systems. Introduces 'certificates' (conditions every change must meet) and 'promotion policies' (review depth based on risk), with recommendations for dedicated environments, CI/CD readiness, and pilot testing.",
-    "url": "https://claude.com/blog/how-to-prepare-for-ai-driven-code-modernization-projects"
   }
 ]
