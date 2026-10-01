@@ -1,44 +1,44 @@
 [
   {
+    "title": "Claude for Government is now generally available",
+    "category": "announcement",
+    "date": "2026-09-30",
+    "summary": "Claude for Government has moved from public beta to GA for federal and state agencies, operating in a FedRAMP High authorized environment. It offers usage-based pricing with hard spending caps and department-level admin controls, keeps conversation history local on agency devices, and requires two-person approval for sensitive operations with full audit logging.",
+    "url": "https://claude.com/blog/claude-for-government-is-now-generally-available"
+  },
+  {
+    "title": "Coding sessions are longer and use more context. Claude Opus 5.5 is built with that in mind.",
+    "category": "announcement",
+    "date": "2026-09-24",
+    "summary": "Claude Opus 5.5 is optimized for extended, context-heavy coding sessions with 40% lower token costs than Opus 5 and 60% cheaper cached-token pricing. The model delivers 30% faster output, 50% fewer cache misses, and requires fewer turns on complex tasks as context usage has grown 2.6x.",
+    "url": "https://claude.com/blog/claude-opus-5-5-built-for-coding-sessions-that-use-more-context"
+  },
+  {
+    "title": "Claude Tag now supports personal connectors in channels",
+    "category": "feature update",
+    "date": "2026-09-24",
+    "summary": "Claude Tag Slack integration now lets users add personal connectors like calendar, drive, and CRM alongside shared channel connectors, with optional review mode and sensitivity screening. Access logs to the individual user's account rather than the channel service account, while unattended operations continue using shared connectors.",
+    "url": "https://claude.com/blog/claude-tag-now-supports-personal-connectors-in-channels"
+  },
+  {
+    "title": "Agents you can coach: how Asana builds human-agent teams with Claude",
+    "category": "announcement",
+    "date": "2026-09-29",
+    "summary": "Asana embeds Claude agents as visible, auditable teammates in its Work Graph with defined roles and shared memory, using them for Slack Q&A, renewal briefings, and cycle planning. Agent performance improves through human coaching, with clear separation between training and permanent memory management.",
+    "url": "https://claude.com/blog/agents-you-can-coach-how-asana-builds-human-agent-teams-with-claude"
+  },
+  {
+    "title": "How to prepare for AI-driven code modernization projects",
+    "category": "announcement",
+    "date": "2026-09-23",
+    "summary": "Enterprise guide for scaling large-scale code modernization with AI agents, recognizing that bottlenecks shift from code production to organizational readiness. Recommends defining modernization types, establishing testable completion certificates, implementing tiered promotion to avoid review bottlenecks, and piloting on small sections to measure token costs.",
+    "url": "https://claude.com/blog/how-to-prepare-for-ai-driven-code-modernization-projects"
+  },
+  {
     "title": "Build plugins for Claude",
     "category": "feature update",
     "date": "2026-09-25",
     "summary": "Anthropic launched a plugin directory submission portal for publishing MCP connectors and Agent Skills with built-in validation, safety scanning, and usage analytics. The system supports MCP 2.0 including interactive MCP Apps and Enterprise Managed Auth, establishing the primary distribution channel for third-party extensions.",
     "url": "https://claude.com/blog/build-plugins-for-claude"
-  },
-  {
-    "title": "Claude Marketplace: one place to discover plugins, agents, and services from our partners",
-    "category": "announcement",
-    "date": "2026-09-23",
-    "summary": "Anthropic launched Claude Marketplace, a unified platform hosting 2,000+ connectors, plugins, agents, and services from partners like Google, Microsoft, Salesforce, and Snowflake. Enterprises can apply committed Anthropic spend toward partner offerings, streamlining procurement for AI-integrated workflows.",
-    "url": "https://claude.com/blog/claude-marketplace"
-  },
-  {
-    "title": "How Anthropic's sales team rebuilt inbound with Claude Managed Agents",
-    "category": "announcement",
-    "date": "2026-09-30",
-    "summary": "Anthropic deployed a Claude-powered sales agent on Claude Managed Agents to handle inbound inquiries, answering pricing and compliance questions while guiding prospects through checkout 24/7. The agent doubled lead-to-opportunity conversion rates and reduced deal closing time by approximately five days.",
-    "url": "https://claude.com/blog/how-anthropics-sales-team-rebuilt-inbound-with-claude-managed-agents"
-  },
-  {
-    "title": "How CodeRabbit, Power Digital, and ThoughtSpot scale with Snowflake and Vercel on Claude Marketplace",
-    "category": "announcement",
-    "date": "2026-09-23",
-    "summary": "CodeRabbit, Power Digital, and ThoughtSpot demonstrate using Anthropic commitments to purchase Snowflake and Vercel services through Claude Marketplace. By consolidating third-party spend under a single approval process, these companies avoid separate budget requests and streamline procurement.",
-    "url": "https://claude.com/blog/how-coderabbit-power-digital-and-thoughtspot-scale-with-snowflake-and-vercel-on-claude-marketplace"
-  },
-  {
-    "title": "Working at the frontier: How Balyasny Asset Management evaluates and governs Claude Fable 5",
-    "category": "announcement",
-    "date": "2026-09-17",
-    "summary": "Balyasny Asset Management deployed Claude Fable 5 in its BAMAgent platform for financial research, achieving 89.4% accuracy on real tasks and reducing merger-arbitrage analysis time from days to hours. The firm implements governance through data boundaries, least-privilege access, and mandatory human review.",
-    "url": "https://claude.com/blog/working-at-the-frontier-how-balyasny-asset-management-evaluates-and-governs-claude-fable-5"
-  },
-  {
-    "title": "Giving companies more control over their AI agents, with NVIDIA",
-    "category": "announcement",
-    "date": "2026-09-28",
-    "summary": "Claude Managed Agents offers composable APIs for production agents with layered security, credential management, and audit trails. Credentials are held in separate vaults inaccessible to agents; NVIDIA OpenShell integration enforces policies outside the model, enabling enterprises to formally verify agent access and set narrow permissions.",
-    "url": "https://claude.com/blog/giving-companies-more-control-over-their-ai-agents-with-nvidia"
   }
 ]
