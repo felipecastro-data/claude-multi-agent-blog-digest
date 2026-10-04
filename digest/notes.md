@@ -1,99 +1,99 @@
 ## Customize Claude Code with mods
-- Mods are TypeScript functions that change Claude Code behavior (prompt rewrites, UI changes, new functionality)
-- Hook into events to rewrite prompts or block/rewrite/retry tool calls
-- Some built-in features now ship as replaceable mods
-- Team/Enterprise plans get a security-default mod plus admin plugin controls
-- Live in CLI and desktop app; distributed via plugins in the Claude directory
+- Mods are small TypeScript functions that customize Claude Code behavior, UI, and functionality
+- Available in Claude Code CLI and desktop app, shipped inside plugins for sharing
+- Install from Claude directory via /plugin, or ask Claude Code to generate and hot-reload mods in-session
+- Enterprises can build CI/CD dashboards, production safeguards, audit logging that stack with security defaults
+- Lets developers shape the tool without waiting for official releases
 Category: feature update
 Date: 2026-10-01
 URL: https://claude.com/blog/claude-code-mods
 
 ## Claude for Government is now generally available
-- GA for federal and state agencies in a FedRAMP High authorized environment (beta began in July)
-- No seat fees; usage-based pay with fixed increments and hard spending caps
-- Audit logs, two-person approval for sensitive operations, metering-only usage exports
-- Claude Code CLI and Claude for Microsoft 365 enter early access
-- Conversation history stays on agency-managed devices
+- Graduates from public beta to GA for federal and state agencies in a FedRAMP High authorized environment
+- Usage-only pricing, no seat fees, fixed increments with hard spending caps
+- Admin controls: audit logs, ATO-supporting documentation, SSO, sub-agency configuration
+- Claude Code CLI and Claude for Microsoft 365 in early access via same environment
+- Agencies can contract directly on GA terms
 Category: announcement
 Date: 2026-09-30
 URL: https://claude.com/blog/claude-for-government-is-now-generally-available
 
 ## How Anthropic's sales team rebuilt inbound with Claude Managed Agents
-- Claude buying agent deployed on Contact Sales and Pricing pages, handling thousands of conversations daily
-- Escalated leads convert to opportunities over 2x as often and close about 5 days faster
-- Reps shifted from repetitive questions to education and live conversations; one rep closed 2.5x more deals
-- Built simply: a prompt, a few tools, and Claude on Managed Agents; non-engineers edit the prompt in Console
-- Recommends fitting plans (including lower tiers) with 24/7 multilingual support
+- Anthropic deployed a Claude buying agent on Contact Sales and Pricing pages
+- Handles thousands of daily conversations, answers questions, guides purchases or escalates to reps
+- Sales cycles shortened by about five days
+- Conversion rates more than doubled
+- Available 24/7 in multiple languages, freeing reps for qualified leads
 Category: announcement
 Date: 2026-09-30
 URL: https://claude.com/blog/how-anthropics-sales-team-rebuilt-inbound-with-claude-managed-agents
 
 ## Agents you can coach: how Asana builds human-agent teams with Claude
-- Asana embeds AI agents as teammates in its Work Graph with roles, permissions, and shared memory
-- Agents have profiles, access controls, and activity feeds, and can be coached by designated team members
-- Shared memory lets agents retain learning across tasks; only admins make permanent behavior changes
-- Agents post reasoning and steps in shared tasks so reviewers can coach in real time
-- Uses: Slack product Q&A, at-risk renewal briefings, engineering cycle planning
+- Asana agents work inside the same Work Graph as humans, with roles, tasks, and visible activity
+- Scoped permissions per job; only admins/editors can update permanent memory
+- Reviewers see agent plans and steps and coach toward outcomes
+- Use cases: Slack product Q&A, at-risk renewal exec briefings, engineering cycle planning
+- Durable memory and audit trails make learning compound across runs
 Category: announcement
 Date: 2026-09-29
 URL: https://claude.com/blog/agents-you-can-coach-how-asana-builds-human-agent-teams-with-claude
 
 ## Giving companies more control over their AI agents, with NVIDIA
-- Anthropic and NVIDIA pair Claude Managed Agents with NVIDIA's Open Agent Safety Platform
-- Credentials are vault-protected separately from agent execution
-- NVIDIA OpenShell (open source, Apache 2.0) enforces policy on agent actions outside the model
-- Features: long-running sessions, multi-agent orchestration, sandboxing, audit trails, policy verification
-- Available now; adopters include Notion, Rakuten, Asana
+- Claude Managed Agents: composable APIs for production agents with sandboxing and credential management
+- Integrates with NVIDIA OpenShell to enforce controls outside the model
+- Credentials held in a separate vault; agents never see passwords or keys
+- Execution tracing, access-control integration, and logging of agent decisions for compliance
+- Matters as agents gain more access to business systems
 Category: announcement
 Date: 2026-09-28
 URL: https://claude.com/blog/giving-companies-more-control-over-their-ai-agents-with-nvidia
 
 ## Build plugins for Claude
-- Developers on paid plans can submit plugins via a directory portal with auto-validation and safety scanning
-- Two paths: single MCP connectors or plugin bundles (MCP servers plus skills on GitHub)
-- Published plugins get install metrics by surface, view counts, and search data
-- Claude now supports MCP 2.0 (MCP Apps for interactive UI, Enterprise Managed Auth)
-- Unified discovery across Claude and Claude Code rolling out over coming weeks
+- New directory submission portal for developers on paid plans, with auto-validation and safety scanning
+- Submit a single MCP connector or bundle MCP servers with skills via GitHub
+- Post-publish analytics: installs by surface, version performance, discovery
+- Claude supports MCP 2.0, including MCP Apps and Enterprise Managed Auth
+- Plugins become the primary extension method; skills and connectors remain building blocks
 Category: feature update
 Date: 2026-09-25
 URL: https://claude.com/blog/build-plugins-for-claude
 
 ## Claude Tag now supports personal connectors in channels
-- Claude Tag in Slack can use users' personal connectors (Drive, calendars, CRM), not just admin-attached ones
-- Individuals control how info surfaces via review or auto mode
-- Admins can provide shared tools via agent identity, restrict to personal connectors, or set tool-by-tool access
-- Launching on Team plans now; Enterprise to follow
-- Enables role-specific info in shared channels with personal auth logs
+- Claude Tag can use a user's personal connectors (Drive, calendar, CRM) in Slack channel requests
+- Previously only admin-attached channel connectors were usable
+- Users can review responses before posting or use auto-mode screening; can disconnect anytime
+- Admins on Enterprise can mandate review
+- Available on Team plans now; Enterprise coming soon
 Category: feature update
 Date: 2026-09-24
 URL: https://claude.com/blog/claude-tag-now-supports-personal-connectors-in-channels
 
 ## Coding sessions are longer and use more context. Claude Opus 5.5 is built with that in mind.
-- Opus 5.5 costs about 40% less to run than Opus 5; cached token prices down 60%
-- Developer data: Claude works 3.3x longer per prompt with 2.6x more context per request
-- Fewer turns to finish tasks and output about 30% faster
-- Cache miss rates down over 50% via Claude Code improvements (e.g., change effort mid-session without resetting cache)
-- Tips: pick the model upfront, use one-hour cache lifetimes, route context-heavy work to Opus 5.5
+- New model for extended, context-heavy coding sessions, about 40% cheaper than Opus 5
+- Cached token reads 60% cheaper; Claude Code cache misses reduced over 50%
+- Usage trends: 2.6x more context per request, Claude works 3.3x longer per prompt with 68% fewer interruptions
+- Tips: keep consistent model choice, one-hour cache lifetimes, compact before stepping away
+- Lowers bills for long-running agentic workflows
 Category: announcement
 Date: 2026-09-24
 URL: https://claude.com/blog/claude-opus-5-5-built-for-coding-sessions-that-use-more-context
 
 ## How CodeRabbit, Power Digital, and ThoughtSpot scale with Snowflake and Vercel on Claude Marketplace
-- Claude Marketplace lets companies redirect part of their Anthropic commitment to partners like Snowflake and Vercel
-- Power Digital expanded Snowflake capacity, running Claude on client data within governance
-- ThoughtSpot applied its commitment to Snowflake's inference API for agentic products
-- CodeRabbit moved to a committed Vercel plan for sandbox isolation and agent workflow coordination
-- Partners gain streamlined customer acquisition and shorter sales cycles
+- Claude Marketplace lets customers apply Anthropic commitments to tools like Snowflake and Vercel
+- Three customers expanded usage by redirecting existing Anthropic budget
+- Deployment timelines cut from weeks to days (CodeRabbit upgraded Vercel within a week)
+- Consolidates procurement and vendor management
+- Still in limited preview; contact account team for eligibility
 Category: announcement
 Date: 2026-09-23
 URL: https://claude.com/blog/how-coderabbit-power-digital-and-thoughtspot-scale-with-snowflake-and-vercel-on-claude-marketplace
 
 ## How to prepare for AI-driven code modernization projects
-- Six-step framework: target architecture, verification certificates, promotion policies, infrastructure, agentic workflows, pilot then scale
-- Certificate-driven validation (test coverage, performance, security scans) instead of relying solely on human review
-- Tiered review by risk so changes reach production faster than human review alone allows
-- Three types: uplift (version bumps), transform (language rewrites), reimagine (architectural rebuilds)
-- Pilot on a small codebase slice to measure token usage and estimate full cost
+- Six-step framework for preparing large-scale modernization with AI agents
+- Modernizations once multi-year can finish in months or weeks; bottleneck shifts to org readiness
+- Define type (uplift, transform, reimagine), behavioral specs, and a testable "certificate"
+- Set a tiered promotion policy; prepare infra, teams, security approvals early
+- Pilot custom Claude Code workflows on small codebases and measure token costs to budget
 Category: announcement
 Date: 2026-09-23
 URL: https://claude.com/blog/how-to-prepare-for-ai-driven-code-modernization-projects
