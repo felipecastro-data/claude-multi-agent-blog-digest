@@ -1,44 +1,44 @@
 [
   {
-    "title": "How Cresta turned CX expertise into an agent builder on the Claude Agent SDK",
-    "category": "announcement",
-    "date": "2026-10-05",
-    "summary": "Cresta's Conductor is a meta-agent built on the Claude Agent SDK that transforms business context into production-ready CX agents, cutting deployment time by roughly half. It captures reusable patterns and business rules for consistency while using built-in evals to balance deterministic and flexible workflows. This tool evolved from an internal forward-deployed practice into a customer-facing product.",
-    "url": "https://claude.com/blog/how-cresta-turned-cx-expertise-into-an-agent-builder-on-the-claude-agent-sdk"
-  },
-  {
-    "title": "Giving companies more control over their AI agents, with NVIDIA",
+    "title": "Claude Sonnet 5.5",
     "category": "announcement",
     "date": "2026-09-28",
-    "summary": "Claude Managed Agents now integrate with NVIDIA OpenShell for layered security: credentials stored in a separate vault, policies enforced outside the model, sandboxing, and audit trails blocking unauthorized actions. Protection doesn't depend on any single layer and integrates with existing access controls. Managed Agents launch today, with OpenShell open sourced under Apache 2.0.",
-    "url": "https://claude.com/blog/giving-companies-more-control-over-their-ai-agents-with-nvidia"
+    "summary": "Claude Sonnet 5.5 is 30% faster than Sonnet 5 with the same per-token pricing, delivering roughly 30% lower cost per task through fewer tokens and adaptive reasoning enabled by default. Breaking API changes include forced tool_choice replaced by auto plus strict tools, and computer use moved to toolset format. New cybersecurity safeguards and distillation protections make it ideal for everyday coding; reserve Opus 5.5 for complex work.",
+    "url": "https://www.anthropic.com/claude-sonnet-5-5"
   },
   {
-    "title": "Customize Claude Code with mods",
-    "category": "feature update",
-    "date": "2026-10-01",
-    "summary": "Mods are stackable TypeScript functions that customize Claude Code's behavior, UI, and features via prompts, elements, or capabilities. They run unsandboxed with full machine access and are shared via plugins, so admins should control loading to enforce security. Users should install only from trusted sources due to the elevated permissions required.",
-    "url": "https://claude.com/blog/claude-code-mods"
-  },
-  {
-    "title": "How CodeRabbit, Power Digital, and ThoughtSpot scale with Snowflake and Vercel on Claude Marketplace",
+    "title": "We're expanding the Claude Startups program to help founders build",
     "category": "announcement",
-    "date": "2026-09-23",
-    "summary": "Claude Marketplace lets companies with Anthropic commitments use pre-approved budgets to provision third-party tools like Snowflake and Vercel under one agreement. CodeRabbit upgraded Vercel in a week; Power Digital scaled from 12 engineers to 800+ users; ThoughtSpot integrated Snowflake's inference API. The marketplace removes procurement friction for managing multi-tool stacks in limited preview.",
-    "url": "https://claude.com/blog/how-coderabbit-power-digital-and-thoughtspot-scale-with-snowflake-and-vercel-on-claude-marketplace"
+    "date": "2026-10-06",
+    "summary": "The Claude Startups program now offers $7,000 in Claude products and credits, plus a new Startup Stack providing up to $45,000 in partner tool discounts. Added benefits include virtual office hours with Applied AI and marketplace support. Founders with companies established within 5 years or funded within 2 years are eligible.",
+    "url": "https://claude.com/blog/were-expanding-the-claude-startups-program-to-help-founders-build"
   },
   {
-    "title": "Claude for Government is now generally available",
+    "title": "How Anthropic's sales team rebuilt inbound with Claude Managed Agents",
     "category": "announcement",
     "date": "2026-09-30",
-    "summary": "Claude for Government is now generally available to federal and state agencies in a FedRAMP High environment with usage-only pricing and no seat fees. It includes admin controls for audit logs, ATO documentation, and SSO, with Claude Code CLI and Claude for Microsoft 365 in early access through the same environment.",
-    "url": "https://claude.com/blog/claude-for-government-is-now-generally-available"
+    "summary": "A Claude Managed Agents buying agent deployed on Anthropic's Contact Sales and Pricing pages handles thousands of daily pricing and purchasing conversations, achieving over 2x lead conversion rates and closing deals ~5 days faster than the previous form. One engineer shipped the first version in weeks, freeing sales reps to focus on complex deals.",
+    "url": "https://claude.com/blog/how-anthropics-sales-team-rebuilt-inbound-with-claude-managed-agents"
   },
   {
-    "title": "Coding sessions are longer and use more context. Claude Opus 5.5 is built with that in mind.",
+    "title": "Agents you can coach: how Asana builds human-agent teams with Claude",
     "category": "announcement",
-    "date": "2026-09-24",
-    "summary": "Claude Opus 5.5 is a new model for extended coding sessions, offering 40% lower costs than Opus 5 with 60% cheaper cached token reads and over 50% fewer cache misses. It enables 3.3x longer interactions with 68% fewer interruptions, directly reducing expenses for long-running agent workflows.",
-    "url": "https://claude.com/blog/claude-opus-5-5-built-for-coding-sessions-that-use-more-context"
+    "date": "2026-09-29",
+    "summary": "Asana integrates AI agents as coworkers within its Work Graph, giving them access to the same projects and tasks as humans with scoped permissions by role. Agents' plans and steps are visible in shared tasks for human review and redirection, with shared organizational memory preventing knowledge loss across team collaboration.",
+    "url": "https://claude.com/blog/agents-you-can-coach-how-asana-builds-human-agent-teams-with-claude"
+  },
+  {
+    "title": "Building with Claude Sonnet 5.5",
+    "category": "feature update",
+    "date": "2026-09-28",
+    "summary": "Sonnet 5.5 runs 30% faster than Sonnet 5 with thinking enabled by default; use the between_tools option to disable upfront thinking if needed. Updated API replaces forced tool_choice with auto plus strict: true and uses toolset format for computer use. Best for high-volume coding, document creation, and repeated agent tasks; reserve Opus 5.5 for work requiring careful judgment.",
+    "url": "https://claude.dev/blog/building-with-claude-sonnet-5-5/"
+  },
+  {
+    "title": "Automating eval design and hillclimbing with Claude",
+    "category": "feature update",
+    "date": "2026-09-28",
+    "summary": "Claude Code now includes /claude-api build-eval and hillclimb commands to automate evaluation design, helping validate graders, check ambiguity, and detect overfitting. These tools guide sampling production tasks with train/test splits and automatically revert changes that only improve training performance, ensuring evals are production-ready.",
+    "url": "https://claude.dev/blog/automating-eval-design-and-hillclimbing/"
   }
 ]
