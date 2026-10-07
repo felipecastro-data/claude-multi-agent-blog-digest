@@ -1,44 +1,44 @@
 [
   {
-    "title": "Claude Sonnet 5.5",
-    "category": "announcement",
-    "date": "2026-09-28",
-    "summary": "Claude Sonnet 5.5 is 30% faster than Sonnet 5 with the same per-token pricing, delivering roughly 30% lower cost per task through fewer tokens and adaptive reasoning enabled by default. Breaking API changes include forced tool_choice replaced by auto plus strict tools, and computer use moved to toolset format. New cybersecurity safeguards and distillation protections make it ideal for everyday coding; reserve Opus 5.5 for complex work.",
-    "url": "https://www.anthropic.com/claude-sonnet-5-5"
+    "title": "Claude Code in the cloud: a field guide to cloud sessions",
+    "category": "feature update",
+    "date": "2026-10-06",
+    "summary": "Cloud sessions run Claude Code on dedicated VMs with isolated repos, ports, and branches, enabling parallel task execution and long-running operations. Seven workflow patterns support parallel backlogs, fix validation, CI auto-repair, sandboxing untrusted code, and more. Available in Pro, Max, Team, and Enterprise plans.",
+    "url": "https://claude.dev/blog/claude-code-in-the-cloud/"
   },
   {
-    "title": "We're expanding the Claude Startups program to help founders build",
+    "title": "Expanding the Cyber Verification Program",
     "category": "announcement",
     "date": "2026-10-06",
-    "summary": "The Claude Startups program now offers $7,000 in Claude products and credits, plus a new Startup Stack providing up to $45,000 in partner tool discounts. Added benefits include virtual office hours with Applied AI and marketplace support. Founders with companies established within 5 years or funded within 2 years are eligible.",
-    "url": "https://claude.com/blog/were-expanding-the-claude-startups-program-to-help-founders-build"
+    "summary": "The Cyber Verification Program expands with three tiers—Defense Access, Red Team Access, and Specialized Access—consolidating Project Glasswing with the original CVP. It supports Claude Opus 5.5, Sonnet 5.5, Mythos 5.1, and future models, with safeguards scaled by access tier. Glasswing partners found 129,000+ verified vulnerabilities in four months, thousands critical or high severity.",
+    "url": "https://www.anthropic.com/news/cyber-verification-program"
   },
   {
-    "title": "How Anthropic's sales team rebuilt inbound with Claude Managed Agents",
-    "category": "announcement",
-    "date": "2026-09-30",
-    "summary": "A Claude Managed Agents buying agent deployed on Anthropic's Contact Sales and Pricing pages handles thousands of daily pricing and purchasing conversations, achieving over 2x lead conversion rates and closing deals ~5 days faster than the previous form. One engineer shipped the first version in weeks, freeing sales reps to focus on complex deals.",
-    "url": "https://claude.com/blog/how-anthropics-sales-team-rebuilt-inbound-with-claude-managed-agents"
-  },
-  {
-    "title": "Agents you can coach: how Asana builds human-agent teams with Claude",
-    "category": "announcement",
-    "date": "2026-09-29",
-    "summary": "Asana integrates AI agents as coworkers within its Work Graph, giving them access to the same projects and tasks as humans with scoped permissions by role. Agents' plans and steps are visible in shared tasks for human review and redirection, with shared organizational memory preventing knowledge loss across team collaboration.",
-    "url": "https://claude.com/blog/agents-you-can-coach-how-asana-builds-human-agent-teams-with-claude"
-  },
-  {
-    "title": "Building with Claude Sonnet 5.5",
+    "title": "Getting started with Claude Code mods",
     "category": "feature update",
-    "date": "2026-09-28",
-    "summary": "Sonnet 5.5 runs 30% faster than Sonnet 5 with thinking enabled by default; use the between_tools option to disable upfront thinking if needed. Updated API replaces forced tool_choice with auto plus strict: true and uses toolset format for computer use. Best for high-volume coding, document creation, and repeated agent tasks; reserve Opus 5.5 for work requiring careful judgment.",
-    "url": "https://claude.dev/blog/building-with-claude-sonnet-5-5/"
+    "date": "2026-10-01",
+    "summary": "Claude Code mods are small JavaScript/TypeScript files extending Claude Code's capabilities without API knowledge—describe what you want in plain language and Claude builds it. Hot reload enables live testing without restart, and $.state persists data across reloads for stateful workflows.",
+    "url": "https://claude.dev/blog/getting-started-with-claude-code-mods/"
   },
   {
-    "title": "Automating eval design and hillclimbing with Claude",
+    "title": "Claude now works with Google Docs, Sheets, and Slides",
     "category": "feature update",
-    "date": "2026-09-28",
-    "summary": "Claude Code now includes /claude-api build-eval and hillclimb commands to automate evaluation design, helping validate graders, check ambiguity, and detect overfitting. These tools guide sampling production tasks with train/test splits and automatically revert changes that only improve training performance, ensuring evals are production-ready.",
-    "url": "https://claude.dev/blog/automating-eval-design-and-hillclimbing/"
+    "date": "2026-10-06",
+    "summary": "Claude integrates with Google Docs, Sheets, and Slides, extending AI capabilities into Google Workspace document workflows. Specific features and detailed availability information were unavailable at publication time.",
+    "url": "https://www.anthropic.com/resources/articles/claude-now-works-in-google-docs-sheets-and-slides"
+  },
+  {
+    "title": "Customize Claude Code with mods",
+    "category": "feature update",
+    "date": "2026-10-01",
+    "summary": "This companion post announces Claude Code mods functionality. See the getting-started guide for implementation details and capabilities.",
+    "url": "https://www.anthropic.com/resources/articles/claude-code-mods"
+  },
+  {
+    "title": "How Comcast and Booz Allen use Claude Mythos to find exploit chains and secure their codebases",
+    "category": "announcement",
+    "date": "2026-10-06",
+    "summary": "A customer story on applying Claude Mythos to security work, including exploit-chain discovery and codebase hardening in large enterprises. Detailed implementation specifics were unavailable at publication time.",
+    "url": "https://www.anthropic.com/resources/articles/how-comcast-booz-allen-use-claude-mythos-to-secure-their-codebases"
   }
 ]
