@@ -1,44 +1,44 @@
 [
   {
-    "title": "Claude Code in the cloud: a field guide to cloud sessions",
-    "category": "feature update",
-    "date": "2026-10-06",
-    "summary": "Cloud sessions run Claude Code on dedicated VMs with isolated repos, ports, and branches, enabling parallel task execution and long-running operations. Seven workflow patterns support parallel backlogs, fix validation, CI auto-repair, sandboxing untrusted code, and more. Available in Pro, Max, Team, and Enterprise plans.",
-    "url": "https://claude.dev/blog/claude-code-in-the-cloud/"
-  },
-  {
-    "title": "Expanding the Cyber Verification Program",
+    "title": "Claude Haiku 5.5",
     "category": "announcement",
-    "date": "2026-10-06",
-    "summary": "The Cyber Verification Program expands with three tiers—Defense Access, Red Team Access, and Specialized Access—consolidating Project Glasswing with the original CVP. It supports Claude Opus 5.5, Sonnet 5.5, Mythos 5.1, and future models, with safeguards scaled by access tier. Glasswing partners found 129,000+ verified vulnerabilities in four months, thousands critical or high severity.",
-    "url": "https://www.anthropic.com/news/cyber-verification-program"
-  },
-  {
-    "title": "Getting started with Claude Code mods",
-    "category": "feature update",
-    "date": "2026-10-01",
-    "summary": "Claude Code mods are small JavaScript/TypeScript files extending Claude Code's capabilities without API knowledge—describe what you want in plain language and Claude builds it. Hot reload enables live testing without restart, and $.state persists data across reloads for stateful workflows.",
-    "url": "https://claude.dev/blog/getting-started-with-claude-code-mods/"
+    "date": "2026-10-07",
+    "summary": "Claude Haiku 5.5 is Anthropic's cheapest, fastest, and most capable small model, available as claude-haiku-5-5 on AWS, Google Cloud, and Azure. It costs about 75% less to run than Haiku 4.5 on average and is the first Haiku-class model with an adjustable effort setting. It suits high-volume work like classification, summaries, and subagents, but is not a replacement for Opus or Sonnet 5.5 on complex agentic coding.",
+    "url": "https://www.anthropic.com/claude-haiku-5-5"
   },
   {
     "title": "Claude now works with Google Docs, Sheets, and Slides",
     "category": "feature update",
     "date": "2026-10-06",
-    "summary": "Claude integrates with Google Docs, Sheets, and Slides, extending AI capabilities into Google Workspace document workflows. Specific features and detailed availability information were unavailable at publication time.",
-    "url": "https://www.anthropic.com/resources/articles/claude-now-works-in-google-docs-sheets-and-slides"
+    "summary": "Claude for Google Workspace is in public beta as an add-on for all paid plans, along with new beta connectors. A sidebar in Docs, Sheets, and Slides reads content and edits it in place, with change proposal cards in Docs, formulas, pivot tables, and charts in Sheets, and themed slides with layout checks in Slides. Users choose per-edit approval or automatic apply, edits follow Google sharing permissions, and admins deploy through the Google Admin console after Team and Enterprise owners enable connectors.",
+    "url": "https://claude.com/resources/articles/claude-now-works-in-google-docs-sheets-and-slides"
+  },
+  {
+    "title": "Automating eval design and hillclimbing with Claude",
+    "category": "feature update",
+    "date": "2026-09-28",
+    "summary": "This playbook covers building evals and improving apps against them without overfitting, adding /claude-api build-eval and /claude-api hillclimb commands to the claude-api skill in Claude Code. build-eval interviews you, samples inputs, proposes the cheapest fitting grader, and runs baseline and diagnostics, while hillclimb makes one change per round and keeps it only if both train and test scores improve. Example results include cost per ticket dropping from 4.6 cents to about 1 cent and the claude-api skill eval pass rate rising from 66.1% to 87.9%.",
+    "url": "https://claude.dev/blog/automating-eval-design-and-hillclimbing/"
   },
   {
     "title": "Customize Claude Code with mods",
     "category": "feature update",
     "date": "2026-10-01",
-    "summary": "This companion post announces Claude Code mods functionality. See the getting-started guide for implementation details and capabilities.",
-    "url": "https://www.anthropic.com/resources/articles/claude-code-mods"
+    "summary": "Claude Code mods are small TypeScript functions that change Claude Code's behavior and appearance, shipped in plugins that work in the CLI and desktop. They can hook into tool calls, permission requests, and screen drawing, rewrite prompts, block or retry tool calls, edit UI, and replace built-ins like /diff, going beyond hooks that could not rewrite events or draw UI. Mods are not sandboxed and have the same machine access as Claude Code, so admins can manage allowed plugin marketplaces and users should trust their sources.",
+    "url": "https://claude.com/resources/articles/claude-code-mods"
+  },
+  {
+    "title": "We're expanding the Claude Startups program to help founders build",
+    "category": "announcement",
+    "date": "2026-10-06",
+    "summary": "The Claude Startups program is opening to more founders building on Claude. Eligible members receive a year of Claude Team (up to 5 Premium seats), a one-time $1,000 API credit, and Claude Startup Stack partner discounts and credits worth up to $45,000. Benefits also include virtual office hours with the Applied AI team and a listing on Claude Marketplace, for companies founded in the last 5 years or funded in the last 2.",
+    "url": "https://claude.com/resources/articles/were-expanding-the-claude-startups-program-to-help-founders-build"
   },
   {
     "title": "How Comcast and Booz Allen use Claude Mythos to find exploit chains and secure their codebases",
     "category": "announcement",
     "date": "2026-10-06",
-    "summary": "A customer story on applying Claude Mythos to security work, including exploit-chain discovery and codebase hardening in large enterprises. Detailed implementation specifics were unavailable at publication time.",
-    "url": "https://www.anthropic.com/resources/articles/how-comcast-booz-allen-use-claude-mythos-to-secure-their-codebases"
+    "summary": "Comcast and Booz Allen describe using Claude Mythos-class models through Project Glasswing to find and fix vulnerabilities, reasoning across code, config, and live behavior to uncover exploit chains of minor weaknesses. Comcast found a critical auth flaw across 258 systems (about 170M lines of code) and fixed it before exploitation, while a Booz Allen analyst reviewed 8 production systems across 138 repos in 12 days. Anthropic's takeaway is that validating findings is now the bottleneck, so continuous security review is urged.",
+    "url": "https://claude.com/resources/articles/how-comcast-booz-allen-use-claude-mythos-to-secure-their-codebases"
   }
 ]

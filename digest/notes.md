@@ -1,99 +1,99 @@
-## Automating eval design and hillclimbing with Claude
-- Two new claude-api skill commands: `/claude-api build-eval` and `/claude-api hillclimb`
-- build-eval guides principled eval creation with grader validation (production-like tasks, headroom, low variance)
-- hillclimb auto-optimizes against an eval with train/test splits and overfitting guards (reverts patches that only help train)
-- Example: support benchmark 74.4% at 4.6c/ticket to 98.9% at 1c/ticket; claude-api skill eval 66.1% to 87.9%
-- Get started with `claude update`. Note: article page says Sep 28, 2026; listing says Oct 7, 2026
-Category: feature update
+## Claude Haiku 5.5
+- Anthropic's cheapest, fastest, most capable small model; ID claude-haiku-5-5; on AWS, Google Cloud, Azure
+- About 75% cheaper to run than Haiku 4.5 on average
+- First Haiku-class model with an adjustable effort setting
+- Sonnet 5.5 cache-read price halved; Max and Team subscribers get a new monthly API credit
+- Suited to high-volume work (classification, summaries, subagents); not a replacement for Opus/Sonnet 5.5 on complex agentic coding
+Category: announcement
 Date: 2026-10-07
+URL: https://www.anthropic.com/claude-haiku-5-5
+
+## Automating eval design and hillclimbing with Claude
+- Playbook for building evals and improving apps against them without overfitting
+- Adds /claude-api build-eval and /claude-api hillclimb commands to the claude-api skill in Claude Code
+- build-eval interviews you, samples inputs, proposes the cheapest fitting grader, runs baseline and diagnostics
+- hillclimb makes one change per round and keeps it only if both train and test scores improve
+- Example results: cost per ticket 4.6c to about 1c; claude-api skill eval pass rate 66.1% to 87.9%
+Category: feature update
+Date: 2026-10-07 (listing date; article page itself says Sep 28, 2026)
 URL: https://claude.dev/blog/automating-eval-design-and-hillclimbing/
 
 ## How Comcast and Booz Allen use Claude Mythos to find exploit chains and secure their codebases
-- Customer story on using Claude Mythos for security work (exploit-chain discovery, codebase hardening)
-- Customers: Comcast and Booz Allen
-- Article page returned 404; details taken from listing title only
-- Shows Mythos applied to defensive security in large enterprises
-- Details unverified
+- Customer story on using Claude Mythos-class models via Project Glasswing to find and fix vulnerabilities
+- Models reason across code, config, and live behavior, finding exploit chains of minor weaknesses
+- Comcast: critical auth flaw found across 258 systems, about 170M lines of code, fixed before exploitation
+- Booz Allen: one analyst reviewed 8 production systems across 138 repos in 12 days
+- Key point: validation of findings is now the bottleneck; Anthropic urges continuous security review
 Category: announcement
 Date: 2026-10-06
-URL: https://www.anthropic.com/resources/articles/how-comcast-booz-allen-use-claude-mythos-to-secure-their-codebases
+URL: https://claude.com/resources/articles/how-comcast-booz-allen-use-claude-mythos-to-secure-their-codebases
 
 ## Claude now works with Google Docs, Sheets, and Slides
-- Claude integrates with Google Docs, Sheets, and Slides (per title)
-- Article page returned 404; details taken from listing title only
-- Extends Claude into Google Workspace document workflows
-- Specific features and availability unverified
-- Needs follow-up if details are required
+- Claude for Google Workspace: public beta add-on for all paid plans, plus new beta connectors
+- Sidebar in Docs, Sheets, Slides reads content and edits in place
+- Docs: change proposal cards; Sheets: formulas, pivot tables, charts; Slides: themed slides, layout checks
+- Choose per-edit approval or automatic apply; follows Google sharing permissions
+- Admins deploy via Google Admin console; Team/Enterprise owners must enable connectors first
 Category: feature update
 Date: 2026-10-06
-URL: https://www.anthropic.com/resources/articles/claude-now-works-in-google-docs-sheets-and-slides
+URL: https://claude.com/resources/articles/claude-now-works-in-google-docs-sheets-and-slides
 
 ## We're expanding the Claude Startups program to help founders build
-- Expansion of the Claude Startups program for founders (per title)
-- Article page returned 404; details taken from listing title only
-- Aimed at helping startups build with Claude
-- Specific benefits and eligibility unverified
-- Needs follow-up if details are required
+- Program for founders building on Claude is opening to more founders
+- Eligible members get a year of Claude Team (up to 5 Premium seats) and a one-time $1,000 API credit
+- Claude Startup Stack: partner discounts and credits worth up to $45,000
+- Virtual office hours with Applied AI team and help listing on Claude Marketplace
+- Eligibility: founded in last 5 years or funded in last 2
 Category: announcement
 Date: 2026-10-06
-URL: https://www.anthropic.com/resources/articles/were-expanding-the-claude-startups-program-to-help-founders-build
+URL: https://claude.com/resources/articles/were-expanding-the-claude-startups-program-to-help-founders-build
 
 ## Expanding the Cyber Verification Program
-- Expanded Cyber Verification Program with three tiers: Defense Access, Red Team Access, Specialized Access
-- Consolidates Project Glasswing and the original CVP into one offering
-- Covers Claude Opus 5.5, Sonnet 5.5, Mythos 5.1 and future models, with reduced blocking safeguards for vetted security pros
-- Glasswing partners found 129,000+ verified vulnerabilities in four months, thousands critical/high
-- Safeguards scale by tier: Defense blocks offensive work; higher tiers allow authorized pen testing under oversight
+- CVP gives vetted security pros advanced cyber capabilities with reduced safeguards on top models
+- Now three tiers: Defense, Red Team, Specialized; merges earlier CVP with Project Glasswing
+- Tiers include newest models (Opus 5.5, Sonnet 5.5, Mythos 5.1)
+- Review times: Defense a few days, Red Team a few weeks; Specialized reviewed with US government; data retention required
+- Glasswing partners found at least 129,000 verified vulnerabilities between April and July 2026
 Category: announcement
 Date: 2026-10-06
 URL: https://www.anthropic.com/news/cyber-verification-program
 
 ## Claude Code in the cloud: a field guide to cloud sessions
-- Cloud sessions run Claude Code on dedicated VMs, each with its own repo clone, ports and branch
-- Enables parallel tasks (e.g. 3 tasks done in 87 seconds) and long-running proofs like 200+ test reruns
-- Seven workflows: parallel backlog, prove fixes, plan locally/build in cloud, mobile steering, auto-fix CI, routines, sandbox untrusted code
-- GitHub proxy keeps user token outside the VM; requires Claude GitHub App for private repos
-- Included in Pro, Max, Team, Enterprise; Pro/Max bonus credits ($100/$250) through Nov 4
+- Cloud sessions run Claude Code on its own VM with repo cloned to a new branch; start from web, mobile, desktop, terminal (claude --cloud), or Slack
+- Keeps running if laptop sleeps; sessions are isolated so parallel tasks do not collide
+- Test: three parallel sessions on one repo finished within 87 seconds
+- Setup: GitHub sign-in plus Claude GitHub App; put shared commands in CLAUDE.md and setup script; push local commits first
+- Limits: not available with Console API key, third-party providers, or Zero Data Retention; shares plan usage limits
 Category: feature update
 Date: 2026-10-06
 URL: https://claude.dev/blog/claude-code-in-the-cloud/
 
 ## How Cresta turned CX expertise into an agent builder on the Claude Agent SDK
-- Customer story: Cresta built a customer-experience agent builder on the Claude Agent SDK (per title)
-- Article page returned 404; details taken from listing title only
-- Shows Agent SDK used for domain-specific agent products
-- Specifics unverified
-- Needs follow-up if details are required
+- Customer story: Cresta's Conductor, a natural-language builder for customer experience agents, runs on the Claude Agent SDK
+- Started as an internal forward-deployed tool, became a customer-facing product
+- Roughly halved initial deployment time in early use
+- Evaluated on build tasks (create agent, write tests, modify, root cause analysis), rerun on new Claude models
+- Argues ongoing testing and iteration is harder than the initial build
 Category: announcement
 Date: 2026-10-05
-URL: https://www.anthropic.com/resources/articles/how-cresta-turned-cx-expertise-into-an-agent-builder-on-the-claude-agent-sdk
+URL: https://claude.com/resources/articles/how-cresta-turned-cx-expertise-into-an-agent-builder-on-the-claude-agent-sdk
 
 ## Getting started with Claude Code mods
-- Mods are small JS/TS files running inside Claude Code sessions to observe, rewrite, or answer events via hooks
-- No API knowledge needed: describe the mod in plain language and Claude builds it
-- Hot reload without restarting; `$.state` persists data across reloads
-- Examples: Token Weather (context usage display), Blast Radius (previews risky bash commands), Replay Theater (steps through edits)
-- Extends Claude Code beyond settings and slash commands: custom UI, safety guards, session data
+- Mods are small JS/TS modules in a Claude Code session, shipped as plugins
+- register(on) adds hooks that can observe, rewrite (next(e)), or answer events, e.g. return { deny } to block a tool call
+- Unlike shell hooks, mods persist, keep state, draw UI, open panes, register slash commands
+- Examples: Token Weather, Blast Radius, Replay Theater (code in anthropics/claude-code-playground)
+- Needs Claude Code 2.1.287+; on by default; install only from trusted publishers
 Category: feature update
 Date: 2026-10-01
 URL: https://claude.dev/blog/getting-started-with-claude-code-mods/
 
 ## Customize Claude Code with mods
-- Announcement post for Claude Code mods (per title); companion to the getting-started guide
-- Article page returned 404; details taken from listing title only
-- See the getting-started post for mod mechanics
-- Specific availability unverified
-- Needs follow-up if details are required
+- Mods are small TypeScript functions that change Claude Code behavior and look; ship in plugins; work in CLI and desktop
+- Hook into tool calls, permission requests, screen drawing
+- Can rewrite prompts, block or retry tool calls, edit UI, replace built-ins like /diff
+- Goes beyond hooks, which could not rewrite events or draw UI; admins can manage allowed plugin marketplaces
+- Not sandboxed: same machine access as Claude Code, so trust sources
 Category: feature update
 Date: 2026-10-01
-URL: https://www.anthropic.com/resources/articles/claude-code-mods
-
-## How Anthropic's sales team rebuilt inbound with Claude Managed Agents
-- Internal case study: Anthropic sales team rebuilt inbound handling with Claude Managed Agents (per title)
-- Article page returned 404; details taken from listing title only
-- Demonstrates Managed Agents in a real sales workflow
-- Specifics unverified
-- Needs follow-up if details are required
-Category: announcement
-Date: 2026-09-30
-URL: https://www.anthropic.com/resources/articles/how-anthropics-sales-team-rebuilt-inbound-with-claude-managed-agents
+URL: https://claude.com/resources/articles/claude-code-mods
