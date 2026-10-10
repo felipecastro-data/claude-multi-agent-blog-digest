@@ -1,5 +1,33 @@
 [
   {
+    "title": "Automating eval design and hillclimbing with Claude",
+    "category": "feature update",
+    "date": "2026-10-07",
+    "summary": "A new playbook adds the `/claude-api build-eval` and `/claude-api hillclimb` commands to the claude-api skill for automating eval design. build-eval interviews you, samples inputs, and waits for approval before choosing a grader and baseline, while hillclimb splits train and test sets and keeps a patch only if both improve, which limits overfitting. In the support benchmark, cost per ticket fell about 80% (4.6c to 1c) and held-out accuracy rose from 78.6% to 90.5%, and the claude-api skill's eval pass rate rose from 66.1% to 87.9%.",
+    "url": "https://claude.dev/blog/automating-eval-design-and-hillclimbing/"
+  },
+  {
+    "title": "Claude now works with Google Docs, Sheets, and Slides",
+    "category": "feature update",
+    "date": "2026-10-06",
+    "summary": "The Claude for Google Workspace add-on is in public beta on all paid plans, adding a Claude sidebar to Docs, Sheets, and Slides. Claude reads the open file and selection and edits directly, such as restyling, adding formulas or charts, or changing slides, in either 'Ask before edits' or 'Accept all edits' mode. New Docs, Sheets, and Slides connectors (beta) let Claude create and edit Google files while respecting sharing permissions, with connectors, skills, and enterprise controls kept inside the add-on.",
+    "url": "https://claude.com/resources/articles/claude-now-works-in-google-docs-sheets-and-slides"
+  },
+  {
+    "title": "How Comcast and Booz Allen use Claude Mythos to find exploit chains and secure their codebases",
+    "category": "announcement",
+    "date": "2026-10-06",
+    "summary": "This customer story describes how Comcast and Booz Allen used Claude Mythos-class models through Project Glasswing to find flaws that scanners missed. Comcast, with 258 systems and about 170M lines of code, found a critical auth flaw in a public-facing platform and fixed it before exploitation, while Booz Allen traced an unprotected key across two languages to expose a boot-time device weakness. One analyst reviewed 8 systems and 138 repos in 12 days, and Comcast says validating findings is now the bottleneck.",
+    "url": "https://claude.com/resources/articles/how-comcast-booz-allen-use-claude-mythos-to-secure-their-codebases"
+  },
+  {
+    "title": "We're expanding the Claude Startups program to help founders build",
+    "category": "announcement",
+    "date": "2026-10-06",
+    "summary": "The Claude Startups program is expanding to more founders, with up to $7,000 in Claude products and credits, including a free year of Claude Team and a one-time $1,000 API credit. A new Claude Startup Stack offers discounts and credits up to $45,000 on partner tools for sales, design, and data engineering, alongside Applied AI office hours and help with Claude Marketplace listings. Eligible founders started their company within the last 5 years or were funded within the last 2.",
+    "url": "https://claude.com/resources/articles/were-expanding-the-claude-startups-program-to-help-founders-build"
+  },
+  {
     "title": "Build live dashboards and animate explainers with Claude",
     "category": "feature update",
     "date": "2026-10-08",
@@ -12,33 +40,5 @@
     "date": "2026-10-06",
     "summary": "Cloud sessions run Claude Code on its own VM with the repo cloned to a fresh branch, and can be started from claude.ai/code, mobile, Desktop, the terminal (`claude --cloud \"...\"`), or Slack, included in Pro, Max, Team, and Enterprise. Sessions keep running if the laptop sleeps, isolate parallel tasks, and keep the GitHub token outside the VM so pushes only reach their own branch. They suit parallel backlog fixes and mobile starts, while shared plan usage, idle-VM reclaiming, and the need for a GitHub App on private repos are limits, and local sessions remain better for local DBs, VPNs, GPUs, and hardware.",
     "url": "https://claude.dev/blog/claude-code-in-the-cloud/"
-  },
-  {
-    "title": "Building effective agent automations",
-    "category": "announcement",
-    "date": "2026-10-08",
-    "summary": "A reference implementation on Claude Managed Agents (beta) shows a scheduled agent that reads Slack and GitHub, tracks changes, and posts a brief to Slack, configured via agent.md, deployment.md, and memory stores and deployed with `ant apply` (code in anthropics/claude-quickstarts). Its reliability patterns include per-source bookmarks, reporting failed sources as unreadable, re-checking live status, and updating state only after Slack confirms, backed by read-only vaulted credentials, a spend cap that pauses, and a preferences file the agent can read but not edit. These patterns matter because scheduled agents fail quietly, and they prevent gaps, duplicates, and silent failures.",
-    "url": "https://claude.dev/blog/building-effective-agent-automations/"
-  },
-  {
-    "title": "How Block orchestrates Claude Fable across thousands of pull requests",
-    "category": "announcement",
-    "date": "2026-10-08",
-    "summary": "In an interview, Bradley Axen of Block describes using Claude Fable to orchestrate large engineering migrations across thousands of PRs and repos, handling design itself and delegating edits and tests to Opus or Sonnet. Block uses frontier tokens for planning and cheaper worker models for volume, is building an auto-selector and benchmarking effort levels, and keeps humans approving merges and deploys under dual approval, which Claude refused to bypass in testing. It marks a shift from single-PR help to org-scale work with human control.",
-    "url": "https://claude.com/resources/articles/how-block-orchestrates-claude-fable-across-thousands-of-pull-requests"
-  },
-  {
-    "title": "Expanding the Cyber Verification Program",
-    "category": "announcement",
-    "date": "2026-10-06",
-    "summary": "The updated Cyber Verification Program gives qualifying security professionals access to top models with reduced cyber-blocking classifiers, now organized into Defense, Red Team, and Specialized tiers that merge the earlier CVP with Project Glasswing. Tiers include Opus 5.5, Sonnet 5.5, and Mythos 5.1, with higher tiers having fewer blocks but stricter verification, and partners found at least 129,000 verified vulnerabilities from April to July 2026. Applicants apply through the CVP portal, with Defense responses in a few days and Red Team possibly taking weeks.",
-    "url": "https://www.anthropic.com/news/cyber-verification-program"
-  },
-  {
-    "title": "Claude Haiku 5.5",
-    "category": "announcement",
-    "date": "2026-10-07",
-    "summary": "Claude Haiku 5.5 is Anthropic's cheapest, fastest, and most capable small model, available as claude-haiku-5-5 on AWS, Google Cloud, and Azure. It costs about 75% less to run than Haiku 4.5 on average and is the first Haiku-class model with an adjustable effort setting. It suits high-volume work like classification, summaries, and subagents, but is not a replacement for Opus or Sonnet 5.5 on complex agentic coding.",
-    "url": "https://www.anthropic.com/claude-haiku-5-5"
   }
 ]
