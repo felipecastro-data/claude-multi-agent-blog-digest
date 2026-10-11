@@ -1,5 +1,33 @@
 [
   {
+    "title": "Claude Haiku 5.5",
+    "category": "announcement",
+    "date": "2026-10-07",
+    "summary": "Anthropic released Claude Haiku 5.5 (`claude-haiku-5-5`), its cheapest, fastest, and most capable small model, priced at $0.10 per million input tokens and $0.50 per million output tokens for prompts up to 100k. It is about 75% cheaper than Haiku 4.5 on average and is the first Haiku-class model with an adjustable effort setting. The release also halves the Sonnet 5.5 cache-read price and adds monthly API credits for Max and Team subscribers, and it suits support, browser use, and subagents, while Sonnet and Opus 5.5 remain better for complex agentic coding.",
+    "url": "https://www.anthropic.com/claude-haiku-5-5"
+  },
+  {
+    "title": "Building effective agent automations",
+    "category": "announcement",
+    "date": "2026-10-08",
+    "summary": "A guide and reference implementation shows how to build scheduled agents on Claude Managed Agents (beta), using a daily Slack and GitHub brief example that is deployed with `ant apply`. It covers six parts (sources, destination, agent config, schedule, memory stores, and guardrails) and reliability patterns such as per-source bookmarks, re-checking live status, and recording a send only after Slack confirms it, along with credential vaults and a per-run budget cap of 3-5x normal cost. These patterns matter because scheduled agents tend to fail quietly, and they target those silent failure modes.",
+    "url": "https://claude.dev/blog/building-effective-agent-automations/"
+  },
+  {
+    "title": "How Block orchestrates Claude Fable across thousands of pull requests",
+    "category": "announcement",
+    "date": "2026-10-08",
+    "summary": "Block's Bradley Axen describes using Claude Fable 5 to orchestrate company-wide code migrations that span hundreds to thousands of PRs, with one migration merging a thousand Fable-orchestrated PRs. Fable handles high-level design such as data models and API specs and directs cheaper Opus or Sonnet models to edit files and run tests, which reportedly keeps quality intact while frontier tokens go to planning. Humans still approve merges and production deploys through dual approval, and the model refuses to bypass that step.",
+    "url": "https://claude.com/resources/articles/how-block-orchestrates-claude-fable-across-thousands-of-pull-requests"
+  },
+  {
+    "title": "Expanding the Cyber Verification Program",
+    "category": "announcement",
+    "date": "2026-10-06",
+    "summary": "Anthropic expanded the Cyber Verification Program, giving vetted security professionals access to top models with fewer cyber safeguards. The program merges Project Glasswing and the prior CVP into three tiers (Defense, Red Team, and Specialized), each including Opus 5.5, Sonnet 5.5, and Mythos 5.1, and data retention is required for misuse monitoring until Enterprise Frontier Safeguards launches this fall. Glasswing partners reportedly found more than 129,000 verified vulnerabilities between April and July 2026.",
+    "url": "https://www.anthropic.com/news/cyber-verification-program"
+  },
+  {
     "title": "Automating eval design and hillclimbing with Claude",
     "category": "feature update",
     "date": "2026-10-07",
@@ -12,33 +40,5 @@
     "date": "2026-10-06",
     "summary": "The Claude for Google Workspace add-on is in public beta on all paid plans, adding a Claude sidebar to Docs, Sheets, and Slides. Claude reads the open file and selection and edits directly, such as restyling, adding formulas or charts, or changing slides, in either 'Ask before edits' or 'Accept all edits' mode. New Docs, Sheets, and Slides connectors (beta) let Claude create and edit Google files while respecting sharing permissions, with connectors, skills, and enterprise controls kept inside the add-on.",
     "url": "https://claude.com/resources/articles/claude-now-works-in-google-docs-sheets-and-slides"
-  },
-  {
-    "title": "How Comcast and Booz Allen use Claude Mythos to find exploit chains and secure their codebases",
-    "category": "announcement",
-    "date": "2026-10-06",
-    "summary": "This customer story describes how Comcast and Booz Allen used Claude Mythos-class models through Project Glasswing to find flaws that scanners missed. Comcast, with 258 systems and about 170M lines of code, found a critical auth flaw in a public-facing platform and fixed it before exploitation, while Booz Allen traced an unprotected key across two languages to expose a boot-time device weakness. One analyst reviewed 8 systems and 138 repos in 12 days, and Comcast says validating findings is now the bottleneck.",
-    "url": "https://claude.com/resources/articles/how-comcast-booz-allen-use-claude-mythos-to-secure-their-codebases"
-  },
-  {
-    "title": "We're expanding the Claude Startups program to help founders build",
-    "category": "announcement",
-    "date": "2026-10-06",
-    "summary": "The Claude Startups program is expanding to more founders, with up to $7,000 in Claude products and credits, including a free year of Claude Team and a one-time $1,000 API credit. A new Claude Startup Stack offers discounts and credits up to $45,000 on partner tools for sales, design, and data engineering, alongside Applied AI office hours and help with Claude Marketplace listings. Eligible founders started their company within the last 5 years or were funded within the last 2.",
-    "url": "https://claude.com/resources/articles/were-expanding-the-claude-startups-program-to-help-founders-build"
-  },
-  {
-    "title": "Build live dashboards and animate explainers with Claude",
-    "category": "feature update",
-    "date": "2026-10-08",
-    "summary": "Anthropic introduced Claude Dashboards and Claude Motion, both in beta. Dashboards connect to BigQuery, Databricks, Snowflake, or Salesforce so users can ask plain-language questions and click any number to see its query (paid plans), while Motion turns a prompt into an editable-code animated explainer exportable to MP4 (Team and Enterprise). Docs, Slides, and Design leave beta and are available on every plan including Free, with the standalone Claude Design folding into Claude (the old URL works until Dec 14).",
-    "url": "https://claude.com/resources/articles/dashboards-and-motion"
-  },
-  {
-    "title": "Claude Code in the cloud: a field guide to cloud sessions",
-    "category": "feature update",
-    "date": "2026-10-06",
-    "summary": "Cloud sessions run Claude Code on its own VM with the repo cloned to a fresh branch, and can be started from claude.ai/code, mobile, Desktop, the terminal (`claude --cloud \"...\"`), or Slack, included in Pro, Max, Team, and Enterprise. Sessions keep running if the laptop sleeps, isolate parallel tasks, and keep the GitHub token outside the VM so pushes only reach their own branch. They suit parallel backlog fixes and mobile starts, while shared plan usage, idle-VM reclaiming, and the need for a GitHub App on private repos are limits, and local sessions remain better for local DBs, VPNs, GPUs, and hardware.",
-    "url": "https://claude.dev/blog/claude-code-in-the-cloud/"
   }
 ]
