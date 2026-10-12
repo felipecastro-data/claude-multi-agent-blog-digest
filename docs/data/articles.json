@@ -1,5 +1,33 @@
 [
   {
+    "title": "Build live dashboards and animate explainers with Claude",
+    "category": "feature update",
+    "date": "2026-10-08",
+    "summary": "Anthropic announced Claude Dashboards and Claude Motion. Dashboards generate live, plain-language reports from BigQuery, Snowflake, Databricks, and Salesforce that refresh with the data and link numbers to their queries (beta on paid plans), while Motion creates editable animations from a prompt that can be exported as MP4 (beta on Team and Enterprise). Docs, Slides, and Design have left beta and are available on all plans including Free, Claude Design has moved into conversations, and claude.ai/design closes December 14.",
+    "url": "https://claude.com/resources/articles/dashboards-and-motion"
+  },
+  {
+    "title": "Claude Code in the cloud: a field guide to cloud sessions",
+    "category": "feature update",
+    "date": "2026-10-06",
+    "summary": "Cloud sessions run Claude Code on an isolated VM with the repo cloned to a new branch, and the output is a branch or pull request. They can be started from claude.ai/code, mobile, Desktop, the terminal (`claude --cloud`), or Slack, and they run without your laptop so parallel tasks do not collide. The GitHub token stays outside the VM, `~/.claude` config does not carry over (so repo CLAUDE.md should hold shared settings), and sessions are included in Pro, Max, Team, and Enterprise while sharing usage limits.",
+    "url": "https://claude.dev/blog/claude-code-in-the-cloud/"
+  },
+  {
+    "title": "How Comcast and Booz Allen use Claude Mythos to find exploit chains and secure their codebases",
+    "category": "announcement",
+    "date": "2026-10-06",
+    "summary": "Security teams used Mythos-class models through Project Glasswing to find, validate, and fix vulnerabilities that scanners missed, reasoning across code, configuration, identity, and live behavior to surface exploit chains. Comcast found a critical authentication flaw across 258 systems and about 170M lines of code and fixed it before exploitation, with validation now the bottleneck, while Booz Allen traced a pre-boot flaw and had one analyst cover 8 systems and 138 repos in 12 days. Both accounts stress that human validation and remediation ownership remain essential.",
+    "url": "https://claude.com/resources/articles/how-comcast-booz-allen-use-claude-mythos-to-secure-their-codebases"
+  },
+  {
+    "title": "We're expanding the Claude Startups program to help founders build",
+    "category": "announcement",
+    "date": "2026-10-06",
+    "summary": "The Claude Startups program is opening to more founders building on Claude. Perks include a free year of Claude Team (up to 5 Premium seats), $1,000 in API credit, and Applied AI office hours, plus a new Claude Startup Stack with partner tool discounts and credits worth up to $45,000. Startups founded within the last 5 years or funded within the last 2 years are eligible, and the program includes help listing products on the Claude Marketplace.",
+    "url": "https://claude.com/resources/articles/were-expanding-the-claude-startups-program-to-help-founders-build"
+  },
+  {
     "title": "Claude Haiku 5.5",
     "category": "announcement",
     "date": "2026-10-07",
@@ -12,33 +40,5 @@
     "date": "2026-10-08",
     "summary": "A guide and reference implementation shows how to build scheduled agents on Claude Managed Agents (beta), using a daily Slack and GitHub brief example that is deployed with `ant apply`. It covers six parts (sources, destination, agent config, schedule, memory stores, and guardrails) and reliability patterns such as per-source bookmarks, re-checking live status, and recording a send only after Slack confirms it, along with credential vaults and a per-run budget cap of 3-5x normal cost. These patterns matter because scheduled agents tend to fail quietly, and they target those silent failure modes.",
     "url": "https://claude.dev/blog/building-effective-agent-automations/"
-  },
-  {
-    "title": "How Block orchestrates Claude Fable across thousands of pull requests",
-    "category": "announcement",
-    "date": "2026-10-08",
-    "summary": "Block's Bradley Axen describes using Claude Fable 5 to orchestrate company-wide code migrations that span hundreds to thousands of PRs, with one migration merging a thousand Fable-orchestrated PRs. Fable handles high-level design such as data models and API specs and directs cheaper Opus or Sonnet models to edit files and run tests, which reportedly keeps quality intact while frontier tokens go to planning. Humans still approve merges and production deploys through dual approval, and the model refuses to bypass that step.",
-    "url": "https://claude.com/resources/articles/how-block-orchestrates-claude-fable-across-thousands-of-pull-requests"
-  },
-  {
-    "title": "Expanding the Cyber Verification Program",
-    "category": "announcement",
-    "date": "2026-10-06",
-    "summary": "Anthropic expanded the Cyber Verification Program, giving vetted security professionals access to top models with fewer cyber safeguards. The program merges Project Glasswing and the prior CVP into three tiers (Defense, Red Team, and Specialized), each including Opus 5.5, Sonnet 5.5, and Mythos 5.1, and data retention is required for misuse monitoring until Enterprise Frontier Safeguards launches this fall. Glasswing partners reportedly found more than 129,000 verified vulnerabilities between April and July 2026.",
-    "url": "https://www.anthropic.com/news/cyber-verification-program"
-  },
-  {
-    "title": "Automating eval design and hillclimbing with Claude",
-    "category": "feature update",
-    "date": "2026-10-07",
-    "summary": "A new playbook adds the `/claude-api build-eval` and `/claude-api hillclimb` commands to the claude-api skill for automating eval design. build-eval interviews you, samples inputs, and waits for approval before choosing a grader and baseline, while hillclimb splits train and test sets and keeps a patch only if both improve, which limits overfitting. In the support benchmark, cost per ticket fell about 80% (4.6c to 1c) and held-out accuracy rose from 78.6% to 90.5%, and the claude-api skill's eval pass rate rose from 66.1% to 87.9%.",
-    "url": "https://claude.dev/blog/automating-eval-design-and-hillclimbing/"
-  },
-  {
-    "title": "Claude now works with Google Docs, Sheets, and Slides",
-    "category": "feature update",
-    "date": "2026-10-06",
-    "summary": "The Claude for Google Workspace add-on is in public beta on all paid plans, adding a Claude sidebar to Docs, Sheets, and Slides. Claude reads the open file and selection and edits directly, such as restyling, adding formulas or charts, or changing slides, in either 'Ask before edits' or 'Accept all edits' mode. New Docs, Sheets, and Slides connectors (beta) let Claude create and edit Google files while respecting sharing permissions, with connectors, skills, and enterprise controls kept inside the add-on.",
-    "url": "https://claude.com/resources/articles/claude-now-works-in-google-docs-sheets-and-slides"
   }
 ]
