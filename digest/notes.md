@@ -1,99 +1,99 @@
 ## Build live dashboards and animate explainers with Claude
-- Claude Dashboards turns company data into dashboards that stay current; Claude Motion makes animated explainers
-- Dashboards connect to BigQuery, Databricks, Snowflake, Salesforce; beta on paid plans
-- Motion is beta on Team/Enterprise, exports MP4
-- Docs, Slides, and Design leave beta and are available on every plan incl. Free
-- Charts show underlying query; animations are editable code, so users review before sharing
+- Launches two betas: Claude Dashboards (live dashboards from company data) and Claude Motion (animated explainers)
+- Dashboards connect to BigQuery, Databricks, Snowflake, Salesforce; charts show underlying query and last refresh; paid plans
+- Motion builds editable code-based animations exportable as MP4; Team and Enterprise
+- Docs, Slides, and Design leave beta and are available on all plans including Free
+- Standalone Claude Design folds into Claude; standalone site stays until December 14
 Category: feature update
 Date: 2026-10-08
 URL: https://claude.com/resources/articles/dashboards-and-motion
 
-## Building effective agent automations
-- Reference implementation of a scheduled "daily brief" agent on Claude Managed Agents (beta); reads Slack/GitHub, posts summary to Slack
-- Design rules: per-source bookmarks, report failed reads as "unreadable", re-check live status before posting, count as sent only after Slack confirms
-- Security: credentials in vaults outside sandbox, read-only GitHub, placeholder tokens swapped only for allowlisted hosts, per-run budget cap
-- Setup via `/claude-api managed-agents-onboard <URL>` in Claude Code; code in claude-quickstarts repo (managed-agents/daily-brief)
-- Matters because background agents often fail silently; patterns make failures visible
+## Uber's CISO on building an insider threat program for AI
+- Interview with Uber CISO Philip Martin on treating AI agents like insider-threat subjects
+- Uber's open-source AI Detection and Response (ADR) tool works with Anthropic's Enterprise Frontier Safeguards
+- Safeguards let Uber keep data control and choose responses; classifier output feeds ADR as a real-time signal
+- Newer models pull context from code, design docs, Jira, making threat modeling more specific
+- Priorities: real-time detection near prompt entry and ongoing analysis of new model behaviors
 Category: announcement
+Date: 2026-10-13
+URL: https://claude.com/resources/articles/uber-s-ciso-on-building-an-insider-threat-program-for-ai
+
+## Building effective agent automations
+- Guide by Lance Martin and CJ Avilla to scheduled agents on Claude Managed Agents (beta), with "daily-brief" reference implementation (Slack and GitHub PRs to Slack brief)
+- Setup is config files (agent, schedule, memory, vault, network allowlist) applied with `ant apply`; runs on Anthropic infrastructure
+- Patterns: per-source bookmarks, report unreadable sources as such, confirm post landed before updating ledger, re-check live status
+- Credentials in vault outside sandbox, read-only access, per-run spending cap
+- Matters because background agents fail silently; these guardrails make failures visible
+Category: feature update
 Date: 2026-10-08
 URL: https://claude.dev/blog/building-effective-agent-automations/
 
 ## How Block orchestrates Claude Fable across thousands of pull requests
-- Interview with Block's Bradley Axen on using Claude Fable 5 to orchestrate large code migrations
-- Fable does high-level design and directs smaller models (Opus/Sonnet) for edits and tests, run on open-source workspace Buzz
-- About 1,000 Fable-orchestrated PRs merged in a single migration; migrations span thousands of PRs across repos
-- Cheaper models handle routine work, improving cost efficiency; model and effort level treated as optimization variables
-- Humans still require two approvals for merges to main and prod deploys
+- Interview with Block's Bradley Axen on using Claude Fable 5 for large-scale code migrations
+- Fable coordinates many agent sessions and does high-level design; Opus/Sonnet handle edits and tests; one migration can reach 1,000+ PRs
+- Frontier models used for planning, cheaper models for routine work; tools help pick model and effort
+- Merges and production deploys still need two human approvals; model refusals blocked bypass attempts in testing
+- Engineers shift toward designing migrations and reviewing agents; model selection becomes a core skill
 Category: announcement
 Date: 2026-10-08
 URL: https://claude.com/resources/articles/how-block-orchestrates-claude-fable-across-thousands-of-pull-requests
 
 ## Claude Haiku 5.5
-- New small model `claude-haiku-5-5`, billed as cheapest, fastest, most capable small model yet
-- About 75% cheaper to run than Haiku 4.5 on average; first Haiku with adjustable effort setting
-- Sonnet 5.5 cache-read prices halved; Max and Team subscribers get new monthly API credits
-- Big benchmark gains, e.g. OSWorld 2.1 offline subset 72.4% vs 15.7% for Haiku 4.5
-- Suited to high-volume, cost-sensitive tasks and subagents; Sonnet/Opus 5.5 still better for complex agentic coding
+- New small model (claude-haiku-5-5), billed as Anthropic's cheapest, fastest, most capable small model
+- About 75% cheaper to run than Haiku 4.5 on average
+- First Haiku-class model with adjustable effort setting
+- Sonnet 5.5 cache-read prices halved (about 20% cheaper on most agentic work); Max and Team get monthly API credit
+- Targets high-volume work (classification, summaries, subagents, live support); Sonnet/Opus still better for complex coding
 Category: announcement
 Date: 2026-10-07
 URL: https://www.anthropic.com/claude-haiku-5-5
 
 ## Automating eval design and hillclimbing with Claude
-- Guidance on designing evals and hillclimbing without overfitting, shipped as two claude-api skill commands: `/claude-api build-eval` and `/claude-api hillclimb`
-- build-eval interviews you, samples production-like inputs, proposes cheapest suitable grader, runs diagnostics
-- hillclimb splits train/test, proposes one patch per round, keeps it only if both sets improve
-- Examples: cost per ticket cut about 80% with better held-out accuracy; skill run rose 66% to about 88%
-- Get started with `claude update` (note: article page showed Sep 28, 2026; listing showed Oct 7, 2026)
+- New `claude-api` skill commands in Claude Code: `/claude-api build-eval` and `/claude-api hillclimb` (by Lance Martin)
+- build-eval interviews user, samples inputs, proposes cheapest fitting grader, pauses for approval
+- hillclimb makes one patch per round, keeps it only if train and held-out scores both improve
+- Results: support benchmark hit 90.5% held-out accuracy at about 1/5 cost; claude-api skill eval rose 66% to ~88%
+- Get started with `claude update`. Note: article page shows date Sep 28, 2026; listing shows Oct 7, 2026
 Category: feature update
 Date: 2026-10-07
 URL: https://claude.dev/blog/automating-eval-design-and-hillclimbing/
 
 ## How Comcast and Booz Allen use Claude Mythos to find exploit chains and secure their codebases
-- Security teams used Claude Mythos-class models via Project Glasswing to find vulnerabilities scanners missed
-- Comcast found a critical auth flaw across 258 systems (~170M lines of code) and fixed it before exploitation
-- Booz Allen chained small weaknesses into exploit chains; reviewed 8 systems / 138 repos in under two weeks, work estimated at months
-- Models reason across code, config, and identity; validation of findings is the new bottleneck
-- Anthropic also expanded the Cyber Verification Program
+- Security teams used Claude Mythos-class models via limited-access Project Glasswing to find and fix vulnerabilities
+- Comcast found a critical authentication flaw across 258 systems and ~170M lines of code, fixed before exploitation
+- Booz Allen traced a boot-time key-protection flaw across two programs and languages; one analyst covered 8 systems/138 repos in 12 days
+- Models connect code, config, identity, and deployment context to surface cross-component exploit chains
+- Validation of findings is the new bottleneck
 Category: announcement
 Date: 2026-10-06
 URL: https://claude.com/resources/articles/how-comcast-booz-allen-use-claude-mythos-to-secure-their-codebases
 
 ## Claude now works with Google Docs, Sheets, and Slides
-- Claude for Google Workspace public beta add-on on all paid plans
-- Sidebar Claude reads the open file and selection and edits in place (restyle Docs, Sheets formulas/charts, Slides from deck layouts)
-- "Ask before edits" vs "Accept all edits" modes control approval
-- New Docs/Sheets/Slides connectors (beta) let main chat create and edit Google files within sharing permissions
-- Connectors, skills, and enterprise controls carry over
+- Claude for Google Workspace: public beta add-on for all paid plans, plus new Docs/Sheets/Slides connectors (beta)
+- Sidebar Claude reads selection and edits files directly: rewrites and suggestion cards in Docs, formulas/pivots/charts in Sheets, theme-matched slides in Slides
+- Modes: "Ask before edits" or "Accept all edits"
+- Respects Google sharing permissions; Compliance API and customer-managed keys apply
+- Install from Workspace Marketplace; Team/Enterprise owners enable connectors, admins deploy via Admin console
 Category: feature update
 Date: 2026-10-06
 URL: https://claude.com/resources/articles/claude-now-works-in-google-docs-sheets-and-slides
 
 ## We're expanding the Claude Startups program to help founders build
-- Claude Startups program expands to more founders
-- Up to $7,000 in Claude products/credits, incl. free year of Claude Team for new Team companies and $1,000 API credit
-- New startup stack of partner tools (sales, design, data engineering) worth up to $45,000 in discounts/credits
-- Adds virtual office hours with Applied AI team, Claude Marketplace listing help, events, newsletter
-- Eligible: founded in last 5 years or funded in last 2
+- Claude Startups program expanded to admit more founders
+- Up to $7,000 in products/credits: free year of Claude Team (up to 5 Premium seats) and one-time $1,000 API credit
+- New Claude Startup Stack: discounts and credits worth up to $45,000 on company tools
+- Also office hours with Applied AI team, Claude Marketplace listing help, events, newsletter
+- Oct 13 update: current cohort full, applications closed for now
 Category: announcement
 Date: 2026-10-06
 URL: https://claude.com/resources/articles/were-expanding-the-claude-startups-program-to-help-founders-build
 
 ## Expanding the Cyber Verification Program
-- Vetted security professionals get access to Anthropic's most capable models with reduced cyber blocking classifiers
-- Merges Project Glasswing and original CVP into three tiers: Defense, Red Team, Specialized
-- Tiers include newest models (Opus 5.5, Sonnet 5.5, Mythos 5.1); Red Team takes weeks to review; Specialized limited to orgs reviewed with US government
-- Participants must retain data so Anthropic can monitor misuse
-- Glasswing partners found at least 129,000 verified vulnerabilities Apr-Jul 2026; expansion extends this to more teams
+- Cyber Verification Program merges Project Glasswing and earlier CVP into one offering for vetted security professionals
+- Three tiers: Defense, Red Team, Specialized; each includes newest models (Opus 5.5, Sonnet 5.5, Mythos 5.1) with reduced cyber-blocking classifiers
+- Red Team allows authorized pentesting; Specialized has fewest blocks, limited to verified orgs reviewed with US government
+- Glasswing partners found 129,000+ verified vulnerabilities Apr-Jul 2026; Anthropic's own scanning found 5,500 more
+- Enrolled orgs must retain data for misuse monitoring; Enterprise Frontier Safeguards (zero data retention) expected later this fall
 Category: announcement
 Date: 2026-10-06
 URL: https://www.anthropic.com/news/cyber-verification-program
-
-## Claude Code in the cloud: a field guide to cloud sessions
-- Cloud sessions run Claude Code on an Anthropic-managed fresh VM with repo cloned to a new branch
-- Start from claude.ai/code, mobile, Desktop, `claude --cloud`, or Slack
-- Isolated per task; GitHub token stays outside VM, pushes only to own branch; keeps running if laptop sleeps
-- Included in Pro, Max, Team, Enterprise plans on the same usage limits; org owners may need to enable
-- Best for backlog and parallel tasks; local better for work needing local DB, VPN, GPU
-Category: feature update
-Date: 2026-10-06
-URL: https://claude.dev/blog/claude-code-in-the-cloud/
