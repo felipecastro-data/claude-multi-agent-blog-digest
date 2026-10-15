@@ -1,5 +1,33 @@
 [
   {
+    "title": "Build live dashboards and animate explainers with Claude",
+    "category": "feature update",
+    "date": "2026-10-08",
+    "summary": "Anthropic introduced Dashboards, which turn plain-language questions into always-current charts connected to BigQuery, Databricks, Snowflake, and Salesforce (beta on paid plans), and Motion, which turns prompts into short animated explainers exportable as MP4 (beta on Team and Enterprise). Docs, Slides, and Design are now out of beta and available on all plans, including Free. Charts show their underlying query and animations are editable code, so results can be checked.",
+    "url": "https://claude.com/resources/articles/dashboards-and-motion"
+  },
+  {
+    "title": "Agent observability on the Claude Platform",
+    "category": "feature update",
+    "date": "2026-10-14",
+    "summary": "In public beta, Managed Agents, the Messages API, and the SDKs can send OpenTelemetry traces to any OTel-compatible tool once a destination is added in Claude Console. Each agent turn, model call, and tool use becomes a trace with latency, tokens, and IDs, following OTel GenAI semantic conventions and working with Grafana Cloud, Honeycomb, Datadog, Langfuse, or any OTLP endpoint. This helps debug failures, review agent behavior, build evals from production traces, and track token usage.",
+    "url": "https://claude.com/resources/articles/agent-observability-on-the-claude-platform"
+  },
+  {
+    "title": "Claude now works with Google Docs, Sheets, and Slides",
+    "category": "feature update",
+    "date": "2026-10-06",
+    "summary": "Claude for Google Workspace is in public beta as a sidebar add-on for Docs, Sheets, and Slides on all paid plans. It reads the open file and selection and edits directly, defaulting to \"Ask before edits\" with an optional \"Accept all edits\" mode, and new beta connectors let it create and edit files from chat while respecting sharing permissions. Enterprise controls such as the Compliance API and customer-managed keys carry over.",
+    "url": "https://claude.com/resources/articles/claude-now-works-in-google-docs-sheets-and-slides"
+  },
+  {
+    "title": "How Block orchestrates Claude Fable across thousands of pull requests",
+    "category": "announcement",
+    "date": "2026-10-08",
+    "summary": "Block's Bradley Axen describes using Claude Fable 5 to orchestrate large code migrations, with Fable handling high-level design and smaller Opus or Sonnet models doing file edits and tests. The migration spans thousands of PRs, with about a thousand Fable-orchestrated PRs merged, and the approach reportedly cuts cost without hurting quality. Humans keep control of merges and deploys through security checks and two approvals, and Claude refuses to bypass dual approval.",
+    "url": "https://claude.com/resources/articles/how-block-orchestrates-claude-fable-across-thousands-of-pull-requests"
+  },
+  {
     "title": "Claude Haiku 5.5",
     "category": "announcement",
     "date": "2026-10-07",
@@ -12,33 +40,5 @@
     "date": "2026-10-08",
     "summary": "Lance Martin and CJ Avilla published a guide to scheduled agents on Claude Managed Agents (beta), using a \"daily-brief\" reference implementation that pulls from Slack and GitHub PRs and posts a Slack brief. Setup uses config files for the agent, schedule, memory, vault, and network allowlist applied with `ant apply`, running on Anthropic infrastructure, with credentials kept in a vault outside the sandbox, read-only access, and a per-run spending cap. The patterns, including per-source bookmarks, reporting unreadable sources, and confirming posts before updating the ledger, matter because background agents otherwise fail silently.",
     "url": "https://claude.dev/blog/building-effective-agent-automations/"
-  },
-  {
-    "title": "How Comcast and Booz Allen use Claude Mythos to find exploit chains and secure their codebases",
-    "category": "announcement",
-    "date": "2026-10-06",
-    "summary": "Security teams used Claude Mythos-class models through the limited-access Project Glasswing to find and fix vulnerabilities. Comcast found a critical authentication flaw across 258 systems and about 170M lines of code and fixed it before exploitation, while Booz Allen traced a boot-time key-protection flaw across two programs and languages, with one analyst covering 8 systems and 138 repos in 12 days. The models connect code, config, identity, and deployment context to surface cross-component exploit chains, and validating findings is now the bottleneck.",
-    "url": "https://claude.com/resources/articles/how-comcast-booz-allen-use-claude-mythos-to-secure-their-codebases"
-  },
-  {
-    "title": "Uber's CISO on building an insider threat program for AI",
-    "category": "announcement",
-    "date": "2026-10-13",
-    "summary": "In an interview, Uber CISO Philip Martin describes treating AI agents as insider-threat subjects. Uber's open-source AI Detection and Response (ADR) tool works with Anthropic's Enterprise Frontier Safeguards, which let Uber keep data control and choose responses, with classifier output feeding ADR as a real-time signal. Newer models pull context from code, design docs, and Jira for more specific threat modeling, and Uber's priorities are real-time detection near prompt entry and ongoing analysis of new model behaviors.",
-    "url": "https://claude.com/resources/articles/uber-s-ciso-on-building-an-insider-threat-program-for-ai"
-  },
-  {
-    "title": "We're expanding the Claude Startups program to help founders build",
-    "category": "announcement",
-    "date": "2026-10-06",
-    "summary": "Anthropic expanded the Claude Startups program to admit more founders, offering up to $7,000 in products and credits, including a free year of Claude Team with up to 5 Premium seats and a one-time $1,000 API credit. A new Claude Startup Stack adds discounts and credits worth up to $45,000 on company tools, alongside office hours with the Applied AI team, Claude Marketplace listing help, events, and a newsletter. As of an Oct 13 update, the current cohort is full and applications are closed for now.",
-    "url": "https://claude.com/resources/articles/were-expanding-the-claude-startups-program-to-help-founders-build"
-  },
-  {
-    "title": "Automating eval design and hillclimbing with Claude",
-    "category": "feature update",
-    "date": "2026-10-07",
-    "summary": "Anthropic published guidance on designing evals and hillclimbing without overfitting, shipped as two claude-api skill commands. `/claude-api build-eval` interviews you, samples production-like inputs, proposes the cheapest suitable grader, and runs diagnostics, while `/claude-api hillclimb` splits train and test sets and keeps each proposed patch only if both sets improve. Examples include an ~80% cut in cost per ticket with better held-out accuracy, and a skill run that rose from 66% to about 88%.",
-    "url": "https://claude.dev/blog/automating-eval-design-and-hillclimbing/"
   }
 ]
