@@ -1,44 +1,44 @@
 [
   {
+    "title": "Claude Haiku 5.5",
+    "category": "announcement",
+    "date": "2026-10-07",
+    "summary": "Anthropic released claude-haiku-5-5, billed as its cheapest, fastest, and most capable small model, at about 75% lower cost than Haiku 4.5 on average and as the first Haiku-class model with adjustable effort. Sonnet 5.5's cache-read price was halved, Max and Team get monthly API credits, and OSWorld 2.1 (offline subset) rose from 15.7% to 72.4%. It suits high-volume, latency-sensitive work and subagent roles, while Sonnet 5.5 and Opus 5.5 remain better for complex coding.",
+    "url": "https://www.anthropic.com/claude-haiku-5-5"
+  },
+  {
+    "title": "Agent observability on the Claude Platform",
+    "category": "feature update",
+    "date": "2026-10-14",
+    "summary": "OpenTelemetry tracing for Claude Managed Agents, the Messages API, and SDKs is now in public beta. Teams add a destination in Claude Console, and each agent turn, model call, and tool use is exported as an OTel trace with latency, tokens, and IDs, following OTel GenAI semantic conventions for backends such as Grafana Cloud, Datadog, Langfuse, Splunk, or any OTLP endpoint. This lets teams review agent behavior before granting more access and track org-wide token usage.",
+    "url": "https://claude.com/resources/articles/agent-observability-on-the-claude-platform"
+  },
+  {
+    "title": "Building effective agent automations",
+    "category": "announcement",
+    "date": "2026-10-08",
+    "summary": "Anthropic published a reference implementation of a scheduled 'daily brief' agent on Claude Managed Agents (beta) that reads Slack and GitHub PRs and posts to Slack. It is defined as config files applied with `ant apply`, keeps credentials in a vault outside the sandbox using read-only scoped tokens, and updates per-source bookmarks only after Slack confirms. Guardrails include a domain allowlist and a per-run spend cap, with a suggested starting cap of 3-5x normal run cost.",
+    "url": "https://claude.dev/blog/building-effective-agent-automations/"
+  },
+  {
+    "title": "How the Claude Code team does code review",
+    "category": "announcement",
+    "date": "2026-10-16",
+    "summary": "Claude writes about 90% of Claude Code's code, and machines do most of the reading while humans handle decisions machines do poorly. Review runs continuously from before a PR exists, human approval scales by risk (none, one, or two reviewers), and past incidents feed an eval set that scores the reviewer. From June to September, merged PRs more than doubled and the revert share fell over 40%.",
+    "url": "https://claude.dev/blog/solving-code-review-at-anthropic/"
+  },
+  {
+    "title": "How Block orchestrates Claude Fable across thousands of pull requests",
+    "category": "announcement",
+    "date": "2026-10-08",
+    "summary": "Block's Bradley Axen describes using Claude Fable 5 as an orchestrator that handles high-level design and directs smaller models (Opus, Sonnet) for file edits and tests across migrations spanning thousands of PRs. The approach lowers cost without reported quality loss, and merges and production deploys still require security checks and two human approvals. Block is building an auto-selector to match model and effort level to each task.",
+    "url": "https://claude.com/resources/articles/how-block-orchestrates-claude-fable-across-thousands-of-pull-requests"
+  },
+  {
     "title": "Code Review is now generally available",
     "category": "feature update",
     "date": "2026-10-15",
     "summary": "Claude Code's PR review feature is now generally available for Team and Enterprise organizations, and most reviews finish in 6-10 minutes, down from about 20 minutes in preview. Admins can set review depth per repo as Quick, Standard (the default), or Deep, and setup uses Claude Code settings plus a GitHub App, with reviews running automatically on new PRs. It targets review as the bottleneck now that coding agents speed up code creation.",
     "url": "https://claude.com/resources/articles/code-review-is-now-generally-available"
-  },
-  {
-    "title": "Automating eval design and hillclimbing with Claude",
-    "category": "feature update",
-    "date": "2026-10-07",
-    "summary": "Claude Code adds two claude-api skill commands, /claude-api build-eval and /claude-api hillclimb. build-eval interviews the user, samples inputs, proposes the cheapest grader, and checks baseline headroom, while hillclimb patches one surface per round with a train/test split and reverts overfit or regressing patches. On a support benchmark, cost fell from 4.6c to 1c per ticket and held-out accuracy rose from 78.6% to 90.5%, with guardrails meant to make gains hold in production.",
-    "url": "https://claude.dev/blog/automating-eval-design-and-hillclimbing/"
-  },
-  {
-    "title": "How Comcast and Booz Allen use Claude Mythos to find exploit chains and secure their codebases",
-    "category": "announcement",
-    "date": "2026-10-06",
-    "summary": "Security teams used Claude Mythos-class models through Project Glasswing, a limited-access program for critical infrastructure defenders. Comcast found a critical auth flaw across 258 systems and fixed it before exploitation, and a Booz Allen analyst reviewed 8 systems across 138 repos in 12 days, finding a pre-boot key weakness. The models trace exploit chains across code, config, identity, and deployment that single-file scanners miss, and validating findings is now the bottleneck, with humans still confirming and routing.",
-    "url": "https://claude.com/resources/articles/how-comcast-booz-allen-use-claude-mythos-to-secure-their-codebases"
-  },
-  {
-    "title": "Uber's CISO on building an insider threat program for AI",
-    "category": "announcement",
-    "date": "2026-10-13",
-    "summary": "Uber CISO Philip Martin describes an insider-threat program for AI agents that pairs Anthropic's Enterprise Frontier Safeguards with Uber's open-source AI Detection and Response (ADR) tool. ADR collects real-time agent telemetry, detects out-of-bounds behavior, and can intervene, while the Safeguards let Uber keep data control and decide responses to triggers. Martin argues that models need insider-risk monitoring just as employees do.",
-    "url": "https://claude.com/resources/articles/uber-s-ciso-on-building-an-insider-threat-program-for-ai"
-  },
-  {
-    "title": "How an Anthropic Japan business development representative runs his day with a fleet of Claude agents",
-    "category": "announcement",
-    "date": "2026-10-16",
-    "summary": "BDR Shahboz Ibragimov runs his workday with six agents built on Claude Managed Agents (beta) and Claude Tag, which handle lead routing, email drafts, and CRM updates before his day starts. He estimates about 60 hours saved and moved his prototypes to Managed Agents for background scheduling, shared memory, and scoped credential vaults. The case shows a non-developer can build an agent fleet in plain language, with humans reviewing judgment calls.",
-    "url": "https://claude.com/resources/articles/how-an-anthropic-japan-business-development-representative-runs-his-day"
-  },
-  {
-    "title": "Build live dashboards and animate explainers with Claude",
-    "category": "feature update",
-    "date": "2026-10-08",
-    "summary": "Anthropic introduced Dashboards, which turn plain-language questions into always-current charts connected to BigQuery, Databricks, Snowflake, and Salesforce (beta on paid plans), and Motion, which turns prompts into short animated explainers exportable as MP4 (beta on Team and Enterprise). Docs, Slides, and Design are now out of beta and available on all plans, including Free. Charts show their underlying query and animations are editable code, so results can be checked.",
-    "url": "https://claude.com/resources/articles/dashboards-and-motion"
   }
 ]
