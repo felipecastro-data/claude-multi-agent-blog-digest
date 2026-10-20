@@ -1,5 +1,33 @@
 [
   {
+    "title": "Claude Haiku 5.5",
+    "category": "announcement",
+    "date": "2026-10-07",
+    "summary": "Anthropic released Claude Haiku 5.5 (claude-haiku-5-5), billed as its cheapest, fastest, and most capable small model. It runs about 75% cheaper on average than Haiku 4.5 and is the first Haiku with an adjustable effort setting. It suits summaries, classification, and database queries, and works as a subagent alongside Sonnet 5.5 and Opus 5.5, with Box reporting +11 points at about half the latency.",
+    "url": "https://www.anthropic.com/claude-haiku-5-5"
+  },
+  {
+    "title": "Agent observability on the Claude Platform",
+    "category": "feature update",
+    "date": "2026-10-14",
+    "summary": "The Claude Platform now exports OpenTelemetry traces from Managed Agents, the Messages API, and SDKs in public beta. Managed Agents and the Messages API need a destination configured in the Claude Console, while SDKs export automatically, and traces cover agent turns, model calls, and tool use with latency, token counts, and IDs. It follows OTel GenAI semantic conventions and works with Grafana Cloud, Datadog, Langfuse, Honeycomb, and any OTLP endpoint, supporting debugging, turning production traces into evals, and tracking org token usage.",
+    "url": "https://claude.com/resources/articles/agent-observability-on-the-claude-platform"
+  },
+  {
+    "title": "How an Anthropic BDR in Japan runs his day with Claude Managed Agents",
+    "category": "announcement",
+    "date": "2026-10-16",
+    "summary": "A business development rep on Anthropic's Japan team describes running his workday with five scheduled agents on Claude Managed Agents (beta) handling lead routing, triage, draft replies, CRM updates, and meeting follow-ups, with a sixth coordinator agent updating the others. Rule-based work runs on Sonnet and judgment-heavy work on Opus, with agents sharing a memory store. He estimates about 60 hours saved, redirected to customer conversations and outbound strategy, and advises describing each job once, letting shared knowledge carry context, and delegating sooner.",
+    "url": "https://claude.com/resources/articles/how-an-anthropic-japan-business-development-representative-runs-his-day"
+  },
+  {
+    "title": "Uber's CISO on building an insider threat program for AI",
+    "category": "announcement",
+    "date": "2026-10-13",
+    "summary": "Uber CISO Philip Martin explains how Uber is building an insider threat program that treats AI agents like insiders. Frontier models' larger context handling enables more specific threat models, and Uber pairs Anthropic's Enterprise Frontier Safeguards with its open-source AI Detection and Response tool and an LLM gateway while keeping control of its data and response decisions. Its priorities are real-time detection and intervention and feeding emerging model-behavior findings back into safeguards.",
+    "url": "https://claude.com/resources/articles/uber-s-ciso-on-building-an-insider-threat-program-for-ai"
+  },
+  {
     "title": "Code Review is now generally available",
     "category": "feature update",
     "date": "2026-10-15",
@@ -12,33 +40,5 @@
     "date": "2026-10-08",
     "summary": "Anthropic published a reference implementation of scheduled agents on Claude Managed Agents (beta), including a sample daily-brief agent that reads Slack and GitHub and posts a brief to Slack, with code in anthropics/claude-quickstarts. It guards against coverage gaps and repeats, silent source failures, duplicate posts, and date or time zone errors, using a cron schedule, a per-run budget cap, a read-only preferences store, and vaulted credentials. Users start with claude update and /claude-api managed-agents-onboard, though prompt injection in source text remains a caveat.",
     "url": "https://claude.dev/blog/building-effective-agent-automations/"
-  },
-  {
-    "title": "Redesigning source control at Anthropic",
-    "category": "announcement",
-    "date": "2026-10-19",
-    "summary": "Anthropic describes Scion, its in-house source control system, and Antique, its code review tool, built for its large monorepo after the monorepo moved from git to Scion in about five months. Servers handle history, commits, and merges while clients fetch only the files they need and are assumed to be always online, mostly agents and CI. Daily merges grew from about 2,500 to over 30,000, and Anthropic reports roughly 200x lower infrastructure footprint and 100x faster checkouts, though it is not a general git replacement.",
-    "url": "https://www.anthropic.com/engineering/redesigning-source-control"
-  },
-  {
-    "title": "How the Claude Code team does code review",
-    "category": "announcement",
-    "date": "2026-10-16",
-    "summary": "Anthropic explains how the Claude Code team reviews code now that agents write about 90% of its codebase. Review runs continuously from before a PR exists, an AI reviewer checks every PR, and human approval scales with risk (none for low, one for medium, two for high). From June to September, merged PRs more than doubled, reverts fell by over 40%, and substantive AI comments rose from 16% to 54%, though the team still has no circuit breakers for rising revert rates.",
-    "url": "https://claude.dev/blog/solving-code-review-at-anthropic/"
-  },
-  {
-    "title": "How Block orchestrates Claude Fable across thousands of pull requests",
-    "category": "announcement",
-    "date": "2026-10-08",
-    "summary": "Block's Bradley Axen describes using Claude Fable 5 to orchestrate company-wide migrations across thousands of PRs, delegating edits and tests to Opus and Sonnet. Model choice is treated as an optimization, with frontier models for planning and cheaper models for routine work, and merges to main and prod deploys still require two human approvals that Claude refuses to bypass. It illustrates how multi-agent orchestration makes cost and oversight central concerns.",
-    "url": "https://claude.com/resources/articles/how-block-orchestrates-claude-fable-across-thousands-of-pull-requests"
-  },
-  {
-    "title": "Build live dashboards and animate explainers with Claude",
-    "category": "feature update",
-    "date": "2026-10-08",
-    "summary": "Claude adds two beta features: live dashboards that connect to BigQuery, Databricks, Snowflake, and Salesforce and auto-update with numbers linked to their queries (paid plans), and Claude Motion, which turns a prompt into editable code-built animated explainers exported as MP4 (Team and Enterprise). Docs, Slides, and Design have left beta and are available on all plans including Free, with the standalone Design site remaining until Dec 14. This lets non-technical staff get data answers and presentations without SQL or tickets.",
-    "url": "https://claude.com/resources/articles/dashboards-and-motion"
   }
 ]
