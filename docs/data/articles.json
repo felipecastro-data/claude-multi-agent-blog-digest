@@ -1,44 +1,44 @@
 [
   {
+    "title": "Claude models on Google Cloud, Anthropic-managed, are now generally available",
+    "category": "feature update",
+    "date": "2026-10-22",
+    "summary": "Anthropic-managed Claude models on Google Cloud are now generally available with full Claude Platform features, including Managed Agents (beta), code execution, computer use, skills, web search, MCP connector, caching, and batch, with new features shipping the same day as the native platform. Billing runs through a single Google Cloud invoice under Google Cloud IAM and counts toward existing commitments, with US and Global endpoints available. Fast Mode for Claude Opus 5.5 is also GA, offering up to 2.5x faster output at $8/$40 per million tokens, and a Google-managed option remains for data residency.",
+    "url": "https://claude.com/resources/articles/claude-models-on-google-cloud-anthropic-managed"
+  },
+  {
+    "title": "Agent observability on the Claude Platform",
+    "category": "feature update",
+    "date": "2026-10-14",
+    "summary": "Agent observability is in public beta on the Claude Platform, exporting OpenTelemetry traces from Managed Agents, the Messages API, and SDKs. Teams add a destination in Claude Console and get turns, model calls, and tool uses with latency, tokens, and IDs, following OTel GenAI semantic conventions and working with Grafana Cloud, Datadog, Honeycomb, and Langfuse. This helps verify agent reliability, debug issues, build evals, and track token usage.",
+    "url": "https://claude.com/resources/articles/agent-observability-on-the-claude-platform"
+  },
+  {
+    "title": "Building agents: When to fold subagents into your main agent loop",
+    "category": "announcement",
+    "date": "2026-10-22",
+    "summary": "This guidance recommends replacing multi-agent orchestrator/subagent setups with a single agent loop, where domain knowledge lives in on-demand skills and tools load via tool search, and includes a migration kit. Single agents with skills often beat subagent designs on quality, cost, and latency, with one customer seeing about 2x faster runtime, and newer models can drop compensating harness logic. Teams should build a small eval and fold in one subagent at a time, keeping subagents for parallel work or context bloat.",
+    "url": "https://claude.com/resources/articles/building-agents-when-to-fold-subagents-into-your-main-agent-loop"
+  },
+  {
+    "title": "How the Claude Code team does code review",
+    "category": "announcement",
+    "date": "2026-10-16",
+    "summary": "Claude writes about 90% of the Claude Code codebase, and its review is layered and mostly automated, with continuous review from pre-PR, multi-agent bug hunting with voting, security review that can block merges, and risk-based human approval. From June to September, merged PRs more than doubled and reverts fell over 40%, while PRs needing 5+ review rounds dropped from 8.9% to 1.5%. The post offers a checklist covering CLAUDE.md and REVIEW.md, risk tiers, and CODEOWNERS.",
+    "url": "https://claude.dev/blog/solving-code-review-at-anthropic/"
+  },
+  {
+    "title": "Redesigning source control at Anthropic",
+    "category": "announcement",
+    "date": "2026-10-19",
+    "summary": "Anthropic built Scion, an in-house server-centric source control system that replaces git for its very large monorepo, completing the migration in about five months. It uses changesets instead of commits and sparse or virtual checkouts, cutting CPU and memory roughly 200x versus old git mirrors and reducing CI checkouts from minutes to seconds. Daily merged changes grew from about 2,500 in May 2026 to over 30,000 in September, driven by agents, and the system is not a general git replacement.",
+    "url": "https://www.anthropic.com/engineering/redesigning-source-control"
+  },
+  {
     "title": "Code Review is now generally available",
     "category": "feature update",
     "date": "2026-10-15",
     "summary": "Claude Code's automated PR review is now generally available for Team and Enterprise plans. Reviews finish in about 6-10 minutes, down from about 20 in preview, and findings are shorter and clearer, each stating the problem, trigger, and fix. Admins can set per-repo review depth (Quick, Standard by default, or Deep), and setup means enabling it in Claude Code settings, installing the GitHub App, and selecting repos.",
     "url": "https://claude.com/resources/articles/code-review-is-now-generally-available"
-  },
-  {
-    "title": "Introducing Claude Duet",
-    "category": "announcement",
-    "date": "2026-10-21",
-    "summary": "Claude Duet is a research preview of a standalone proactive-agent app on iOS, Android, and claude.ai. It sends a morning brief across connected apps, checks them every few hours, and works in its own VM when devices are off, showing planned messages, payments, signatures, and deletions for approval before acting. A new classifier blocks sharing of the most sensitive data such as card numbers and government IDs, and access is by waitlist, starting with US Pro and Max users who share usage limits with Claude.",
-    "url": "https://claude.com/resources/articles/claude-duet"
-  },
-  {
-    "title": "Claude Security now scans continuously and tracks fixes",
-    "category": "feature update",
-    "date": "2026-10-21",
-    "summary": "The latest Claude Security version is in public beta for Claude Enterprise, connecting to Git repos including GitHub Enterprise Server with a baseline scan followed by risk-based rescans of changed code. Findings are automatically marked fixed when a fix ships and reopen if they recur, while a per-project knowledge base and editable threat model drive severity ratings. It also offers an API, webhooks, an MCP connector, and role-based access controls.",
-    "url": "https://claude.com/resources/articles/claude-security-now-scans-continuously-and-tracks-fixes"
-  },
-  {
-    "title": "Building effective agent automations",
-    "category": "feature update",
-    "date": "2026-10-08",
-    "summary": "A reference implementation shows a scheduled daily-brief agent on Claude Managed Agents (beta) that reads Slack and GitHub PRs and posts a brief to Slack, configured through files applied with the ant CLI and credentials kept in a vault. It uses per-source bookmarks instead of fixed windows, reports unreadable sources, and counts a send only on Slack's \"ok\": true, with guardrails including a read-only GitHub token, a memory store, a host allowlist, and a per-run budget cap. The code is at anthropics/claude-quickstarts under managed-agents/daily-brief.",
-    "url": "https://claude.dev/blog/building-effective-agent-automations/"
-  },
-  {
-    "title": "HCLTech joins the Claude Partner Network as a Global Premier partner",
-    "category": "announcement",
-    "date": "2026-10-21",
-    "summary": "HCLTech, with 230k+ employees across 60 countries, becomes a Global Premier Partner in the Claude Partner Network. It will build agentic solutions on Claude through a dedicated business unit and Center of Excellence, embed Claude in select HCLSoftware products, and add Claude and Claude Code to its AI Force platform. Safeguards include sandbox testing, policy guardrails, and human approval for production changes, bringing Claude into regulated sectors such as banking, healthcare, telecom, and manufacturing.",
-    "url": "https://claude.com/resources/articles/hcltech-joins-claude-partner-network"
-  },
-  {
-    "title": "How an Anthropic BDR in Japan runs his day with Claude Managed Agents",
-    "category": "announcement",
-    "date": "2026-10-16",
-    "summary": "Japan business development representative Shahboz Ibragimov runs six agents called \"Nakama\" on Claude Managed Agents (beta) to route and qualify leads, update Salesforce, draft emails, and summarize meetings. Managed Agents provides single definitions, schedules, shared memory, and vaulted credentials, with cheaper models for rule-based tasks, Opus for judgment, and Claude Tag handling Slack follow-ups. He estimates about 60 hours per week saved.",
-    "url": "https://claude.com/resources/articles/how-an-anthropic-japan-business-development-representative-runs-his-day"
   }
 ]
