@@ -1,44 +1,44 @@
 [
   {
+    "title": "Introducing Claude Duet",
+    "category": "feature update",
+    "date": "2026-10-21",
+    "summary": "Claude Duet is a research preview of a proactive agent app on iOS, Android, and claude.ai, included in Pro and Max with a US waitlist first. It sends a morning brief, checks connected apps every few hours, messages only when attention is needed, and keeps working in its own VM when devices are off, with 6,000+ connectors and plugins. Approval is required before sending, paying, signing, or deleting, trading and moving money between accounts are off-limits, and Anthropic notes it is early and may misjudge urgency, with background checks counting against shared usage limits.",
+    "url": "https://claude.com/resources/articles/claude-duet"
+  },
+  {
+    "title": "Claude Duet Safety, Privacy, and Security",
+    "category": "announcement",
+    "date": "2026-10-23",
+    "summary": "Anthropic outlines the safety, privacy, and security design of Duet, a research-preview cloud agent that keeps working after the app is closed using connected apps. Sensitive actions such as sending, paying, or deleting require user approval with a separate check on each action, and a new classifier screens outgoing messages for sensitive information. Passwords are encrypted and typed into sites without passing through the model, the browser runs in a separate cloud VM, and Anthropic acknowledges that safeguards will sometimes miss things or over-flag and are still being refined.",
+    "url": "https://claude.com/resources/articles/claude-duet-safety-privacy-and-security"
+  },
+  {
+    "title": "LLMs are making formal software verification feasible at a much larger scale",
+    "category": "announcement",
+    "date": "2026-10-22",
+    "summary": "Frontier Red Team research with Theorem shows Claude writing formal proofs that code is free of certain bugs, proving no crashes on any input up to 64 MB for 239 entry points across 123 OSS-Fuzz libraries (~180M lines of Rocq). The work found bugs fuzzing missed, including an out-of-bounds write at a ~20 MB input layout, and rediscovered a libexpat vulnerability, with newer models using ~40% fewer tokens on a benchmark and shared proofs cutting token use 17%. The authors caution that \"formally verified\" is not \"bug-free,\" since the proofs assume single-threaded static RISC-V Linux binaries and trusted components.",
+    "url": "https://www.anthropic.com/research/formal-verification"
+  },
+  {
+    "title": "HCLTech joins the Claude Partner Network as a Global Premier partner",
+    "category": "announcement",
+    "date": "2026-10-21",
+    "summary": "HCLTech (230,000+ employees) joins the Claude Partner Network at the top Global Premier tier, which requires 1,000 certified practitioners. It will build agentic solutions through a dedicated business unit and Center of Excellence, embed Claude in HCLSoftware products such as BigFix and AppScan, and add Claude and Claude Code to its AI Force platform. Deployments include guardrails, human review, and sandbox testing, targeting regulated sectors such as banking, healthcare, telecom, and manufacturing.",
+    "url": "https://claude.com/resources/articles/hcltech-joins-claude-partner-network"
+  },
+  {
+    "title": "How an Anthropic BDR in Japan runs his day with Claude Managed Agents",
+    "category": "announcement",
+    "date": "2026-10-16",
+    "summary": "Shahboz Ibragimov, a business development representative on Anthropic's Japan team, describes running his workday with Claude Managed Agents (beta) and Claude Tag, using five scheduled agents for lead routing, triage, email drafts, CRM updates, and meeting follow-ups plus a coordinator agent. A shared memory store learns from his edits, credentials sit in managed vaults, and complex items hand off to Claude Tag in Slack, with cheaper models for rule-based work and Opus for judgment for an estimated ~60 hours saved. His takeaway is that the knowledge base matters more than the prompt, showing a non-developer can build multi-agent workflows.",
+    "url": "https://claude.com/resources/articles/how-an-anthropic-japan-business-development-representative-runs-his-day"
+  },
+  {
     "title": "The full Claude Platform, available on Google Cloud",
     "category": "feature update",
     "date": "2026-10-22",
     "summary": "Claude Models on Google Cloud in Anthropic-managed mode is now generally available, giving Google Cloud customers the full Claude Platform feature set, billed on a single Google Cloud invoice against existing commitments with Google Cloud IAM credentials. Managed Agents, the MCP connector, and some other features are in beta, while Fast Mode on Claude Opus 5.5 is GA at $8/$40 per million input/output tokens. Customers can choose Anthropic-managed (Anthropic is the data processor) or Google-managed (Google is the processor, with regional residency and Model Armor/Agent Engine) deployment.",
     "url": "https://claude.com/resources/articles/claude-models-on-google-cloud-anthropic-managed"
-  },
-  {
-    "title": "Building agents: When to fold subagents into your main agent loop",
-    "category": "announcement",
-    "date": "2026-10-22",
-    "summary": "This guidance recommends replacing multi-subagent setups with a single main agent loop that uses one model, one context window, and skills, with tools loaded on demand. Anthropic claims this often beats one-prompt and subagent designs on quality and is usually cheaper and faster, with one customer seeing roughly 2x faster runtime. Teams should build a small end-to-end eval, fold in one subagent at a time, and keep subagents only for context bloat, parallelism, or conflicting instructions, with a migration kit now available.",
-    "url": "https://claude.com/resources/articles/building-agents-when-to-fold-subagents-into-your-main-agent-loop"
-  },
-  {
-    "title": "Redesigning source control at Anthropic",
-    "category": "announcement",
-    "date": "2026-10-19",
-    "summary": "Anthropic's engineering team describes Scion, an in-house source control system that replaces git for its monorepo, plus the Antique code review tool, migrated in about five months. Reported results include roughly 200x less CPU and memory than prior git mirrors, checkouts dropping from minutes to seconds, and daily merged changes rising from about 2,500 to 30,000+. The approach is shared so git platforms can adopt parts of it.",
-    "url": "https://www.anthropic.com/engineering/redesigning-source-control"
-  },
-  {
-    "title": "How the Claude Code team does code review",
-    "category": "announcement",
-    "date": "2026-10-16",
-    "summary": "The Claude Code team describes its review process now that Claude writes about 90% of the codebase, with most review automated and humans focused on risky decisions. From June to September, merged PRs more than doubled while the revert share fell over 40%, and review rounds are capped at three with only new diffs re-reviewed (mean reviews to pass fell from 2.08 to 1.32). The post also covers agent-verified findings, risk-scaled human approvals, and an adoption checklist.",
-    "url": "https://claude.dev/blog/solving-code-review-at-anthropic/"
-  },
-  {
-    "title": "Claude Cowork and chat come together for Enterprise",
-    "category": "feature update",
-    "date": "2026-10-23",
-    "summary": "Chat and Cowork are now unified into one Claude experience across web, desktop, and mobile, and this is generally available for Enterprise plans. Users don't pick a mode up front: a chat continues as agentic work in the cloud when a task needs code or files, and tasks keep running after the laptop closes and can resume across devices. Admins get role-based access, a new Efficient mode limited to Sonnet and Haiku, and spend controls per org, group, and member, with SSO and Compliance API controls carrying over.",
-    "url": "https://claude.com/resources/articles/unified-claude-enterprise"
-  },
-  {
-    "title": "Claude Security now scans continuously and tracks fixes",
-    "category": "feature update",
-    "date": "2026-10-21",
-    "summary": "Claude Security is in public beta for Enterprise, powered by Claude models including Claude Mythos, and connects to repos via a GitHub app or tokens for a baseline scan followed by risk-based rescans. It marks findings fixed when code lands and reopens them automatically if the issue reappears, with a per-project knowledge base, an editable threat model, and severity and attacker-reachability details. A new API, MCP connector, webhooks, and role-based access controls round out the release.",
-    "url": "https://claude.com/resources/articles/claude-security-now-scans-continuously-and-tracks-fixes"
   }
 ]
