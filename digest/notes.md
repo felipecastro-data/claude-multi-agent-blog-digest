@@ -1,99 +1,99 @@
-## Building agents: When to fold subagents into your main agent loop
-- Guide on merging many specialist subagents into one main agent loop on Claude Platform
-- Recommends one model with one tool loop; domain knowledge in on-demand skills plus tool search
-- Subagents still useful for context bloat, parallel work, or tool-selection conflicts
-- Single agent with skills often gave better quality, lower cost and latency (one customer ~2x faster)
-- Migrate by building a small eval, folding one subagent at a time; includes migration kit
+## Introducing artifacts for legal work
+- Claude for Legal gets a gallery of ready-to-use artifacts (trackers, dashboards) teams can adapt, share, connect to own data
+- Covers cite checking, playbook deviation tracking, regulatory scans, tabular contract review; outputs link to sources
+- 60+ legal connectors added since May launch (Bloomberg Law, Filevine); partners Goodwin, Harvey, PwC contributed
+- Nine access-to-justice artifacts; new Legal Ambassadors Program (waitlist)
+- Sharing settings support ethical walls; lawyers still review output
+Category: feature update
+Date: 2026-10-28
+URL: https://claude.com/resources/articles/introducing-artifacts-for-legal-work
+
+## Manage costs and demonstrate ROI for Claude Code on Google Cloud
+- Best-practices guide from Anthropic, inspired by webinar with Google Cloud
+- Framework of three levers: control, track, prove
+- Claude apps gateway: spend caps per user/group/org, model allowlists, OpenTelemetry to Cloud Monitoring/BigQuery
+- ROI metrics: adoption, satisfaction, PR cycle time, review turnaround, merged work
+- Cost per task matters more than per-token price for agentic tools
 Category: announcement
-Date: 2026-10-22
-URL: https://claude.com/resources/articles/building-agents-when-to-fold-subagents-into-your-main-agent-loop
+Date: 2026-10-27
+URL: https://claude.com/resources/articles/how-to-manage-costs-and-demonstrate-roi-for-claude-code-on-google-cloud
+
+## Claude for Financial Advisors
+- Suite of connectors and workflow skills for advisor research, meeting prep, documentation
+- New connectors: Charles Schwab, Addepar, Orion, Wealthbox; plugin bundles 8 skills (pre-meeting prep, follow-up, rebalance review)
+- Advisor approves critical tasks, CRM updates, client communications; compliance skill checks SEC Marketing Rule
+- Enterprise plans recommended for RIAs (audit logs)
+- Listing date Oct 27; article notes originally published Sept 14, 2026 and updated
+Category: feature update
+Date: 2026-10-27
+URL: https://claude.com/resources/articles/claude-for-financial-advisors
 
 ## Expanding Claude for Nonprofits
-- New Claude for Nonprofits plugin of skills and connectors, built with ~30 nonprofits
-- Auto-installed for nonprofits on Team and Enterprise plans at no extra cost
-- Covers small-team capacity (marketing, hiring, board), setup with data map/AI policy, and fundraising lifecycle
-- Claude Corps fellowship to be extended via Taproot, matching pro bono consultants
-- Admins control access and connectors; no training on org data by default
+- Claude for Nonprofits plugin of skills and connectors, built with ~30 nonprofits
+- Skills for marketing, hiring, board work, org setup, and full fundraising cycle
+- No extra cost on nonprofit Team and Enterprise plans
+- Claude Corps to extend via Taproot partnership matching pro bono consultants
+- 25,000+ nonprofits use Claude; admin connector controls, no training on customer data by default
 Category: feature update
 Date: 2026-10-26
 URL: https://claude.com/resources/articles/expanding-claude-for-nonprofits
 
 ## Claude Cowork and chat come together for Enterprise
-- Chat and Cowork unified into one Claude experience on web, desktop, mobile for Enterprise
-- Conversations start as chat; code/file tasks move to cloud environment that keeps running when laptop closes
-- Chats, projects, connectors, skills, plugins carry over
-- Agentic work in isolated cloud VMs, network off by default; SSO and Compliance API still apply
-- New Efficient mode (Sonnet/Haiku), role-based model access, spend limits, pooled budgets
+- Enterprise gets unified Claude experience merging chat and Cowork across web, desktop, mobile
+- Simple questions answered quickly; code/file tasks run in Anthropic-managed cloud and continue after laptop closes
+- Admin controls: role access, Efficient mode (Sonnet/Haiku), spend limits at org/group/member, pooled budgets
+- Isolated VMs, network off by default; SSO and Compliance API still apply
+- ZDR, HIPAA-ready, and customer-managed key orgs stay on current config
 Category: feature update
 Date: 2026-10-23
 URL: https://claude.com/resources/articles/unified-claude-enterprise
 
 ## Claude Duet Safety, Privacy, and Security
-- Duet is a research-preview cloud agent that keeps running after the app is closed
-- Asks approval before sensitive sends, payments, deletions; separate check outside the model; some actions (trading, moving money) blocked regardless
-- New classifier screens outgoing messages; credentials, card/bank and ID numbers never shared; health/financial info only with consent
-- Never sees passwords, cookies, tokens; single-use encrypted passwords go to separate cloud browser
-- Anthropic warns safeguards can still miss things and are evolving
+- Claude Duet: proactive agent (research preview) on a cloud computer, works after app is closed
+- Shows action, destination, content and waits for approval on sensitive actions; some (trading, moving money) always blocked
+- New classifier screens outgoing messages; credentials/IDs never shared, health/financial need consent
+- Model never sees passwords, cookies, tokens; browser isolated
+- Anthropic admits safeguards will sometimes miss things
 Category: announcement
 Date: 2026-10-23
 URL: https://claude.com/resources/articles/claude-duet-safety-privacy-and-security
 
+## Building agents: When to fold subagents into your main agent loop
+- Guide on replacing orchestrator/subagent setups with one agent loop using skills and tools
+- Single agent with skills often gave better answers at lower cost and latency; avoids lossy handoffs
+- Subagents still useful for context bloat, parallel work, tool-selection conflicts
+- Migrate by building small eval first, folding one subagent at a time
+- Migration kit and API skills (build-eval, prompt-audit, hillclimb, cost-optimize)
+Category: announcement
+Date: 2026-10-22
+URL: https://claude.com/resources/articles/building-agents-when-to-fold-subagents-into-your-main-agent-loop
+
 ## LLMs are making formal software verification feasible at a much larger scale
-- Anthropic research with Theorem: Claude writes formal proofs about compiled code (RISC-V assembly)
-- Proved no-crash properties for 239 entry points across 123 OSS-Fuzz libraries, each machine-checked
-- Claude patched bugs found and surfaced flaws fuzzing missed (e.g. counter underflow causing out-of-bounds write)
-- Matters as AI gets better at finding exploits; testing alone may not suffice; falling token costs help
-- Caveat: "verified" is not "bug-free"; limited to single-threaded static binaries on RISC-V/Linux with assumed hardware/OS models
+- Frontier Red Team with Theorem used Claude to write formal proofs of no-crash properties in open-source software
+- 239 entry points across 123 libraries, at compiled RISC-V assembly level
+- Found and patched bugs missed by fuzzing for years; also applied to zlib, Rust Python interpreter, PDF reader
+- Could make verification routine rather than niche
+- Caveat: "formally verified" does not mean bug-free
 Category: announcement
 Date: 2026-10-22
 URL: https://www.anthropic.com/research/formal-verification
 
 ## The full Claude Platform, available on Google Cloud
-- Claude Models on Google Cloud (Anthropic managed) now generally available
-- Use Google Cloud IAM credentials, single Google invoice, counts toward Google Cloud commitment
-- New features and betas ship same day as native Claude Platform (Managed Agents beta, code execution, computer use, skills, Files API, MCP connector, etc.)
-- Fast Mode on Claude Opus 5.5 GA at $8 input / $40 output per million tokens
-- Google-managed offering remains for Google-as-processor, strict regional residency needs
+- Claude Models on Google Cloud (Anthropic managed) now generally available with full Claude Platform features
+- Uses Google Cloud IAM, single invoice, counts toward existing Google Cloud commitment
+- Same-day access to new features/betas: Managed Agents (beta), code execution, computer use, caching, batch
+- Fast Mode on Claude Opus 5.5 GA, up to 2.5x faster output
+- Google-managed option remains for Google-as-processor, regional residency, Model Armor
 Category: feature update
 Date: 2026-10-22
 URL: https://claude.com/resources/articles/claude-models-on-google-cloud-anthropic-managed
 
 ## HCLTech joins the Claude Partner Network as a Global Premier partner
-- HCLTech (230,000+ staff, 60 countries) joins at top Global Premier tier
-- Will build agentic solutions via dedicated Anthropic Business Unit and Center of Excellence
-- Embedding Claude in HCLSoftware (BigFix, AppScan, Actian AI analyst) and Claude Code in AI Force platform
-- Agents do routine work; engineers oversee high-impact changes with review/logging/approval
+- HCLTech (230,000+ employees) joins as Global Premier partner, top tier
+- Dedicated Anthropic Business Unit and Center of Excellence for agentic solutions
+- Claude embedded in HCL BigFix, HCL AppScan, Actian AI analyst; Claude and Claude Code added to AI Force
+- Agents do routine IT work; engineers oversee high-impact changes
 - Targets regulated sectors: banking, healthcare, telecom, manufacturing
 Category: announcement
 Date: 2026-10-21
 URL: https://claude.com/resources/articles/hcltech-joins-claude-partner-network
-
-## Introducing Claude Duet
-- Research preview proactive agent app for iOS, Android, claude.ai
-- Runs on its own virtual machine so works when your devices are off; daily brief, messages only when needed
-- Asks approval before sending, paying, signing, deleting
-- 6,000+ connectors/plugins (Gmail, Slack, QuickBooks, Stripe, Gusto, Docusign); classifier blocks sensitive data sharing
-- Waitlist for US Pro and Max subscribers; usage counts against plan limits
-Category: announcement
-Date: 2026-10-21
-URL: https://claude.com/resources/articles/claude-duet
-
-## Claude Security now scans continuously and tracks fixes
-- Claude Security (vulnerability scanning) latest version in public beta for Claude Enterprise
-- Baseline scan of connected repos, then risk-based rescans of code changes; one project can span multiple repos
-- Marks findings fixed when fix ships, reopens if reappearing; per-project knowledge base and editable threat model
-- API, webhooks, MCP connector for Claude.ai and Claude Code; role-based permissions
-- Prioritizes by attacker reachability with severity ratings and attack-path explanations
-Category: feature update
-Date: 2026-10-21
-URL: https://claude.com/resources/articles/claude-security-now-scans-continuously-and-tracks-fixes
-
-## Redesigning source control at Anthropic
-- Describes Scion, Anthropic's in-house source control replacing git for its monorepo (plus Antique code review tool)
-- Migrated in ~5 months; server-side history, clients fetch only needed files, replacing hundreds of git mirrors
-- CI checkouts drop from minutes to seconds; 200x smaller CPU/memory footprint
-- Claude-driven development raised merges from ~2,500 to 30,000+/day, making human-scale tooling a bottleneck
-- Not a general git replacement; ideas shared for git platforms to adopt. (Article page shows Oct 13, updated Oct 15; listing shows Oct 19)
-Category: announcement
-Date: 2026-10-19
-URL: https://www.anthropic.com/engineering/redesigning-source-control
