@@ -1,99 +1,99 @@
 ## Building agents: When to fold subagents into your main agent loop
-- Guide on replacing multi-agent subagent setups with one agent loop using skills and tools; includes a migration kit
-- Domain procedures move into on-demand skills; hard limits and lookups move into tools
-- Shared context cuts lossy handoffs; often better quality at lower cost/latency (one customer ~2x faster)
-- Warns orgs end up with "a copy of their org chart"; recommends a small central team owning the system prompt and evals
-- Migrate by building a small eval set, folding in one subagent at a time, checking per-task results and repeating runs
+- Guidance on merging subagents into a single main agent loop, with a migration kit for assessing multi-agent systems
+- One model in one context runs a tool loop; domain procedures move into skills, hard limits (validation, approval gates) into tools
+- Single agent with skills often beat one-prompt and subagent designs on quality, cost, latency; one customer saw about 2x faster runtimes
+- Migrate by building a small end-to-end eval first, then fold in one subagent at a time
+- Subagents still make sense for context bloat, parallel work, or tool-selection/conflicting-instruction problems
 Category: announcement
 Date: 2026-10-22
 URL: https://claude.com/resources/articles/building-agents-when-to-fold-subagents-into-your-main-agent-loop
 
 ## Smart reports, surveys, and pooled group budgets for Claude Enterprise
 - Three Claude Enterprise features now generally available
-- Smart reports sample transcripts, group work into workstreams, show spend, deliverables, friction; not for evaluating individuals
-- In-app surveys: customizable cards after replies, exportable responses
-- Pooled group budgets: shared monthly budget per group, with admin alerts at 50/75/95/100%
-- Helps leaders see where Claude adds value and direct spend; availability varies by configuration (HIPAA, CMEK)
+- Smart reports: Claude samples transcripts for a team, groups work into workstreams, shows spend, deliverables, friction points, and skill recommendations (not for evaluating individuals)
+- In-app surveys: short cards after replies, default questions on value/time saved, customizable, exportable
+- Pooled group budgets: shared monthly budget with individual limits as guardrails; alerts at 50/75/95/100%
+- Helps admins see where Claude creates value and avoids unused budget
 Category: feature update
 Date: 2026-10-28
 URL: https://claude.com/resources/articles/smart-reports-surveys-pooled-budgets
 
 ## IDC brings Quanta into Claude and adopts Claude across the company
-- IDC Quanta technology intelligence platform now available as an MCP connector in Claude
-- Claude produces competitor briefs, vendor shortlists, forecast comparisons, with IDC source citations
-- Works in Claude app, Cowork, and Microsoft Office add-ins
-- IDC internal rollout: data repository rebuilt in 3 weeks vs ~3 months; code review 5 days to ~30 minutes (IDC-reported)
-- Available to IDC Quanta customers using Claude
+- IDC Quanta market intelligence platform now available as a Claude connector, with answers citing IDC sources
+- Use cases: competitor briefs, vendor shortlists, budget vs. IDC forecast comparisons
+- IDC rolled out Claude company-wide, starting with engineering
+- Company-reported results: data repository rebuilt in 3 weeks vs. ~3 months; code reviews from 5 days to ~30 minutes; planning sprints from 3 weeks to 3 days
+- Research that took days can be done in minutes inside tools customers already use
 Category: announcement
 Date: 2026-10-28
 URL: https://claude.com/resources/articles/idc-brings-quanta-into-claude-and-adopts-claude-across-the-company
 
 ## Introducing artifacts for legal work
-- Gallery of prebuilt interactive legal tools (trackers, dashboards) added to Claude for Legal
-- Covers citation checks, law comparisons, matter tracking, contract deviation flags, regulation scans, review tables
-- 60+ legal connectors added, including Bloomberg Law and Filevine
-- Partner artifacts from Goodwin, Harvey, Foley & Lardner, PwC; nine access-to-justice tools; Legal Ambassadors Program waitlist
-- Source links let lawyers verify output; sharing controls support privacy and ethical walls
+- Ready-to-use interactive artifacts (trackers, dashboards) for legal teams in Claude for Legal
+- New legal gallery: cite checking, jurisdiction comparison tables, contract deviation boards, regulatory timelines
+- 60+ legal connectors; partners Goodwin, Harvey, Foley & Lardner, PwC contributed artifacts
+- Sharing controls support ethical walls; outputs link to sources for verification
+- Nine access-to-justice artifacts included; Legal Ambassadors Program (waitlist) launching
 Category: feature update
 Date: 2026-10-28
 URL: https://claude.com/resources/articles/introducing-artifacts-for-legal-work
 
 ## Manage costs and demonstrate ROI for Claude Code on Google Cloud
-- Best-practices guide: control, track, and prove value of Claude Code on Google Cloud
-- Claude apps gateway (self-hosted) adds per-user/group/org spend caps, server-side model allowlists, 75%/95% warnings, admin API
-- OpenTelemetry metrics by user, model, skill, plugin, agent, MCP server; flow to Cloud Monitoring and BigQuery
-- ROI: measure adoption, satisfaction, delivery impact (PR cycle time, review turnaround) vs a baseline
-- Cost per task matters more than price per token; prefer model defaults over blunt restrictions
-Category: feature update
+- Guide using a "control, track, prove" framework for Claude Code on Google Cloud
+- Control: Claude apps gateway sets spend caps per user, IdP group, or org; model defaults/allowlists; in-CLI warnings
+- Track: OpenTelemetry metrics by user, model, skill, plugin, agent, MCP server; export to Cloud Monitoring or BigQuery
+- Prove: measure adoption, satisfaction, PR cycle time, review turnaround, deployment frequency vs. baseline
+- Favors guiding over restricting; waste often comes from routine work on expensive models
+Category: announcement
 Date: 2026-10-27
 URL: https://claude.com/resources/articles/how-to-manage-costs-and-demonstrate-roi-for-claude-code-on-google-cloud
 
 ## Claude for Financial Advisors
 - Suite of connectors and workflow skills linking Claude to custodians, portfolio platforms, CRMs, planning tools
-- Partners include Addepar, BlackRock, Charles Schwab, Orion, Wealthbox
-- Skills: meeting prep and notes, rebalance review, estate/tax briefs, prospect intake, compliance checks
-- Claude stages actions for advisor review; recommendations and compliance remain subject to human approval
-- Plugin in Cowork plugin browser for Enterprise; Enterprise recommended for audit logs
+- 20+ partner connectors (Schwab, BlackRock, Addepar, Wealthbox, Orion)
+- Skills: meeting prep, follow-up, rebalance review, estate/tax checks, compliance screening (SEC Marketing Rule flags)
+- Claude stages CRM updates and client communications for advisor approval
+- Plugin available now; Enterprise plans recommended for audit logs
 Category: announcement
 Date: 2026-10-27
 URL: https://claude.com/resources/articles/claude-for-financial-advisors
 
 ## Expanding Claude for Nonprofits
-- Claude for Nonprofits plugin of skills and connectors, built with ~30 nonprofits
-- Covers fundraising, marketing, hiring, board work, grant research, responsible setup against AI policy
-- Claude Corps fellowship to extend via Taproot pro bono consulting; new consulting partners and webinars
-- Auto-installs at no extra cost on Team and Enterprise plans
-- 25,000+ nonprofits already use Claude; 75%+ have under 10 seats
+- Claude for Nonprofits plugin of skills and connectors, built with about 30 nonprofits
+- Skills for marketing, hiring, board work, data mapping, and fundraising (funder research, RFP eligibility, proposals, reports, donors)
+- Free automatically for verified nonprofits on Team and Enterprise plans
+- Over 75% of the 25,000+ nonprofits using Claude have fewer than 10 seats
+- Claude Corps fellowship to expand via Taproot partnership; no training on customer data by default
 Category: announcement
 Date: 2026-10-26
 URL: https://claude.com/resources/articles/expanding-claude-for-nonprofits
 
 ## Claude Cowork and chat come together for Enterprise
-- Claude Enterprise now has one unified experience combining chat and Cowork on web, desktop, mobile; generally available
-- Chat tasks needing code/files move to an Anthropic-managed cloud environment; work continues when laptop closes
-- Admin controls: role access, model entitlements, spend limits, new Efficient mode (Sonnet/Haiku), pooled group budgets
-- Each agentic session runs in an isolated VM, network egress off by default; SSO and Compliance API still apply
-- ZDR for Claude Code, HIPAA-ready, and CMEK orgs stay on current setup
+- Chat and Cowork unified into one product, now generally available for Claude Enterprise
+- Conversations start as chat; code/file tasks move to cloud agentic work that continues after closing the device
+- Agentic sessions run in isolated VMs, network off by default; builds on SSO and Compliance API
+- New Efficient mode limits to Sonnet and Haiku; per-role model access, spend limits, pooled budgets
+- One tool for both quick questions and multi-step projects
 Category: feature update
 Date: 2026-10-23
 URL: https://claude.com/resources/articles/unified-claude-enterprise
 
 ## Claude Duet Safety, Privacy, and Security
-- Claude Duet is a research-preview always-on agent on a cloud computer using connected apps
-- Approval required before sensitive steps; some actions (trading, moving money) stay off-limits regardless
-- Outgoing message classifier blocks credentials, card/bank numbers, government IDs
-- Credential isolation: agent never sees passwords, cookies, tokens; handled by separate browser machine and proxy
-- Still in preview; Anthropic asks for feedback and vulnerability reports
+- Claude Duet is a research-preview cloud-computer agent that works across connected apps and keeps running after the app closes
+- Requires approval before sensitive messages, payments, or deletions; separate automated check outside the model
+- Purchases use one-time cards limited to one merchant and amount
+- Classifier blocks sharing credentials, card/bank numbers, ID numbers; Duet never sees passwords, cookies, or tokens (isolated browser VM)
+- Safeguards still being refined and may occasionally miss issues
 Category: announcement
 Date: 2026-10-23
 URL: https://claude.com/resources/articles/claude-duet-safety-privacy-and-security
 
 ## LLMs are making formal software verification feasible at a much larger scale
-- Anthropic with Theorem used Claude to write formal proofs that compiled software won't crash, operating on RISC-V assembly
-- Proved 239 fuzz-test entry points across 123 open-source libraries crash-free for inputs under 64 MB
-- Claude also found and patched hundreds of bugs, some missed by fuzzing
-- Proofs still cost hundreds of millions of tokens; proof reuse cut tokens 17%
-- Caveat: "formally verified" is not "bug-free"; specs and trusted components must match reality
+- Anthropic and Theorem used Claude to write formal proofs that open-source software is free of certain crashes, checking compiled RISC-V code
+- Proved no-crash properties for 239 entry points across 123 libraries, inputs up to 64 MB
+- Converted fuzz tests into formal specs; found bugs fuzzing missed, including a decade-old logic bug
+- Caveat: "formally verified" is not "bug-free"; assumes single-threaded static RISC-V Linux binaries
+- Proof costs falling; authors expect formal verification to become standard in secure development
 Category: announcement
 Date: 2026-10-22
 URL: https://www.anthropic.com/research/formal-verification
