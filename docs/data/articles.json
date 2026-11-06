@@ -1,5 +1,33 @@
 [
   {
+    "title": "Smart reports, surveys, and pooled group budgets for Claude Enterprise",
+    "category": "feature update",
+    "date": "2026-10-28",
+    "summary": "Three Claude Enterprise features are now generally available: smart reports, in-app surveys, and pooled group budgets. Smart reports analyze sampled team transcripts for workstreams, spend, deliverables, friction, and skill recommendations, while surveys gather customizable, exportable team feedback. Pooled group budgets add a shared monthly limit with member guardrails and admin threshold alerts, and these features are meant for adoption planning rather than individual performance reviews.",
+    "url": "https://claude.com/resources/articles/smart-reports-surveys-pooled-budgets"
+  },
+  {
+    "title": "Introducing Personal Finance in Claude",
+    "category": "feature update",
+    "date": "2026-11-05",
+    "summary": "Personal Finance connects bank and card accounts so users can ask plain-language questions about their money, in beta for Pro, Max, and Ultra plans in the US. It is read-only and cannot move or invest money, and accounts link via Plaid so Claude never sees the bank password; it can categorize spending, flag unusual charges, and explain terms. Hub conversations are not used for model training, accounts can be unlinked anytime, and there are no ads or sponsored recommendations.",
+    "url": "https://claude.com/resources/articles/introducing-personal-finance-in-claude"
+  },
+  {
+    "title": "Manage costs and demonstrate ROI for Claude Code on Google Cloud",
+    "category": "announcement",
+    "date": "2026-10-27",
+    "summary": "A best-practices guide covers cost governance for Claude Code on Google Cloud using a control, track, and prove framework. It pairs Claude apps gateway spend caps, 75%/95% warnings, and model allowlists with Google Cloud budgets, BigQuery exports, and provisioned throughput, while OpenTelemetry data breaks usage and cost down by user, model, and tool. It recommends judging cost per task and outcomes rather than relying on blunt restrictions.",
+    "url": "https://claude.com/resources/articles/how-to-manage-costs-and-demonstrate-roi-for-claude-code-on-google-cloud"
+  },
+  {
+    "title": "Building agents: When to fold subagents into your main agent loop",
+    "category": "announcement",
+    "date": "2026-10-22",
+    "summary": "Guidance on when to replace orchestrator/subagent designs with a single main agent loop on Claude Platform. A single loop loads skills on demand and finds tools via tool search, and enterprise comparisons show single agents with skills often beat multi-agent designs on quality, cost, and latency, with one customer seeing its loop run about 2x faster. Subagents still fit for context bloat, parallel tasks, or tool-selection trouble, and a migration kit and Claude API skills have been released.",
+    "url": "https://claude.com/resources/articles/building-agents-when-to-fold-subagents-into-your-main-agent-loop"
+  },
+  {
     "title": "More visibility and control over Claude Enterprise for security teams",
     "category": "feature update",
     "date": "2026-11-05",
@@ -12,33 +40,5 @@
     "date": "2026-11-02",
     "summary": "Message threads are in public beta in the Claude Platform Messages API for long-running agent sessions. Clients send the full conversation once, then only new messages plus the previous response ID via a thread parameter, and threads expire after 5 minutes idle. Claude Code has it on by default with about 35% lower median time to first token on 500k-1M token requests, token usage is unchanged, and it is available on Claude Platform, AWS, Microsoft Foundry, and Google Cloud.",
     "url": "https://claude.com/resources/articles/message-threads"
-  },
-  {
-    "title": "Introducing artifacts for legal work",
-    "category": "feature update",
-    "date": "2026-10-28",
-    "summary": "Ready-to-use interactive artifacts such as trackers and dashboards are now available for legal teams, and they can be shared and adapted. The legal gallery includes a cite checker, jurisdiction survey matrix, matter board, playbook deviation board, regulatory horizon scan, and contract review tool, plus partner artifacts from Goodwin, Harvey, Foley & Lardner, and PwC and nine access-to-justice artifacts. Claude for Legal now has 60+ connectors and a Legal Ambassadors Program waitlist, and a lawyer still reviews Claude's first pass.",
-    "url": "https://claude.com/resources/articles/introducing-artifacts-for-legal-work"
-  },
-  {
-    "title": "Claude for Financial Advisors",
-    "category": "feature update",
-    "date": "2026-10-27",
-    "summary": "Claude for Financial Advisors is a suite of connectors and workflow skills for research, meeting prep, and documentation, with 20+ connector partners including Charles Schwab, BlackRock, Addepar, Orion, and Wealthbox. Plugin skills cover meeting prep, notes and follow-up, rebalance review, estate and tax briefs, prospect intake, and compliance checks, and it is available in Cowork for Enterprise (recommended for RIAs for audit logs) with others able to request a license. Advisors keep approval over client communications and regulated actions.",
-    "url": "https://claude.com/resources/articles/claude-for-financial-advisors"
-  },
-  {
-    "title": "New agents and products for security, productivity, and creative work on Claude Marketplace",
-    "category": "announcement",
-    "date": "2026-11-04",
-    "summary": "Claude Marketplace now lists 25+ partner agents and products spanning security (Chainguard, Checkmarx, Tanium), dev infrastructure (Datadog, Netlify), creative (Runway, Webflow), and productivity (Asana, Glean, monday, Zoom). Eligible enterprises can apply part of their committed Anthropic spend to partner solutions, for both new purchases and expanding existing tools. This means one commitment covers both Claude and partner products.",
-    "url": "https://claude.com/resources/articles/new-agents-and-products-claude-marketplace"
-  },
-  {
-    "title": "IDC brings Quanta into Claude and adopts Claude across the company",
-    "category": "announcement",
-    "date": "2026-10-28",
-    "summary": "IDC's Quanta technology intelligence platform is now available in Claude through an MCP connector, with cited answers for competitor briefs, vendor shortlists, and budget versus IDC forecast comparisons. IDC has rolled out Claude company-wide across engineering, product, marketing, and sales. IDC reports rebuilding its internal data repository in 3 weeks instead of about 3 months and cutting code review from 5 days to about 30 minutes.",
-    "url": "https://claude.com/resources/articles/idc-brings-quanta-into-claude-and-adopts-claude-across-the-company"
   }
 ]
