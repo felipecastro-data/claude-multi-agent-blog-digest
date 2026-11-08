@@ -1,5 +1,19 @@
 [
   {
+    "title": "More visibility and control over Claude Enterprise for security teams",
+    "category": "feature update",
+    "date": "2026-11-05",
+    "summary": "Claude Enterprise adds security and admin features for security teams, including a beta security center that compares settings against Anthropic's recommended configuration with an exportable report. Inference hooks are now generally available, sending prompt and pre-tool-call data to existing data security tools. Centralized management (beta), access controls (beta), and an EDR sensor (beta, macOS/Windows) that reports activity without blocking are also included.",
+    "url": "https://claude.com/resources/articles/claude-enterprise-security-updates"
+  },
+  {
+    "title": "Make long-running agents faster with message threads",
+    "category": "feature update",
+    "date": "2026-11-02",
+    "summary": "Message threads are in public beta in the Claude Platform Messages API, letting clients send the conversation once and then only new messages with a `thread` parameter and the previous response ID. Threads are kept in encrypted memory and expire 5 minutes after the last request, with token usage unchanged. Claude Code users with 500k-1M token requests saw median time to first token drop about 35%, which helps coding agents, computer use agents, and document- or image-heavy workflows.",
+    "url": "https://claude.com/resources/articles/message-threads"
+  },
+  {
     "title": "Introducing artifacts for legal work",
     "category": "feature update",
     "date": "2026-10-28",
@@ -26,19 +40,5 @@
     "date": "2026-10-27",
     "summary": "Connectors and workflow skills help financial advisors with research, meeting prep, and documentation, connecting to custodians such as Schwab, Addepar, and BlackRock along with CRMs and planning tools. Skills cover meeting prep and notes, rebalance review, estate and tax briefs, and SEC Marketing Rule checks, with approval required for critical tasks so the advisor stays in control. It is available now as a Cowork plugin, and Enterprise is recommended for audit logs.",
     "url": "https://claude.com/resources/articles/claude-for-financial-advisors"
-  },
-  {
-    "title": "Smart reports, surveys, and pooled group budgets for Claude Enterprise",
-    "category": "feature update",
-    "date": "2026-10-28",
-    "summary": "Three Claude Enterprise features are now generally available: smart reports, in-app surveys, and pooled group budgets. Smart reports analyze sampled team transcripts for workstreams, spend, deliverables, friction, and skill recommendations, while surveys gather customizable, exportable team feedback. Pooled group budgets add a shared monthly limit with member guardrails and admin threshold alerts, and these features are meant for adoption planning rather than individual performance reviews.",
-    "url": "https://claude.com/resources/articles/smart-reports-surveys-pooled-budgets"
-  },
-  {
-    "title": "Introducing Personal Finance in Claude",
-    "category": "feature update",
-    "date": "2026-11-05",
-    "summary": "Personal Finance connects bank and card accounts so users can ask plain-language questions about their money, in beta for Pro, Max, and Ultra plans in the US. It is read-only and cannot move or invest money, and accounts link via Plaid so Claude never sees the bank password; it can categorize spending, flag unusual charges, and explain terms. Hub conversations are not used for model training, accounts can be unlinked anytime, and there are no ads or sponsored recommendations.",
-    "url": "https://claude.com/resources/articles/introducing-personal-finance-in-claude"
   }
 ]
