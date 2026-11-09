@@ -1,5 +1,33 @@
 [
   {
+    "title": "Smart reports, surveys, and pooled group budgets for Claude Enterprise",
+    "category": "feature update",
+    "date": "2026-10-28",
+    "summary": "Three Claude Enterprise features are now generally available: smart reports, in-app surveys, and pooled group budgets. Smart reports sample transcripts, group work into workstreams, and show spend, deliverables, and friction points, but are not meant for evaluating individuals. Pooled group budgets give each group a shared monthly budget with alerts at 50/75/95/100%, and availability varies by configuration such as HIPAA or customer-managed keys.",
+    "url": "https://claude.com/resources/articles/smart-reports-surveys-pooled-budgets"
+  },
+  {
+    "title": "Introducing Personal Finance in Claude",
+    "category": "feature update",
+    "date": "2026-11-05",
+    "summary": "Personal Finance is in beta on Pro, Max, and Ultra plans in the US, connecting to bank and card accounts through Plaid in read-only mode so Claude cannot move or invest funds. It totals spending by category, flags duplicate charges and rising bills, explains terms, and builds charts and dashboards. Claude never sees bank passwords, Personal Finance hub chats are not used for training, accounts can be unlinked at any time, and the feature is not designed for investment advice.",
+    "url": "https://claude.com/resources/articles/introducing-personal-finance-in-claude"
+  },
+  {
+    "title": "Components of agent memory",
+    "category": "announcement",
+    "date": "2026-11-06",
+    "summary": "Anthropic describes \"dreaming,\" an offline process where Claude reviews past session logs to fix and write memory notes and build linked wikis, checking mid-session notes against original transcripts because they can go stale. Reported results include document-wiki accuracy rising from 13% to 48% over 128 dreaming sessions and contract task fact capture going from 72% to 100%. The post notes that newer models (Opus 5, Sonnet 5) judge what to remember better, strict steering rules often hurt stronger models, and keeping always-loaded context small matters because dreaming trades compute for accuracy.",
+    "url": "https://www.anthropic.com/research/components-of-agent-memory"
+  },
+  {
+    "title": "Manage costs and demonstrate ROI for Claude Code on Google Cloud",
+    "category": "announcement",
+    "date": "2026-10-27",
+    "summary": "This best-practices guide uses a control, track, and prove framework for Claude Code on Google Cloud. Control uses the Claude apps gateway to set spend caps per user, group, or org with warnings at 75% and 95% and enforce model allowlists, while Track exports OpenTelemetry metrics to Cloud Monitoring or BigQuery. Prove measures adoption, satisfaction, PR cycle time, and review turnaround against a pre-rollout baseline, and the guide recommends cutting waste such as expensive models on routine tasks over capping power users.",
+    "url": "https://claude.com/resources/articles/how-to-manage-costs-and-demonstrate-roi-for-claude-code-on-google-cloud"
+  },
+  {
     "title": "More visibility and control over Claude Enterprise for security teams",
     "category": "feature update",
     "date": "2026-11-05",
@@ -12,33 +40,5 @@
     "date": "2026-11-02",
     "summary": "Message threads are in public beta in the Claude Platform Messages API, letting clients send the conversation once and then only new messages with a `thread` parameter and the previous response ID. Threads are kept in encrypted memory and expire 5 minutes after the last request, with token usage unchanged. Claude Code users with 500k-1M token requests saw median time to first token drop about 35%, which helps coding agents, computer use agents, and document- or image-heavy workflows.",
     "url": "https://claude.com/resources/articles/message-threads"
-  },
-  {
-    "title": "Introducing artifacts for legal work",
-    "category": "feature update",
-    "date": "2026-10-28",
-    "summary": "Ready-to-use interactive artifacts such as trackers and dashboards are now available for legal teams, including a legal gallery for cite-checking, contract vs. standard terms, regulatory tracking, and side-by-side review. The release includes nine access-to-justice artifacts and launches the Legal Ambassadors Program, with artifacts shareable internally and externally under privacy and ethical-wall settings. Outputs link to their sources so lawyers can verify them.",
-    "url": "https://claude.com/resources/articles/introducing-artifacts-for-legal-work"
-  },
-  {
-    "title": "New agents and products for security, productivity, and creative work on Claude Marketplace",
-    "category": "announcement",
-    "date": "2026-11-04",
-    "summary": "Claude Marketplace adds new partner listings, bringing the total to over 25 partner agents and products. Partners span security (Chainguard, Checkmarx, Cyera, Rubrik, Tanium), dev infrastructure (Datadog, Netlify), marketing and creative (AirOps, Runway, Webflow), and productivity (Asana, Glean, monday, Zoom). Eligible enterprises can apply committed Anthropic spend to partner products, and builders can apply to join the marketplace.",
-    "url": "https://claude.com/resources/articles/new-agents-and-products-claude-marketplace"
-  },
-  {
-    "title": "IDC brings Quanta into Claude and adopts Claude across the company",
-    "category": "announcement",
-    "date": "2026-10-28",
-    "summary": "The IDC Quanta platform is now available in Claude as a connector, drawing answers from IDC forecasts, market data, and research with citations. Customers can use it to produce competitor briefs, vendor shortlists, and budget comparisons in minutes. IDC also rolled Claude out internally, cutting code review time from 5 days to about 30 minutes.",
-    "url": "https://claude.com/resources/articles/idc-brings-quanta-into-claude-and-adopts-claude-across-the-company"
-  },
-  {
-    "title": "Claude for Financial Advisors",
-    "category": "announcement",
-    "date": "2026-10-27",
-    "summary": "Connectors and workflow skills help financial advisors with research, meeting prep, and documentation, connecting to custodians such as Schwab, Addepar, and BlackRock along with CRMs and planning tools. Skills cover meeting prep and notes, rebalance review, estate and tax briefs, and SEC Marketing Rule checks, with approval required for critical tasks so the advisor stays in control. It is available now as a Cowork plugin, and Enterprise is recommended for audit logs.",
-    "url": "https://claude.com/resources/articles/claude-for-financial-advisors"
   }
 ]
