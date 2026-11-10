@@ -1,99 +1,99 @@
-## Components of agent memory
-- Describes "dreaming": an offline process where Claude reviews past session logs and reorganizes its memory (fixes notes, writes new ones, builds linked wikis).
-- Notes written mid-session can be wrong or go stale; dreaming checks them against original transcripts.
-- Results: document-wiki accuracy rose 13% to 48% over 128 dreaming sessions; contract task fact capture went 72% to 100%.
-- Newer models (Opus 5, Sonnet 5) judge what to remember better; strict steering rules often hurt stronger models.
-- Keeping always-loaded context small matters; dreaming trades compute for accuracy.
+## Introducing Claude Whiteboards, Claude Sheets, and Claude Data
+- Whiteboards and Sheets launch in beta; Dashboards becomes generally available as Claude Data; all on paid plans
+- Whiteboards: shared boards where Claude builds timelines, groups notes, drafts action items; export to doc/deck or Lucid/Miro
+- Sheets: Claude builds spreadsheets with formulas and drop-downs, logs each edit, exports to .xlsx/CSV
+- Claude Data adds certified metrics, live sharing (beta), caching, tracked changes with rollback; partners include Amplitude, Mixpanel, Omni, PostHog, Sigma
+- Enterprise: Whiteboards and Sheets off by default; Claude Data turns on Nov 19, 2026
+Category: feature update
+Date: 2026-11-10
+URL: https://claude.com/resources/articles/sheets-whiteboards-data
+
+## Your apps can now open in Claude, and Claude can work in them
+- Partner apps open inside Claude beside chat or full screen, no tab switching
+- Claude can edit open pages, rows, or files; user approves actions as with any connector
+- Rolling out on web and desktop, all plans, as part of a new experience combining chat and Cowork
+- Initial tools: Asana, Canva, Notion, Confluence, Box; can be pinned to sidebar
+- Built on MCP Apps (open MCP extension); full apps in Claude in public preview for developers
+Category: feature update
+Date: 2026-11-10
+URL: https://claude.com/resources/articles/interactive-connectors-full-tool
+
+## More ways to work with Claude: Sheets, Whiteboards, and Interactive Connectors
+- Overview post: new artifact types (Sheets, Whiteboards, Data), upgraded interactive connectors, and a coming Claude Meetings feature
+- Dashboards can be built from connected sources such as Snowflake and Salesforce
+- Partners embed apps (Adobe, Atlassian); some plugins include role-specific skills
+- Enterprise controls: per-user product/connector access, spending limits, connector restrictions; auto-connect (beta)
+- Aimed at non-technical teams building their own tools with carried-over context
+Category: announcement
+Date: 2026-11-10
+URL: https://claude.com/resources/articles/more-ways-to-work-with-claude-sheets-whiteboards-and-interactive-connectors
+
+## JPMorganChase expands Claude Code to more employees across the firm
+- Customer story: JPMorganChase widening Claude and Claude Code use firm-wide
+- Access extends beyond engineers to product, advisors, infrastructure/ops, security teams
+- Agents built for PR review, self-healing systems, legacy modernization; faster path to production
+- Guardrails: containerized environments, staged access, automated pass/halt gates so Claude can't sign off its own work
+- Example of agents in a heavily regulated financial institution
+Category: announcement
+Date: 2026-11-09
+URL: https://claude.com/resources/articles/jpmorganchase-expands-claude-code
+
+## Claude Fable 5.2 and Mythos 5.2
+- Upgraded models (same underlying model): Fable for all users, Mythos limited to vetted cybersecurity/biomedical orgs
+- Better coding, reasoning, vision; up to 30% faster than 5.1; $8/$40 per million input/output tokens; optional fast mode
+- About 55% fewer safety-classifier blocks than 5.1; outperforms Opus 5.5 on nearly all evals
+- Examples: Fermat's Last Theorem formalization in 30 hours, working electronic devices
+- Caveats: models often suspect evaluation; Anthropic recommends Opus 5.5 for most daily work
+Category: announcement
+Date: 2026-11-09
+URL: https://www.anthropic.com/claude-fable-and-mythos-5-2
+
+## Claude can design electronic prototypes from start to finish
+- With Diode Computers, Claude designed a speakerphone, voice-assistant hub, and handheld virtual pet
+- From a short prompt: schematics, PCB layouts, 3D-printable enclosures, firmware, parts lists
+- Fable 5.2 scored 69% on Diode's PCB Gym benchmark vs 25% for Fable 5
+- Prototypes worked without circuit fixes; humans did assembly and testing
+- Caveat: early prototypes, no electrical validation, thermal testing, or certification
+Category: announcement
+Date: 2026-11-09
+URL: https://www.anthropic.com/research/claude-electronics-design
+
+## Safely scaling multi-agent teams with Claude Fable 5.2
+- Experiment: 1,000 Claude agents (1 lead, 999 helpers) reproduced a Lean proof of Fermat's Last Theorem using early Fable 5.2
+- Used only general tools (shell, editor, Lean/Mathlib, Git, shared Postgres); agents built their own coordination with no human steering
+- Finished in 28.7 hours with about one-third the output tokens; proof about one-seventh original length
+- Safety: per-agent sandboxes without internet, real-time classifier on every tool call, offline monitor; none of 1M+ calls needed blocking
+- Agents tended to give up early on hard statements; domain tools and occasional encouragement still help
+Category: announcement
+Date: 2026-11-09
+URL: https://claude.dev/blog/safely-scaling-multi-agent-teams-with-fable-5-2/
+
+## Which Claude model should you build with?
+- Playbook for choosing among Haiku 5.5, Sonnet 5.5, Opus 5.5, Fable 5.2, plus pricing, effort levels, subagents
+- Recommended default: Opus 5.5 at medium effort, half the per-token cost of Fable 5.2
+- Fable 5.2 at high roughly matched Opus 5.5 at max on FrontierCode 2.0 (45.3% vs 45.5%) at about half cost per task
+- Tune effort before switching models; low effort with high-effort retry of failures hit ~97% on SWE-bench Pro at ~$0.17/task
+- Migration: thinking blocks do not carry across tiers; tool_choice any/tool and budget_tokens settings return 400 errors on some models
+Category: feature update
+Date: 2026-11-09
+URL: https://claude.dev/blog/which-claude-model-should-you-build-with/
+
+## The components of agent memory
+- Describes agent memory as a hierarchy: transcripts, memory notes, wiki-style representations, small injected context layer
+- Introduces "dreaming": offline review of past transcripts to fix and write notes
+- Wiki-only setup rose from 13% to 48% over 128 dreaming sessions; legal brief contract facts 72% to 100%
+- Pokémon test: dreaming corrected a wrong note, agent escaped a prior trap
+- Rigid save rules can hurt stronger models; always-loaded context must stay small
 Category: announcement
 Date: 2026-11-06
 URL: https://www.anthropic.com/research/components-of-agent-memory
 
 ## Introducing Personal Finance in Claude
-- Connects to bank and card accounts via Plaid, read-only; Claude cannot move or invest funds.
-- Beta rollout on Pro, Max, and Ultra plans in the US.
-- Totals spending by category, flags duplicate charges and rising bills, explains terms, builds charts/dashboards.
-- Claude doesn't see bank passwords; Personal Finance hub chats not used for training; accounts can be unlinked anytime.
-- Not designed for investment advice; users should verify important figures.
+- Connect bank and card accounts via Plaid and ask money questions in plain language; read-only access
+- Claude categorizes spending, compares months, flags duplicate charges/rising bills, builds charts and dashboards
+- Beta rolling out on Pro, Max, Ultra plans in the US
+- Hub conversations not used for training; accounts can be unlinked anytime
+- No ads or lending products; not investment advice, verify key figures with your bank
 Category: feature update
 Date: 2026-11-05
 URL: https://claude.com/resources/articles/introducing-personal-finance-in-claude
-
-## More visibility and control over Claude Enterprise for security teams
-- Security center (beta) compares org Claude settings against Anthropic's recommended config; exports auditor reports.
-- Inference hooks (GA): prompt and pre-tool-call hooks send data to existing DLP/security tools.
-- Centralized management (beta): one admin console for parent orgs (SSO, SCIM).
-- Admin API sign-out of members, self-managed IP allowlist, block personal accounts in Claude Desktop on managed machines.
-- EDR sensor integration in Cowork VM (beta, macOS/Windows), detection mode only.
-Category: feature update
-Date: 2026-11-05
-URL: https://claude.com/resources/articles/claude-enterprise-security-updates
-
-## New agents and products for security, productivity, and creative work on Claude Marketplace
-- Claude Marketplace now has over 25 partner agents and products.
-- New security partners: Chainguard, Checkmarx, Cyera, Rubrik, Tanium; dev infra: Datadog, Netlify.
-- Creative/marketing: AirOps, Runway, Webflow; productivity: Asana, Glean, monday, Zoom.
-- Eligible customers can apply committed Anthropic spend to partner solutions.
-- Security tools pair Claude with code scanning, vulnerability testing, endpoint management, and agent governance.
-Category: announcement
-Date: 2026-11-04
-URL: https://claude.com/resources/articles/new-agents-and-products-claude-marketplace
-
-## Make long-running agents faster with message threads
-- Public beta in the Claude Platform Messages API: send full conversation once, then only new messages.
-- Uses a `thread` parameter plus previous response ID; threads expire 5 minutes after last request.
-- Cuts time to first token; about 35% median drop for 500k-1M token requests in Claude Code (on by default).
-- Token usage and rates unchanged; Claude still reads the full conversation each turn.
-- Available on Claude Platform, AWS, Microsoft Foundry, and Google Cloud.
-Category: feature update
-Date: 2026-11-02
-URL: https://claude.com/resources/articles/message-threads
-
-## Smart reports, surveys, and pooled group budgets for Claude Enterprise
-- Three Claude Enterprise features now generally available.
-- Smart reports: Claude samples transcripts, groups work into workstreams, shows spend, deliverables, friction points; not for evaluating individuals.
-- In-app surveys: short cards after replies; customizable questions/audiences, export, retention settings.
-- Pooled group budgets: shared monthly budget per group; alerts at 50/75/95/100%; members can request more.
-- Availability varies by config (e.g., HIPAA, customer-managed keys).
-Category: feature update
-Date: 2026-10-28
-URL: https://claude.com/resources/articles/smart-reports-surveys-pooled-budgets
-
-## IDC brings Quanta into Claude and adopts Claude across the company
-- IDC Quanta platform integrated into Claude; answers draw on IDC forecasts and research with source citations.
-- Works in Claude app, Cowork, and Microsoft Office add-ins; supports competitor briefs, vendor shortlists, budget vs forecast comparisons.
-- IDC rolled out Claude company-wide, starting with engineering.
-- Reported results: data repository rebuilt in 3 weeks vs ~3 months; code review from 5 days to ~30 minutes.
-- Existing Quanta customers add the connector within Claude.
-Category: announcement
-Date: 2026-10-28
-URL: https://claude.com/resources/articles/idc-brings-quanta-into-claude-and-adopts-claude-across-the-company
-
-## Introducing artifacts for legal work
-- Gallery of ready-to-use interactive artifacts (trackers, dashboards) for legal teams.
-- Use cases: cite checking, comparing laws, matter management, contract deviation flagging, regulation scanning, contract review tables.
-- Contributions from Goodwin, Harvey, Foley & Lardner, PwC; nine access-to-justice artifacts (five by nonprofits).
-- 60+ legal connectors added since May launch.
-- Shareable internally or with clients, with privacy and ethical wall settings; answers link to sources.
-Category: feature update
-Date: 2026-10-28
-URL: https://claude.com/resources/articles/introducing-artifacts-for-legal-work
-
-## Manage costs and demonstrate ROI for Claude Code on Google Cloud
-- Best-practices guide using a control, track, prove framework.
-- Control: Claude apps gateway sets spend caps per user/group/org, warns at 75% and 95%, enforces model allowlists.
-- Track: OpenTelemetry metrics by user, model, skill, plugin, agent, MCP server; export to Cloud Monitoring or BigQuery.
-- Prove: measure adoption, satisfaction, PR cycle time, review turnaround against a pre-rollout baseline.
-- Recommends cutting waste (expensive models on routine tasks) over capping power users.
-Category: announcement
-Date: 2026-10-27
-URL: https://claude.com/resources/articles/how-to-manage-costs-and-demonstrate-roi-for-claude-code-on-google-cloud
-
-## Claude for Financial Advisors
-- Suite of connectors and workflow skills for advisor research, meeting prep, and documentation.
-- Connectors include Charles Schwab, Addepar, BlackRock, Orion, Wealthbox; bundled in a single plugin.
-- Skills: pre-meeting prep, follow-up, rebalance reviews, estate/tax checks, compliance screening.
-- Human review required for recommendations, communications, and compliance; CRM updates are staged for approval.
-- Available now in Cowork for Enterprise customers.
-Category: feature update
-Date: 2026-10-27
-URL: https://claude.com/resources/articles/claude-for-financial-advisors

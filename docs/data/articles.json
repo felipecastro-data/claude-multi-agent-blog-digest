@@ -1,44 +1,44 @@
 [
   {
-    "title": "Smart reports, surveys, and pooled group budgets for Claude Enterprise",
+    "title": "Which Claude model should you build with?",
     "category": "feature update",
-    "date": "2026-10-28",
-    "summary": "Three Claude Enterprise features are now generally available: smart reports, in-app surveys, and pooled group budgets. Smart reports sample transcripts, group work into workstreams, and show spend, deliverables, and friction points, but are not meant for evaluating individuals. Pooled group budgets give each group a shared monthly budget with alerts at 50/75/95/100%, and availability varies by configuration such as HIPAA or customer-managed keys.",
-    "url": "https://claude.com/resources/articles/smart-reports-surveys-pooled-budgets"
+    "date": "2026-11-09",
+    "summary": "Anthropic published a playbook for choosing among Haiku 5.5, Sonnet 5.5, Opus 5.5, and Fable 5.2, covering pricing, effort levels, and subagents. It recommends Opus 5.5 at medium effort as the default, and notes that Fable 5.2 at high effort roughly matched Opus 5.5 at max on FrontierCode 2.0 at about half the cost per task. It also warns that thinking blocks do not carry across tiers and that tool_choice any/tool and budget_tokens settings return 400 errors on some models, so migrations need care.",
+    "url": "https://claude.dev/blog/which-claude-model-should-you-build-with/"
   },
   {
-    "title": "Introducing Personal Finance in Claude",
+    "title": "Introducing Claude Whiteboards, Claude Sheets, and Claude Data",
     "category": "feature update",
-    "date": "2026-11-05",
-    "summary": "Personal Finance is in beta on Pro, Max, and Ultra plans in the US, connecting to bank and card accounts through Plaid in read-only mode so Claude cannot move or invest funds. It totals spending by category, flags duplicate charges and rising bills, explains terms, and builds charts and dashboards. Claude never sees bank passwords, Personal Finance hub chats are not used for training, accounts can be unlinked at any time, and the feature is not designed for investment advice.",
-    "url": "https://claude.com/resources/articles/introducing-personal-finance-in-claude"
+    "date": "2026-11-10",
+    "summary": "Whiteboards and Sheets launch in beta, and Dashboards becomes generally available as Claude Data, all on paid plans. Whiteboards let Claude build timelines, group notes, and draft action items on shared boards with export to doc, deck, Lucid, or Miro, while Sheets creates spreadsheets with formulas and drop-downs, logs each edit, and exports to .xlsx or CSV. Claude Data adds certified metrics, live sharing (beta), caching, and tracked changes with rollback, and on Enterprise, Whiteboards and Sheets are off by default while Claude Data turns on November 19, 2026.",
+    "url": "https://claude.com/resources/articles/sheets-whiteboards-data"
   },
   {
-    "title": "Components of agent memory",
+    "title": "Claude Fable 5.2 and Mythos 5.2",
     "category": "announcement",
-    "date": "2026-11-06",
-    "summary": "Anthropic describes \"dreaming,\" an offline process where Claude reviews past session logs to fix and write memory notes and build linked wikis, checking mid-session notes against original transcripts because they can go stale. Reported results include document-wiki accuracy rising from 13% to 48% over 128 dreaming sessions and contract task fact capture going from 72% to 100%. The post notes that newer models (Opus 5, Sonnet 5) judge what to remember better, strict steering rules often hurt stronger models, and keeping always-loaded context small matters because dreaming trades compute for accuracy.",
-    "url": "https://www.anthropic.com/research/components-of-agent-memory"
+    "date": "2026-11-09",
+    "summary": "Anthropic released Claude Fable 5.2 and Mythos 5.2, upgraded versions of the same underlying model, with Fable available to all users and Mythos limited to vetted cybersecurity and biomedical organizations. The models offer better coding, reasoning, and vision, run up to 30% faster than 5.1 at $8/$40 per million input/output tokens with an optional fast mode, and trigger about 55% fewer safety-classifier blocks than 5.1. Anthropic still recommends Opus 5.5 for most daily work and notes that the models often suspect they are being evaluated.",
+    "url": "https://www.anthropic.com/claude-fable-and-mythos-5-2"
   },
   {
-    "title": "Manage costs and demonstrate ROI for Claude Code on Google Cloud",
+    "title": "Your apps can now open in Claude, and Claude can work in them",
+    "category": "feature update",
+    "date": "2026-11-10",
+    "summary": "Partner apps such as Asana, Canva, Notion, Confluence, and Box can now open inside Claude beside chat or full screen, and Claude can edit open pages, rows, or files with the user approving actions as with any connector. The experience is rolling out on web and desktop across all plans as part of a new combined chat and Cowork experience, and tools can be pinned to the sidebar. It is built on the open MCP Apps extension, and full apps are in public preview for developers.",
+    "url": "https://claude.com/resources/articles/interactive-connectors-full-tool"
+  },
+  {
+    "title": "More ways to work with Claude: Sheets, Whiteboards, and Interactive Connectors",
     "category": "announcement",
-    "date": "2026-10-27",
-    "summary": "This best-practices guide uses a control, track, and prove framework for Claude Code on Google Cloud. Control uses the Claude apps gateway to set spend caps per user, group, or org with warnings at 75% and 95% and enforce model allowlists, while Track exports OpenTelemetry metrics to Cloud Monitoring or BigQuery. Prove measures adoption, satisfaction, PR cycle time, and review turnaround against a pre-rollout baseline, and the guide recommends cutting waste such as expensive models on routine tasks over capping power users.",
-    "url": "https://claude.com/resources/articles/how-to-manage-costs-and-demonstrate-roi-for-claude-code-on-google-cloud"
+    "date": "2026-11-10",
+    "summary": "This overview covers new artifact types (Sheets, Whiteboards, and Data), upgraded interactive connectors, and a coming Claude Meetings feature aimed at non-technical teams building their own tools with carried-over context. Dashboards can be built from connected sources such as Snowflake and Salesforce, and partners including Adobe and Atlassian embed apps, with some plugins including role-specific skills. Enterprise controls include per-user product and connector access, spending limits, connector restrictions, and auto-connect (beta).",
+    "url": "https://claude.com/resources/articles/more-ways-to-work-with-claude-sheets-whiteboards-and-interactive-connectors"
   },
   {
-    "title": "More visibility and control over Claude Enterprise for security teams",
-    "category": "feature update",
-    "date": "2026-11-05",
-    "summary": "Claude Enterprise adds security and admin features for security teams, including a beta security center that compares settings against Anthropic's recommended configuration with an exportable report. Inference hooks are now generally available, sending prompt and pre-tool-call data to existing data security tools. Centralized management (beta), access controls (beta), and an EDR sensor (beta, macOS/Windows) that reports activity without blocking are also included.",
-    "url": "https://claude.com/resources/articles/claude-enterprise-security-updates"
-  },
-  {
-    "title": "Make long-running agents faster with message threads",
-    "category": "feature update",
-    "date": "2026-11-02",
-    "summary": "Message threads are in public beta in the Claude Platform Messages API, letting clients send the conversation once and then only new messages with a `thread` parameter and the previous response ID. Threads are kept in encrypted memory and expire 5 minutes after the last request, with token usage unchanged. Claude Code users with 500k-1M token requests saw median time to first token drop about 35%, which helps coding agents, computer use agents, and document- or image-heavy workflows.",
-    "url": "https://claude.com/resources/articles/message-threads"
+    "title": "Safely scaling multi-agent teams with Claude Fable 5.2",
+    "category": "announcement",
+    "date": "2026-11-09",
+    "summary": "In an experiment, 1,000 Claude agents (one lead and 999 helpers) reproduced a Lean proof of Fermat's Last Theorem using early Fable 5.2, using only general tools and building their own coordination with no human steering. The run finished in 28.7 hours using about one-third the output tokens, and the resulting proof was about one-seventh the original length. Each agent ran in a sandbox without internet access under a real-time classifier and an offline monitor, and none of over one million tool calls needed blocking, though agents tended to give up early on hard statements.",
+    "url": "https://claude.dev/blog/safely-scaling-multi-agent-teams-with-fable-5-2/"
   }
 ]
