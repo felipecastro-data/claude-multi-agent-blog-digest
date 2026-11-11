@@ -1,5 +1,33 @@
 [
   {
+    "title": "JPMorganChase expands Claude Code to more employees across the firm",
+    "category": "announcement",
+    "date": "2026-11-09",
+    "summary": "JPMorganChase is expanding Claude Code beyond engineering to product, advisors, infrastructure and operations, and security teams. Uses include requirements, risk and controls assessments, incident root cause analysis, and vulnerability fixes. Claude runs in controlled containerized environments without direct employee credentials, with staged access expansion, internal approval for new models, and automated gates that stop Claude from approving its own changes.",
+    "url": "https://claude.com/resources/articles/jpmorganchase-expands-claude-code"
+  },
+  {
+    "title": "Claude can design electronic prototypes from start to finish",
+    "category": "announcement",
+    "date": "2026-11-09",
+    "summary": "With Diode Computers, Claude designed three electronic prototypes end to end: a speakerphone, a voice-assistant hub, and a handheld virtual pet. Fable 5.2 scored 69% on an internal board-layout benchmark versus 25% for Fable 5, revising failing designs, writing its own routing tool, and running manufacturability and parts checks. Diode built all three boards from the design files without the usual revision rounds, though the prototypes are early, unvalidated, and were produced without Claude having access to test equipment.",
+    "url": "https://www.anthropic.com/research/claude-electronics-design"
+  },
+  {
+    "title": "The components of agent memory",
+    "category": "announcement",
+    "date": "2026-11-06",
+    "summary": "Anthropic describes 'dreaming,' an offline review of past session transcripts that fixes mistakes, writes notes, and builds memory structures. Memory is layered from raw transcripts and working notes to wikis and a small always-loaded context, and newer Opus 5+ models are better at deciding what to save. In a test across 128 dreaming sessions on a 350k-file corpus, wiki-only answer scores rose from 13% to 48%, suggesting periodic review corrects drift while always-loaded context should stay small.",
+    "url": "https://www.anthropic.com/research/components-of-agent-memory"
+  },
+  {
+    "title": "How Curative is building a national provider network with agents on Claude",
+    "category": "announcement",
+    "date": "2026-11-10",
+    "summary": "Curative, a health insurer, built a hierarchy of agents on Claude to negotiate provider contracts, with a lead agent running on Opus. It has signed over 23,000 contracts at roughly 2,000 to 2,400 per week, compared with about 2,100 in all of 2025, and cut claims dispute response times from about 90 days to under 30 minutes. Oversight includes a Haiku judge reviewing every outbound message, a Sonnet rate reviewer, and humans approving uncleared requests.",
+    "url": "https://claude.com/resources/articles/how-curative-is-building-a-national-provider-network-with-agents-on-claude"
+  },
+  {
     "title": "Which Claude model should you build with?",
     "category": "feature update",
     "date": "2026-11-09",
@@ -12,33 +40,5 @@
     "date": "2026-11-10",
     "summary": "Whiteboards and Sheets launch in beta, and Dashboards becomes generally available as Claude Data, all on paid plans. Whiteboards let Claude build timelines, group notes, and draft action items on shared boards with export to doc, deck, Lucid, or Miro, while Sheets creates spreadsheets with formulas and drop-downs, logs each edit, and exports to .xlsx or CSV. Claude Data adds certified metrics, live sharing (beta), caching, and tracked changes with rollback, and on Enterprise, Whiteboards and Sheets are off by default while Claude Data turns on November 19, 2026.",
     "url": "https://claude.com/resources/articles/sheets-whiteboards-data"
-  },
-  {
-    "title": "Claude Fable 5.2 and Mythos 5.2",
-    "category": "announcement",
-    "date": "2026-11-09",
-    "summary": "Anthropic released Claude Fable 5.2 and Mythos 5.2, upgraded versions of the same underlying model, with Fable available to all users and Mythos limited to vetted cybersecurity and biomedical organizations. The models offer better coding, reasoning, and vision, run up to 30% faster than 5.1 at $8/$40 per million input/output tokens with an optional fast mode, and trigger about 55% fewer safety-classifier blocks than 5.1. Anthropic still recommends Opus 5.5 for most daily work and notes that the models often suspect they are being evaluated.",
-    "url": "https://www.anthropic.com/claude-fable-and-mythos-5-2"
-  },
-  {
-    "title": "Your apps can now open in Claude, and Claude can work in them",
-    "category": "feature update",
-    "date": "2026-11-10",
-    "summary": "Partner apps such as Asana, Canva, Notion, Confluence, and Box can now open inside Claude beside chat or full screen, and Claude can edit open pages, rows, or files with the user approving actions as with any connector. The experience is rolling out on web and desktop across all plans as part of a new combined chat and Cowork experience, and tools can be pinned to the sidebar. It is built on the open MCP Apps extension, and full apps are in public preview for developers.",
-    "url": "https://claude.com/resources/articles/interactive-connectors-full-tool"
-  },
-  {
-    "title": "More ways to work with Claude: Sheets, Whiteboards, and Interactive Connectors",
-    "category": "announcement",
-    "date": "2026-11-10",
-    "summary": "This overview covers new artifact types (Sheets, Whiteboards, and Data), upgraded interactive connectors, and a coming Claude Meetings feature aimed at non-technical teams building their own tools with carried-over context. Dashboards can be built from connected sources such as Snowflake and Salesforce, and partners including Adobe and Atlassian embed apps, with some plugins including role-specific skills. Enterprise controls include per-user product and connector access, spending limits, connector restrictions, and auto-connect (beta).",
-    "url": "https://claude.com/resources/articles/more-ways-to-work-with-claude-sheets-whiteboards-and-interactive-connectors"
-  },
-  {
-    "title": "Safely scaling multi-agent teams with Claude Fable 5.2",
-    "category": "announcement",
-    "date": "2026-11-09",
-    "summary": "In an experiment, 1,000 Claude agents (one lead and 999 helpers) reproduced a Lean proof of Fermat's Last Theorem using early Fable 5.2, using only general tools and building their own coordination with no human steering. The run finished in 28.7 hours using about one-third the output tokens, and the resulting proof was about one-seventh the original length. Each agent ran in a sandbox without internet access under a real-time classifier and an offline monitor, and none of over one million tool calls needed blocking, though agents tended to give up early on hard statements.",
-    "url": "https://claude.dev/blog/safely-scaling-multi-agent-teams-with-fable-5-2/"
   }
 ]
