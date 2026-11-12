@@ -1,99 +1,99 @@
-## Introducing Claude Whiteboards, Claude Sheets, and Claude Data
-- Whiteboards and Sheets launched in beta; Dashboards now generally available as Claude Data; paid plans
-- Whiteboards turn notes into timelines with owners/dates; Sheets builds/edits spreadsheets with formulas and logs edits
-- Claude Data adds certified metric definitions, data stories, live sharing (beta), caching, design system support, version rollback
-- Work can move to partner tools like Lucid, Miro, Airtable
-- Matters: docs, boards, sheets, dashboards stay in Claude without copy-paste
-Category: feature update
-Date: 2026-11-10
-URL: https://claude.com/resources/articles/sheets-whiteboards-data
-
 ## Your apps can now open in Claude, and Claude can work in them
-- Partner apps (Confluence, Notion etc.) open inside Claude, beside chat or full screen, with full editor under your own account
-- Claude can edit the open page/row/file; actions approved like other connector actions
-- Pin tools to sidebar or open from + menu
-- Built on MCP Apps (open MCP extension); app tools and embedded sites in public preview
-- Web and desktop, all plans; admins can restrict connector tools
+- Partner apps (connectors) can open inside Claude beside chat or full screen
+- Claude can edit open pages, rows, files directly; user approves actions
+- Open tools without a prompt; pin to sidebar or + menu
+- Web and desktop, all plans, starting with a few directory tools; admins can restrict tools
+- Developers can build full apps on MCP Apps extension (public preview)
 Category: feature update
 Date: 2026-11-10
 URL: https://claude.com/resources/articles/interactive-connectors-full-tool
 
+## Operate Claude Managed Agents inside your security perimeter
+- Self-hosted Claude Managed Agents in private beta
+- Harness, sandboxes, credentials, session history can run in customer cloud or on-prem
+- Model routing choice: Anthropic, Bedrock, Google Agent Platform, Microsoft Foundry, or own gateway
+- Credentials kept out of sandbox; network allowlists; OpenTelemetry logging of each step
+- Targets unattended agents on internal code and systems
+Category: feature update
+Date: 2026-11-12
+URL: https://claude.com/resources/articles/self-hosted-claude-managed-agents
+
+## J. Crew brings its signature approach to styling to life with Claude
+- Style Advisor: AI stylist on JCrew.com for full outfits, women's and men's, U.S.
+- Shoppers describe an occasion or start with an item; looks come from J.Crew photo shoots
+- Built with Claude Code using multiple Claude models for different tasks
+- Production uses a stylist model plus a smaller faster model for focused tasks
+- Keeps recommendations consistent with brand styling
+Category: announcement
+Date: 2026-11-12
+URL: https://claude.com/resources/articles/j-crew-style-advisor-with-claude
+
+## Introducing Claude for Manufacturing
+- Plugin with 17 skills and 4 connectors (Autodesk Fusion, Infor, Microsoft 365, Oracle NetSuite)
+- Drafts quotes, quality reports, supplier requests; multi-step flows like pricing jobs, investigating failed inspections
+- Separate Infor plugin can act in Infor (release POs, reschedule production) with approval and user permissions
+- Humans review before work reaches customers or suppliers; does not operate equipment
+- Available on Team and Enterprise plans
+Category: announcement
+Date: 2026-11-12
+URL: https://claude.com/resources/articles/claude-for-manufacturing
+
+## The Claude Tag guide for startups
+- Guide to Claude Tag (beta): @mention Claude in Slack, connect tools, assign tasks; based on 8 startups
+- Five use cases: on-call triage, threads to draft PRs, knowledge base, data analysis, recurring reports
+- Results: Campfire mention-to-PR in 21 min; NavigateAI merged 134 PRs; Moritz cut daily update from ~1 hr to 5 min
+- Advice: start with one task, narrow access, human review before merge, spend limits
+- Team/Enterprise only; not available with ZDR, CMEK, HIPAA config
+Category: announcement
+Date: 2026-11-12
+URL: https://claude.com/resources/articles/claude-tag-guide-for-startups
+
 ## How Curative is building a national provider network with agents on Claude
-- Curative (health insurer) built agent hierarchy to negotiate provider contracts; lead agent Gwen runs on Opus
-- Over 23,000 contracts signed; ~2,000-2,400/week vs ~2,100 in all of 2025
-- Claims dispute responses dropped from ~90 days to under 30 minutes
-- Oversight: Haiku judge reviews every outbound message; Sonnet rate reviewer; humans approve uncleared requests
-- Matters: national network estimated at 30 years at prior pace; helps small practices get paid sooner
+- Case study: health insurer Curative uses hierarchy of agents to contract providers
+- Opus agent "Gwen" handles a contract end to end; Sonnet reviews rates; Haiku screens messages; CEO approves non-standard pricing
+- Now signs 2,000-2,400 contracts/week vs 2,100 in all of 2025
+- Claims dispute responses cut from ~90 days to under 30 minutes
+- Lessons: one general tool (Python), meet providers on their channel (even fax), expand authority gradually
 Category: announcement
 Date: 2026-11-10
 URL: https://claude.com/resources/articles/how-curative-is-building-a-national-provider-network-with-agents-on-claude
 
 ## More ways to work with Claude: Sheets, Whiteboards, and Interactive Connectors
-- Announces Claude Sheets, Whiteboards, Data (formerly Dashboards), and upgraded interactive connectors; Claude Meetings coming soon
-- Claude Data draws from Snowflake, Salesforce, etc.
-- Context carries across whiteboard, spreadsheet, dashboard
-- Enterprise admins control products/connectors per person
-- Early results: Anthropic legal review 3 days to ~1; Gusto contracts from over a week to hours
-Category: announcement
+- New artifact types: Sheets, Whiteboards, Data, plus interactive connectors
+- Build spreadsheets, shared whiteboards, dashboards (Snowflake, Salesforce)
+- Adobe, Atlassian etc. embed apps in Claude; Claude Meetings coming soon
+- Customers: Gusto contract turnaround from over a week to hours; Advantage Solutions forecasts 10 hrs to under 30 min
+- Admin controls, spend limits; Claude auto-connect in beta
+Category: feature update
 Date: 2026-11-10
 URL: https://claude.com/resources/articles/more-ways-to-work-with-claude-sheets-whiteboards-and-interactive-connectors
 
+## Introducing Claude Whiteboards, Claude Sheets, and Claude Data
+- Whiteboards and Sheets in beta; Dashboards renamed Claude Data (GA); included in paid plans
+- Whiteboards: brainstorm with Claude, convert to doc or deck
+- Sheets: Claude builds/edits spreadsheets with formulas, logs each edit
+- Data: certified metric queries, data stories, live sharing (beta)
+- Team: Whiteboards/Sheets on by default; Enterprise: off by default, Data on by default Nov 19, 2026
+Category: feature update
+Date: 2026-11-10
+URL: https://claude.com/resources/articles/sheets-whiteboards-data
+
 ## JPMorganChase expands Claude Code to more employees across the firm
-- Claude Code expanding beyond engineering to product, advisors, infra/ops, security teams
-- Uses: requirements, risk/controls assessments, incident root cause analysis, vulnerability fixes
-- Runs in controlled environments (containerized Devspace); agents lack direct employee credentials
-- Staged access expansion; new models need internal approval; automated gates stop Claude approving its own changes
-- Matters: shows AI coding agent within oversight of a large regulated bank
+- Customer story: Claude Code expanding beyond engineers to product, advisors, infra and security staff
+- Uses: root-cause analysis, vulnerability fixes, risk/controls assessments, building agents
+- Asset & Wealth Management ships client solutions faster with more testing
+- Runs in containerized environments on firm infrastructure; no direct agent access to credentials
+- Staged access, internal model approval, automated halt gates, human accountability
 Category: announcement
 Date: 2026-11-09
 URL: https://claude.com/resources/articles/jpmorganchase-expands-claude-code
 
 ## Claude Fable 5.2 and Mythos 5.2
-- Two access tiers of same model: Fable for all users (stronger cyber/bio safeguards); Mythos for vetted orgs
-- Better coding, reasoning, vision; up to 30% faster output than 5.1; $8/$40 per M tokens; optional fast mode up to 2.5x faster
-- Beats Opus 5.5 on nearly all evals (FrontierCode 2.0: 49.1% vs 45.5%)
-- Applications: black-hole physics problems, Fermat's Last Theorem formalization (~30 hrs, 1,000 agents), three working electronic devices
-- ~55% fewer safeguard false positives; models suspect evaluation more often, complicating assessment
+- Same underlying model; Fable for all users, Mythos limited to vetted cyber/biomedical orgs
+- Better coding, reasoning, vision; output up to 30% faster than 5.1
+- Pricing $8/M input, $40/M output; optional fast mode up to 2.5x faster at higher price
+- Cyber/bio safeguards block ~55% fewer legitimate queries
+- Anthropic claims (self-reported): Fermat's Last Theorem formalized in 30 hrs with ~1,000 agents; low alignment risk
 Category: announcement
 Date: 2026-11-09
 URL: https://www.anthropic.com/claude-fable-and-mythos-5-2
-
-## Claude can design electronic prototypes from start to finish
-- With Diode Computers, Claude designed a speakerphone, voice-assistant hub, and handheld virtual pet
-- Fable 5.2 scored 69% on internal board-layout benchmark vs 25% for Fable 5
-- Revises failing designs; wrote its own routing tool; ran manufacturability and parts checks
-- Diode built all three boards from design files without usual revision rounds; worked after weeks of use
-- Caveat: early prototypes, not validated/certified; Claude had no test equipment access
-Category: announcement
-Date: 2026-11-09
-URL: https://www.anthropic.com/research/claude-electronics-design
-
-## Safely scaling multi-agent teams with Claude Fable 5.2
-- 1,000 agents (1 lead, 999 helpers) on early Fable 5.2 wrote a formal Lean proof of Fermat's Last Theorem
-- Took 28.7 hours, ~1/3 the output tokens of September effort, proof 1/7 the length, no researcher steering
-- Safety: per-agent sandboxes without internet, real-time command classifier, offline monitor; none of 1M+ tool calls blocked
-- Team self-organized with its own task tree
-- Caveat: agents misjudged difficulty (47 of 60 statements called infeasible, most later proved)
-Category: announcement
-Date: 2026-11-09
-URL: https://claude.dev/blog/safely-scaling-multi-agent-teams-with-fable-5-2/
-
-## Which Claude model should you build with?
-- Guide to Haiku 5.5, Sonnet 5.5, Opus 5.5, Fable 5.2; Mythos 5.2 limited to verification programs
-- Default: Opus 5.5 at medium effort; Sonnet for scoped tasks, Haiku for high-volume, Fable for hardest work
-- Tune effort before model; Opus high + Fable lower effort can match Opus max at ~half cost
-- Pricing: Opus $4/$20, Fable $8/$40 per M tokens; cost per task matters more than list price
-- Switching models mid-conversation loses model-specific prompt cache and thinking blocks
-Category: announcement
-Date: 2026-11-09
-URL: https://claude.dev/blog/which-claude-model-should-you-build-with/
-
-## The components of agent memory
-- Describes "dreaming": offline review of past session transcripts to fix mistakes, write notes, build memory structures
-- Memory layers: raw transcripts, working notes, representations like wikis, small always-loaded context
-- Newer models (Opus 5+) better at deciding what to save; compact memory beat bulky in Pokémon run
-- Wiki-only answer scores rose 13% to 48% over 128 dreaming sessions on 350k-file corpus
-- Matters: periodic review corrects drift/errors; keep always-loaded context small
-Category: announcement
-Date: 2026-11-06
-URL: https://www.anthropic.com/research/components-of-agent-memory
