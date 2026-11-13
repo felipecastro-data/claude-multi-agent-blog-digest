@@ -1,44 +1,44 @@
 [
   {
+    "title": "Introducing Claude Whiteboards, Claude Sheets, and Claude Data",
+    "category": "feature update",
+    "date": "2026-11-10",
+    "summary": "Whiteboards and Sheets launch in beta, and Dashboards become generally available as Claude Data, all included in paid plans. Whiteboards offer shared boards that can export to docs or decks and to Lucid, Miro, or Vani by Zoho, while Sheets adds tabs, formulas, formatting, drop-downs, logged edits, and .xlsx/CSV export. Claude Data adds certified metric queries, data stories, live sharing (beta), caching, and tracked changes with rollback, requires a data connector, and Enterprise defaults differ from Team plans.",
+    "url": "https://claude.com/resources/articles/sheets-whiteboards-data"
+  },
+  {
+    "title": "Using Claude Opus 5.5 as your daily driver for knowledge work",
+    "category": "feature update",
+    "date": "2026-11-12",
+    "summary": "Anthropic recommends Opus 5.5 for everyday knowledge work such as research, analysis, memos, and decks, priced at $4/$20 per million tokens. It is now the default on Pro, Max, Ultra, and Team plans, with Medium effort as the default and thinking always on. In a merger-model test, Opus 5.5 Medium matched or beat Opus 5 High, finishing in 63 minutes versus 93 at half the cost.",
+    "url": "https://claude.com/resources/articles/using-claude-opus-5-5-as-your-daily-driver-for-knowledge-work"
+  },
+  {
+    "title": "Introducing Claude Meetings",
+    "category": "feature update",
+    "date": "2026-11-12",
+    "summary": "Claude Meetings (beta) lets Claude join video calls as a visible participant, answering questions by voice or chat, building docs and whiteboards, and writing notes and action items during the meeting. It is available on Team and Enterprise plans for Google Meet only, and excludes ZDR, HIPAA-ready, and CMEK orgs. Each meeting gets a claude.ai page with notes and transcript, transcripts are saved but not audio, and Claude stays out of calls with outside guests by default.",
+    "url": "https://claude.com/resources/articles/claude-meetings"
+  },
+  {
+    "title": "How Curative is building a national provider network with agents on Claude",
+    "category": "announcement",
+    "date": "2026-11-10",
+    "summary": "Health insurer Curative built a hierarchy of Claude agents, with an Opus-based agent named Gwen handling provider contract outreach through signature. The agents helped sign about 23,000 contracts at roughly 2,000-2,400 per week, versus 2,100 for all of 2025, and cut claims dispute responses from about 90 days to under 30 minutes. Its contracting team grew from 45 to about 55 with each member about 2.5x as productive, and its lessons include limiting agent authority at first, meeting providers on preferred channels (fax doubled win rate), isolating runs, and logging everything.",
+    "url": "https://claude.com/resources/articles/how-curative-is-building-a-national-provider-network-with-agents-on-claude"
+  },
+  {
+    "title": "J. Crew brings its signature approach to styling to life with Claude",
+    "category": "announcement",
+    "date": "2026-11-12",
+    "summary": "J.Crew launched Style Advisor, an AI stylist on JCrew.com for US women's and men's shoppers that starts from an occasion or an item and returns full outfit looks drawn from J.Crew shoots, which customers can refine. It uses multiple Claude models: Fable 5.1 for planning, Opus 5.5 to prototype in Claude Code, Sonnet 5.5 for the stylist, and Haiku 5.5 for quick tasks. The customer story frames it as a shift from product search to an inspiration-led shopping experience.",
+    "url": "https://claude.com/resources/articles/j-crew-style-advisor-with-claude"
+  },
+  {
     "title": "Introducing Claude Fable 5.2 and Mythos 5.2",
     "category": "announcement",
     "date": "2026-11-09",
     "summary": "Anthropic released Claude Fable 5.2 and Mythos 5.2, which share the same underlying model: Fable is available to all users, while Mythos is limited to vetted cyber and biomedical organizations. The update brings better coding, reasoning, and vision, output up to 30% faster than 5.1, and an optional fast mode up to 2.5x faster at a higher price, with pricing of $8 per million input and $40 per million output tokens. Cyber and bio safeguards block about 55% fewer legitimate queries, and Anthropic self-reports that Fermat's Last Theorem was formalized in 30 hours with about 1,000 agents.",
     "url": "https://www.anthropic.com/claude-fable-and-mythos-5-2"
-  },
-  {
-    "title": "Introducing Claude for Manufacturing",
-    "category": "announcement",
-    "date": "2026-11-12",
-    "summary": "Claude for Manufacturing is a plugin with 17 skills and connectors to Autodesk Fusion, Infor, Microsoft 365, and Oracle NetSuite, for drafting quotes, quality reports, and supplier requests and for multi-step flows such as job pricing and investigating failed inspections. A separate Infor plugin can act inside Infor, such as releasing POs or rescheduling production, with approval and user permissions. Humans review output before it reaches customers or suppliers, the plugin does not operate equipment, and it is available on Team and Enterprise plans.",
-    "url": "https://claude.com/resources/articles/claude-for-manufacturing"
-  },
-  {
-    "title": "Your apps can now open in Claude, and Claude can work in them",
-    "category": "feature update",
-    "date": "2026-11-10",
-    "summary": "Partner apps (connectors) can now open inside Claude beside chat or full screen, and Claude can edit open pages, rows, and files directly, with the user approving actions. Users can open tools without a prompt and pin them to the sidebar or the + menu, on web and desktop across all plans, starting with a few directory tools, and admins can restrict tools. Developers can build full apps on the MCP Apps extension, which is in public preview.",
-    "url": "https://claude.com/resources/articles/interactive-connectors-full-tool"
-  },
-  {
-    "title": "Operate Claude Managed Agents inside your security perimeter",
-    "category": "feature update",
-    "date": "2026-11-12",
-    "summary": "Self-hosted Claude Managed Agents are in private beta, letting the harness, sandboxes, credentials, and session history run in a customer's cloud or on-prem. Customers can route models through Anthropic, Bedrock, Google Agent Platform, Microsoft Foundry, or their own gateway. Credentials stay out of the sandbox, network allowlists apply, and each step is logged via OpenTelemetry, targeting unattended agents that work on internal code and systems.",
-    "url": "https://claude.com/resources/articles/self-hosted-claude-managed-agents"
-  },
-  {
-    "title": "More ways to work with Claude: Sheets, Whiteboards, and Interactive Connectors",
-    "category": "feature update",
-    "date": "2026-11-10",
-    "summary": "Claude adds new artifact types, Sheets, Whiteboards, and Data, plus interactive connectors, so users can build spreadsheets, shared whiteboards, and dashboards over sources such as Snowflake and Salesforce. Partners such as Adobe and Atlassian can embed apps in Claude, and Claude Meetings is coming soon. Customers report Gusto contract turnaround dropping from over a week to hours and Advantage Solutions forecasts falling from 10 hours to under 30 minutes, with admin controls, spend limits, and Claude auto-connect in beta.",
-    "url": "https://claude.com/resources/articles/more-ways-to-work-with-claude-sheets-whiteboards-and-interactive-connectors"
-  },
-  {
-    "title": "The Claude Tag guide for startups",
-    "category": "announcement",
-    "date": "2026-11-12",
-    "summary": "This guide to Claude Tag (beta), based on 8 startups, covers @mentioning Claude in Slack, connecting tools, and assigning tasks across five use cases: on-call triage, turning threads into draft PRs, a knowledge base, data analysis, and recurring reports. Reported results include a Campfire mention-to-PR in 21 minutes, NavigateAI merging 134 PRs, and Moritz cutting a daily update from about an hour to 5 minutes. Its advice is to start with one task, narrow access, require human review before merge, and set spend limits, and Claude Tag is available only on Team and Enterprise plans and not with ZDR, CMEK, or HIPAA configurations.",
-    "url": "https://claude.com/resources/articles/claude-tag-guide-for-startups"
   }
 ]
