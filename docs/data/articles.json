@@ -1,5 +1,33 @@
 [
   {
+    "title": "J. Crew brings its signature approach to styling to life with Claude",
+    "category": "announcement",
+    "date": "2026-11-12",
+    "summary": "J.Crew's Style Advisor, an AI stylist on JCrew.com, is now live for U.S. women's and men's styles and helps shoppers buy complete outfits. Shoppers can describe an occasion or start from one item and receive full looks drawn from J.Crew photo shoots, refinable by chat. Built with Claude Code, it uses a frontier model for planning, Sonnet for styling decisions, and Haiku for quick tasks to bring in-store styling expertise online.",
+    "url": "https://claude.com/resources/articles/j-crew-style-advisor-with-claude"
+  },
+  {
+    "title": "Introducing Claude Meetings",
+    "category": "feature update",
+    "date": "2026-11-12",
+    "summary": "Claude Meetings is in beta and lets Claude join Google Meet video calls as a visible participant that follows the conversation and answers questions aloud or in chat. With permission, it can use tools and build docs or whiteboards live, and it writes notes and action items to a claude.ai page with the transcript and artifacts. It is available on Team and Enterprise plans, stays out of calls with outside guests unless an admin allows it, and excludes ZDR, HIPAA-ready, and customer-managed key orgs during beta.",
+    "url": "https://claude.com/resources/articles/claude-meetings"
+  },
+  {
+    "title": "Using Claude Opus 5.5 as your daily driver for knowledge work",
+    "category": "announcement",
+    "date": "2026-11-12",
+    "summary": "Opus 5.5 is now the default model on Pro, Max, Ultra, and Team plans, and a guide recommends it for research, analysis, memos, reports, spreadsheets, and decks. Although its per-token price is higher, fewer back-and-forths can offset the cost; an internal test produced a merger model and deck in 63 minutes versus 93 minutes for Opus 5, at about half the cost. Tips include starting at Medium effort, asking for finished files, defining what done means, and skipping \"think hard\" because thinking is always on.",
+    "url": "https://claude.com/resources/articles/using-claude-opus-5-5-as-your-daily-driver-for-knowledge-work"
+  },
+  {
+    "title": "How Curative is building a national provider network with agents on Claude",
+    "category": "announcement",
+    "date": "2026-11-10",
+    "summary": "Health insurer Curative built a hierarchy of agents on Claude, with core agent Gwen handling provider deals from outreach to signature. Contracts are signed about 50x faster than in 2025, with over 23,000 signed at roughly 2,000 to 2,400 per week, and claims dispute responses dropped from about 90 days to under 30 minutes. Lessons include starting with limited agent authority, meeting providers on their preferred channels (adding fax more than doubled win rate), and using a judge agent to audit outbound messages.",
+    "url": "https://claude.com/resources/articles/how-curative-is-building-a-national-provider-network-with-agents-on-claude"
+  },
+  {
     "title": "Operate Claude Managed Agents inside your security perimeter",
     "category": "feature update",
     "date": "2026-11-12",
@@ -12,33 +40,5 @@
     "date": "2026-11-10",
     "summary": "Partner apps can now open inside Claude beside chat or full screen, built on the open MCP Apps extension, and Claude can edit open pages, rows, and files with user approval for actions. It is rolling out on web and desktop to all plans, starting with Asana, Canva, and Notion, and admins can restrict connector tools as they do today. Developers can also run full apps inside Claude in public preview.",
     "url": "https://claude.com/resources/articles/interactive-connectors-full-tool"
-  },
-  {
-    "title": "Introducing Claude for Manufacturing",
-    "category": "feature update",
-    "date": "2026-11-12",
-    "summary": "Anthropic released a manufacturing plugin with 17 skills and four connectors (Autodesk Fusion, Infor, Microsoft 365, and Oracle NetSuite) covering quotes, failed-inspection investigation, breakdown diagnosis, supplier sourcing, design comparison, and production reports. Infor is releasing its own plugin so Claude can act, such as releasing POs or rescheduling production, after user approval. Humans review anything before it reaches customers or suppliers, and the plugin targets manual data work affecting 79% of manufacturers on Team and Enterprise plans.",
-    "url": "https://claude.com/resources/articles/claude-for-manufacturing"
-  },
-  {
-    "title": "More ways to work with Claude: Sheets, Whiteboards, and Interactive Connectors",
-    "category": "feature update",
-    "date": "2026-11-10",
-    "summary": "New artifact types include Claude Sheets (collaborative spreadsheets with formulas and tabs), Whiteboards, and Claude Data (formerly Dashboards), which connects to tools like Snowflake and Salesforce to build dashboards. Partner apps such as Adobe and Atlassian can run inside Claude, and Claude Meetings is coming soon. These tools let non-technical teams build tools and move ideas across formats with shared context, while working within existing permissions that admins control.",
-    "url": "https://claude.com/resources/articles/more-ways-to-work-with-claude-sheets-whiteboards-and-interactive-connectors"
-  },
-  {
-    "title": "The Claude Tag guide for startups",
-    "category": "announcement",
-    "date": "2026-11-13",
-    "summary": "A guide shows how eight startups use Claude Tag (beta), which lets teams @mention Claude in Slack to run tasks with connected tools, across five setups: on-call triage, threads to draft PRs, a company brain, self-serve data analysis, and recurring reports. Campfire went from mention to open PR in 21 minutes, and Moritz cut a daily update from about an hour to 5 minutes. The advice is to start with one task in a small private pilot, limit access, and have humans review and merge PRs, with Claude Tag available on Beta, Team, and Enterprise plans.",
-    "url": "https://claude.com/resources/articles/claude-tag-guide-for-startups"
-  },
-  {
-    "title": "Building always-on agents",
-    "category": "announcement",
-    "date": "2026-11-13",
-    "summary": "Anthropic published a guide to stateful, proactive agents that sleep and wake for brief runs to handle events, built around five primitives: event inbox, timers, memory, permissions, and outbox. Interest is renewed as models judge intent and timing better and long-horizon work gets cheaper, citing a 78% cost drop per solved task from Opus 5 to Opus 5.5. It recommends safeguards such as credential proxies, deferred approvals, and tuning message frequency, and gives developers a blueprint for adding proactive agents to products.",
-    "url": "https://claude.com/resources/articles/building-always-on-agents"
   }
 ]
