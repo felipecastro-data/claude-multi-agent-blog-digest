@@ -1,44 +1,44 @@
 [
   {
+    "title": "Using Claude Opus 5.5 as your daily driver for knowledge work",
+    "category": "feature update",
+    "date": "2026-11-12",
+    "summary": "Opus 5.5 is now the recommended model for everyday knowledge work such as research, memos, spreadsheets, and decks, and it is the default on Pro, Max, Ultra, and Team plans. At Medium effort (the default), it matches or beats Opus 5 at High and is stronger at financial analysis and reading charts. Fewer steps and less editing can offset its higher per-token price, and the guide recommends asking for finished files, defining done, and starting at Medium effort.",
+    "url": "https://claude.com/resources/articles/using-claude-opus-5-5-as-your-daily-driver-for-knowledge-work"
+  },
+  {
+    "title": "Your apps can now open in Claude, and Claude can work in them",
+    "category": "feature update",
+    "date": "2026-11-10",
+    "summary": "Partner apps can now embed directly in Claude, opening beside chat or full screen, and Claude can edit open pages, rows, and files in them with actions approved like connector actions. The feature is rolling out on web and desktop for all plans, starting with Asana, Canva, Notion, and Confluence, and apps can be pinned to the sidebar. Built on the open MCP Apps extension, with app tools and embedded sites in public preview, it reduces tab switching by letting Claude work inside existing tools.",
+    "url": "https://claude.com/resources/articles/interactive-connectors-full-tool"
+  },
+  {
+    "title": "Linked billing on the Claude Platform",
+    "category": "feature update",
+    "date": "2026-11-17",
+    "summary": "This beta feature lets third-party platforms bill customers' Claude API usage without sharing API keys, since customers link their existing Claude Platform org and usage bills directly to them. Customers approve each platform, set monthly spend limits, view spend in Console, and can unlink at any time, while platforms skip building metering and invoicing and can choose per request who pays. The trade-off is that requests run in the platform's org, so customer IP allowlists, encryption keys, and retention settings do not apply.",
+    "url": "https://claude.com/resources/articles/linked-billing-on-claude-platform"
+  },
+  {
+    "title": "Operate Claude Managed Agents inside your security perimeter",
+    "category": "feature update",
+    "date": "2026-11-12",
+    "summary": "Self-hosted Claude Managed Agents are in private beta and can run in your own cloud or on-prem, with the full service (harness, credentials, and session history) hostable rather than just the sandbox. Model requests can route to Anthropic, a cloud provider, or your own gateway, with credentials kept out of the sandbox, network access limited to allowed hosts, and every tool call recorded. Activity can be exported via OpenTelemetry, and session history stays in your own database.",
+    "url": "https://claude.com/resources/articles/self-hosted-claude-managed-agents"
+  },
+  {
+    "title": "How Curative is building a national provider network with agents on Claude",
+    "category": "announcement",
+    "date": "2026-11-10",
+    "summary": "Health insurer Curative uses a hierarchy of Claude agents to negotiate and sign provider contracts, with an Opus agent managing each deal, a Sonnet rate reviewer, a Haiku judge checking outbound messages, and a CEO approving non-standard pricing. Reported results include roughly 2,000-2,400 contracts per week versus 2,100 for all of 2025, and claims dispute responses falling from about 90 days to under 30 minutes. The company estimates the network would otherwise take about 30 years to build, and its lessons include limited initial authority, isolated runs, and logging and auditing.",
+    "url": "https://claude.com/resources/articles/how-curative-is-building-a-national-provider-network-with-agents-on-claude"
+  },
+  {
     "title": "Introducing Claude for Manufacturing",
     "category": "feature update",
     "date": "2026-11-12",
     "summary": "Claude for Manufacturing is a plugin with 17 skills and four connectors (Autodesk Fusion, Infor, Microsoft 365, and Oracle NetSuite) that drafts quotes, quality reports, and supplier requests, with multi-step skills pausing for human review. Infor is releasing its own plugin so Claude can act in Infor, such as releasing POs, per user permissions and with approval. It targets manual data entry, which 79% of manufacturers report per a 2025 MLC survey, and is available on Team and Enterprise plans.",
     "url": "https://claude.com/resources/articles/claude-for-manufacturing"
-  },
-  {
-    "title": "More ways to work with Claude: Sheets, Whiteboards, and Interactive Connectors",
-    "category": "feature update",
-    "date": "2026-11-10",
-    "summary": "Claude is expanding into everyday knowledge work with new artifact types, including Claude Sheets (collaborative spreadsheets), Claude Whiteboards, and Claude Data (formerly Dashboards), plus upgraded Interactive connectors. Claude Meetings is coming soon and Claude auto-connect is in beta for eligible Team and Enterprise plans, with enterprise admins controlling which products and connectors each person uses. Advantage Solutions' FP&A team cut forecast assembly from about 10 hours to under 30 minutes.",
-    "url": "https://claude.com/resources/articles/more-ways-to-work-with-claude-sheets-whiteboards-and-interactive-connectors"
-  },
-  {
-    "title": "The Claude Tag guide for startups",
-    "category": "announcement",
-    "date": "2026-11-13",
-    "summary": "This guide, based on interviews with eight high-growth startups using Claude Tag (beta), which lets teams @Claude in Slack channels, covers uses such as on-call alert triage, draft PRs from Slack threads, and scheduled reports. Campfire went from Slack mention to open PR in 21 minutes, and Moritz cut a daily update from about an hour to 5 minutes, with Claude never merging changes itself. It recommends starting with one channel and one task, a small private pilot, limited connector access, and spend limits, and requires a Team or Enterprise plan.",
-    "url": "https://claude.com/resources/articles/claude-tag-guide-for-startups"
-  },
-  {
-    "title": "Building always-on agents",
-    "category": "announcement",
-    "date": "2026-11-13",
-    "summary": "This guide covers always-on agents that are stateful, proactive, manage context across sessions, and act without direct supervision, mostly sleeping and waking for brief runs using five primitives: event inbox, timers, memory, permissions, and outbox. It argues this is practical now due to better model judgment and lower long-horizon costs, with Opus 5.5 costing 78% less per solved task than Opus 5 on one coding benchmark. Guidance includes treating the inbox as source of truth, running one active worker per inbox, keeping credentials outside the agent behind a proxy, and starting with a quiet agent that earns more attention over time.",
-    "url": "https://claude.com/resources/articles/building-always-on-agents"
-  },
-  {
-    "title": "J. Crew brings its signature approach to styling to life with Claude",
-    "category": "announcement",
-    "date": "2026-11-12",
-    "summary": "J.Crew's Style Advisor, an AI stylist on JCrew.com, is now live for U.S. women's and men's styles and helps shoppers buy complete outfits. Shoppers can describe an occasion or start from one item and receive full looks drawn from J.Crew photo shoots, refinable by chat. Built with Claude Code, it uses a frontier model for planning, Sonnet for styling decisions, and Haiku for quick tasks to bring in-store styling expertise online.",
-    "url": "https://claude.com/resources/articles/j-crew-style-advisor-with-claude"
-  },
-  {
-    "title": "Introducing Claude Meetings",
-    "category": "feature update",
-    "date": "2026-11-12",
-    "summary": "Claude Meetings is in beta and lets Claude join Google Meet video calls as a visible participant that follows the conversation and answers questions aloud or in chat. With permission, it can use tools and build docs or whiteboards live, and it writes notes and action items to a claude.ai page with the transcript and artifacts. It is available on Team and Enterprise plans, stays out of calls with outside guests unless an admin allows it, and excludes ZDR, HIPAA-ready, and customer-managed key orgs during beta.",
-    "url": "https://claude.com/resources/articles/claude-meetings"
   }
 ]
