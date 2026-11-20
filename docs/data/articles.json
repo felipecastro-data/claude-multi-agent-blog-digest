@@ -1,44 +1,44 @@
 [
   {
+    "title": "Using Claude Opus 5.5 as your daily driver for knowledge work",
+    "category": "feature update",
+    "date": "2026-11-12",
+    "summary": "This guide recommends Opus 5.5 for research, analysis, memos, spreadsheets, and decks, and Opus 5.5 is now the default on Pro, Max, Ultra, and Team plans. Pricing is $4/$20 per million tokens versus $2/$10 for Sonnet 5.5, and a financial modeling task took 63 minutes versus 93 for Opus 5 at half the cost, with Medium effort matching or beating Opus 5 at High. Tips include asking for finished files, connecting work files, and stating the goal and output up front.",
+    "url": "https://claude.com/resources/articles/using-claude-opus-5-5-as-your-daily-driver-for-knowledge-work"
+  },
+  {
+    "title": "Using a \"chaos loop\" to harden the Claude Docs launch: 60 server errors across billions of requests",
+    "category": "announcement",
+    "date": "2026-11-17",
+    "summary": "For two weeks before the Claude Docs launch on September 16, 2026, Claude ran continuously on staging, load-testing the service, reading telemetry, and deploying fixes while humans approved irreversible changes. A 3 GB memory issue in one doc was fixed with copy-on-write (about 180 MB), cutting the capacity estimate from 500+ pods to about 50. The launch reached 4.6M docs by September 22 with 60 server errors over 2B requests, 629 production rollouts, and no rollbacks, at about $125k in inference at list price.",
+    "url": "https://claude.dev/blog/chaos-loop-claude-docs-launch/"
+  },
+  {
+    "title": "How the Claude Code team thinks about verification",
+    "category": "announcement",
+    "date": "2026-11-16",
+    "summary": "About 90% of the Claude Code team's code is written and reviewed by Claude, with preferred tests being end-to-end, property, and differential tests, plus a verify skill that boots and drives the app and escalates to a human after three failed rounds. Guardrails keep changes from modifying the checks that judge them, read REVIEW.md from the base branch, start gates in observe mode, and never skip or retry flaky tests. The article argues verification is what enables delegation and parallel agents, shifting the engineer's role to defining \"done\" and reviewing evidence.",
+    "url": "https://claude.dev/blog/how-the-claude-code-team-thinks-about-verification/"
+  },
+  {
+    "title": "Building always-on agents",
+    "category": "announcement",
+    "date": "2026-11-13",
+    "summary": "This guide covers stateful, proactive agents that keep context across sessions and act unsupervised, mostly sleeping and waking for short runs, built from five primitives: event inbox, timers, durable memory, permissions, and outbox. Newer models judge intent and check-in timing better, and long-horizon work is cheaper (Opus 5.5 used 78% less per solved task than Opus 5 on one benchmark), while permissions carry the most risk. Its core advice is to start quiet and earn the user's attention.",
+    "url": "https://claude.com/resources/articles/building-always-on-agents"
+  },
+  {
+    "title": "J. Crew brings its signature approach to styling to life with Claude",
+    "category": "announcement",
+    "date": "2026-11-12",
+    "summary": "J.Crew launched Style Advisor, an AI stylist on JCrew.com for US women's and men's shoppers that turns a described occasion into complete outfits drawn from its photo shoots, refinable in chat. It was built with Claude Code, using a larger model for planning, Sonnet for conversation decisions, and Haiku for quick tasks. Next steps include personalization from preferences and purchase history, plus more markets and lines.",
+    "url": "https://claude.com/resources/articles/j-crew-style-advisor-with-claude"
+  },
+  {
     "title": "Introducing Claude for Manufacturing",
     "category": "feature update",
     "date": "2026-11-12",
     "summary": "Claude for Manufacturing is a plugin with 17 skills and four connectors (Autodesk Fusion, Infor, Microsoft 365, and Oracle NetSuite) that drafts quotes, quality reports, and supplier requests from a manufacturer's own records. Its skills cover failed-inspection investigation, breakdown diagnosis, sourcing, design comparison, and production reporting, and the Infor plugin can make approved changes. It is available on Team and Enterprise plans, humans approve all work, and it does not operate equipment.",
     "url": "https://claude.com/resources/articles/claude-for-manufacturing"
-  },
-  {
-    "title": "Your apps can now open in Claude, and Claude can work in them",
-    "category": "feature update",
-    "date": "2026-11-10",
-    "summary": "Partner apps can now embed directly in Claude, built on interactive connectors and MCP Apps, an open extension in public preview. Users can open a tool beside chat or full screen, where Claude edits the open page, row, or file with user approval, and tools can be pinned to the sidebar and + menu to open without a prompt. Launch partners include Asana, Canva, Dropbox, monday.com, Smartsheet, Vercel, and Webflow, with examples from Adobe, Atlassian, Box, HubSpot, and Notion, so work stays in familiar tools.",
-    "url": "https://claude.com/resources/articles/interactive-connectors-full-tool"
-  },
-  {
-    "title": "Operate Claude Managed Agents inside your security perimeter",
-    "category": "feature update",
-    "date": "2026-11-12",
-    "summary": "Self-hosted Claude Managed Agents are in private beta, letting organizations run the full service, including the harness, sandboxes, credentials, and session history, in their own cloud or on-prem rather than only the sandbox. Teams choose whether model requests go to Anthropic, a cloud provider, or their own gateway, with reasoning separated from code execution, credentials kept out of the sandbox, an allowed-host network list, and OpenTelemetry export of every step. This keeps data in the organization's environment for unattended agents, and ZDR applies to model requests.",
-    "url": "https://claude.com/resources/articles/self-hosted-claude-managed-agents"
-  },
-  {
-    "title": "Linked billing on the Claude Platform",
-    "category": "feature update",
-    "date": "2026-11-17",
-    "summary": "Linked billing on the Claude Platform is in beta and lets third-party platforms bill Claude API usage to a customer's own Claude Platform org. Customers link platforms through a hosted flow, approve each one, set monthly spend limits, view spend in Console, and unlink at any time, while platforms skip building metering and invoicing and can choose per request who pays. No API keys change hands, but requests run in the platform's org, so customer-org IP allowlists, encryption keys, and retention settings do not apply.",
-    "url": "https://claude.com/resources/articles/linked-billing-on-claude-platform"
-  },
-  {
-    "title": "Introducing Claude Meetings",
-    "category": "feature update",
-    "date": "2026-11-12",
-    "summary": "Claude Meetings is a beta in which Claude joins Google Meet video calls as a visible participant on Team and Enterprise plans. Claude can answer questions by voice or chat, build docs and whiteboards live, and write notes and action items, with each meeting saved as a claude.ai page containing notes, transcript, and built artifacts. It stays out of calls with outside guests unless an admin allows it, stores transcripts and summaries rather than audio, and is not available for ZDR, HIPAA-ready, or CMEK orgs during beta.",
-    "url": "https://claude.com/resources/articles/claude-meetings"
-  },
-  {
-    "title": "The Claude Tag guide for startups",
-    "category": "announcement",
-    "date": "2026-11-13",
-    "summary": "This guide covers Claude Tag (beta), a Slack-based tool for Team and Enterprise where teams @mention Claude, connect tools, and assign tasks. It profiles eight startups using it for on-call triage, Slack-to-draft-PR, company Q&A, self-serve data, and recurring reports, with results such as Campfire going from mention to PR in 21 minutes and NavigateAI merging 134 PRs. Guardrails include people reviewing and merging draft PRs, admin connector bundles, per-channel settings, and spend limits.",
-    "url": "https://claude.com/resources/articles/claude-tag-guide-for-startups"
   }
 ]
