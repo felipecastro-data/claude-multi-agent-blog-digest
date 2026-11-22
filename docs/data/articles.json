@@ -1,44 +1,44 @@
 [
   {
+    "title": "Introducing Claude for Manufacturing",
+    "category": "announcement",
+    "date": "2026-11-12",
+    "summary": "Claude for Manufacturing is a plugin for plant teams with 17 skills and connectors to Autodesk Fusion, Infor, Microsoft 365, and Oracle NetSuite. It drafts quotes, quality reports, and supplier requests, and with Infor's separate plugin it can write to Infor, such as releasing POs or rescheduling production, following user permissions. Humans approve work before it goes to customers or suppliers, Claude does not operate equipment, and a Model Hardware Standard research preview aims to standardize equipment settings and safety limits.",
+    "url": "https://claude.com/resources/articles/claude-for-manufacturing"
+  },
+  {
+    "title": "Using a 'chaos loop' to harden the Claude Docs launch: 60 server errors across billions of requests",
+    "category": "announcement",
+    "date": "2026-11-17",
+    "summary": "Claude Docs, a collaborative editor for people and Claude sessions, launched Sept 16, 2026 on about 50 pods after a roughly two-week chaos loop on staging, where Claude load-tested, read telemetry, and proposed fixes while humans approved hard-to-undo changes. Claude found a ~3 GB memory issue from per-keystroke copying, and copy-on-write cut estimated capacity from 500+ pods to about 50. Results included 4.6M+ docs by Sept 22, about 2B requests with 60 server errors, 629 deploys and no rollbacks, and roughly $125,000 in list-price inference, though the author's $3k-$10k estimate for a small-team stack is unverified.",
+    "url": "https://claude.dev/blog/chaos-loop-claude-docs-launch/"
+  },
+  {
+    "title": "How the Claude Code team thinks about verification",
+    "category": "announcement",
+    "date": "2026-11-16",
+    "summary": "About 90% of the Claude Code team's code is written and reviewed by Claude, and verification is what allows many agents to run in parallel. The team prioritizes end-to-end tests on the real app plus property and differential tests, and uses a verify skill, a 39-item diff-triggered reliability checklist, and a REVIEW.md read from the base branch so changes cannot edit their own checks. A commit gate with off/observe/enforce modes is in place, missed bugs become REVIEW.md rules, and flaky tests are root-caused or deleted rather than retried, so humans shift from reading diffs to defining \"done\" and reviewing evidence.",
+    "url": "https://claude.dev/blog/how-the-claude-code-team-thinks-about-verification/"
+  },
+  {
+    "title": "Building always-on agents",
+    "category": "announcement",
+    "date": "2026-11-13",
+    "summary": "Anthropic's guide covers stateful, proactive agents that mostly sleep and wake for brief runs, built from five primitives: event inbox, timers, external memory, permissions/credentials, and outbox. It cites Opus 5.5 costing 78% less per solved task than Opus 5 on a long-horizon coding benchmark, compared with a typical 40% reduction. Recommended practices include treating the inbox as source of truth, running one active worker per inbox, batching events, and starting quiet, with permissions and credentials flagged as the highest-risk area.",
+    "url": "https://claude.com/resources/articles/building-always-on-agents"
+  },
+  {
+    "title": "J. Crew brings its signature approach to styling to life with Claude",
+    "category": "announcement",
+    "date": "2026-11-12",
+    "summary": "Style Advisor, an AI stylist on JCrew.com, builds full outfits for women's and men's styles in the U.S. from an occasion or a starting item, with looks drawn from J.Crew's own photo shoots and refined through conversation. It uses several Claude models: a top-tier model for planning, Claude Code for the prototype, Sonnet as the stylist, and Haiku for quick tasks. The approach is meant to shift online shopping toward inspiration-led browsing while keeping recommendations consistent with J.Crew's styling approach.",
+    "url": "https://claude.com/resources/articles/j-crew-style-advisor-with-claude"
+  },
+  {
     "title": "Your apps can now open in Claude, and Claude can work in them",
     "category": "feature update",
     "date": "2026-11-10",
     "summary": "Partner apps can now open inside Claude beside the chat or full screen, and Claude can edit the live page, row, or file, with the user approving actions as they would for any connector. Tools can be pinned to the sidebar and opened from the + menu without a prompt, rolling out on web and desktop for all plans starting with Asana, Canva, Notion, and Atlassian. Developers can build full apps on the MCP Apps standard, which is in public preview.",
     "url": "https://claude.com/resources/articles/interactive-connectors-full-tool"
-  },
-  {
-    "title": "Linked billing on the Claude Platform",
-    "category": "feature update",
-    "date": "2026-11-17",
-    "summary": "In beta, third-party tools can let customers pay for Claude API usage without sharing an API key. Customers link their org through Anthropic's hosted flow, approve each platform, and set monthly spend limits, with Anthropic handling billing and approvals. Requests run in the platform's org, so customer IP allowlists, encryption keys, and retention settings do not apply.",
-    "url": "https://claude.com/resources/articles/linked-billing-on-claude-platform"
-  },
-  {
-    "title": "Introducing Claude Meetings",
-    "category": "feature update",
-    "date": "2026-11-12",
-    "summary": "Claude joins video calls as a visible participant and starts work during the meeting, answering questions aloud or in chat, building docs and whiteboards live, and writing notes and action items on a claude.ai meeting page. It is in beta on Team and Enterprise with Google Meet supported and other platforms coming soon. It saves transcripts, summaries, and screen descriptions but not audio, and it is not available with zero data retention, HIPAA-ready configs, or customer-managed keys.",
-    "url": "https://claude.com/resources/articles/claude-meetings"
-  },
-  {
-    "title": "Operate Claude Managed Agents inside your security perimeter",
-    "category": "feature update",
-    "date": "2026-11-12",
-    "summary": "Self-hosted Claude Managed Agents are in private beta, and the harness, sandboxes, credentials, and session history now all run in the customer's environment instead of only the sandbox. Model routing can go direct to Anthropic, Bedrock, Google Agent Platform, Microsoft Foundry, or a customer's own gateway. Reasoning is separated from code execution, credentials are kept out of the sandbox, network allowlists apply, and session logs are exported via OpenTelemetry; access is through an Anthropic account team.",
-    "url": "https://claude.com/resources/articles/self-hosted-claude-managed-agents"
-  },
-  {
-    "title": "The Claude Tag guide for startups",
-    "category": "announcement",
-    "date": "2026-11-13",
-    "summary": "This guide covers Claude Tag (beta), which lets Team and Enterprise teams @mention Claude in Slack, and shares setups from eight startups, including on-call triage, Slack threads to draft PRs, internal Q&A, and recurring reports. Campfire went from mention to open PR in 21 minutes, and Moritz cut a daily update from about an hour to 5 minutes. Guardrails include draft PRs only with human review, scoped access, spend limits, and security review, and the advice is to start with one clear task in an existing channel.",
-    "url": "https://claude.com/resources/articles/claude-tag-guide-for-startups"
-  },
-  {
-    "title": "Using Claude Opus 5.5 as your daily driver for knowledge work",
-    "category": "feature update",
-    "date": "2026-11-12",
-    "summary": "This guide recommends Opus 5.5 for research, analysis, memos, spreadsheets, and decks, and Opus 5.5 is now the default on Pro, Max, Ultra, and Team plans. Pricing is $4/$20 per million tokens versus $2/$10 for Sonnet 5.5, and a financial modeling task took 63 minutes versus 93 for Opus 5 at half the cost, with Medium effort matching or beating Opus 5 at High. Tips include asking for finished files, connecting work files, and stating the goal and output up front.",
-    "url": "https://claude.com/resources/articles/using-claude-opus-5-5-as-your-daily-driver-for-knowledge-work"
   }
 ]

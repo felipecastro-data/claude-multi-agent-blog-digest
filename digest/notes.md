@@ -1,99 +1,99 @@
-## Your apps can now open in Claude, and Claude can work in them
-- Partner apps can open inside Claude beside the chat or full screen
-- Claude can edit the live page, row, or file; user approves actions as with any connector
-- Pin tools to sidebar, open from + menu without a prompt
-- Rolling out on web and desktop, all plans; starts with Asana, Canva, Notion, Atlassian
-- Developers can build full apps on MCP Apps standard (public preview)
-Category: feature update
-Date: 2026-11-10
-URL: https://claude.com/resources/articles/interactive-connectors-full-tool
-
 ## Linked billing on the Claude Platform
-- Beta: third-party tools let customers pay for Claude API usage without sharing an API key
-- Customers link their org via Anthropic's hosted flow, approve each platform, set monthly spend limits, unlink in Console
-- No key storage or rotation for platforms; Anthropic handles billing and approvals
-- Platforms get per-customer usage and can choose per request who pays
-- Caveat: requests run in the platform's org, so customer IP allowlists, encryption keys, retention settings don't apply
+- Beta feature letting third-party platforms (coding agents, workflow tools) have customers pay for Claude API usage without sharing API keys
+- Customers link their Claude Platform org via hosted approval flow; usage billed directly to that org
+- Customers can set per-platform spend limits and unlink anytime
+- Platforms avoid storing/rotating keys and building metering/invoicing; see per-customer usage
+- Caveat: requests run in platform's org, so customer IP allowlists, encryption keys, retention settings don't apply
 Category: feature update
 Date: 2026-11-17
 URL: https://claude.com/resources/articles/linked-billing-on-claude-platform
 
 ## Using a 'chaos loop' to harden the Claude Docs launch: 60 server errors across billions of requests
-- Claude ran a roughly two-week chaos loop on staging: generated load, broke components, read telemetry, shipped fixes; humans approved hard-to-undo changes
-- Key fix: copy-on-write cut one doc from ~3 GB to ~180 MB; launch pods estimate fell from 500+ to ~50
-- Results: 4.6M+ docs by Sep 22, 2B requests with 60 server errors, no rollbacks across 629 September deploys
-- Cost about $125,000 in inference; author estimates $3k-$10k for smaller projects (untested)
-- Argues long-running models can hold one goal across many iterations
+- Claude Docs (collaborative editor for people and Claude sessions) launched Sept 16, 2026 on ~50 pods
+- Team ran a ~2-week "chaos loop" on staging: Claude load-tested, read telemetry, proposed and deployed fixes; humans approved hard-to-undo changes
+- Claude found a ~3 GB memory issue from per-keystroke copying; copy-on-write cut estimated capacity from 500+ pods to ~50
+- Results: 4.6M+ docs by Sept 22, ~2B requests with 60 server errors, 629 deploys in September, no rollbacks
+- Cost ~$125,000 inference at list price; author estimates $3k-$10k for small-team stack (unverified)
 Category: announcement
 Date: 2026-11-17
 URL: https://claude.dev/blog/chaos-loop-claude-docs-launch/
 
 ## How the Claude Code team thinks about verification
-- Claude Code team (Addy Osmani) on how agents verify their own work with evidence; ~90% of team code is written and reviewed by Claude
-- Prioritizes E2E tests, plus property tests and differential tests for migrations
-- Claude runs the app via a `verify` skill; humans take over after three failed fix attempts; checks read from base branch; flaky tests fixed or deleted, never retried
-- Missed bugs become REVIEW.md or CLAUDE.md rules; commit gates start in observe mode; reviewers evaluated against past reverts
-- Verification lets one person direct many agents; the job shifts to defining "done" and reviewing evidence
+- About 90% of Claude Code team's code is written and reviewed by Claude; verification enables running many agents in parallel
+- Prioritize end-to-end tests on the real app, plus property tests and differential tests (good for migrations)
+- Practices: `verify` skill in .claude/skills/, 39-item diff-triggered reliability checklist, REVIEW.md read from base branch so changes can't edit own checks
+- Commit gate with off/observe/enforce modes; missed bugs become REVIEW.md rules; flaky tests are root-caused or deleted, never retried
+- Humans shift from reading diffs to defining "done" and reviewing evidence
 Category: announcement
 Date: 2026-11-16
 URL: https://claude.dev/blog/how-the-claude-code-team-thinks-about-verification/
 
 ## Building always-on agents
-- Guide (William Hu) on architecture for agents that run in bursts, keep context across sessions, act unsupervised
-- Five primitives: event inbox, timers, memory, permissions, outbox
-- Interest rising as models show better judgment and long-task intelligence gets cheaper (cites Opus 5.5 78% cheaper per solved task than Opus 5 on one benchmark)
-- Covers reliability: event dedup, one worker per inbox, credential and approval handling
-- Blueprint for making agents proactive
+- Anthropic guide to stateful, proactive agents that mostly sleep and wake for brief runs
+- Five primitives: event inbox, timers, external memory, permissions/credentials, outbox
+- Better model judgment and cheaper intelligence: Opus 5.5 cost 78% less per solved task than Opus 5 on a long-horizon coding benchmark (vs 40% typical)
+- Practices: inbox as source of truth, one active worker per inbox, batch events, start quiet and earn attention
+- Permissions/credentials flagged as highest-risk area
 Category: announcement
 Date: 2026-11-13
 URL: https://claude.com/resources/articles/building-always-on-agents
 
 ## The Claude Tag guide for startups
-- Guide to Claude Tag (beta), which lets teams @mention Claude in Slack; for Team and Enterprise plans
-- Eight startups share setups: on-call triage, Slack threads to draft PRs, internal Q&A, data requests, recurring reports
-- Results: Campfire went from mention to open PR in 21 min; Moritz cut daily update from ~1 hour to 5 min
-- Guardrails: draft PRs only, humans review and merge; scoped access, spend limits, security review
-- Advice: start with one clear task in an existing channel
+- Guide to Claude Tag (beta), which lets teams @mention Claude in Slack connected to their tools
+- Not a new feature; documents how eight startups use it for on-call triage, Slack-to-draft-PR, knowledge base, self-serve data, recurring reports
+- Example: Campfire went from Slack mention to open PR in 21 minutes
+- Requires Team or Enterprise; humans review/merge PRs
+- Unavailable for orgs with zero data retention, CMEK, or HIPAA configuration
 Category: announcement
 Date: 2026-11-13
 URL: https://claude.com/resources/articles/claude-tag-guide-for-startups
 
 ## Operate Claude Managed Agents inside your security perimeter
-- Self-hosted Claude Managed Agents in private beta
-- Previously only the sandbox was self-hostable; now harness, sandboxes, credentials, session history all run in customer environment
-- Model routing choices: direct to Anthropic, Bedrock, Google Agent Platform, Microsoft Foundry, or own gateway
-- Reasoning separated from code execution, credentials kept out of sandbox, network allowlists, OpenTelemetry session logs
-- Access via Anthropic account team
+- Self-hosted Claude Managed Agents now in private beta
+- Harness, sandboxes, credentials, and session history can run in customer's cloud or on-prem (previously Anthropic-hosted)
+- Model routing choice: direct to Anthropic, Bedrock, Google Agent Platform, Microsoft Foundry, or own gateway
+- Keeps code, credentials, and session logs inside the security perimeter; session history in customer's database
+- Design separates reasoning from execution, keeps credentials out of sandbox, limits network to approved hosts, OpenTelemetry export
 Category: feature update
 Date: 2026-11-12
 URL: https://claude.com/resources/articles/self-hosted-claude-managed-agents
 
 ## J. Crew brings its signature approach to styling to life with Claude
-- Style Advisor, an AI stylist on JCrew.com, helps shoppers by full outfit; live for US women's and men's
-- Users describe an occasion or start from one piece; looks come from J.Crew photo shoots; refine by chat
-- Built with Claude Code: Opus prototype, Sonnet as in-conversation stylist, Haiku for quick tasks
-- Moves shopping toward inspiration-led experience per J.Crew CEO
-- Next: personalization from preferences and purchases, more markets and lines
+- Style Advisor, an AI stylist on JCrew.com, builds full outfits for women's and men's styles in the U.S.
+- Shoppers describe an occasion or start with an item; looks come from J.Crew's own photo shoots and are refined by conversation
+- Multiple Claude models used: top-tier for planning, Claude Code for prototype, Sonnet as stylist, Haiku for quick tasks
+- Shifts online shopping toward inspiration-led browsing
+- Recommendations stay consistent with J.Crew's styling approach
 Category: announcement
 Date: 2026-11-12
 URL: https://claude.com/resources/articles/j-crew-style-advisor-with-claude
 
 ## Introducing Claude for Manufacturing
-- Plugin with 17 skills and four connectors: Autodesk Fusion, Infor, Microsoft 365, Oracle NetSuite
-- Drafts quotes, quality reports, supplier requests; handles multistep work like failed-inspection investigation and bid comparison
-- Without a connector, saved system exports in Microsoft 365 work; separate Infor plugin can act (e.g. release POs) with approval
-- Humans approve outputs before they reach customers or suppliers; does not operate equipment
-- Available on Team and Enterprise plans
-Category: feature update
+- Plugin for plant teams with 17 skills and four connectors (Autodesk Fusion, Infor, Microsoft 365, Oracle NetSuite)
+- Drafts quotes, quality reports, and supplier requests; skills span sales, quality, operations, supply chain, design, setup
+- With Infor's separate plugin, Claude can write to Infor (release POs, reschedule production), following user permissions
+- Humans approve work before it goes to customers or suppliers
+- Does not operate equipment; Model Hardware Standard research preview aims to standardize equipment settings/safety limits
+Category: announcement
 Date: 2026-11-12
 URL: https://claude.com/resources/articles/claude-for-manufacturing
 
 ## Introducing Claude Meetings
-- Claude joins video calls as a visible participant and starts work during the meeting
-- Beta on Team and Enterprise; Google Meet supported, others coming soon
-- Answers questions aloud or in chat, builds docs/whiteboards live, writes notes and action items on a claude.ai meeting page
-- Saves transcript, summary, screen descriptions, not audio; posts join notice; admins control outside-guest calls
-- Not available with zero data retention, HIPAA-ready configs, or customer-managed keys
+- Beta feature: Claude joins video calls as a visible participant and can act during the meeting
+- Answers questions aloud or in chat (default written), uses connected tools, builds docs/whiteboards live, writes notes and action items
+- Each meeting gets a claude.ai page with notes, transcript, outputs; audio not saved
+- Rolling out to Team and Enterprise; Google Meet only for now
+- Not yet for zero data retention, HIPAA-ready, or CMEK orgs; admins control outside-guest joining
 Category: feature update
 Date: 2026-11-12
 URL: https://claude.com/resources/articles/claude-meetings
+
+## Using Claude Opus 5.5 as your daily driver for knowledge work
+- Guide recommending Opus 5.5 as default for research, analysis, memos, reports, spreadsheets, decks
+- Lineup: Haiku 5.5 (fast/simple), Sonnet 5.5 (scoped work), Opus 5.5 (judgment-heavy), Fable 5.2 (demanding long-running technical work)
+- Opus 5.5 is now default on Pro, Max, Ultra, Team; thinking always on; Medium effort reportedly matches or beats Opus 5 at High
+- Prompting tips: ask for finished files, define "done", skip "think hard", use connectors
+- Fewer steps can offset higher per-token price; try higher effort before a bigger model
+Category: feature update
+Date: 2026-11-12
+URL: https://claude.com/resources/articles/using-claude-opus-5-5-as-your-daily-driver-for-knowledge-work
