@@ -1,44 +1,44 @@
 [
   {
-    "title": "Introducing Claude for Manufacturing",
-    "category": "announcement",
-    "date": "2026-11-12",
-    "summary": "Claude for Manufacturing is a plugin for plant teams with 17 skills and connectors to Autodesk Fusion, Infor, Microsoft 365, and Oracle NetSuite. It drafts quotes, quality reports, and supplier requests, and with Infor's separate plugin it can write to Infor, such as releasing POs or rescheduling production, following user permissions. Humans approve work before it goes to customers or suppliers, Claude does not operate equipment, and a Model Hardware Standard research preview aims to standardize equipment settings and safety limits.",
-    "url": "https://claude.com/resources/articles/claude-for-manufacturing"
+    "title": "Introducing Claude Ship",
+    "category": "feature update",
+    "date": "2026-11-23",
+    "summary": "Claude Ship is a system for moving pull requests through review, fixes, and approval, combining Code Review (now GA) with the beta PR Steward and Claude Approvals. Claude repairs failing checks, merge conflicts, and reviewer feedback, and approves changes that a policy file permits, while /ship in Claude Code advances your own PRs once admins enable it per GitHub repo on Team and Enterprise plans. It is token-billed with admin spend limits, is unavailable with ZDR, HIPAA configuration, or customer-managed keys, and aims to remove the review and merge bottleneck as agents write more code.",
+    "url": "https://claude.com/resources/articles/introducing-claude-ship"
   },
   {
-    "title": "Using a 'chaos loop' to harden the Claude Docs launch: 60 server errors across billions of requests",
-    "category": "announcement",
+    "title": "Zero data retention with Enterprise Frontier Safeguards is now in beta",
+    "category": "feature update",
+    "date": "2026-11-23",
+    "summary": "Enterprise Frontier Safeguards (EFS), a misuse-detection layer that works with zero data retention, has moved from private beta with 100+ customers to public beta. It is available on Claude Platform, Claude Platform on AWS, Amazon Bedrock, and Claude on Google Cloud, with Microsoft Foundry coming. Customers keep inputs and outputs in their own cloud, while automated cross-request monitoring detects coordinated attacks that look harmless per request.",
+    "url": "https://claude.com/resources/articles/zero-data-retention-with-enterprise-frontier-safeguards"
+  },
+  {
+    "title": "Linked billing on the Claude Platform",
+    "category": "feature update",
     "date": "2026-11-17",
-    "summary": "Claude Docs, a collaborative editor for people and Claude sessions, launched Sept 16, 2026 on about 50 pods after a roughly two-week chaos loop on staging, where Claude load-tested, read telemetry, and proposed fixes while humans approved hard-to-undo changes. Claude found a ~3 GB memory issue from per-keystroke copying, and copy-on-write cut estimated capacity from 500+ pods to about 50. Results included 4.6M+ docs by Sept 22, about 2B requests with 60 server errors, 629 deploys and no rollbacks, and roughly $125,000 in list-price inference, though the author's $3k-$10k estimate for a small-team stack is unverified.",
-    "url": "https://claude.dev/blog/chaos-loop-claude-docs-launch/"
+    "summary": "Linked billing is a beta feature that lets end customers of third-party tools pay for their Claude API usage without sharing an API key. Customers link their Claude Platform org through a hosted flow, approve each platform, set spend limits, and can unlink at any time, while platforms see per-customer usage and choose who pays per request. Requests run in the platform's org, so customer-org IP allowlists, encryption keys, and retention settings do not apply, but the approach reduces key-handling risk and lets platforms ship Claude features without building billing.",
+    "url": "https://claude.com/resources/articles/linked-billing-on-claude-platform"
   },
   {
-    "title": "How the Claude Code team thinks about verification",
+    "title": "The enterprise guide to securing coding agents",
     "category": "announcement",
-    "date": "2026-11-16",
-    "summary": "About 90% of the Claude Code team's code is written and reviewed by Claude, and verification is what allows many agents to run in parallel. The team prioritizes end-to-end tests on the real app plus property and differential tests, and uses a verify skill, a 39-item diff-triggered reliability checklist, and a REVIEW.md read from the base branch so changes cannot edit their own checks. A commit gate with off/observe/enforce modes is in place, missed bugs become REVIEW.md rules, and flaky tests are root-caused or deleted rather than retried, so humans shift from reading diffs to defining \"done\" and reviewing evidence.",
-    "url": "https://claude.dev/blog/how-the-claude-code-team-thinks-about-verification/"
+    "date": "2026-11-23",
+    "summary": "This guide covers securing coding agents like Claude Code against leaked credentials, unvetted dependencies and extensions, data exfiltration, and prompt injection, with six questions for vetting providers. It describes layered defenses: a judgment layer (alignment, probes, auto mode classifier) and fixed boundaries (permissions, hooks, sandboxing, egress allowlists) that can be centrally locked. Auto mode is now the default for interactive sessions on every plan, skill and plugin scanning is available on Enterprise, and Salesforce is cited at 79% more PRs merged per developer and 5% fewer incidents.",
+    "url": "https://claude.com/resources/articles/enterprise-guide-to-securing-coding-agents"
   },
   {
-    "title": "Building always-on agents",
+    "title": "KPMG's Todd Lohr on AI when your data is also your clients' data",
+    "category": "announcement",
+    "date": "2026-11-23",
+    "summary": "An Anthropic interview with KPMG US Vice Chair Todd Lohr covers adopting frontier AI while protecting client data. KPMG integrated Claude into its Digital Gateway tax platform, now called Digital Gateway Powered by Claude, and regulated-data firms can keep data in their own infrastructure and still use frontier models. Lohr's takeaway is that you have to adopt and secure at the same time, supported by Enterprise Frontier Safeguards (public beta) for misuse detection compatible with zero data retention.",
+    "url": "https://claude.com/resources/articles/kpmg-todd-lohr-on-ai-when-your-data-is-also-your-clients-data"
+  },
+  {
+    "title": "The Claude Tag guide for startups",
     "category": "announcement",
     "date": "2026-11-13",
-    "summary": "Anthropic's guide covers stateful, proactive agents that mostly sleep and wake for brief runs, built from five primitives: event inbox, timers, external memory, permissions/credentials, and outbox. It cites Opus 5.5 costing 78% less per solved task than Opus 5 on a long-horizon coding benchmark, compared with a typical 40% reduction. Recommended practices include treating the inbox as source of truth, running one active worker per inbox, batching events, and starting quiet, with permissions and credentials flagged as the highest-risk area.",
-    "url": "https://claude.com/resources/articles/building-always-on-agents"
-  },
-  {
-    "title": "J. Crew brings its signature approach to styling to life with Claude",
-    "category": "announcement",
-    "date": "2026-11-12",
-    "summary": "Style Advisor, an AI stylist on JCrew.com, builds full outfits for women's and men's styles in the U.S. from an occasion or a starting item, with looks drawn from J.Crew's own photo shoots and refined through conversation. It uses several Claude models: a top-tier model for planning, Claude Code for the prototype, Sonnet as the stylist, and Haiku for quick tasks. The approach is meant to shift online shopping toward inspiration-led browsing while keeping recommendations consistent with J.Crew's styling approach.",
-    "url": "https://claude.com/resources/articles/j-crew-style-advisor-with-claude"
-  },
-  {
-    "title": "Your apps can now open in Claude, and Claude can work in them",
-    "category": "feature update",
-    "date": "2026-11-10",
-    "summary": "Partner apps can now open inside Claude beside the chat or full screen, and Claude can edit the live page, row, or file, with the user approving actions as they would for any connector. Tools can be pinned to the sidebar and opened from the + menu without a prompt, rolling out on web and desktop for all plans starting with Asana, Canva, Notion, and Atlassian. Developers can build full apps on the MCP Apps standard, which is in public preview.",
-    "url": "https://claude.com/resources/articles/interactive-connectors-full-tool"
+    "summary": "A guide shows how eight fast-growing startups use Claude Tag, a beta Slack tool for @mentioning Claude, connecting tools, and assigning tasks. Use cases include alert triage, turning Slack threads into draft PRs, docs and code Q&A, self-serve data answers, and scheduled reports, with reported results such as a Slack mention opening a PR in 21 minutes. It stresses human review before merge, scoped access, and spend limits, and is available only on Claude Team and Enterprise plans.",
+    "url": "https://claude.com/resources/articles/claude-tag-guide-for-startups"
   }
 ]
