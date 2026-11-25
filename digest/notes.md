@@ -1,99 +1,99 @@
 ## Turn artifacts into Mac and Windows apps
-- Beta "Install as app" turns Claude artifacts into desktop apps with own icon and window
-- Apps open outside Claude, can be shared; no API key or separate login needed
-- Permission-based access: browser-level, app features (notifications, menu bar), up to full computer access
-- Auto-updates when artifact is edited; permissions re-requested after updates; usage counts toward plan limits
-- Apps not reviewed by Anthropic; unavailable to HIPAA-ready orgs and hybrid deployments
+- Artifacts can be installed as desktop apps on Mac and Windows via "Install as app" (beta)
+- Apps get own icon and window, notifications, menu bar/system tray items, auto-update when the artifact is edited
+- Three permission levels: browser-equivalent (default), app permissions, full computer access (only for apps you or your org made; re-asks after each update)
+- Artifacts become everyday work tools; usage counts toward plan limits
+- Beta rollout
 Category: feature update
 Date: 2026-11-24
 URL: https://claude.com/resources/articles/install-as-app
 
 ## MCP servers can now ship skills, run tasks, and more with Claude
-- MCP update lets servers work with Claude more like another agent
-- Skills over MCP (public beta): servers bundle guidance with tools; loaded on demand, update with server
-- Tasks (background long jobs) and Elicitation (pause to ask user input) now GA
+- Skills over MCP (public beta): servers publish skills with tools; Claude loads on demand; updates with server
+- Tasks and Elicitation (GA): background long jobs; servers can pause to ask user input/approval
 - File Uploads rolling out soon: send PDFs, spreadsheets, images to servers without using context window
-- Part of open spec, so other compatible clients can use them
+- Part of open MCP spec, so should work in any compatible client
+- Developers can add support to plugins now
 Category: feature update
 Date: 2026-11-24
 URL: https://claude.com/resources/articles/skills-over-mcp-tasks-and-more
 
 ## KPMG's Todd Lohr on AI when your data is also your clients' data
-- Interview with KPMG US Vice Chair Todd Lohr on adopting frontier AI while protecting client data
-- KPMG tax platform now "Digital Gateway Powered by Claude"
+- Interview with Todd Lohr, KPMG US Vice Chair, on adopting frontier AI while protecting client data
+- KPMG integrated Claude into its Digital Gateway tax platform ("Digital Gateway Powered by Claude")
 - KPMG had early access to Enterprise Frontier Safeguards (now public beta), compatible with zero data retention
-- Lets KPMG keep client data in-house while using frontier models, speeding regulated deployments
-- Lohr: adopt and secure AI together; "wait and see" is not sustainable
+- Regulated firms keep client data in infrastructure they control while using frontier models
+- Lohr: adopt and secure AI simultaneously; "wait and see" is unsustainable
 Category: announcement
 Date: 2026-11-23
 URL: https://claude.com/resources/articles/kpmg-todd-lohr-on-ai-when-your-data-is-also-your-clients-data
 
 ## Zero data retention with Enterprise Frontier Safeguards is now in beta
-- Enterprise Frontier Safeguards (EFS) detects sophisticated misuse while keeping zero data retention
-- Moved from private beta (100+ customers incl. Bridgewater, Salesforce, Stripe) to public beta
-- Automated monitoring across many requests creates "Safety Case" records; no human review, no training use
-- Customers bring own storage (S3, GCS); data deleted after written there
-- Available on Claude Platform, AWS (Claude Platform and Bedrock), Google Cloud; Microsoft Foundry coming
+- Enterprise Frontier Safeguards (EFS) detects sophisticated misuse while keeping zero data retention intact
+- Moved from private beta (100+ customers) to public beta; eligible customers get setup instructions
+- Monitors misuse patterns across many requests; creates Safety Cases for review excluding inputs/outputs; analysis runs on data in customer's cloud storage
+- Helps regulated and security-sensitive orgs keep data custody
+- Works on Claude Platform, Claude Platform on AWS, Bedrock, Claude on Google Cloud; Microsoft Foundry coming soon
 Category: feature update
 Date: 2026-11-23
 URL: https://claude.com/resources/articles/zero-data-retention-with-enterprise-frontier-safeguards
 
 ## The enterprise guide to securing coding agents
-- Guide for security leaders scaling Claude Code with a layered risk framework
-- Four risks: credential/privilege abuse, unvetted dependencies/extensions, data exfiltration, prompt injection
-- Auto mode now default start mode for interactive Claude Code on all plans; headless, Agent SDK, HIPAA default to manual
-- Enterprise plans get skill and plugin scanning
-- Pairs probabilistic defenses with deterministic controls (deny rules, hooks, sandboxing, egress allowlists, managed settings)
+- Guide for security/technical leaders on securing Claude Code on Team and Enterprise plans
+- Covers six evaluation questions, four risks (credential leakage, unvetted dependencies, data exfiltration, prompt injection), layered controls (sandboxing, permission rules, managed settings)
+- Auto mode is now default starting mode for interactive Claude Code sessions on all plans; headless, Agent SDK, HIPAA default to manual
+- Enterprise plans gained skill and plugin scanning for malicious content
+- Suggests piloting on a low-sensitivity repo before expanding
 Category: announcement
 Date: 2026-11-23
 URL: https://claude.com/resources/articles/enterprise-guide-to-securing-coding-agents
 
 ## Introducing Claude Ship
-- Beta product that reviews PRs, fixes them, and decides which are ready to merge per team policy
-- Combines Code Review (now GA) with PR Steward (fixes checks, conflicts, feedback) and Claude Approvals (policy-based approval)
-- `/ship` command in Claude Code, or admins enable per repository with spend limits
-- Anthropic says merged PRs on its Claude Code team more than doubled June to September
-- Team and Enterprise, GitHub only; not for ZDR, HIPAA, or customer-managed keys; token-billed
-Category: announcement
+- Beta system taking a PR through review, fixes, and approval; combines Code Review (GA) with new PR Steward and Claude Approvals agents
+- PR Steward fixes failing CI, merge conflicts, reviewer feedback (does not approve/merge)
+- Claude Approvals applies a team-written policy file to approve routine changes or require human sign-off; `/ship` in Claude Code
+- Available on Team and Enterprise for GitHub repos; token-billed
+- Not available with ZDR, HIPAA configuration, or customer-managed encryption keys
+Category: feature update
 Date: 2026-11-23
 URL: https://claude.com/resources/articles/introducing-claude-ship
 
 ## Linked billing on the Claude Platform
-- Beta lets third-party platforms bill customers' Claude API usage to the customer's own Claude Platform org
-- Customers link via hosted flow, approve platforms, set monthly spend limits, unlink anytime
-- No API key changes hands, so platforms need not store or rotate keys
-- Platforms skip building metering/invoicing; customers can use existing Anthropic commitments
-- Tradeoff: requests run in platform's org, so customer IP allowlists, encryption keys, retention settings do not apply
+- Beta: third-party platforms can bill customers' Claude API usage without sharing an API key
+- Customers link their Claude Platform org, approve each platform, set spend limit, can unlink anytime
+- Platforms no longer store/rotate keys or build own metering; can choose per request who pays
+- Gives customers spend visibility by platform
+- Caveat: requests run in the platform's org, so customer IP allowlists, encryption keys, retention settings don't apply
 Category: feature update
 Date: 2026-11-17
 URL: https://claude.com/resources/articles/linked-billing-on-claude-platform
 
 ## Using a "chaos loop" to harden the Claude Docs launch: 60 server errors across billions of requests
 - Claude Docs (collaborative editor for people and Claude sessions) launched Sept 16, 2026
-- Claude ran a "chaos loop" on staging: load tests, read telemetry, proposed and deployed fixes, reran; humans approved irreversible changes
-- Rust service with minimal dependencies kept it legible; copy-on-write fix cut a 3 GB doc to ~180 MB and pods from 500+ to ~50
-- Result: ~2B requests, 60 server errors, no rollbacks, 4.6M docs created by Sept 22
-- Cost ~$125,000 inference; credited to newer models holding long goals without drifting
+- Claude ran a "chaos loop" on staging: injected load/failures, read Datadog telemetry, shipped fixes; humans approved irreversible changes
+- Found keystroke copying causing ~3 GB doc memory; copy-on-write cut to ~180 MB, launch need from 500+ pods to ~50
+- Results: ~2B requests, 60 server errors, no rollback, 4.6M docs by Sept 22; inference cost ~$125,000
+- Newer models can hold one goal across weeks of long-running work
 Category: announcement
 Date: 2026-11-17
 URL: https://claude.dev/blog/chaos-loop-claude-docs-launch/
 
 ## How the Claude Code team thinks about verification
-- Addy Osmani on having coding agents verify work with evidence; ~90% of team code written and reviewed by Claude
-- Prioritizes E2E tests (via a `verify` skill), plus property and differential tests
-- Recurring failures become hooks or CLAUDE.md rules
-- Safeguards: human after three failed fixes, rules read from base branch, gates start in observe mode, no skipping flaky tests
-- Verification loops enable running dozens or hundreds of agents; separate grader improved success up to 10 points
+- Addy Osmani post on verifying agent-written code; ~90% of team's code is written and reviewed by Claude
+- Prioritizes end-to-end tests, plus property tests and differential tests
+- Practices: `verify` skill in `.claude/skills/`, 39-item diff-triggered reliability checklist, tests/build/lint before PR, human escalation after three failed rounds, REVIEW.md read from base branch
+- Commit gates (off/observe/enforce); flaky tests deleted and documented, not retried
+- Separate grader improved task success up to 10 points; dev role shifts to defining "done"
 Category: announcement
 Date: 2026-11-16
 URL: https://claude.dev/blog/how-the-claude-code-team-thinks-about-verification/
 
 ## Building strong safety evaluations
-- Anthropic recommendations for building and relying on AI safety evals, drawing on psychology replication reforms
-- Shifted from counting refusals to "appropriate response rate" on multi-turn conversations with a Claude-simulated user
-- Hardened eval environments, paused many internet-access evals, added real-time monitoring for web search evals
-- Urges validating graders against human labels, preregistering analyses, reporting uncertainty
-- Config matters: system prompt change moved a score from 60% (API) to 94% (claude.ai)
+- Anthropic guide with recommendations for building, running, and reporting AI safety evals
+- Match design to the question and measure the right construct; favor multi-turn simulations since single-turn tests are near saturated (94-98% harmless)
+- Validate LLM graders against human experts, preregister analyses, use large samples, report confidence intervals
+- Document full config: one model's appropriate-response rate differed up to 34 points between API and claude.ai
+- Weak evals can make models look safer than they are
 Category: announcement
 Date: 2026-11-13
 URL: https://www.anthropic.com/research/building-strong-safety-evaluations

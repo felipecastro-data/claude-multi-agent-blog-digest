@@ -1,5 +1,33 @@
 [
   {
+    "title": "The enterprise guide to securing coding agents",
+    "category": "announcement",
+    "date": "2026-11-23",
+    "summary": "Anthropic published a guide for security and technical leaders on securing Claude Code on Team and Enterprise plans, covering six evaluation questions, four risks (credential leakage, unvetted dependencies, data exfiltration, and prompt injection), and layered controls such as sandboxing, permission rules, and managed settings. Auto mode is now the default starting mode for interactive Claude Code sessions on all plans, while headless, Agent SDK, and HIPAA setups default to manual, and Enterprise plans gained scanning of skills and plugins for malicious content. The guide recommends piloting on a low-sensitivity repo before expanding.",
+    "url": "https://claude.com/resources/articles/enterprise-guide-to-securing-coding-agents"
+  },
+  {
+    "title": "Linked billing on the Claude Platform",
+    "category": "feature update",
+    "date": "2026-11-17",
+    "summary": "In beta, third-party platforms can bill customers' Claude API usage without sharing an API key. Customers link their Claude Platform org, approve each platform, set a spend limit, and can unlink at any time, while platforms no longer need to store or rotate keys or build their own metering, and can choose per request who pays. The caveat is that requests run in the platform's org, so customer IP allowlists, encryption keys, and retention settings do not apply.",
+    "url": "https://claude.com/resources/articles/linked-billing-on-claude-platform"
+  },
+  {
+    "title": "Zero data retention with Enterprise Frontier Safeguards is now in beta",
+    "category": "feature update",
+    "date": "2026-11-23",
+    "summary": "Enterprise Frontier Safeguards (EFS) detects sophisticated misuse while keeping zero data retention intact, and has moved from a private beta with 100+ customers to a public beta where eligible customers can get setup instructions. It monitors misuse patterns across many requests and creates Safety Cases for review that exclude inputs and outputs, with analysis running on data in the customer's cloud storage. It works on Claude Platform, Claude Platform on AWS, Bedrock, and Claude on Google Cloud, with Microsoft Foundry coming soon, helping regulated and security-sensitive organizations keep data custody.",
+    "url": "https://claude.com/resources/articles/zero-data-retention-with-enterprise-frontier-safeguards"
+  },
+  {
+    "title": "KPMG's Todd Lohr on AI when your data is also your clients' data",
+    "category": "announcement",
+    "date": "2026-11-23",
+    "summary": "In an interview, KPMG US Vice Chair Todd Lohr explains how KPMG integrated Claude into its Digital Gateway tax platform while protecting client data. KPMG had early access to Enterprise Frontier Safeguards, now in public beta and compatible with zero data retention, which lets regulated firms keep client data in infrastructure they control while using frontier models. Lohr argues that firms must adopt and secure AI simultaneously, since \"wait and see\" is unsustainable.",
+    "url": "https://claude.com/resources/articles/kpmg-todd-lohr-on-ai-when-your-data-is-also-your-clients-data"
+  },
+  {
     "title": "MCP servers can now ship skills, run tasks, and more with Claude",
     "category": "feature update",
     "date": "2026-11-24",
@@ -12,33 +40,5 @@
     "date": "2026-11-24",
     "summary": "The beta Install as app option turns Claude artifacts into desktop apps with their own icon and window that open outside Claude and can be shared, with no API key or separate login needed. Access is permission-based, ranging from browser-level permissions to app features like notifications and menu bar to full computer access, and apps auto-update when the artifact is edited with permissions re-requested after updates. Apps are not reviewed by Anthropic, usage counts toward plan limits, and the feature is unavailable to HIPAA-ready organizations and hybrid deployments.",
     "url": "https://claude.com/resources/articles/install-as-app"
-  },
-  {
-    "title": "Using a \"chaos loop\" to harden the Claude Docs launch: 60 server errors across billions of requests",
-    "category": "announcement",
-    "date": "2026-11-17",
-    "summary": "Claude Docs, a collaborative editor for people and Claude sessions, launched September 16, 2026, and was hardened on staging with a \"chaos loop\" in which Claude ran load tests, read telemetry, proposed and deployed fixes, and reran tests, while humans approved irreversible changes. A copy-on-write fix cut a 3 GB document to about 180 MB and reduced pods from over 500 to about 50. The launch recorded about 2 billion requests, 60 server errors, no rollbacks, and 4.6 million documents created by September 22, at a cost of roughly $125,000 in inference.",
-    "url": "https://claude.dev/blog/chaos-loop-claude-docs-launch/"
-  },
-  {
-    "title": "How the Claude Code team thinks about verification",
-    "category": "announcement",
-    "date": "2026-11-16",
-    "summary": "Addy Osmani describes how the Claude Code team has coding agents verify their work with evidence, with about 90% of team code written and reviewed by Claude. The approach prioritizes end-to-end tests via a verify skill plus property and differential tests, turns recurring failures into hooks or CLAUDE.md rules, and includes safeguards such as bringing in a human after three failed fixes and starting gates in observe mode. Verification loops enable running dozens or hundreds of agents, and a separate grader improved success by up to 10 points.",
-    "url": "https://claude.dev/blog/how-the-claude-code-team-thinks-about-verification/"
-  },
-  {
-    "title": "Building strong safety evaluations",
-    "category": "announcement",
-    "date": "2026-11-13",
-    "summary": "Anthropic shares recommendations for building and relying on AI safety evaluations, drawing on psychology replication reforms. The approach shifts from counting refusals to an \"appropriate response rate\" over multi-turn conversations with a Claude-simulated user, and urges validating graders against human labels, preregistering analyses, and reporting uncertainty. Configuration matters, as a system prompt change moved one score from 60% on the API to 94% on claude.ai.",
-    "url": "https://www.anthropic.com/research/building-strong-safety-evaluations"
-  },
-  {
-    "title": "Introducing Claude Ship",
-    "category": "feature update",
-    "date": "2026-11-23",
-    "summary": "Claude Ship is a system for moving pull requests through review, fixes, and approval, combining Code Review (now GA) with the beta PR Steward and Claude Approvals. Claude repairs failing checks, merge conflicts, and reviewer feedback, and approves changes that a policy file permits, while /ship in Claude Code advances your own PRs once admins enable it per GitHub repo on Team and Enterprise plans. It is token-billed with admin spend limits, is unavailable with ZDR, HIPAA configuration, or customer-managed keys, and aims to remove the review and merge bottleneck as agents write more code.",
-    "url": "https://claude.com/resources/articles/introducing-claude-ship"
   }
 ]
