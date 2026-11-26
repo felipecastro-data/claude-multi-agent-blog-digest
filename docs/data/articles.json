@@ -1,5 +1,19 @@
 [
   {
+    "title": "Introducing Claude Ship",
+    "category": "feature update",
+    "date": "2026-11-23",
+    "summary": "Claude Ship is a system for handling pull requests after they are opened, made up of Code Review (generally available) plus PR Steward and Claude Approvals (beta). Running `/ship` in Claude Code pushes a change, opens a PR, and works through review and failing checks, while admins set review depth, timing, and spend limits per GitHub repo and an approval policy file can add observe-only mode and human sign-off for sensitive changes. It is available on Team and Enterprise with GitHub only, is not offered for ZDR, HIPAA configurations, or customer-managed keys, and Anthropic reports that merged PRs on its Claude Code team more than doubled from June to September while reverted changes fell over 40%.",
+    "url": "https://claude.com/resources/articles/introducing-claude-ship"
+  },
+  {
+    "title": "Using a \"chaos loop\" to harden the Claude Docs launch: 60 server errors across billions of requests",
+    "category": "announcement",
+    "date": "2026-11-17",
+    "summary": "A post describes a two-week \"chaos loop\" in which Claude load-tested a staging cluster for the collaborative Claude Docs editor, broke components, and shipped fixes. The loop found a large doc using about 3 GB per pod, which copy-on-write reduced to about 180 MB, cutting estimated launch capacity from 500+ pods to about 50. The September 16, 2026 launch handled 4.6M+ docs in a week and 2 billion requests with 60 server errors and no rollbacks, at an estimated $125,000 inference cost.",
+    "url": "https://claude.dev/blog/chaos-loop-claude-docs-launch/"
+  },
+  {
     "title": "The enterprise guide to securing coding agents",
     "category": "announcement",
     "date": "2026-11-23",
@@ -26,19 +40,5 @@
     "date": "2026-11-23",
     "summary": "In an interview, KPMG US Vice Chair Todd Lohr explains how KPMG integrated Claude into its Digital Gateway tax platform while protecting client data. KPMG had early access to Enterprise Frontier Safeguards, now in public beta and compatible with zero data retention, which lets regulated firms keep client data in infrastructure they control while using frontier models. Lohr argues that firms must adopt and secure AI simultaneously, since \"wait and see\" is unsustainable.",
     "url": "https://claude.com/resources/articles/kpmg-todd-lohr-on-ai-when-your-data-is-also-your-clients-data"
-  },
-  {
-    "title": "MCP servers can now ship skills, run tasks, and more with Claude",
-    "category": "feature update",
-    "date": "2026-11-24",
-    "summary": "MCP now lets servers work with Claude more like another agent, with Skills over MCP in public beta so servers can bundle guidance with their tools, loaded on demand and updated with the server. Tasks (background long-running jobs) and Elicitation (pausing to ask the user for input) are now generally available. File Uploads is rolling out soon so PDFs, spreadsheets, and images can reach servers without using the context window, and the update is part of an open spec that other compatible clients can use.",
-    "url": "https://claude.com/resources/articles/skills-over-mcp-tasks-and-more"
-  },
-  {
-    "title": "Turn artifacts into Mac and Windows apps",
-    "category": "feature update",
-    "date": "2026-11-24",
-    "summary": "The beta Install as app option turns Claude artifacts into desktop apps with their own icon and window that open outside Claude and can be shared, with no API key or separate login needed. Access is permission-based, ranging from browser-level permissions to app features like notifications and menu bar to full computer access, and apps auto-update when the artifact is edited with permissions re-requested after updates. Apps are not reviewed by Anthropic, usage counts toward plan limits, and the feature is unavailable to HIPAA-ready organizations and hybrid deployments.",
-    "url": "https://claude.com/resources/articles/install-as-app"
   }
 ]
