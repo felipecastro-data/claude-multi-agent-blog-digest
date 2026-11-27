@@ -1,5 +1,19 @@
 [
   {
+    "title": "MCP servers can now ship skills, run tasks, and more with Claude",
+    "category": "feature update",
+    "date": "2026-11-24",
+    "summary": "MCP servers can now publish skills alongside tools, with Skills over MCP in public beta so skills load on demand and update with the server. Tasks (background long jobs) and Elicitation (pausing for user sign-off or input) are now generally available, and File Uploads for sending PDFs, spreadsheets, and images to servers is rolling out soon. Because this is part of the open spec, other compatible clients should be able to support it as well.",
+    "url": "https://claude.com/resources/articles/skills-over-mcp-tasks-and-more"
+  },
+  {
+    "title": "Turn artifacts into Mac and Windows apps",
+    "category": "feature update",
+    "date": "2026-11-24",
+    "summary": "Artifacts can be installed as desktop apps on Mac and Windows via \"Install as app\" (beta), each getting its own icon and window, sharing support, and auto-updating when the artifact is edited. Three permission levels are offered: a browser-like default, app permissions for notifications and shortcuts, and full computer access, which lets artifacts act as everyday work tools such as calendar-driven meeting prep with reminders. It is available on all plans but not for HIPAA-ready orgs or hybrid deployments, and it requires internet access and sign-in.",
+    "url": "https://claude.com/resources/articles/install-as-app"
+  },
+  {
     "title": "Introducing Claude Ship",
     "category": "feature update",
     "date": "2026-11-23",
@@ -26,19 +40,5 @@
     "date": "2026-11-17",
     "summary": "In beta, third-party platforms can bill customers' Claude API usage without sharing an API key. Customers link their Claude Platform org, approve each platform, set a spend limit, and can unlink at any time, while platforms no longer need to store or rotate keys or build their own metering, and can choose per request who pays. The caveat is that requests run in the platform's org, so customer IP allowlists, encryption keys, and retention settings do not apply.",
     "url": "https://claude.com/resources/articles/linked-billing-on-claude-platform"
-  },
-  {
-    "title": "Zero data retention with Enterprise Frontier Safeguards is now in beta",
-    "category": "feature update",
-    "date": "2026-11-23",
-    "summary": "Enterprise Frontier Safeguards (EFS) detects sophisticated misuse while keeping zero data retention intact, and has moved from a private beta with 100+ customers to a public beta where eligible customers can get setup instructions. It monitors misuse patterns across many requests and creates Safety Cases for review that exclude inputs and outputs, with analysis running on data in the customer's cloud storage. It works on Claude Platform, Claude Platform on AWS, Bedrock, and Claude on Google Cloud, with Microsoft Foundry coming soon, helping regulated and security-sensitive organizations keep data custody.",
-    "url": "https://claude.com/resources/articles/zero-data-retention-with-enterprise-frontier-safeguards"
-  },
-  {
-    "title": "KPMG's Todd Lohr on AI when your data is also your clients' data",
-    "category": "announcement",
-    "date": "2026-11-23",
-    "summary": "In an interview, KPMG US Vice Chair Todd Lohr explains how KPMG integrated Claude into its Digital Gateway tax platform while protecting client data. KPMG had early access to Enterprise Frontier Safeguards, now in public beta and compatible with zero data retention, which lets regulated firms keep client data in infrastructure they control while using frontier models. Lohr argues that firms must adopt and secure AI simultaneously, since \"wait and see\" is unsustainable.",
-    "url": "https://claude.com/resources/articles/kpmg-todd-lohr-on-ai-when-your-data-is-also-your-clients-data"
   }
 ]
