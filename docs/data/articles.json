@@ -1,5 +1,33 @@
 [
   {
+    "title": "Zero data retention with Enterprise Frontier Safeguards is now in beta",
+    "category": "feature update",
+    "date": "2026-11-23",
+    "summary": "Enterprise Frontier Safeguards (EFS), a misuse-detection layer compatible with zero data retention, has moved from private beta with Bridgewater, Salesforce, and Stripe to public beta. It monitors misuse patterns across many requests and creates Safety Cases for customer review, while customers supply their own S3 or GCS storage and data is deleted after write and never used for training. It is available on Claude Platform, Platform on AWS, Bedrock, and Google Cloud, with Microsoft Foundry coming soon.",
+    "url": "https://claude.com/resources/articles/zero-data-retention-with-enterprise-frontier-safeguards"
+  },
+  {
+    "title": "KPMG's Todd Lohr on AI when your data is also your clients' data",
+    "category": "announcement",
+    "date": "2026-11-23",
+    "summary": "In an interview, KPMG US Vice Chair Todd Lohr discusses deploying frontier AI with sensitive client data. KPMG integrated Claude into its Digital Gateway tax platform as \"Digital Gateway Powered by Claude\" and is an early user of Enterprise Frontier Safeguards to keep data within its own organization. Automated misuse review flags serious misuse for human review, and his advice is to \"adopt and secure at the same time.\"",
+    "url": "https://claude.com/resources/articles/kpmg-todd-lohr-on-ai-when-your-data-is-also-your-clients-data"
+  },
+  {
+    "title": "How the Claude Code team thinks about verification",
+    "category": "announcement",
+    "date": "2026-11-16",
+    "summary": "An engineering post by Addy Osmani explains how agents verify work with evidence, noting that Claude writes about 90% of the Claude Code team's code. It covers three test types (end-to-end, property, and differential), practices such as a per-repo verify skill, a 39-item reliability checklist, and REVIEW.md read from the base branch, and a commit gate with off, observe, and enforce modes. A separate grader improved task success by up to 10 points, shifting the human role toward defining \"done.\"",
+    "url": "https://claude.dev/blog/how-the-claude-code-team-thinks-about-verification/"
+  },
+  {
+    "title": "Building strong safety evaluations",
+    "category": "announcement",
+    "date": "2026-11-13",
+    "summary": "Anthropic's engineering guide covers designing, running, and reporting AI safety evaluations. It recommends measuring appropriate response rate with domain rubrics rather than refusal rate, and using multi-turn simulations because single-turn tests saturate. It also stresses validating graders against experts, preregistering, repeating runs, and reporting confidence intervals, and notes that a targeted system prompt raised appropriate response rate from 60% (API) to 94% on claude.ai.",
+    "url": "https://www.anthropic.com/research/building-strong-safety-evaluations"
+  },
+  {
     "title": "MCP servers can now ship skills, run tasks, and more with Claude",
     "category": "feature update",
     "date": "2026-11-24",
@@ -12,33 +40,5 @@
     "date": "2026-11-24",
     "summary": "Artifacts can be installed as desktop apps on Mac and Windows via \"Install as app\" (beta), each getting its own icon and window, sharing support, and auto-updating when the artifact is edited. Three permission levels are offered: a browser-like default, app permissions for notifications and shortcuts, and full computer access, which lets artifacts act as everyday work tools such as calendar-driven meeting prep with reminders. It is available on all plans but not for HIPAA-ready orgs or hybrid deployments, and it requires internet access and sign-in.",
     "url": "https://claude.com/resources/articles/install-as-app"
-  },
-  {
-    "title": "Introducing Claude Ship",
-    "category": "feature update",
-    "date": "2026-11-23",
-    "summary": "Claude Ship is a system for handling pull requests after they are opened, made up of Code Review (generally available) plus PR Steward and Claude Approvals (beta). Running `/ship` in Claude Code pushes a change, opens a PR, and works through review and failing checks, while admins set review depth, timing, and spend limits per GitHub repo and an approval policy file can add observe-only mode and human sign-off for sensitive changes. It is available on Team and Enterprise with GitHub only, is not offered for ZDR, HIPAA configurations, or customer-managed keys, and Anthropic reports that merged PRs on its Claude Code team more than doubled from June to September while reverted changes fell over 40%.",
-    "url": "https://claude.com/resources/articles/introducing-claude-ship"
-  },
-  {
-    "title": "Using a \"chaos loop\" to harden the Claude Docs launch: 60 server errors across billions of requests",
-    "category": "announcement",
-    "date": "2026-11-17",
-    "summary": "A post describes a two-week \"chaos loop\" in which Claude load-tested a staging cluster for the collaborative Claude Docs editor, broke components, and shipped fixes. The loop found a large doc using about 3 GB per pod, which copy-on-write reduced to about 180 MB, cutting estimated launch capacity from 500+ pods to about 50. The September 16, 2026 launch handled 4.6M+ docs in a week and 2 billion requests with 60 server errors and no rollbacks, at an estimated $125,000 inference cost.",
-    "url": "https://claude.dev/blog/chaos-loop-claude-docs-launch/"
-  },
-  {
-    "title": "The enterprise guide to securing coding agents",
-    "category": "announcement",
-    "date": "2026-11-23",
-    "summary": "Anthropic published a guide for security and technical leaders on securing Claude Code on Team and Enterprise plans, covering six evaluation questions, four risks (credential leakage, unvetted dependencies, data exfiltration, and prompt injection), and layered controls such as sandboxing, permission rules, and managed settings. Auto mode is now the default starting mode for interactive Claude Code sessions on all plans, while headless, Agent SDK, and HIPAA setups default to manual, and Enterprise plans gained scanning of skills and plugins for malicious content. The guide recommends piloting on a low-sensitivity repo before expanding.",
-    "url": "https://claude.com/resources/articles/enterprise-guide-to-securing-coding-agents"
-  },
-  {
-    "title": "Linked billing on the Claude Platform",
-    "category": "feature update",
-    "date": "2026-11-17",
-    "summary": "In beta, third-party platforms can bill customers' Claude API usage without sharing an API key. Customers link their Claude Platform org, approve each platform, set a spend limit, and can unlink at any time, while platforms no longer need to store or rotate keys or build their own metering, and can choose per request who pays. The caveat is that requests run in the platform's org, so customer IP allowlists, encryption keys, and retention settings do not apply.",
-    "url": "https://claude.com/resources/articles/linked-billing-on-claude-platform"
   }
 ]
